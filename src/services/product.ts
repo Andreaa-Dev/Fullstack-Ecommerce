@@ -1,7 +1,9 @@
-import Product, { ProductDocument } from 'src/models/Product'
+import Product, { ProductDocument } from '../models/Product'
 import { NotFoundError } from '../helpers/apiError'
 
-const create = async (product: ProductDocument): Promise<ProductDocument> => {
+const createProduct = async (
+  product: ProductDocument
+): Promise<ProductDocument> => {
   return product.save()
 }
 
@@ -15,8 +17,9 @@ const findById = async (productId: string): Promise<ProductDocument> => {
   return foundProduct
 }
 
+//publishedYear: -1
 const findAll = async (): Promise<ProductDocument[]> => {
-  return Product.find().sort({ name: 1, publishedYear: -1 })
+  return Product.find().sort({ name: 1 })
 }
 
 const update = async (
@@ -47,7 +50,7 @@ const deleteProduct = async (
 }
 
 export default {
-  create,
+  createProduct,
   findById,
   findAll,
   update,

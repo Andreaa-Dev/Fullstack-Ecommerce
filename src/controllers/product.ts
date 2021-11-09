@@ -1,8 +1,8 @@
 import { Request, Response, NextFunction } from 'express'
 
-import Movie from '../models/Movie'
-import MovieService from '../services/movie'
+import Product from '../models/Product'
 import { BadRequestError } from '../helpers/apiError'
+import ProductService from '../services/product'
 
 // POST /product
 export const createProduct = async (
@@ -22,7 +22,7 @@ export const createProduct = async (
       variant,
     })
 
-    await ProductService.create(product)
+    await ProductService.createProduct(product)
     res.json(product)
   } catch (error) {
     if (error instanceof Error && error.name == 'ValidationError') {
@@ -54,7 +54,7 @@ export const updateProduct = async (
 }
 
 // DELETE /products/:productId => delete product
-export const deleteMovie = async (
+export const deleteProduct = async (
   req: Request,
   res: Response,
   next: NextFunction

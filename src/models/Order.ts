@@ -19,8 +19,8 @@ const OrderSchema = new mongoose.Schema({
   },
   variant: {
     type: String,
+    required: true,
   },
-
   price: {
     type: Number,
     required: true,
@@ -29,13 +29,15 @@ const OrderSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  date: Date,
+  date: { type: Date, default: Date.now },
   userId: {
+    type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
   },
   productId: {
+    type: mongoose.Schema.Types.ObjectId,
     ref: 'Product',
   },
 })
 
-export default mongoose.model<OrderDocument>('Product', orderSchema)
+export default mongoose.model<OrderDocument>('Product', OrderSchema)

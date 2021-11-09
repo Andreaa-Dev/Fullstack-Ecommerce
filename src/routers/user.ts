@@ -1,12 +1,12 @@
 import express from 'express'
 
-// import {
-//   createMovie,
-//   findById,
-//   deleteMovie,
-//   findAll,
-//   updateMovie,
-// } from '../controllers/user'
+import {
+  createUser,
+  findById,
+  deleteUser,
+  findAll,
+  updateUser,
+} from '../controllers/user'
 
 const router = express.Router()
 

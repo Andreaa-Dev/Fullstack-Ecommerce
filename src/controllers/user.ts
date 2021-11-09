@@ -1,8 +1,8 @@
 import { Request, Response, NextFunction } from 'express'
 
-import Movie from '../models/Movie'
-import MovieService from '../services/movie'
+import User from '../models/User'
 import { BadRequestError } from '../helpers/apiError'
+import UserService from '../services/user'
 
 // POST /user => create user
 export const createUser = async (
@@ -21,7 +21,7 @@ export const createUser = async (
       role,
     })
 
-    await UserService.create(user)
+    await UserService.createUser(user)
     res.json(user)
   } catch (error) {
     if (error instanceof Error && error.name == 'ValidationError') {
@@ -41,7 +41,7 @@ export const updateUser = async (
   try {
     const update = req.body
     const userId = req.params.userId
-    const updatedUser = await userService.update(userId, update)
+    const updatedUser = await UserService.updateUser(userId, update)
     res.json(updatedUser)
   } catch (error) {
     if (error instanceof Error && error.name == 'ValidationError') {
@@ -59,7 +59,7 @@ export const deleteUser = async (
   next: NextFunction
 ) => {
   try {
-    await MovieService.deleteUser(req.params.userId)
+    await UserService.deleteUser(req.params.userId)
     //it just delete user so no need res.json
     res.status(204).end()
   } catch (error) {

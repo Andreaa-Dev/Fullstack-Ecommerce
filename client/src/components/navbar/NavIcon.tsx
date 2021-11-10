@@ -1,7 +1,7 @@
 import React from 'react'
-import FavoriteIcon from '@mui/icons-material/Favorite'
-import PersonIcon from '@mui/icons-material/Person'
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
+import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined'
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined'
 import { Box } from '@mui/system'
 
 function NavIcon() {
@@ -13,9 +13,9 @@ function NavIcon() {
         justifyContent: 'space-between',
       }}
     >
-      <FavoriteIcon />
-      <PersonIcon />
-      <ShoppingCartIcon />
+      <FavoriteBorderIcon />
+      <PersonOutlineOutlinedIcon />
+      <ShoppingCartOutlinedIcon />
     </Box>
   )
 }

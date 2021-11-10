@@ -1,21 +1,32 @@
 import React from 'react'
-import TextField from '@mui/material/TextField'
-import { Box, Typography } from '@mui/material'
+import { Box, createTheme, ThemeProvider, Typography } from '@mui/material'
 
 import NavIcon from './NavIcon'
-import Subnav from './SubNav'
+import SubNav from './SubNav'
+import SearchProduct from './SearchProduct'
+
 function NavBar() {
+  const themes = createTheme({
+    typography: {
+      fontFamily: ['Zen Antique', 'serif'].join(','),
+    },
+  })
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-      }}
-    >
-      <TextField id="standard-basic" label="Standard" variant="standard" />
-      <Typography variant="h4">DIOR</Typography>
-      <NavIcon />
+    <Box>
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+        }}
+      >
+        <SearchProduct />
+        <ThemeProvider theme={themes}>
+          <Typography variant="h4">DIOR</Typography>
+        </ThemeProvider>
+        <NavIcon />
+      </Box>
+      <SubNav />
     </Box>
   )
 }

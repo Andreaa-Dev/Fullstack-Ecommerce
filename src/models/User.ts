@@ -3,6 +3,7 @@ import mongoose, { Document } from 'mongoose'
 
 //add types for mongoose
 export type UserDocument = Document & {
+  _id: string
   firstName: string
   lastName: string
   email: string

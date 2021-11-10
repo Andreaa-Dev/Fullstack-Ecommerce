@@ -1,0 +1,3189 @@
+[
+  {
+    "id": 740,
+    "brand": "dior",
+    "name": "\n                            Junon\n                            ",
+    "price": "20.0",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/214/90/0/v6_packshots_sku_pdg%252FPDG_Y0002959-F000355494.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/nails/nail-lacquers/pr-naillacquers-y0002959_f000355494-couture-colour-gel-shine-long-wear.html",
+    "website_link": "https://www.dior.com",
+    "description": "Discover the new-generation Dior Vernis and its ingenious formula that plays up the gel effect.",
+    "rating": null,
+    "category": null,
+    "product_type": "nail_polish",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:24:03.403Z",
+    "updated_at": "2017-12-23T20:59:02.537Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/740.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/740/original/data?1514062742",
+    "product_colors": []
+  },
+  {
+    "id": 730,
+    "brand": "dior",
+    "name": "\n                            Matte\n                            ",
+    "price": "20.0",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/214/90/0/v6_packshots_sku_pdg%252FPDG_Y0002959-F000355999.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/nails/nail-lacquers/pr-naillacquers-y0003759_f000375999-couture-colour-long-wear-nail-lacquer.html",
+    "website_link": "https://www.dior.com",
+    "description": "Discover the new-generation Dior Vernis and its ingenious formula that accentuates the gel effect.",
+    "rating": null,
+    "category": null,
+    "product_type": "nail_polish",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:23:26.195Z",
+    "updated_at": "2017-12-23T20:59:00.800Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/730.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/730/original/data?1514062740",
+    "product_colors": [
+      {
+        "hex_value": "#F39994",
+        "colour_name": "162 Miss Satin"
+      },
+      {
+        "hex_value": "#C78377",
+        "colour_name": "614 Jungle Matte"
+      },
+      {
+        "hex_value": "#6D1724",
+        "colour_name": "979 Poison Metal"
+      },
+      {
+        "hex_value": "#A50809",
+        "colour_name": "999 Matte"
+      }
+    ]
+  },
+  {
+    "id": 729,
+    "brand": "dior",
+    "name": "\n                            Poison Metal\n                            ",
+    "price": "20.0",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/214/90/0/packshots%252FPDG_Y0003559_F000355979.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/nails/nail-lacquers/pr-naillacquers-y0003759_f000355979-couture-colour-long-wear-nail-lacquer.html",
+    "website_link": "https://www.dior.com",
+    "description": "Discover the new-generation Dior Vernis and its ingenious formula that accentuates the gel effect.",
+    "rating": null,
+    "category": null,
+    "product_type": "nail_polish",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:23:25.096Z",
+    "updated_at": "2017-12-23T20:59:00.613Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/729.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/729/original/data?1514062740",
+    "product_colors": [
+      {
+        "hex_value": "#F39994",
+        "colour_name": "162 Miss Satin"
+      },
+      {
+        "hex_value": "#C78377",
+        "colour_name": "614 Jungle Matte"
+      },
+      {
+        "hex_value": "#6D1724",
+        "colour_name": "979 Poison Metal"
+      },
+      {
+        "hex_value": "#A50809",
+        "colour_name": "999 Matte"
+      }
+    ]
+  },
+  {
+    "id": 728,
+    "brand": "dior",
+    "name": "\n                            Jungle Matte\n                            ",
+    "price": "20.0",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/214/90/0/packshots%252FPDG_Y0003759_F000355614.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/nails/nail-lacquers/pr-naillacquers-y0003759_f000355614-couture-colour-long-wear-nail-lacquer.html",
+    "website_link": "https://www.dior.com",
+    "description": "Discover the new-generation Dior Vernis and its ingenious formula that accentuates the gel effect.",
+    "rating": null,
+    "category": null,
+    "product_type": "nail_polish",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:23:24.181Z",
+    "updated_at": "2017-12-23T20:59:00.023Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/728.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/728/original/data?1514062739",
+    "product_colors": [
+      {
+        "hex_value": "#F39994",
+        "colour_name": "162 Miss Satin"
+      },
+      {
+        "hex_value": "#C78377",
+        "colour_name": "614 Jungle Matte"
+      },
+      {
+        "hex_value": "#6D1724",
+        "colour_name": "979 Poison Metal"
+      },
+      {
+        "hex_value": "#A50809",
+        "colour_name": "999 Matte"
+      }
+    ]
+  },
+  {
+    "id": 727,
+    "brand": "dior",
+    "name": "\n                            Miss Satin\n                            ",
+    "price": "20.0",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/214/90/0/packshots%252FPDG_Y0003759_F000355162.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/nails/nail-lacquers/pr-naillacquers-y0003759_f000355162-couture-colour-long-wear-nail-lacquer.html",
+    "website_link": "https://www.dior.com",
+    "description": "Discover the new-generation Dior Vernis and its ingenious formula that accentuates the gel effect.",
+    "rating": null,
+    "category": null,
+    "product_type": "nail_polish",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:23:23.157Z",
+    "updated_at": "2017-12-23T20:58:59.809Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/727.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/727/original/data?1514062739",
+    "product_colors": [
+      {
+        "hex_value": "#F39994",
+        "colour_name": "162 Miss Satin"
+      },
+      {
+        "hex_value": "#C78377",
+        "colour_name": "614 Jungle Matte"
+      },
+      {
+        "hex_value": "#6D1724",
+        "colour_name": "979 Poison Metal"
+      },
+      {
+        "hex_value": "#A50809",
+        "colour_name": "999 Matte"
+      }
+    ]
+  },
+  {
+    "id": 726,
+    "brand": "dior",
+    "name": "\n                            Mineral\n                            ",
+    "price": "20.0",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/214/90/0/packshots%252FPDG_Y0003567_F000355201.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/nails/nail-lacquers/pr-naillacquers-y0003567_f000355201-true-colour-ultra-shiny-long-wear.html",
+    "website_link": "https://www.dior.com",
+    "description": "Discover the new-generation Dior Vernis and its ingenious formula that plays up the gel effect.",
+    "rating": null,
+    "category": null,
+    "product_type": "nail_polish",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:23:22.803Z",
+    "updated_at": "2017-12-23T20:58:59.358Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/726.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/726/original/data?1514062739",
+    "product_colors": [
+      {
+        "hex_value": "#C0CAB7",
+        "colour_name": "201 Mineral"
+      }
+    ]
+  },
+  {
+    "id": 725,
+    "brand": "dior",
+    "name": "\n                            Sauvage\n                            ",
+    "price": "20.0",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/214/90/0/packshots%252FPDG_Y0003565_F002880924.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/nails/nail-lacquers/pr-naillacquers-y0003565_f000355924-couture-colour-gel-shine-long-wear-nail-lacquer.html",
+    "website_link": "https://www.dior.com",
+    "description": "Discover the new-generation Dior Vernis and its ingenious formula that plays up the gel effect.",
+    "rating": null,
+    "category": null,
+    "product_type": "nail_polish",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:23:21.844Z",
+    "updated_at": "2017-12-23T20:58:59.148Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/725.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/725/original/data?1514062739",
+    "product_colors": [
+      {
+        "hex_value": "#ED7C90",
+        "colour_name": "550 Tease"
+      },
+      {
+        "hex_value": "#EA508D",
+        "colour_name": "684 Diabolo"
+      },
+      {
+        "hex_value": "#481B2A",
+        "colour_name": "924 Sauvage"
+      }
+    ]
+  },
+  {
+    "id": 724,
+    "brand": "dior",
+    "name": "\n                            Diabolo\n                            ",
+    "price": "20.0",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/214/90/0/packshots%252FPDG_Y0003565_F002880684.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/nails/nail-lacquers/pr-naillacquers-y0003565_f000355684-couture-colour-gel-shine-long-wear-nail-lacquer.html",
+    "website_link": "https://www.dior.com",
+    "description": "Discover the new-generation Dior Vernis and its ingenious formula that plays up the gel effect.",
+    "rating": null,
+    "category": null,
+    "product_type": "nail_polish",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:23:21.228Z",
+    "updated_at": "2017-12-23T20:58:58.888Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/724.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/724/original/data?1514062738",
+    "product_colors": [
+      {
+        "hex_value": "#ED7C90",
+        "colour_name": "550 Tease"
+      },
+      {
+        "hex_value": "#EA508D",
+        "colour_name": "684 Diabolo"
+      },
+      {
+        "hex_value": "#481B2A",
+        "colour_name": "924 Sauvage"
+      }
+    ]
+  },
+  {
+    "id": 723,
+    "brand": "dior",
+    "name": "\n                            Tease\n                            ",
+    "price": "20.0",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/214/90/0/packshots%252FPDG_Y0003565_F002880550.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/nails/nail-lacquers/pr-naillacquers-y0003565_f000355550-couture-colour-gel-shine-long-wear-nail-lacquer.html",
+    "website_link": "https://www.dior.com",
+    "description": "Discover the new-generation Dior Vernis and its ingenious formula that plays up the gel effect.",
+    "rating": null,
+    "category": null,
+    "product_type": "nail_polish",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:23:20.423Z",
+    "updated_at": "2017-12-23T20:58:58.761Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/723.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/723/original/data?1514062738",
+    "product_colors": [
+      {
+        "hex_value": "#ED7C90",
+        "colour_name": "550 Tease"
+      },
+      {
+        "hex_value": "#EA508D",
+        "colour_name": "684 Diabolo"
+      },
+      {
+        "hex_value": "#481B2A",
+        "colour_name": "924 Sauvage"
+      }
+    ]
+  },
+  {
+    "id": 722,
+    "brand": "dior",
+    "name": "\n                            Precious Rocks\n                            ",
+    "price": "20.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/214/90/0/packshots%252FPDG_Y0002880_F000288001.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/precious-rocks-collection/pr-preciousrockslook-y0002880_f000288001-nail-liner-shine-precision.html",
+    "website_link": "https://www.dior.com",
+    "description": "Diorific reveals a nail liner designed to decorate your nails like gemstones with festive shades. In one ultra-precise golden stroke, Dior Vernis Liner delivers a clear varnish strewn with gold, platinum, and silver glitter in various sizes, showering nails with countless little gems.",
+    "rating": null,
+    "category": null,
+    "product_type": "nail_polish",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:23:19.614Z",
+    "updated_at": "2017-12-23T20:58:58.620Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/722.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/722/original/data?1514062738",
+    "product_colors": [
+      {
+        "hex_value": "#CAAB54",
+        "colour_name": "001 Precious Rocks"
+      }
+    ]
+  },
+  {
+    "id": 721,
+    "brand": "dior",
+    "name": "\n                            Amethyst\n                            ",
+    "price": "20.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/214/90/0/packshots%252FPDG_Y0002986_F000298998.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/precious-rocks-collection/pr-preciousrockslook-y0002986_f000298998-couture-colour-gel-shine-long-wear.html",
+    "website_link": "https://www.dior.com",
+    "description": "The sparkling, vibrant tones of Diorific Vernis nail polishes are modeled after precious stones.",
+    "rating": null,
+    "category": null,
+    "product_type": "nail_polish",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:23:18.553Z",
+    "updated_at": "2017-12-23T20:58:58.443Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/721.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/721/original/data?1514062738",
+    "product_colors": [
+      {
+        "hex_value": "#BC2D48",
+        "colour_name": "673 Ruby"
+      },
+      {
+        "hex_value": "#970530",
+        "colour_name": "745 Grenat"
+      },
+      {
+        "hex_value": "#006D66",
+        "colour_name": "809 Emerald"
+      },
+      {
+        "hex_value": "#511B38",
+        "colour_name": "998 Amethyst"
+      }
+    ]
+  },
+  {
+    "id": 720,
+    "brand": "dior",
+    "name": "\n                            Emerald\n                            ",
+    "price": "20.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/214/90/0/packshots%252FPDG_Y0002986_F000298809.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/precious-rocks-collection/pr-preciousrockslook-y0002986_f000298809-couture-colour-gel-shine-long-wear.html",
+    "website_link": "https://www.dior.com",
+    "description": "The sparkling, vibrant tones of Diorific Vernis nail polishes are modeled after precious stones.",
+    "rating": null,
+    "category": null,
+    "product_type": "nail_polish",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:23:17.565Z",
+    "updated_at": "2017-12-23T20:58:58.230Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/720.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/720/original/data?1514062738",
+    "product_colors": [
+      {
+        "hex_value": "#BC2D48",
+        "colour_name": "673 Ruby"
+      },
+      {
+        "hex_value": "#970530",
+        "colour_name": "745 Grenat"
+      },
+      {
+        "hex_value": "#006D66",
+        "colour_name": "809 Emerald"
+      },
+      {
+        "hex_value": "#511B38",
+        "colour_name": "998 Amethyst"
+      }
+    ]
+  },
+  {
+    "id": 719,
+    "brand": "dior",
+    "name": "\n                            Grenat\n                            ",
+    "price": "0.0",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/214/90/0/packshots%252FPDG_Y0002986_F000298745.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/precious-rocks-collection/pr-preciousrockslook-y0002986_f000298745-couture-colour-gel-shine-long-wear.html",
+    "website_link": "https://www.dior.com",
+    "description": "The sparkling, vibrant tones of Diorific Vernis nail polishes are modeled after precious stones.",
+    "rating": null,
+    "category": null,
+    "product_type": "nail_polish",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:23:16.306Z",
+    "updated_at": "2017-12-23T20:58:57.984Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/719.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/719/original/data?1514062737",
+    "product_colors": [
+      {
+        "hex_value": "#BC2D48",
+        "colour_name": "673 Ruby"
+      },
+      {
+        "hex_value": "#970530",
+        "colour_name": "745 Grenat"
+      },
+      {
+        "hex_value": "#006D66",
+        "colour_name": "809 Emerald"
+      },
+      {
+        "hex_value": "#511B38",
+        "colour_name": "998 Amethyst"
+      }
+    ]
+  },
+  {
+    "id": 718,
+    "brand": "dior",
+    "name": "\n                            Ruby\n                            ",
+    "price": "20.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/214/90/0/packshots%252FPDG_Y0002986_F000298673.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/precious-rocks-collection/pr-preciousrockslook-y0002986_f000298673-couture-colour-gel-shine-long-wear.html",
+    "website_link": "https://www.dior.com",
+    "description": "The sparkling, vibrant tones of Diorific Vernis nail polishes are modeled after precious stones.",
+    "rating": null,
+    "category": null,
+    "product_type": "nail_polish",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:23:15.101Z",
+    "updated_at": "2017-12-23T20:58:57.852Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/718.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/718/original/data?1514062737",
+    "product_colors": [
+      {
+        "hex_value": "#BC2D48",
+        "colour_name": "673 Ruby"
+      },
+      {
+        "hex_value": "#970530",
+        "colour_name": "745 Grenat"
+      },
+      {
+        "hex_value": "#006D66",
+        "colour_name": "809 Emerald"
+      },
+      {
+        "hex_value": "#511B38",
+        "colour_name": "998 Amethyst"
+      }
+    ]
+  },
+  {
+    "id": 717,
+    "brand": "dior",
+    "name": "All-In-Brow 3D",
+    "price": "43.0",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_y0929580_f092958001.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/eyes/eyebrows/pr-eyebrows-y0929580_f092958001-long-wear-brow-contour-kit.html",
+    "website_link": "https://www.dior.com",
+    "description": "Inspired by the expert techniques of professional fashion show makeup artists, Dior presents its first eyebrow kit, which includes:",
+    "rating": null,
+    "category": null,
+    "product_type": "eyebrow",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:23:13.659Z",
+    "updated_at": "2017-12-23T20:58:57.681Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/717.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/717/original/open-uri20171223-4-k72ych?1514062737",
+    "product_colors": [
+      {
+        "hex_value": "#786557",
+        "colour_name": "001 Brown"
+      }
+    ]
+  },
+  {
+    "id": 716,
+    "brand": "dior",
+    "name": "Sourcils Poudre",
+    "price": "20.0",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0746300.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/eyes/eyebrows/pr-eyebrows-y0746300_f074630093-powder-eyebrow-pencil-with-a-brush-and-sharpener.html",
+    "website_link": "https://www.dior.com",
+    "description": "The finish of a powder combined with the powerful definition of a wax in a professional pencil that gives a denser shape to the brow line for a naturally structured effect.",
+    "rating": null,
+    "category": null,
+    "product_type": "eyebrow",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:23:12.519Z",
+    "updated_at": "2017-12-23T20:58:57.438Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/716.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/716/original/open-uri20171223-4-lr6t41?1514062737",
+    "product_colors": [
+      {
+        "hex_value": "#37342C",
+        "colour_name": "093 Black"
+      },
+      {
+        "hex_value": "#8A6B55",
+        "colour_name": "433 Ash Blonde"
+      },
+      {
+        "hex_value": "#583D2F",
+        "colour_name": "453 Soft Brown"
+      },
+      {
+        "hex_value": "#68403E",
+        "colour_name": "593 Brown"
+      },
+      {
+        "hex_value": "#A0795F",
+        "colour_name": "653 Blonde"
+      },
+      {
+        "hex_value": "#614D42",
+        "colour_name": "693 Dark Brown"
+      }
+    ]
+  },
+  {
+    "id": 715,
+    "brand": "dior",
+    "name": "DIORSHOW BROW STYLER",
+    "price": "20.0",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_y0726130.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/eyes/eyebrows/pr-eyebrows-y0726130_f072613001-ultra-fine-precision-brow-pencil.html",
+    "website_link": "https://www.dior.com",
+    "description": "This ultra-fine retractable pencil naturally fills in brows and helps shape with precision.  ",
+    "rating": null,
+    "category": null,
+    "product_type": "eyebrow",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:23:11.420Z",
+    "updated_at": "2017-12-23T20:58:57.208Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/715.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/715/original/data?1514062737",
+    "product_colors": [
+      {
+        "hex_value": "#685656",
+        "colour_name": "001 Universal Brown"
+      },
+      {
+        "hex_value": "#6D5B42",
+        "colour_name": "002 Universal Dark Brown"
+      },
+      {
+        "hex_value": "#683E28",
+        "colour_name": "003 Auburn"
+      },
+      {
+        "hex_value": "#92673F",
+        "colour_name": "021 Chestnut"
+      }
+    ]
+  },
+  {
+    "id": 714,
+    "brand": "dior",
+    "name": "DIORSHOW BOLD BROW - Christmas 2017 Limited Edition",
+    "price": "22.0",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0929631_F092963004.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/precious-rocks-collection/pr-preciousrockslook-y0929631_f092963004-brow-mascara-structure-shine-gold-edition.html",
+    "website_link": "https://www.dior.com",
+    "description": "This winter, Diorshow Bold Brow has all the sheer shine of gold. A striking little detail to create a bold beauty look or subtly enhance natural makeup.",
+    "rating": null,
+    "category": null,
+    "product_type": "eyebrow",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:23:10.728Z",
+    "updated_at": "2017-12-23T20:58:56.795Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/714.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/714/original/open-uri20171223-4-1c1cqh2?1514062736",
+    "product_colors": [
+      {
+        "hex_value": "#D2AF75",
+        "colour_name": "004 Gold"
+      }
+    ]
+  },
+  {
+    "id": 713,
+    "brand": "dior",
+    "name": "DIORSHOW BOLD BROW",
+    "price": "22.0",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0929630.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/metallics-collection/pr-metallicslook-y0929630_f092963002-instant-volumizing-brow-mascara.html",
+    "website_link": "https://www.dior.com",
+    "description": "Immediately achieve lush, full, groomed brows.",
+    "rating": null,
+    "category": null,
+    "product_type": "eyebrow",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:23:10.007Z",
+    "updated_at": "2017-12-23T20:58:56.344Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/713.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/713/original/open-uri20171223-4-1gf1ey3?1514062736",
+    "product_colors": [
+      {
+        "hex_value": "#6F5246",
+        "colour_name": "002 Dark"
+      },
+      {
+        "hex_value": "#A07B66",
+        "colour_name": "011 Light"
+      },
+      {
+        "hex_value": "#8C5F3D",
+        "colour_name": "021 Medium"
+      }
+    ]
+  },
+  {
+    "id": 712,
+    "brand": "dior",
+    "name": "Diorshow Art Pen",
+    "price": "27.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_y0775300.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/eyes/liners/pr-liners-y0775300_f077530095-intense-professional-felt-tip-eyeliner-long-lasting-wear.html",
+    "website_link": "https://www.dior.com",
+    "description": "A high-precision felt-tip applicator with a deep black stroke to create all the catwalk styles, from the most natural to the utterly show-stopping. Easy to remove with warm water or makeup remover.",
+    "rating": null,
+    "category": null,
+    "product_type": "eyeliner",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:23:08.733Z",
+    "updated_at": "2017-12-23T20:58:56.190Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/712.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/712/original/open-uri20171223-4-h1615c?1514062736",
+    "product_colors": [
+      {
+        "hex_value": "gray6",
+        "colour_name": "095 Catwalk Black"
+      }
+    ]
+  },
+  {
+    "id": 711,
+    "brand": "dior",
+    "name": "Diorliner",
+    "price": "27.0",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_y0775101.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/eyes/liners/pr-liners-y0775101_f077510098-precision-eyeliner.html",
+    "website_link": "https://www.dior.com",
+    "description": "Click-pen eyeliner that delivers precise contouring and a flawlessly clean line. Diorliner deposits just the right amount of liner with a single click.",
+    "rating": null,
+    "category": null,
+    "product_type": "eyeliner",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:23:07.851Z",
+    "updated_at": "2017-12-23T20:58:55.708Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/711.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/711/original/open-uri20171223-4-1x93p9h?1514062735",
+    "product_colors": [
+      {
+        "hex_value": "black",
+        "colour_name": "098 Black"
+      },
+      {
+        "hex_value": "#7E5F5C",
+        "colour_name": "798 Brown"
+      }
+    ]
+  },
+  {
+    "id": 710,
+    "brand": "dior",
+    "name": "Dior Addict It-Line",
+    "price": "26.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_y0777200.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/eyes/liners/pr-liners-y0777200_f077720099-liquid-eyeliner-fabulous-line-and-vibrant-colour.html",
+    "website_link": "https://www.dior.com",
+    "description": "Fashionable eyes with fabulous line and vibrant colour.",
+    "rating": null,
+    "category": null,
+    "product_type": "eyeliner",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:23:07.026Z",
+    "updated_at": "2017-12-23T20:58:55.447Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/710.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/710/original/open-uri20171223-4-1pbovdl?1514062735",
+    "product_colors": [
+      {
+        "hex_value": "gray8",
+        "colour_name": "099 It-Black"
+      }
+    ]
+  },
+  {
+    "id": 709,
+    "brand": "dior",
+    "name": "Eyeliner Waterproof",
+    "price": "20.0",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_y0803050.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/eyes/liners/pr-liners-y0803050_f080305594-long-wear-waterproof-eyeliner-pencil.html",
+    "website_link": "https://www.dior.com",
+    "description": "The essential pencil for a perfectly soft, blended line with extra-long wear.",
+    "rating": null,
+    "category": null,
+    "product_type": "eyeliner",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:23:06.058Z",
+    "updated_at": "2017-12-23T20:58:55.182Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/709.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/709/original/open-uri20171223-4-lpewoq?1514062735",
+    "product_colors": [
+      {
+        "hex_value": "#533638",
+        "colour_name": "594 Intense Brown"
+      },
+      {
+        "hex_value": "gray9",
+        "colour_name": "094 Trinidad Black"
+      },
+      {
+        "hex_value": "#456C89",
+        "colour_name": "254 Captivating Blue"
+      }
+    ]
+  },
+  {
+    "id": 708,
+    "brand": "dior",
+    "name": "DIORSHOW KHÔL",
+    "price": "19.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0739300_F073930009.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/eyes/liners/pr-liners-y0739300_f073930099-high-intensity-pencil-waterproof-hold-with-blending-tip-and-sharpener.html",
+    "website_link": "https://www.dior.com",
+    "description": "With its highly pigmented formula, the Diorshow Khôl pencil has a creamy texture that provides precise application and easy blending at the lashline and the water line.",
+    "rating": null,
+    "category": null,
+    "product_type": "eyeliner",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:23:05.058Z",
+    "updated_at": "2017-12-23T20:58:54.931Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/708.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/708/original/data?1514062734",
+    "product_colors": [
+      {
+        "hex_value": "#282828",
+        "colour_name": "099 Black Khôl"
+      },
+      {
+        "hex_value": "#F2F3EF",
+        "colour_name": "009 White Khôl"
+      },
+      {
+        "hex_value": "#F8D9BF",
+        "colour_name": "529 Beige Khôl"
+      }
+    ]
+  },
+  {
+    "id": 707,
+    "brand": "dior",
+    "name": "Diorshow Pro Liner Waterproof",
+    "price": "20.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_y0775350.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/eyes/liners/pr-liners-y0775350_f077535062-bevel-tip-eyeliner-long-lasting-spectacular-line.html",
+    "website_link": "https://www.dior.com",
+    "description": "The breakthrough Diorshow Pro Line Waterproof teams the easy application of a pencil with the glide and intensity of a liquid liner.",
+    "rating": null,
+    "category": null,
+    "product_type": "eyeliner",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:23:03.384Z",
+    "updated_at": "2017-12-23T20:58:54.439Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/707.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/707/original/open-uri20171223-4-1b0dpkg?1514062734",
+    "product_colors": [
+      {
+        "hex_value": "#7A6B64",
+        "colour_name": "062 Pro Grege"
+      },
+      {
+        "hex_value": "gray50",
+        "colour_name": "042 PRO GREY"
+      },
+      {
+        "hex_value": "#3D474A",
+        "colour_name": "082 Pro Anthracite"
+      },
+      {
+        "hex_value": "#2F2F34",
+        "colour_name": "092 PRO BLACK"
+      },
+      {
+        "hex_value": "#534862",
+        "colour_name": "182 PRO PURPLE"
+      },
+      {
+        "hex_value": "#354862",
+        "colour_name": "272 PRO BLUE"
+      },
+      {
+        "hex_value": "#323B57",
+        "colour_name": "282 Pro Navy"
+      },
+      {
+        "hex_value": "#60683D",
+        "colour_name": "472 PRO KHAKI"
+      },
+      {
+        "hex_value": "#5A4545",
+        "colour_name": "582 PRO BROWN"
+      },
+      {
+        "hex_value": "#55343D",
+        "colour_name": "772 Pro Mahogany"
+      }
+    ]
+  },
+  {
+    "id": 706,
+    "brand": "dior",
+    "name": "Diorshow Iconic",
+    "price": "25.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/0/90/0/packshots%252FPDG_landscape_Y0696100.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/eyes/mascaras/pr-mascaras-y0696100-high-definition-lash-curler-mascara.html",
+    "website_link": "https://www.dior.com",
+    "description": "The first lash-lifting mascara by Dior.",
+    "rating": null,
+    "category": null,
+    "product_type": "mascara",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:23:01.795Z",
+    "updated_at": "2017-12-23T20:58:54.054Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/706.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/706/original/open-uri20171223-4-kkri6q?1514062733",
+    "product_colors": [
+      {
+        "hex_value": "#0A0C0D",
+        "colour_name": "090 Black"
+      },
+      {
+        "hex_value": "#4D6895",
+        "colour_name": "268 Navy"
+      },
+      {
+        "hex_value": "#5A413D",
+        "colour_name": "698 Chestnut"
+      }
+    ]
+  },
+  {
+    "id": 705,
+    "brand": "dior",
+    "name": "Diorshow Iconic Overcurl",
+    "price": "25.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/0/90/0/packshots%252FPDG_landscape_Y0697170.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/eyes/mascaras/pr-mascaras-y0697170-spectacular-volume-and-curl-professional-mascara.html",
+    "website_link": "https://www.dior.com",
+    "description": "Diorshow Iconic Overcurl pushes the limits of curl to the extreme.",
+    "rating": null,
+    "category": null,
+    "product_type": "mascara",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:23:00.835Z",
+    "updated_at": "2017-12-23T20:58:53.809Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/705.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/705/original/open-uri20171223-4-w711ik?1514062733",
+    "product_colors": [
+      {
+        "hex_value": "gray2",
+        "colour_name": "090 Over Black"
+      },
+      {
+        "hex_value": "#20214E",
+        "colour_name": "264 Over Blue"
+      },
+      {
+        "hex_value": "#43332B",
+        "colour_name": "694 Over Brown"
+      }
+    ]
+  },
+  {
+    "id": 704,
+    "brand": "dior",
+    "name": "Dior Addict It-Lash",
+    "price": "25.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/0/90/0/packshots%252FPDG_landscape_Y0698100_v2.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/eyes/mascaras/pr-mascaras-y0698100-fabulous-impact-vibrant-colour-volume-length-mascara.html",
+    "website_link": "https://www.dior.com",
+    "description": "Dior Addict It-lash can transform the eyes in a single flourish for a fabulous impact, as if by magic. Volume, length and the most extraordinary stylistic effects come together to achieve a fashion-forward, modern-day doe-eyed look. With unconditional hold, easy to apply and easy to remove, it is the ideal mascara for women who want it all, and want it now.",
+    "rating": null,
+    "category": null,
+    "product_type": "mascara",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:23:00.160Z",
+    "updated_at": "2017-12-23T20:58:53.372Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/704.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/704/original/open-uri20171223-4-1543imh?1514062733",
+    "product_colors": [
+      {
+        "hex_value": "black",
+        "colour_name": "092 It-Black"
+      }
+    ]
+  },
+  {
+    "id": 703,
+    "brand": "dior",
+    "name": "Diorshow New Look",
+    "price": "25.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/0/90/0/packshots%252FPDG_landscape_Y0697100.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/eyes/mascaras/pr-mascaras-y0697100-lash-multiplying-effect-volume-care.html",
+    "website_link": "https://www.dior.com",
+    "description": "Breathtaking eyes by Diorshow.",
+    "rating": null,
+    "category": null,
+    "product_type": "mascara",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:59.125Z",
+    "updated_at": "2017-12-23T20:58:53.080Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/703.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/703/original/open-uri20171223-4-19fm0l4?1514062732",
+    "product_colors": [
+      {
+        "hex_value": "#0A0C0D",
+        "colour_name": "090 New Look Black"
+      },
+      {
+        "hex_value": "#00011F",
+        "colour_name": "264 New Look Blue"
+      },
+      {
+        "hex_value": "#301800",
+        "colour_name": "694 New Look Brown"
+      }
+    ]
+  },
+  {
+    "id": 702,
+    "brand": "dior",
+    "name": "Diorshow Black Out",
+    "price": "25.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/0/90/0/packshots%252FPDG_landscape_Y0726100.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/eyes/mascaras/pr-mascaras-y0726100-spectacular-volume-intense-black-khol-mascara.html",
+    "website_link": "https://www.dior.com",
+    "description": "Like kohl for the lashes. Diorshow Black Out recreates the captivating effect of kohl in a mascara for extreme volume with a charcoal-like finish.",
+    "rating": null,
+    "category": null,
+    "product_type": "mascara",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:58.486Z",
+    "updated_at": "2017-12-23T20:58:52.891Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/702.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/702/original/open-uri20171223-4-u6a3sc?1514062732",
+    "product_colors": [
+      {
+        "hex_value": "#0A0C0D",
+        "colour_name": "099 Kohl Black"
+      }
+    ]
+  },
+  {
+    "id": 701,
+    "brand": "dior",
+    "name": "DIORSHOW",
+    "price": "25.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/0/90/0/packshots%252FPDG_landscape_Y0697400.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/eyes/mascaras/pr-mascaras-y0697400-lash-extension-effect-volume-mascara.html",
+    "website_link": "https://www.dior.com",
+    "description": "In 2015, Diorshow, the professional Dior Backstage mascara, is being renewed. Its new-generation formula enriched with microfibres optically reproduces the effect of lash extensions used by runway makeup artists.",
+    "rating": null,
+    "category": null,
+    "product_type": "mascara",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:56.643Z",
+    "updated_at": "2017-12-23T20:58:43.998Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/701.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/701/original/open-uri20171223-4-1o3625w?1514062723",
+    "product_colors": [
+      {
+        "hex_value": "#3D474A",
+        "colour_name": "088 Pro Anthracite"
+      },
+      {
+        "hex_value": "#020202",
+        "colour_name": "090 PRO BLACK"
+      },
+      {
+        "hex_value": "#45306F",
+        "colour_name": "168 PRO PURPLE"
+      },
+      {
+        "hex_value": "#071641",
+        "colour_name": "258 PRO BLUE"
+      },
+      {
+        "hex_value": "#323B57",
+        "colour_name": "288 Pro Navy"
+      },
+      {
+        "hex_value": "#402A14",
+        "colour_name": "698 PRO BROWN"
+      },
+      {
+        "hex_value": "#55343D",
+        "colour_name": "778 Pro Mahogany"
+      },
+      {
+        "hex_value": "#6E3650",
+        "colour_name": "868 Pro Magenta"
+      }
+    ]
+  },
+  {
+    "id": 700,
+    "brand": "dior",
+    "name": "DIORSHOW PUMP'N'VOLUME",
+    "price": "25.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/0/90/0/packshots%252FPDG_landscape_Y0697600_inter.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/eyes/mascaras/pr-mascaras-y0697600-instant-oversize-volume-squeezable-mascara.html",
+    "website_link": "https://www.dior.com",
+    "description": "Dior reinvents volume with Diorshow Pump 'N' Volume, a brand new mascara by the House, for a fringe of XXL lashes. Spectacular from every angle, this new Dior mascara revolutionizes volume-building application. Simply squeeze the flexible mascara tube to soften the ultra-volumizing formula and load the brush with the creamy product. Achieve extreme volume instantly!",
+    "rating": null,
+    "category": null,
+    "product_type": "mascara",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:56.212Z",
+    "updated_at": "2017-12-23T20:58:43.664Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/700.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/700/original/open-uri20171223-4-1vpmsud?1514062723",
+    "product_colors": [
+      {
+        "hex_value": "black",
+        "colour_name": "090 Black Pump"
+      }
+    ]
+  },
+  {
+    "id": 699,
+    "brand": "dior",
+    "name": "Diorshow Maximizer 3D",
+    "price": "25.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/0/90/0/packshots%252FPDG_landscape_Y0697970.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/eyes/eyes-primers/pr-eyeprimers-y0697970-triple-volume-plumping-lash-primer.html",
+    "website_link": "https://www.dior.com",
+    "description": "The exclusive Dior backstage mascara serum-primer thoroughly plumps lashes.",
+    "rating": null,
+    "category": null,
+    "product_type": "mascara",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:55.591Z",
+    "updated_at": "2017-12-23T20:58:42.844Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/699.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/699/original/open-uri20171223-4-yjxlwa?1514062722",
+    "product_colors": []
+  },
+  {
+    "id": 698,
+    "brand": "dior",
+    "name": "Holiday Diorshow Pump n' Volume Set",
+    "price": "25.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y9185255_F918525500.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/eyes/eyeshadows/pr-eyeshadows-y9185255-oversize-couture-eye-makeup.html",
+    "website_link": "https://www.dior.com",
+    "description": "Discover the Couture eye makeup in a set by Dior:",
+    "rating": null,
+    "category": null,
+    "product_type": "eyeshadow",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:54.088Z",
+    "updated_at": "2017-12-23T20:58:52.692Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/698.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/698/original/open-uri20171223-4-t0oodf?1514062732",
+    "product_colors": []
+  },
+  {
+    "id": 697,
+    "brand": "dior",
+    "name": "Couture Colour Wardrobe palette",
+    "price": "65.0",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y9185280_F918528000.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/eyes/eyeshadows/pr-eyeshadows-y9185280-holiday-multi-use-eyes-and-lips-palette.html",
+    "website_link": "https://www.dior.com",
+    "description": "Directly inspired by runway shows, the Couture Colour Wardrobe palette teams fresh and natural colours with vibrant and sophisticated shades to create countless custom makeup looks to suit any moment.",
+    "rating": null,
+    "category": "palette",
+    "product_type": "eyeshadow",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:53.414Z",
+    "updated_at": "2017-12-26T00:33:00.563Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/697.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/697/original/open-uri20171223-4-1tgdgkb?1514062732",
+    "product_colors": [
+      {
+        "hex_value": "#C48A80",
+        "colour_name": "000"
+      }
+    ]
+  },
+  {
+    "id": 696,
+    "brand": "dior",
+    "name": "Colour Design Eye palette",
+    "price": "45.0",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y9185290_F918529000.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/eyes/eyeshadows/pr-eyeshadows-y9185290-holiday-eyes-palette.html",
+    "website_link": "https://www.dior.com",
+    "description": "Inspired by runway shows, the Colour Design Eye palette mixes glowy and iridescent colours with matte and confident shades, to recreate a natural nude or a sophisiticated glamour version of the catwalk look.",
+    "rating": null,
+    "category": "palette",
+    "product_type": "eyeshadow",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:52.788Z",
+    "updated_at": "2017-12-26T00:33:00.504Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/696.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/696/original/open-uri20171223-4-j71dzh?1514062732",
+    "product_colors": [
+      {
+        "hex_value": "#A18783",
+        "colour_name": "000"
+      }
+    ]
+  },
+  {
+    "id": 695,
+    "brand": "dior",
+    "name": "Eye Reviver",
+    "price": "43.0",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0929540.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/backstage-pros/eyes/pr-eyepros-y0929540-illuminating-neutrals-eye-palette.html",
+    "website_link": "https://www.dior.com",
+    "description": "Dior has created its 1st illuminating palette to brighten the eyes with an instant radiance-boosting effect. Using Glow-MimeticsTM technology, the incredibly luminous universal neutrals recreate the radiance of a flawless eyelid. The shades combine in perfect harmony with the primer and liner to create smooth, even and wider-looking eyes, while adding structure and brightness.",
+    "rating": null,
+    "category": null,
+    "product_type": "eyeshadow",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:52.370Z",
+    "updated_at": "2017-12-23T20:58:52.094Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/695.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/695/original/open-uri20171223-4-a5l25v?1514062732",
+    "product_colors": [
+      {
+        "hex_value": "#A48473",
+        "colour_name": "001"
+      }
+    ]
+  },
+  {
+    "id": 694,
+    "brand": "dior",
+    "name": "5 COULEURS DESIGNER",
+    "price": "45.0",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0148140_f014814208_112016.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/eyes/eyeshadows/pr-eyeshadows-y0148140-the-makeup-artist-tutorial-palette.html",
+    "website_link": "https://www.dior.com",
+    "description": "Born of Backstage expertise, inspired by professional techniques and textures, 5 COULEURS DESIGNER features an easy, 5-step makeup lesson (base, 2 shadows, highlighter and liner) to bring out the eyes with flawless sculpting and colour gradation.",
+    "rating": null,
+    "category": null,
+    "product_type": "eyeshadow",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:50.561Z",
+    "updated_at": "2017-12-23T20:58:51.822Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/694.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/694/original/open-uri20171223-4-13spuxr?1514062731",
+    "product_colors": [
+      {
+        "hex_value": "#C1C0BF",
+        "colour_name": "008 SMOKY DESIGN"
+      },
+      {
+        "hex_value": "#C5C5CC",
+        "colour_name": "208 NAVY DESIGN"
+      },
+      {
+        "hex_value": "#CDC8BD",
+        "colour_name": "308 KHAKI DESIGN"
+      },
+      {
+        "hex_value": "#D4C3BD",
+        "colour_name": "508 NUDE PINK DESIGN"
+      },
+      {
+        "hex_value": "#D2C2B4",
+        "colour_name": "708 AMBER DESIGN"
+      },
+      {
+        "hex_value": "#CDBFB9",
+        "colour_name": "718 TAUPE DESIGN"
+      }
+    ]
+  },
+  {
+    "id": 693,
+    "brand": "dior",
+    "name": "5 COULEURS PRECIOUS ROCKS - Christmas 2017 Limited Edition",
+    "price": "43.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0148228_F014822857_v2.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/precious-rocks-collection/pr-preciousrockslook-y0148223-high-fidelity-colours-effects-eyeshadow-palette.html",
+    "website_link": "https://www.dior.com",
+    "description": "Emblematic of Dior eye makeup, this winter, the 5 Couleurs palette has been reinterpreted in two limited editions featuring ruby and emerald tones.",
+    "rating": null,
+    "category": null,
+    "product_type": "eyeshadow",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:49.724Z",
+    "updated_at": "2017-12-23T20:58:51.579Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/693.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/693/original/open-uri20171223-4-1psqtni?1514062731",
+    "product_colors": [
+      {
+        "hex_value": "#D7D8CC",
+        "colour_name": "347 Emerald"
+      },
+      {
+        "hex_value": "#DCC1BF",
+        "colour_name": "857 Ruby"
+      }
+    ]
+  },
+  {
+    "id": 692,
+    "brand": "dior",
+    "name": "5 COULEURS",
+    "price": "45.0",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0148410.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/eyes/eyeshadows/pr-eyeshadows-y0148410-high-fidelity-colours-effects-eyeshadow-palette.html",
+    "website_link": "https://www.dior.com",
+    "description": "An icon of the Dior look and a concentration of expertise in terms of colour and visual effects, the 5 Couleurs palette is reinvented. More creative than ever, with stronger pigments and richer effects, it allows women to explore every facet of colour and express every aspect of their personality. With the 5 Couleurs palette, self-expression is unlimited, creativity is unleashed and colour is more audacious than ever.",
+    "rating": null,
+    "category": null,
+    "product_type": "eyeshadow",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:47.200Z",
+    "updated_at": "2017-12-23T20:58:51.384Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/692.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/692/original/open-uri20171223-4-1ia7ngs?1514062731",
+    "product_colors": [
+      {
+        "hex_value": "#D9CED4",
+        "colour_name": "157 Magnify"
+      },
+      {
+        "hex_value": "#C5C9D1",
+        "colour_name": "277 Defy"
+      },
+      {
+        "hex_value": "#CFD1D1",
+        "colour_name": "357 Electrify"
+      },
+      {
+        "hex_value": "#E6D8D1",
+        "colour_name": "537 Touch"
+      },
+      {
+        "hex_value": "#DACFC9",
+        "colour_name": "567 Adore"
+      },
+      {
+        "hex_value": "#DCCBC3",
+        "colour_name": "647 Undress"
+      },
+      {
+        "hex_value": "#D8C9BC",
+        "colour_name": "657 Expose"
+      },
+      {
+        "hex_value": "#D9CDCE",
+        "colour_name": "757 Dream"
+      },
+      {
+        "hex_value": "#E2CCC7",
+        "colour_name": "767 Inflame"
+      },
+      {
+        "hex_value": "#E0CBC8",
+        "colour_name": "777 Exalt"
+      },
+      {
+        "hex_value": "#D1BFBA",
+        "colour_name": "797 Feel"
+      }
+    ]
+  },
+  {
+    "id": 691,
+    "brand": "dior",
+    "name": "Diorshow Mono",
+    "price": "25.0",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_y0147160_f014716623.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/eyes/eyeshadows/pr-eyeshadows-y0147160-professional-eye-shadow-spectacular-effects-long-wear.html",
+    "website_link": "https://www.dior.com",
+    "description": "Diorshow Mono, the eyeshadow used by the Dior makeup artists, was inspired by the fabric textures of the brand's fashions - matte, silky, ultra-glittery and lamé - and features super-saturated hues to deck the eyes in long-lasting colors with radiant finishes.",
+    "rating": null,
+    "category": null,
+    "product_type": "eyeshadow",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:42.681Z",
+    "updated_at": "2017-12-23T20:58:51.143Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/691.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/691/original/open-uri20171223-4-1mp005c?1514062731",
+    "product_colors": [
+      {
+        "hex_value": "#E8E5DF",
+        "colour_name": "006 Infinity"
+      },
+      {
+        "hex_value": "#EED8BE",
+        "colour_name": "522"
+      },
+      {
+        "hex_value": "#8F7582",
+        "colour_name": "060"
+      },
+      {
+        "hex_value": "#BCBABB",
+        "colour_name": "026 Techno"
+      },
+      {
+        "hex_value": "#808285",
+        "colour_name": "071 Radical"
+      },
+      {
+        "hex_value": "#5D6265",
+        "colour_name": "081 Runway"
+      },
+      {
+        "hex_value": "#676D81",
+        "colour_name": "094 Gravity"
+      },
+      {
+        "hex_value": "#7B8094",
+        "colour_name": "173 Evening"
+      },
+      {
+        "hex_value": "#8E6688",
+        "colour_name": "184 Temptation"
+      },
+      {
+        "hex_value": "#ADB8D2",
+        "colour_name": "240 Air"
+      },
+      {
+        "hex_value": "#373C66",
+        "colour_name": "296 Show"
+      },
+      {
+        "hex_value": "#B3B478",
+        "colour_name": "480 Nature"
+      },
+      {
+        "hex_value": "#EDD8C0",
+        "colour_name": "516 Delicate"
+      },
+      {
+        "hex_value": "#E0B798",
+        "colour_name": "530 Gallery"
+      },
+      {
+        "hex_value": "#CAB6AB",
+        "colour_name": "554 Minimalism"
+      },
+      {
+        "hex_value": "#CFB289",
+        "colour_name": "564 Fire"
+      },
+      {
+        "hex_value": "#CDA284",
+        "colour_name": "573 Mineral"
+      },
+      {
+        "hex_value": "#7D625A",
+        "colour_name": "583 Animal"
+      },
+      {
+        "hex_value": "#F3E0B0",
+        "colour_name": "616 Pulse"
+      },
+      {
+        "hex_value": "#F2C9B1",
+        "colour_name": "623 Feeling"
+      },
+      {
+        "hex_value": "#D6AF98",
+        "colour_name": "658 Cosmopolite"
+      },
+      {
+        "hex_value": "#A77B60",
+        "colour_name": "684 Reflection"
+      },
+      {
+        "hex_value": "#A58887",
+        "colour_name": "756 Front Row"
+      },
+      {
+        "hex_value": "#DF8772",
+        "colour_name": "764 Fusion"
+      },
+      {
+        "hex_value": "#9A716C",
+        "colour_name": "794 Fever"
+      },
+      {
+        "hex_value": "#EBC3C9",
+        "colour_name": "826 Backstage"
+      },
+      {
+        "hex_value": "#E59EB9",
+        "colour_name": "848 Focus"
+      },
+      {
+        "hex_value": "#906B83",
+        "colour_name": "994 Power"
+      }
+    ]
+  },
+  {
+    "id": 690,
+    "brand": "dior",
+    "name": "Diorshow Fusion Mono Matte",
+    "price": "0.0",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0148310_F014831761_012016.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/eyes/eyeshadows/pr-eyeshadows-y0148310-long-wear-professional-eyeshadow.html",
+    "website_link": "https://www.dior.com",
+    "description": "A weightless texture that blends into the skin and dresses the eye in velvety colour. In a single step, it creates an even and intense matte finish for a professional makeup effect.",
+    "rating": null,
+    "category": null,
+    "product_type": "eyeshadow",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:41.944Z",
+    "updated_at": "2017-12-23T20:58:50.955Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/690.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/690/original/open-uri20171223-4-13ulolv?1514062730",
+    "product_colors": [
+      {
+        "hex_value": "#363A3E",
+        "colour_name": "091 Nocturne"
+      },
+      {
+        "hex_value": "#E5BAA8",
+        "colour_name": "721 Songe"
+      }
+    ]
+  },
+  {
+    "id": 689,
+    "brand": "dior",
+    "name": "Diorshow Fusion Mono",
+    "price": "25.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0148300_F014830821_012016.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/eyes/eyeshadows/pr-eyeshadows-y0148300-long-wear-professional-mirror-shine-eyeshadow.html",
+    "website_link": "https://www.dior.com",
+    "description": "A weightless texture that blends into the skin and dresses the eye in velvety colour. In a single step, it creates an even and intense matte finish for a professional makeup effect.",
+    "rating": null,
+    "category": null,
+    "product_type": "eyeshadow",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:40.725Z",
+    "updated_at": "2017-12-23T20:58:50.521Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/689.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/689/original/open-uri20171223-4-b1imkg?1514062730",
+    "product_colors": [
+      {
+        "hex_value": "#EDE9E6",
+        "colour_name": "001 Lune"
+      },
+      {
+        "hex_value": "#93867A",
+        "colour_name": "381 Millenium"
+      },
+      {
+        "hex_value": "#BD9171",
+        "colour_name": "661 Météore"
+      },
+      {
+        "hex_value": "#BD9E9B",
+        "colour_name": "771"
+      },
+      {
+        "hex_value": "#826A73",
+        "colour_name": "881 Hypnotique"
+      },
+      {
+        "hex_value": "#8B4E78",
+        "colour_name": "981"
+      }
+    ]
+  },
+  {
+    "id": 688,
+    "brand": "dior",
+    "name": "Backstage Eye Prime",
+    "price": "22.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0146000_032016.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/eyes/eyeshadows/pr-eyeshadows-y0146000-10h-color-locking-and-crease-preventing-eyelid-primer.html",
+    "website_link": "https://www.dior.com",
+    "description": "The first eye primer from Dior Backstage. Its smoothing and unifying action immediately corrects and prepares the eyelid for maximum colour intensity.",
+    "rating": null,
+    "category": null,
+    "product_type": "eyeshadow",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:40.273Z",
+    "updated_at": "2017-12-23T20:58:50.046Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/688.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/688/original/open-uri20171223-4-1krajzv?1514062729",
+    "product_colors": []
+  },
+  {
+    "id": 687,
+    "brand": "dior",
+    "name": "Diorskin Rosy Glow",
+    "price": "32.0",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0715100.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/face/blush/pr-blush-y0715100_f071510001-healthy-glow-booster-blush.html",
+    "website_link": "https://www.dior.com",
+    "description": "Rosy Glow reacts to the moisture in the skin to bring a delicate flush of colour to the cheeks. The fresh and luminous color upon application develops into a rosy blush to suit each individual complexion for an incredibly natural, custom healthy glow that lasts all day.",
+    "rating": null,
+    "category": null,
+    "product_type": "blush",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:37.243Z",
+    "updated_at": "2017-12-23T20:58:49.221Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/687.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/687/original/open-uri20171223-4-vrtkii?1514062729",
+    "product_colors": [
+      {
+        "hex_value": "#F1C0D7",
+        "colour_name": "001 Petal"
+      }
+    ]
+  },
+  {
+    "id": 686,
+    "brand": "dior",
+    "name": "DIORBLUSH PRECIOUS ROCKS - Christmas 2017 Limited Edition",
+    "price": "0.0",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0715928_F071592864.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/precious-rocks-collection/pr-preciousrockslook-y0715928_f071592864-vibrant-colour-powderblush.html",
+    "website_link": "https://www.dior.com",
+    "description": "The new limited-edition Diorblush showcases every facet of the Precious Rocks collection. Printed with a prismatic motif that reflects that of a precious stone, its sheer, peach colour blends seamlessly with your skin to deliver a fresh, crystal-clear complexion.",
+    "rating": null,
+    "category": null,
+    "product_type": "blush",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:36.467Z",
+    "updated_at": "2017-12-23T20:58:48.998Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/686.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/686/original/open-uri20171223-4-msf54n?1514062728",
+    "product_colors": [
+      {
+        "hex_value": "#EF8687",
+        "colour_name": "864 Precious Rocks"
+      }
+    ]
+  },
+  {
+    "id": 685,
+    "brand": "dior",
+    "name": "Diorblush Sculpt",
+    "price": "32.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0716250.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/face/blush/pr-blush-y0716250_f071625001-professional-contouring-powder-blush.html",
+    "website_link": "https://www.dior.com",
+    "description": "The first contouring blush by Dior, Diorblush Sculpt allows you to easily redefine the face’s structure and volumes with the precision of a makeup artist thanks to its two contrasting shades.",
+    "rating": null,
+    "category": null,
+    "product_type": "blush",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:35.267Z",
+    "updated_at": "2017-12-23T20:58:48.814Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/685.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/685/original/open-uri20171223-4-1p1tlsw?1514062728",
+    "product_colors": [
+      {
+        "hex_value": "#DA9A8E",
+        "colour_name": "001 Pink Shape"
+      },
+      {
+        "hex_value": "#D6A086",
+        "colour_name": "002 Coral Shape"
+      },
+      {
+        "hex_value": "#D3A895",
+        "colour_name": "003 Beige Contour"
+      },
+      {
+        "hex_value": "#C69E8A",
+        "colour_name": "004 Brown Contour"
+      }
+    ]
+  },
+  {
+    "id": 684,
+    "brand": "dior",
+    "name": "Diorblush",
+    "price": "32.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0715255.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/face/blush/pr-blush-y0715255_f071525556-vibrant-colour-powder-blush.html",
+    "website_link": "https://www.dior.com",
+    "description": "The iconic blush from the House of Dior: the new colour accessory for face makeup with style.",
+    "rating": null,
+    "category": null,
+    "product_type": "blush",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:32.065Z",
+    "updated_at": "2017-12-23T20:58:48.374Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/684.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/684/original/open-uri20171223-4-14490w0?1514062728",
+    "product_colors": [
+      {
+        "hex_value": "#EA8166",
+        "colour_name": "556 Amber Show"
+      },
+      {
+        "hex_value": "#E17D70",
+        "colour_name": "553 Cocktail Peach"
+      },
+      {
+        "hex_value": "#AB6F70",
+        "colour_name": "566 Brown Milly"
+      },
+      {
+        "hex_value": "#EF7A5B",
+        "colour_name": "586 Orange Riviera"
+      },
+      {
+        "hex_value": "#ED7167",
+        "colour_name": "676 Coral Cruise"
+      },
+      {
+        "hex_value": "#E6A397",
+        "colour_name": "746 Beige Nude"
+      },
+      {
+        "hex_value": "#EB8881",
+        "colour_name": "756 Rose Chérie"
+      },
+      {
+        "hex_value": "#F09BA1",
+        "colour_name": "829 Miss Pink"
+      },
+      {
+        "hex_value": "#C17E6A",
+        "colour_name": "849 Mimi Bronze"
+      },
+      {
+        "hex_value": "#EB81A5",
+        "colour_name": "861 Rose Darling"
+      },
+      {
+        "hex_value": "#EF7B88",
+        "colour_name": "876 Happy Cherry"
+      },
+      {
+        "hex_value": "#EB5E6D",
+        "colour_name": "889 New Red"
+      },
+      {
+        "hex_value": "#EB5C54",
+        "colour_name": "896 Redissimo"
+      },
+      {
+        "hex_value": "#D88D8C",
+        "colour_name": "939 Rose Libertine"
+      }
+    ]
+  },
+  {
+    "id": 683,
+    "brand": "dior",
+    "name": "Diorskin Nude Air Tan",
+    "price": "36.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_y0712400.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/face/healthy-glow-makeup/pr-sunmakeup-y0712400_f071240001-healthy-glow-sun-powder.html",
+    "website_link": "https://www.dior.com",
+    "description": "Diorskin Nude Air bronzing powders warm the original skin tone and let the skin breathe for the continual radiant beauty of a sun-kissed healthy glow. Choose the perfect shade of tan, in matte or satiny.",
+    "rating": null,
+    "category": null,
+    "product_type": "bronzer",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:30.765Z",
+    "updated_at": "2017-12-23T20:58:49.791Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/683.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/683/original/open-uri20171223-4-1nzl361?1514062729",
+    "product_colors": [
+      {
+        "hex_value": "#CD9163",
+        "colour_name": "001 Golden Honey"
+      },
+      {
+        "hex_value": "#CD9068",
+        "colour_name": "002 Amber"
+      },
+      {
+        "hex_value": "#D8996C",
+        "colour_name": "003 Cinnamon"
+      },
+      {
+        "hex_value": "#B17252",
+        "colour_name": "035 Matte Cinnamon"
+      }
+    ]
+  },
+  {
+    "id": 682,
+    "brand": "dior",
+    "name": "Diorskin Nude Air Glow Powder",
+    "price": "39.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_y0778920.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/face/powders/pr-powders-y0778920_f077892001-healthy-glow-radiance-powder.html",
+    "website_link": "https://www.dior.com",
+    "description": "A precursor in the art of natural, for beauty that grows more radiant with each day, Dior broadens its nude makeup expertise with the innovation of Diorskin Nude Air Glow Powder: a luminous powder as weightless and beneficial as a breath of fresh air that revives and illuminates the complexion's original colour and lets the skin breathe for a continuously healthy glow.",
+    "rating": null,
+    "category": "powder",
+    "product_type": "foundation",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:29.631Z",
+    "updated_at": "2017-12-23T20:58:48.109Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/682.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/682/original/open-uri20171223-4-1q5xbnc?1514062728",
+    "product_colors": [
+      {
+        "hex_value": "#D59A72",
+        "colour_name": "001 Fresh Tan"
+      },
+      {
+        "hex_value": "#D69D7B",
+        "colour_name": "002 Fresh Light"
+      },
+      {
+        "hex_value": "#DB9781",
+        "colour_name": "004 Warm Light"
+      }
+    ]
+  },
+  {
+    "id": 681,
+    "brand": "dior",
+    "name": "Diorskin Nude Air loose powder",
+    "price": "36.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0720350.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/face/powders/pr-powders-y0720350_f072035010-healthy-glow-invisible-loose-powder.html",
+    "website_link": "https://www.dior.com",
+    "description": "The ultimate finishing touch, impressively lightweight Diorskin Nude Air loose and compact powders maintain the illusion of a fresh and radiant face.",
+    "rating": null,
+    "category": "powder",
+    "product_type": "foundation",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:28.576Z",
+    "updated_at": "2017-12-23T20:58:47.830Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/681.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/681/original/open-uri20171223-4-1p8wv?1514062727",
+    "product_colors": [
+      {
+        "hex_value": "#FEE6CF",
+        "colour_name": "010 Ivory"
+      },
+      {
+        "hex_value": "#FCDEDD",
+        "colour_name": "012 Pink"
+      },
+      {
+        "hex_value": "#EFCEB0",
+        "colour_name": "020 Light Beige"
+      },
+      {
+        "hex_value": "#E8BA92",
+        "colour_name": "030 Medium Beige"
+      }
+    ]
+  },
+  {
+    "id": 680,
+    "brand": "dior",
+    "name": "Diorskin nude air powder",
+    "price": "36.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_y0332400.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/face/powders/pr-powders-y0332400_f033240020-healthy-glow-invisible-powder.html",
+    "website_link": "https://www.dior.com",
+    "description": "The ultimate finishing touch, impressively lightweight Diorskin Nude Air loose and compact powders maintain the illusion of a fresh and radiant face.",
+    "rating": null,
+    "category": "powder",
+    "product_type": "foundation",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:27.744Z",
+    "updated_at": "2017-12-23T20:58:47.453Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/680.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/680/original/open-uri20171223-4-qtckl4?1514062727",
+    "product_colors": [
+      {
+        "hex_value": "#E7BEA0",
+        "colour_name": "020 Light Beige"
+      },
+      {
+        "hex_value": "#DDAD84",
+        "colour_name": "030 Medium Beige"
+      }
+    ]
+  },
+  {
+    "id": 679,
+    "brand": "dior",
+    "name": "DIORIFIC PRECIOUS ROCKS - Christmas 2017 Limited Edition",
+    "price": "40.0",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0719390_F071939001_v2.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/precious-rocks-collection/pr-preciousrockslook-y0719390_f071939001-golden-glow-loose-powder.html",
+    "website_link": "https://www.dior.com",
+    "description": "Diorific unveils a limited-edition gold loose powder. The finishing touch, Diorific Precious Rocks bathes your skin in a delicate glow and sculpts with a subtle, golden shimmer.",
+    "rating": null,
+    "category": "powder",
+    "product_type": "foundation",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:26.968Z",
+    "updated_at": "2017-12-23T20:58:47.039Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/679.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/679/original/open-uri20171223-4-fl8mwn?1514062726",
+    "product_colors": [
+      {
+        "hex_value": "#F3D7B2",
+        "colour_name": "001 Precious Rocks"
+      }
+    ]
+  },
+  {
+    "id": 678,
+    "brand": "dior",
+    "name": "Diorskin Forever & Ever Control Loose Powder",
+    "price": "36.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_y0720700.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/face/powders/pr-powders-y0720700_f072070001-extreme-perfection-matte-finish-loose-powder.html",
+    "website_link": "https://www.dior.com",
+    "description": "As a finishing touch, Diorskin Forever & Ever Control loose powder guarantees a long-lasting matte result. Its air-whipped texture in a universal shade leaves a weightless finish on the skin.",
+    "rating": null,
+    "category": "powder",
+    "product_type": "foundation",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:26.353Z",
+    "updated_at": "2017-12-23T20:58:46.582Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/678.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/678/original/open-uri20171223-4-1w1wmuf?1514062726",
+    "product_colors": [
+      {
+        "hex_value": "#E7D6CA",
+        "colour_name": "001"
+      }
+    ]
+  },
+  {
+    "id": 677,
+    "brand": "dior",
+    "name": "Fix It Colour",
+    "price": "23.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0929603_f092960100.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/face/primers/pr-primers-y0929603_f092960100-2-in-1-prime-colour-correct-face-eyes-lips.html",
+    "website_link": "https://www.dior.com",
+    "description": "Inspired by Backstage makeup techniques, Dior invents its first multipurpose colour concealer: 1 stick, 2 textures, 3 application areas, 4 expert shades to target and neutralize the colour imperfections of the complexion and around the eye and lip contours.",
+    "rating": null,
+    "category": "concealer",
+    "product_type": "foundation",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:24.860Z",
+    "updated_at": "2017-12-23T20:58:46.299Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/677.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/677/original/open-uri20171223-4-16x99yk?1514062726",
+    "product_colors": [
+      {
+        "hex_value": "#D1D4E3",
+        "colour_name": "100 Blue"
+      },
+      {
+        "hex_value": "#EEC8B9",
+        "colour_name": "200 Apricot"
+      },
+      {
+        "hex_value": "#EBDBB9",
+        "colour_name": "300 Yellow"
+      },
+      {
+        "hex_value": "#CEDFC6",
+        "colour_name": "400 Green"
+      }
+    ]
+  },
+  {
+    "id": 676,
+    "brand": "dior",
+    "name": "Diorskin Forever Undercover",
+    "price": "21.0",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0339200.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/face/concealers/pr-concealers-y0339200_f033920010-one-coat-camouflage-everlasting-concealer-waterproof.html",
+    "website_link": "https://www.dior.com",
+    "description": "A veritable concentrate of Dior laboratories' expertise, this intuitive formula isn't afraid of a challenge: with a single stroke it provides instant camouflage for imperfections, water resistance and 8-hour** wear.",
+    "rating": null,
+    "category": "concealer",
+    "product_type": "foundation",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:22.682Z",
+    "updated_at": "2017-12-23T20:58:46.032Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/676.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/676/original/open-uri20171223-4-m191xo?1514062725",
+    "product_colors": [
+      {
+        "hex_value": "#E3CAB3",
+        "colour_name": "010 Ivory"
+      },
+      {
+        "hex_value": "#E8D1B7",
+        "colour_name": "011 Creme"
+      },
+      {
+        "hex_value": "#DCBDA1",
+        "colour_name": "020 Light Beige"
+      },
+      {
+        "hex_value": "#E8CBAC",
+        "colour_name": "021 Linen"
+      },
+      {
+        "hex_value": "#E4C5B1",
+        "colour_name": "022 Cameo"
+      },
+      {
+        "hex_value": "#D5B292",
+        "colour_name": "030 Medium Beige"
+      },
+      {
+        "hex_value": "#E7C4A1",
+        "colour_name": "031 Sand"
+      },
+      {
+        "hex_value": "#DFB693",
+        "colour_name": "033 Apricot Beige"
+      },
+      {
+        "hex_value": "#D0A783",
+        "colour_name": "040 Honey Beige"
+      },
+      {
+        "hex_value": "#C99364",
+        "colour_name": "050 Dark Beige"
+      },
+      {
+        "hex_value": "#B27854",
+        "colour_name": "060 Light Mocha"
+      }
+    ]
+  },
+  {
+    "id": 675,
+    "brand": "dior",
+    "name": "FIX IT",
+    "price": "23.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0929570.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/backstage-pros/complexion/pr-complexionpros-y0929570_f092957001-2-in-1-prime-conceal-face-eyes-lips.html",
+    "website_link": "https://www.dior.com",
+    "description": "1 stick, 2 textures, 3 application areas.",
+    "rating": null,
+    "category": "concealer",
+    "product_type": "foundation",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:21.441Z",
+    "updated_at": "2017-12-23T20:58:42.480Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/675.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/675/original/open-uri20171223-4-vr9zss?1514062722",
+    "product_colors": [
+      {
+        "hex_value": "#F0D9C6",
+        "colour_name": "001 Light"
+      },
+      {
+        "hex_value": "#F0D4C2",
+        "colour_name": "002 Medium"
+      },
+      {
+        "hex_value": "#E4C4AD",
+        "colour_name": "003 Dark"
+      },
+      {
+        "hex_value": "#DEBEA3",
+        "colour_name": "025 Medium Beige"
+      }
+    ]
+  },
+  {
+    "id": 674,
+    "brand": "dior",
+    "name": "FLASH LUMINIZER",
+    "price": "29.0",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0883558_F088075002.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/face/concealers/pr-concealers-y0883558_f088075500-radiance-booster-pen.html",
+    "website_link": "https://www.dior.com",
+    "description": "Inspired by the lighting techniques used by Backstage makeup artists, Dior has created Flash Luminizer, the illuminator brush that enhances the complexion in a single click, for professional radiance.",
+    "rating": null,
+    "category": "highlighter",
+    "product_type": "foundation",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:20.685Z",
+    "updated_at": "2017-12-23T20:59:04.893Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/674.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/674/original/open-uri20171223-4-1wtdzyq?1514062744",
+    "product_colors": [
+      {
+        "hex_value": "#EAC4A6",
+        "colour_name": "500 Pearly Vanilla"
+      },
+      {
+        "hex_value": "#FACBBD",
+        "colour_name": "800 Pearly Pink"
+      }
+    ]
+  },
+  {
+    "id": 673,
+    "brand": "dior",
+    "name": "Dior Addict Lip Maximizer",
+    "price": "25.0",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_y0028670.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/lips/gloss/pr-gloss-y0028670_f002867001-collagen-active-lip-gloss.html",
+    "website_link": "https://www.dior.com",
+    "description": "The first instant-volume gloss from Dior Backstage.",
+    "rating": null,
+    "category": "lip_gloss",
+    "product_type": "lipstick",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:18.123Z",
+    "updated_at": "2017-12-23T20:58:45.684Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/673.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/673/original/open-uri20171223-4-sia3yz?1514062725",
+    "product_colors": [
+      {
+        "hex_value": "#FADCDC",
+        "colour_name": "001 Pink"
+      },
+      {
+        "hex_value": "#F4C4C8",
+        "colour_name": "003 Sparkling"
+      }
+    ]
+  },
+  {
+    "id": 672,
+    "brand": "dior",
+    "name": "Dior Addict Ultra-Gloss",
+    "price": "24.0",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_y0285300.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/lips/gloss/pr-gloss-y0285300_f028530004-sensational-mirror-shine-hydra-plumping-volume.html",
+    "website_link": "https://www.dior.com",
+    "description": "More than just a gloss, Dior Addict Ultra-Gloss is a lip plumper and gloss all in one.",
+    "rating": null,
+    "category": "lip_gloss",
+    "product_type": "lipstick",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:12.664Z",
+    "updated_at": "2017-12-23T20:58:45.455Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/672.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/672/original/open-uri20171223-4-1jr6g64?1514062725",
+    "product_colors": [
+      {
+        "hex_value": "#E0E4EA",
+        "colour_name": "004 Tiara"
+      },
+      {
+        "hex_value": "#E7CDB2",
+        "colour_name": "013 Mise en Dior"
+      },
+      {
+        "hex_value": "#D9B6AB",
+        "colour_name": "211"
+      },
+      {
+        "hex_value": "#F4A9A9",
+        "colour_name": "267 So Real"
+      },
+      {
+        "hex_value": "#F4A2A3",
+        "colour_name": "363 Nude"
+      },
+      {
+        "hex_value": "#EF9EB1",
+        "colour_name": "453 Sideral"
+      },
+      {
+        "hex_value": "#EDA5B9",
+        "colour_name": "465 Shock"
+      },
+      {
+        "hex_value": "#F0889D",
+        "colour_name": "553 Princess"
+      },
+      {
+        "hex_value": "#B87569",
+        "colour_name": "629 Mirrored"
+      },
+      {
+        "hex_value": "#E14148",
+        "colour_name": "643 Everdior"
+      },
+      {
+        "hex_value": "#EF7472",
+        "colour_name": "649 Nova"
+      },
+      {
+        "hex_value": "#EC7A86",
+        "colour_name": "653 Sequins"
+      },
+      {
+        "hex_value": "#F07B83",
+        "colour_name": "656 Cosmic"
+      },
+      {
+        "hex_value": "#DF445B",
+        "colour_name": "662 Diorling"
+      },
+      {
+        "hex_value": "#EA5071",
+        "colour_name": "664 New Wave"
+      },
+      {
+        "hex_value": "#DA5E6D",
+        "colour_name": "669"
+      },
+      {
+        "hex_value": "#E84280",
+        "colour_name": "673"
+      },
+      {
+        "hex_value": "#FE54A9",
+        "colour_name": "676 Cruise"
+      },
+      {
+        "hex_value": "#E15F7B",
+        "colour_name": "683 Chromic"
+      },
+      {
+        "hex_value": "#D04971",
+        "colour_name": "686 Fancy"
+      },
+      {
+        "hex_value": "#DB2B5D",
+        "colour_name": "765 Ultradior"
+      },
+      {
+        "hex_value": "#AD6164",
+        "colour_name": "785 Diorama"
+      }
+    ]
+  },
+  {
+    "id": 671,
+    "brand": "dior",
+    "name": "Cheek & Lip Glow",
+    "price": "27.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0880550_112016.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/backstage-pros/lips/pr-lipspros-y0880550_f088055001-instant-blushing-rosy-tint.html",
+    "website_link": "https://www.dior.com",
+    "description": "Dior creates its first cheek and lip blush to create a flush of pink on the skin.",
+    "rating": null,
+    "category": null,
+    "product_type": "blush",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:11.460Z",
+    "updated_at": "2017-12-23T20:58:49.448Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/671.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/671/original/open-uri20171223-4-4vqvon?1514062729",
+    "product_colors": [
+      {
+        "hex_value": "#E1000F",
+        "colour_name": "001"
+      }
+    ]
+  },
+  {
+    "id": 670,
+    "brand": "dior",
+    "name": "DIORIFIC MATTE FLUID - Christmas Look 2017 Limited Edition",
+    "price": "27.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0278001_F027800006_v2.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/precious-rocks-collection/pr-preciousrockslook-y0278001_f027800005-lip-cheek-velvet-colour.html",
+    "website_link": "https://www.dior.com",
+    "description": "A Dior essential, Diorific Matte Fluid tinges lips and cheeks with a matte texture in four exclusive shades.",
+    "rating": null,
+    "category": "lipstick",
+    "product_type": "lipstick",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:10.711Z",
+    "updated_at": "2017-12-23T20:58:45.146Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/670.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/670/original/open-uri20171223-4-f0oedq?1514062725",
+    "product_colors": [
+      {
+        "hex_value": "#AA6565",
+        "colour_name": "005 Charm"
+      },
+      {
+        "hex_value": "#910924",
+        "colour_name": "006 Glory"
+      }
+    ]
+  },
+  {
+    "id": 669,
+    "brand": "dior",
+    "name": "DIORIFIC KHÔL",
+    "price": "29.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0027647_F002764751.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/precious-rocks-collection/pr-preciousrockslook-y0027647_f002764341-powder-lipstick-ultra-pigmented-long-wear-intensity.html",
+    "website_link": "https://www.dior.com",
+    "description": "For the first time at Dior, Diorific is now available as Lip Khôl designed to adorn your lips in intense colour with a powdery, matte finish.",
+    "rating": null,
+    "category": "lipstick",
+    "product_type": "lipstick",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:09.776Z",
+    "updated_at": "2017-12-23T20:58:44.968Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/669.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/669/original/open-uri20171223-4-1r1wmbn?1514062724",
+    "product_colors": [
+      {
+        "hex_value": "#E17D79",
+        "colour_name": "341 Pure Topaz"
+      },
+      {
+        "hex_value": "#C95B86",
+        "colour_name": "671 Vibrant Tourmaline"
+      },
+      {
+        "hex_value": "#864640",
+        "colour_name": "741 Deep Ruby"
+      },
+      {
+        "hex_value": "#CD2E3A",
+        "colour_name": "751 Intense Garnet"
+      },
+      {
+        "hex_value": "#604751",
+        "colour_name": "991 Bold Amethyst"
+      }
+    ]
+  },
+  {
+    "id": 668,
+    "brand": "dior",
+    "name": "Diorific",
+    "price": "29.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_y0027600.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/lips/lipsticks/pr-lipsticks-y0027600_f002760005-haute-couture-long-wearing-lipstick.html",
+    "website_link": "https://www.dior.com",
+    "description": "Diorific, the legendary lip accessory with an Haute Couture finish, holds the signature of Dior glamour in its jewel-like gold case.",
+    "rating": null,
+    "category": "lipstick",
+    "product_type": "lipstick",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:07.996Z",
+    "updated_at": "2017-12-23T20:58:44.805Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/668.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/668/original/open-uri20171223-4-19lz1tl?1514062724",
+    "product_colors": [
+      {
+        "hex_value": "#B55758",
+        "colour_name": "005 Glory"
+      },
+      {
+        "hex_value": "#C56C72",
+        "colour_name": "008 Mitzah"
+      },
+      {
+        "hex_value": "#E1857A",
+        "colour_name": "009 Award"
+      },
+      {
+        "hex_value": "#D00040",
+        "colour_name": "013 Ange Bleu"
+      },
+      {
+        "hex_value": "#E30F25",
+        "colour_name": "014 Dolce Vita"
+      },
+      {
+        "hex_value": "#A27977",
+        "colour_name": "015 Broadway"
+      },
+      {
+        "hex_value": "#CE3C2F",
+        "colour_name": "021 Icône"
+      },
+      {
+        "hex_value": "#D55B74",
+        "colour_name": "023 Diorella"
+      },
+      {
+        "hex_value": "#CE6063",
+        "colour_name": "024 Liz"
+      },
+      {
+        "hex_value": "#E87379",
+        "colour_name": "025 Diorissimo"
+      }
+    ]
+  },
+  {
+    "id": 667,
+    "brand": "dior",
+    "name": "Dior Addict Lipstick - Limited Edition",
+    "price": "27.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_y0028752.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/lips/lipsticks/pr-lipsticks-y0028752_f002875465-hydra-gel-core-mirror-shine.html",
+    "website_link": "https://www.dior.com",
+    "description": "Dior ushers in a new era in lip makeup with the breakthrough creation of a lipstick that boasts a hydra-gel core with a top coat effect for sensational mirror shine.",
+    "rating": null,
+    "category": "lipstick",
+    "product_type": "lipstick",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:05.679Z",
+    "updated_at": "2017-12-23T20:58:44.647Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/667.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/667/original/open-uri20171223-4-azwrgu?1514062724",
+    "product_colors": [
+      {
+        "hex_value": "#DC8E74",
+        "colour_name": "423 Minimal"
+      },
+      {
+        "hex_value": "#E2122D",
+        "colour_name": "853 Hype"
+      },
+      {
+        "hex_value": "#DC2144",
+        "colour_name": "875 Beverly Pink"
+      },
+      {
+        "hex_value": "#410000",
+        "colour_name": "955 Excessive"
+      },
+      {
+        "hex_value": "#EF768F",
+        "colour_name": "465 Cruise"
+      }
+    ]
+  },
+  {
+    "id": 666,
+    "brand": "dior",
+    "name": "Dior Addict Lipstick",
+    "price": "27.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0028757_F002875435.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/lips/lipsticks/pr-lipsticks-y0028757_f002875435-hydra-gel-core-mirror-shine.html",
+    "website_link": "https://www.dior.com",
+    "description": "Dior ushers in a new era in lip makeup with the breakthrough creation of a lipstick that boasts a hydra-gel core with a top coat effect for sensational mirror shine.",
+    "rating": null,
+    "category": "lipstick",
+    "product_type": "lipstick",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:22:00.358Z",
+    "updated_at": "2017-12-23T20:58:44.371Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/666.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/666/original/open-uri20171223-4-ndh6nv?1514062724",
+    "product_colors": [
+      {
+        "hex_value": "#E32A67",
+        "colour_name": "885 Artsy"
+      },
+      {
+        "hex_value": "#C0011F",
+        "colour_name": "951 Too Much"
+      },
+      {
+        "hex_value": "#7A2335",
+        "colour_name": "967 Gotha"
+      },
+      {
+        "hex_value": "#CB0428",
+        "colour_name": "974 Rebellious"
+      },
+      {
+        "hex_value": "#F49E90",
+        "colour_name": "138 Purity"
+      },
+      {
+        "hex_value": "#D48A86",
+        "colour_name": "260 Bright"
+      },
+      {
+        "hex_value": "#F28F9B",
+        "colour_name": "266 Delight"
+      },
+      {
+        "hex_value": "#EF7775",
+        "colour_name": "334 Happy"
+      },
+      {
+        "hex_value": "#DB7F72",
+        "colour_name": "343 Spring Ball"
+      },
+      {
+        "hex_value": "#F07C6E",
+        "colour_name": "441 Frimousse"
+      },
+      {
+        "hex_value": "#EF7771",
+        "colour_name": "451 Tribale"
+      },
+      {
+        "hex_value": "#EB553E",
+        "colour_name": "532 So Electric"
+      },
+      {
+        "hex_value": "#C1807A",
+        "colour_name": "535 Tailleur Bar"
+      },
+      {
+        "hex_value": "#DD2B47",
+        "colour_name": "536 Lucky"
+      },
+      {
+        "hex_value": "#E98693",
+        "colour_name": "553 Smile"
+      },
+      {
+        "hex_value": "#E8485D",
+        "colour_name": "554 It Pink"
+      },
+      {
+        "hex_value": "#F18592",
+        "colour_name": "561 Wonderful"
+      },
+      {
+        "hex_value": "#DC485F",
+        "colour_name": "578 Diorkiss"
+      },
+      {
+        "hex_value": "#DF525F",
+        "colour_name": "579 Must-Have"
+      },
+      {
+        "hex_value": "#8F534E",
+        "colour_name": "612 City Lights"
+      },
+      {
+        "hex_value": "#9F4F4D",
+        "colour_name": "623 Not Shy"
+      },
+      {
+        "hex_value": "#EA4A44",
+        "colour_name": "639 Riviera"
+      },
+      {
+        "hex_value": "#E64B55",
+        "colour_name": "655 Mutine"
+      },
+      {
+        "hex_value": "#BC425F",
+        "colour_name": "680 After Party"
+      },
+      {
+        "hex_value": "#E9437C",
+        "colour_name": "685 Oversize"
+      },
+      {
+        "hex_value": "#E15F86",
+        "colour_name": "686 Fantasy"
+      },
+      {
+        "hex_value": "#AA5D57",
+        "colour_name": "722 True"
+      },
+      {
+        "hex_value": "#D30C19",
+        "colour_name": "745 New Look"
+      },
+      {
+        "hex_value": "#D50F38",
+        "colour_name": "750 Rock'n Roll"
+      },
+      {
+        "hex_value": "#E83144",
+        "colour_name": "871 Power"
+      },
+      {
+        "hex_value": "#961D4B",
+        "colour_name": "881 Fashion Night"
+      },
+      {
+        "hex_value": "#C01552",
+        "colour_name": "976 Be Dior"
+      },
+      {
+        "hex_value": "#AC2B56",
+        "colour_name": "983 Insoumise"
+      },
+      {
+        "hex_value": "#3E0013",
+        "colour_name": "987 Black Tie"
+      },
+      {
+        "hex_value": "#F295A2",
+        "colour_name": "435 Dreamy"
+      }
+    ]
+  },
+  {
+    "id": 665,
+    "brand": "dior",
+    "name": "DIOR ADDICT LACQUER STICK",
+    "price": "27.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_y0028808.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/lips/lipsticks/pr-lipsticks-y0028808_f002880344-liquified-shine-saturated-lip-colour-weightless-wear.html",
+    "website_link": "https://www.dior.com",
+    "description": "Try Dior Addict Lacquer Stick, the new-generation lacquer stick by Dior, as easy to apply as it is to wear. A stick with a \"lip fondant\" effect that liberates all the colour and shine of a lacquer, plus the comfort of a balm, with 6 hours* of wear and unrivaled texture.",
+    "rating": null,
+    "category": "lipstick",
+    "product_type": "lipstick",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:21:56.663Z",
+    "updated_at": "2017-12-23T20:58:43.466Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/665.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/665/original/open-uri20171223-4-tcsi74?1514062723",
+    "product_colors": [
+      {
+        "hex_value": "#F19183",
+        "colour_name": "344 Rolling"
+      },
+      {
+        "hex_value": "#A15C61",
+        "colour_name": "420 Underground"
+      },
+      {
+        "hex_value": "#EB636B",
+        "colour_name": "457 Palm Beach"
+      },
+      {
+        "hex_value": "#EB5C97",
+        "colour_name": "487 Bubble"
+      },
+      {
+        "hex_value": "#E47082",
+        "colour_name": "550 Tease"
+      },
+      {
+        "hex_value": "#EA5344",
+        "colour_name": "554 West Coast"
+      },
+      {
+        "hex_value": "#9E3F48",
+        "colour_name": "570 LA Pink"
+      },
+      {
+        "hex_value": "#C86378",
+        "colour_name": "577 Lazy"
+      },
+      {
+        "hex_value": "#8C3D3C",
+        "colour_name": "620 Poisonous"
+      },
+      {
+        "hex_value": "#D5305F",
+        "colour_name": "674 K-Kiss"
+      },
+      {
+        "hex_value": "#E60760",
+        "colour_name": "684 Diabolo"
+      },
+      {
+        "hex_value": "#902215",
+        "colour_name": "740 Club"
+      },
+      {
+        "hex_value": "#E51E1A",
+        "colour_name": "744 Party Red"
+      },
+      {
+        "hex_value": "#C20516",
+        "colour_name": "757 American Girl"
+      },
+      {
+        "hex_value": "#A01314",
+        "colour_name": "857 Hollywood Red"
+      },
+      {
+        "hex_value": "#C4032B",
+        "colour_name": "877 Turn Me Dior"
+      },
+      {
+        "hex_value": "#BB0E63",
+        "colour_name": "882 Sassy"
+      },
+      {
+        "hex_value": "#391E1C",
+        "colour_name": "904 Black Coffee"
+      },
+      {
+        "hex_value": "#602127",
+        "colour_name": "924 Sauvage"
+      },
+      {
+        "hex_value": "#751E41",
+        "colour_name": "984 Dark Flower"
+      }
+    ]
+  },
+  {
+    "id": 664,
+    "brand": "dior",
+    "name": "DIOR ADDICT LIP TATTOO",
+    "price": "25.0",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0028967_v4.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/lips/lipsticks/pr-lipsticks-y0028967_f002896421-coloured-tint-bare-lip-sensation-extreme-weightless-wear.html",
+    "website_link": "https://www.dior.com",
+    "description": "Dior Addict Lip Tattoo, the first long wear lip tint by Dior, is about to shake up your makeup routine. With its 10-hour hold*, comfortable formula and weightless \"no transfer\" finish, the colour fuses to the lips like a tattoo just seconds after application.",
+    "rating": null,
+    "category": "lip_gloss",
+    "product_type": "lipstick",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:21:54.822Z",
+    "updated_at": "2017-12-23T20:58:45.860Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/664.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/664/original/open-uri20171223-4-1mdas12?1514062725",
+    "product_colors": [
+      {
+        "hex_value": "#AD5F56",
+        "colour_name": "421 Natural Beige"
+      },
+      {
+        "hex_value": "#E55461",
+        "colour_name": "451 Natural Coral"
+      },
+      {
+        "hex_value": "#A76165",
+        "colour_name": "491 Natural Rosewood"
+      },
+      {
+        "hex_value": "#E13D5D",
+        "colour_name": "761 Natural Cherry"
+      },
+      {
+        "hex_value": "#974249",
+        "colour_name": "771 Natural Berry"
+      },
+      {
+        "hex_value": "#EC6292",
+        "colour_name": "881 Natural Pink"
+      }
+    ]
+  },
+  {
+    "id": 663,
+    "brand": "dior",
+    "name": "ROUGE DIOR COLLECTION COUTURE - Christmas Look 2017 Limited Edition",
+    "price": "29.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0027859_F002785999.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/precious-rocks-collection/pr-preciousrockslook-y0027859_f002785999-jewel-lipstick-couture-colour-comfort-wear.html",
+    "website_link": "https://www.dior.com",
+    "description": "The must-have of the collection, Rouge Dior has been reinterpreted for the holiday season, with the Bijou edition of the 999 Matte shade featuring a faceted cannage band.",
+    "rating": null,
+    "category": "lipstick",
+    "product_type": "lipstick",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:21:53.603Z",
+    "updated_at": "2017-12-23T20:58:43.097Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/663.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/663/original/open-uri20171223-4-sznyox?1514062723",
+    "product_colors": [
+      {
+        "hex_value": "#BA1B2B",
+        "colour_name": "999 Matte"
+      }
+    ]
+  },
+  {
+    "id": 662,
+    "brand": "dior",
+    "name": "Dior Holiday Couture Collection",
+    "price": "77.0",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y9185275_F918527500.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/lips/lipsticks/pr-lipsticks-y9185275_f918527500-rouge-dior-colour-lipstick-trio.html",
+    "website_link": "https://www.dior.com",
+    "description": "A couture makeup bag with a selection of three iconic Rouge Dior lipsticks to suit any occasion: two different rosy shades with a satiny finish for a romantic look, and the matte version of the famous 999 for flamboyant lips.",
+    "rating": null,
+    "category": "lipstick",
+    "product_type": "lipstick",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:21:53.130Z",
+    "updated_at": "2017-12-23T20:58:42.309Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/662.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/662/original/open-uri20171223-4-b9oitk?1514062722",
+    "product_colors": []
+  },
+  {
+    "id": 661,
+    "brand": "dior",
+    "name": "ROUGE DIOR - Fall 2017 Limited Edition",
+    "price": "27.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0027837.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/look-exclusives/metallics-collection/pr-metallicslook-y0027837_f002784426-couture-colour-lipstick-comfort-wear.html",
+    "website_link": "https://www.dior.com",
+    "description": "Designed by Peter Philips to combine with the opulent hues and metallic effects on the eyes, face and nails, the six new Rouge Dior shades for fall 2017 flaunt strong beauty with a distinguished chic style. Its iconic formula offering 16 hours of comfort* ensures that women feel good, regardless of the colour or finish chosen.",
+    "rating": null,
+    "category": "lipstick",
+    "product_type": "lipstick",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:21:52.127Z",
+    "updated_at": "2017-12-23T20:58:42.069Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/661.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/661/original/open-uri20171223-4-10ntph3?1514062721",
+    "product_colors": [
+      {
+        "hex_value": "#D58F7F",
+        "colour_name": "426 Sensual Matte"
+      },
+      {
+        "hex_value": "#B76566",
+        "colour_name": "481 Hypnotic Matte"
+      },
+      {
+        "hex_value": "#B52237",
+        "colour_name": "861 Sophisticated Matte "
+      },
+      {
+        "hex_value": "#A82628",
+        "colour_name": "999 Metallic"
+      }
+    ]
+  },
+  {
+    "id": 660,
+    "brand": "dior",
+    "name": "Rouge Dior",
+    "price": "27.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_y0027830.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/lips/lipsticks/pr-lipsticks-y0027830_f002783028-couture-colour-from-satin-to-matte-comfort-wear.html",
+    "website_link": "https://www.dior.com",
+    "description": "With Rouge Dior and its 16h* comfort cult formula, women feel good, no matter the colour, no matter the satin or matte finish.",
+    "rating": null,
+    "category": "lipstick",
+    "product_type": "lipstick",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:21:45.703Z",
+    "updated_at": "2017-12-23T20:58:41.827Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/660.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/660/original/open-uri20171223-4-19og9mv?1514062721",
+    "product_colors": [
+      {
+        "hex_value": "#E83F4A",
+        "colour_name": "028 Actrice"
+      },
+      {
+        "hex_value": "#E40068",
+        "colour_name": "047 Miss"
+      },
+      {
+        "hex_value": "#D36179",
+        "colour_name": "060 Première"
+      },
+      {
+        "hex_value": "#D91920",
+        "colour_name": "080 Red Smile"
+      },
+      {
+        "hex_value": "#BBC3C2",
+        "colour_name": "207 Montaigne Matte"
+      },
+      {
+        "hex_value": "#D07866",
+        "colour_name": "219 Rose Montaigne"
+      },
+      {
+        "hex_value": "#DB7096",
+        "colour_name": "277 Osée"
+      },
+      {
+        "hex_value": "#E06E6D",
+        "colour_name": "365 New World"
+      },
+      {
+        "hex_value": "#CA6863",
+        "colour_name": "414 Saint Germain"
+      },
+      {
+        "hex_value": "#AD5E56",
+        "colour_name": "434 Promenade"
+      },
+      {
+        "hex_value": "#C15961",
+        "colour_name": "458 Paris"
+      },
+      {
+        "hex_value": "#E4003E",
+        "colour_name": "520 Feel Good"
+      },
+      {
+        "hex_value": "#2E4763",
+        "colour_name": "602 Visionary Matte"
+      },
+      {
+        "hex_value": "#EB5959",
+        "colour_name": "634 Strong Matte"
+      },
+      {
+        "hex_value": "#EA5156",
+        "colour_name": "642 Ready"
+      },
+      {
+        "hex_value": "#E84618",
+        "colour_name": "643 Stand Out"
+      },
+      {
+        "hex_value": "#B73E42",
+        "colour_name": "644 Sydney"
+      },
+      {
+        "hex_value": "#ED6C7E",
+        "colour_name": "652 Euphoric Matte"
+      },
+      {
+        "hex_value": "#D0546B",
+        "colour_name": "663 Désir"
+      },
+      {
+        "hex_value": "#CC4A6B",
+        "colour_name": "678 Culte"
+      },
+      {
+        "hex_value": "#BC5553",
+        "colour_name": "683 Rendez-Vous"
+      },
+      {
+        "hex_value": "#A41220",
+        "colour_name": "743 Rouge Zinnia"
+      },
+      {
+        "hex_value": "#CF1D58",
+        "colour_name": "766 Rose Harpers"
+      },
+      {
+        "hex_value": "#E96C81",
+        "colour_name": "771 Radiant Matte"
+      },
+      {
+        "hex_value": "#CB7A84",
+        "colour_name": "772 Classic Matte"
+      },
+      {
+        "hex_value": "#E1244B",
+        "colour_name": "775 Darling"
+      },
+      {
+        "hex_value": "#E6699D",
+        "colour_name": "787 Exuberant Matte"
+      },
+      {
+        "hex_value": "#96518F",
+        "colour_name": "789 Superstitious Matte"
+      },
+      {
+        "hex_value": "#E0262F",
+        "colour_name": "844 Trafalgar"
+      },
+      {
+        "hex_value": "#AD0F1C",
+        "colour_name": "872 Victoire"
+      },
+      {
+        "hex_value": "#BC4B76",
+        "colour_name": "897 Mysterious Matte"
+      },
+      {
+        "hex_value": "#86556D",
+        "colour_name": "962 Poison Matte"
+      },
+      {
+        "hex_value": "#A05357",
+        "colour_name": "964 Ambitious Matte"
+      },
+      {
+        "hex_value": "#BE030E",
+        "colour_name": "999"
+      },
+      {
+        "hex_value": "#CC424D",
+        "colour_name": "999 Matte"
+      },
+      {
+        "hex_value": "#DB6F6D",
+        "colour_name": "343 Panaréa"
+      }
+    ]
+  },
+  {
+    "id": 659,
+    "brand": "dior",
+    "name": "Rouge Dior Double Rouge",
+    "price": "27.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_y0027279.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/lips/lipsticks/pr-lipsticks-y0027279_f002727288-matte-metal-colour-couture-contour-lipstick.html",
+    "website_link": "https://www.dior.com",
+    "description": "Inspired by professional techniques, Double Rouge combines two makeup trends: matte and metal.",
+    "rating": null,
+    "category": "lipstick",
+    "product_type": "lipstick",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:21:43.664Z",
+    "updated_at": "2017-12-23T20:58:41.645Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/659.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/659/original/open-uri20171223-4-14wnn4c?1514062721",
+    "product_colors": [
+      {
+        "hex_value": "#F09E94",
+        "colour_name": "288 MISS CRUSH"
+      },
+      {
+        "hex_value": "#B48D86",
+        "colour_name": "510 JUNGLE BEIGE"
+      },
+      {
+        "hex_value": "#E97048",
+        "colour_name": "534 TEMPTING TANGERINE"
+      },
+      {
+        "hex_value": "#DD7F9C",
+        "colour_name": "582 SPICY SWEET"
+      },
+      {
+        "hex_value": "#925970",
+        "colour_name": "992 POISON PURPLE"
+      },
+      {
+        "hex_value": "#BD3C3C",
+        "colour_name": "999 MATTE METAL"
+      }
+    ]
+  },
+  {
+    "id": 658,
+    "brand": "dior",
+    "name": "Rouge Dior Liquid",
+    "price": "26.5",
+    "price_sign": "£",
+    "currency": "GBP",
+    "image_link": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_y0027269.jpg",
+    "product_link": "https://www.dior.com/beauty/en_gb/fragrance-beauty/makeup/lips/lipsticks/pr-lipsticks-y0027269_f002726162-liquid-lip-stain.-intense-couture-colour.-extreme-long-wear.-3-effects-matte-metal-satin.html",
+    "website_link": "https://www.dior.com",
+    "description": "Rouge Dior has yet again been reinvented with the first liquid lipstick formula by Dior with multiple effects and surprising colour impact. Coverage, 12h* long wear and comfort: a true gem available in 3 vibrant finishes – matte, metal and satin.",
+    "rating": null,
+    "category": "lipstick",
+    "product_type": "lipstick",
+    "tag_list": [],
+    "created_at": "2017-12-03T23:07:49.795Z",
+    "updated_at": "2017-12-23T20:58:41.306Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/658.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/658/original/open-uri20171223-4-1c7npm6?1514062721",
+    "product_colors": [
+      {
+        "hex_value": "#F08885",
+        "colour_name": "162 MISS SATIN"
+      },
+      {
+        "hex_value": "#C27F75",
+        "colour_name": "221 CHIC MATTE"
+      },
+      {
+        "hex_value": "#DA6272",
+        "colour_name": "265 FURY MATTE"
+      },
+      {
+        "hex_value": "#D17B67",
+        "colour_name": "334 VIBRANT METAL"
+      },
+      {
+        "hex_value": "#CB657E",
+        "colour_name": "375 SPICY METAL"
+      },
+      {
+        "hex_value": "#C16863",
+        "colour_name": "427 DELICATE SATIN"
+      },
+      {
+        "hex_value": "#E2544C",
+        "colour_name": "442 IMPETUOUS SATIN"
+      },
+      {
+        "hex_value": "#925738",
+        "colour_name": "515 SCANDALOUS METAL"
+      },
+      {
+        "hex_value": "#AA584E",
+        "colour_name": "527 RECKLESS MATTE"
+      },
+      {
+        "hex_value": "#CE354A",
+        "colour_name": "565 VERSATILE SATIN"
+      },
+      {
+        "hex_value": "#AB5E6A",
+        "colour_name": "574 LIVELY MATTE"
+      },
+      {
+        "hex_value": "#D3CFD2",
+        "colour_name": "601 HOLOGLAM"
+      },
+      {
+        "hex_value": "#AF695C",
+        "colour_name": "614 JUNGLE MATTE"
+      },
+      {
+        "hex_value": "#914047",
+        "colour_name": "625 MYSTERIOUS MATTE"
+      },
+      {
+        "hex_value": "#E43F1E",
+        "colour_name": "658 EXTREME MATTE"
+      },
+      {
+        "hex_value": "#CC4735",
+        "colour_name": "751 ROCK'N'METAL"
+      },
+      {
+        "hex_value": "#D32759",
+        "colour_name": "788 FRENETIC SATIN"
+      },
+      {
+        "hex_value": "#A50C46",
+        "colour_name": "797 SAVAGE MATTE"
+      },
+      {
+        "hex_value": "#6F0F2B",
+        "colour_name": "862 HECTIC MATTE"
+      },
+      {
+        "hex_value": "#652832",
+        "colour_name": "895 FAB SATIN"
+      },
+      {
+        "hex_value": "#3B2427",
+        "colour_name": "901 OXBLOOD MATTE"
+      },
+      {
+        "hex_value": "#292324",
+        "colour_name": "908 BLACK MATTE"
+      },
+      {
+        "hex_value": "#791D26",
+        "colour_name": "979 POISON METAL"
+      },
+      {
+        "hex_value": "#C51215",
+        "colour_name": "999 MATTE"
+      }
+    ]
+  }
+]

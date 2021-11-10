@@ -3,13 +3,26 @@ import mongoose, { Document } from 'mongoose'
 
 //add types for mongoose
 export type ProductDocument = Document & {
+  _id: string
   name: string
   price: number
-  priceSign: string
   imageLink: string
   description: string
-  variant: string[]
+  variant: VariantDocument[]
 }
+export type VariantDocument = {
+  hexValue: string
+  colourName: string
+}
+
+const VariantSchema = new mongoose.Schema({
+  hexValue: {
+    type: String,
+  },
+  colourName: {
+    type: String,
+  },
+})
 
 const ProductSchema = new mongoose.Schema({
   name: {
@@ -20,10 +33,6 @@ const ProductSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  priceSign: {
-    type: String,
-    required: true,
-  },
   imageLink: {
     type: String,
     required: true,
@@ -32,11 +41,8 @@ const ProductSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  variant: [
-    {
-      type: String,
-    },
-  ],
+  //embed schema
+  variant: [VariantSchema],
 })
 
 export default mongoose.model<ProductDocument>('Product', ProductSchema)

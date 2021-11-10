@@ -7,12 +7,7 @@ import { MONGODB_URI } from './util/secrets'
 const mongoUrl = MONGODB_URI
 
 mongoose
-  .connect(mongoUrl, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false,
-    useCreateIndex: true,
-  })
+  .connect(mongoUrl)
   .then(() => {
     // Start Express server
     app.listen(app.get('port'), () => {

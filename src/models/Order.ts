@@ -3,6 +3,7 @@ import mongoose, { Document } from 'mongoose'
 
 //add types for mongoose
 export type OrderDocument = Document & {
+  _id: string
   name: string
   variant: string
   price: number
@@ -40,4 +41,4 @@ const OrderSchema = new mongoose.Schema({
   },
 })
 
-export default mongoose.model<OrderDocument>('Product', OrderSchema)
+export default mongoose.model<OrderDocument>('Order', OrderSchema)

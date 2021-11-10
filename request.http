@@ -1,7 +1,3 @@
-POST  http://localhost:3300/user HTTP/1.1
-content-type: application/json
 
-{
-    "name": "Andrea",
-    "age": 7
-}
+
+

@@ -12,7 +12,7 @@ function ProductPage() {
       .catch((error) => console.log(error))
   }, [])
 
-  return <div></div>
+  return <div>product page</div>
 }
 
 export default ProductPage

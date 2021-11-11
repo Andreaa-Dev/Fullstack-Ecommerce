@@ -8,11 +8,17 @@ function ProductPage() {
       .then((res: any) => {
         const data = res.data
         console.log(data, 'data')
+        return data
       })
       .catch((error) => console.log(error))
   }, [])
 
-  return <div>product page</div>
+  return (
+    <div>
+      product page
+      <div>{}</div>
+    </div>
+  )
 }
 
 export default ProductPage

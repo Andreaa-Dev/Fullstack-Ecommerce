@@ -6,8 +6,8 @@ import CardGiftcardOutlinedIcon from '@mui/icons-material/CardGiftcardOutlined'
 
 function ServiceFooter() {
   return (
-    <Box sx={{ backgroundColor: 'black', color: 'white' }}>
-      <Typography sx={{ textAlign: 'center' }}>
+    <Box sx={{ backgroundColor: 'black', color: 'white', p: 15 }}>
+      <Typography sx={{ textAlign: 'center', mb: 5 }}>
         THE E-BOUTIQUE SERVICES
       </Typography>
       <Box
@@ -15,7 +15,6 @@ function ServiceFooter() {
           display: 'grid',
           gridTemplateColumns: '1fr 1fr 1fr ',
           gridColumnGap: 5,
-          p: 15,
         }}
       >
         <Box

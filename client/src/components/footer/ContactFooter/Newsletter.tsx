@@ -4,7 +4,9 @@ import React from 'react'
 function Newsletter() {
   return (
     <div>
-      <Typography>NEWSLETTER</Typography>
+      <Typography variant="h6" fontWeight="bold">
+        NEWSLETTER
+      </Typography>
       <Typography>Sign up to receive exclusive updates and content</Typography>
       <TextField
         id="standard-basic"

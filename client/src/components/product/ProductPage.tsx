@@ -1,23 +1,41 @@
 import React, { useEffect } from 'react'
-import axios from 'axios'
+import { useDispatch, useSelector } from 'react-redux'
+import { Box } from '@mui/system'
+
+import ProductItem from './ProductItem'
+import { AppState } from '../../misc/type'
+import { fetchData } from '../../redux/action'
 
 function ProductPage() {
-  useEffect(() => {
-    axios
-      .get('http://localhost:5000/api/v1/product')
-      .then((res: any) => {
-        const data = res.data
-        console.log(data, 'data')
-        return data
-      })
-      .catch((error) => console.log(error))
-  }, [])
+  const dispatch = useDispatch()
 
+  useEffect(() => {
+    dispatch(fetchData())
+  }, [dispatch])
+
+  const productData = useSelector(
+    (state: AppState) => state.productState.product
+  )
+
+  console.log(productData, 's')
   return (
-    <div>
-      product page
-      <div>{}</div>
-    </div>
+    <>
+      {productData.map((item) => {
+        return (
+          <Box
+            sx={{
+              display: 'grid',
+              gridTemplateRows: '1fr 1fr 1fr 1fr 1fr',
+              justifyContent: 'center',
+              p: 5,
+            }}
+          >
+            product page
+            <ProductItem data={item} />
+          </Box>
+        )
+      })}
+    </>
   )
 }
 

@@ -3,6 +3,7 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined'
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined'
 import { Box } from '@mui/system'
+import { Badge } from '@mui/material'
 
 function NavIcon() {
   return (
@@ -11,11 +12,17 @@ function NavIcon() {
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between',
+        width: 100,
+        p: 1.5,
       }}
     >
-      <FavoriteBorderIcon />
+      <Badge badgeContent={1} color="primary">
+        <FavoriteBorderIcon color="action" />
+      </Badge>
       <PersonOutlineOutlinedIcon />
-      <ShoppingCartOutlinedIcon />
+      <Badge badgeContent={4} color="primary">
+        <ShoppingCartOutlinedIcon color="action" />
+      </Badge>
     </Box>
   )
 }

@@ -4,7 +4,6 @@ import { Box, createTheme, ThemeProvider, Typography } from '@mui/material'
 import NavIcon from './NavIcon'
 import SubNav from './SubNav'
 import SearchProduct from './SearchProduct'
-import Test from './Test'
 
 function NavBar() {
   const themes = createTheme({
@@ -28,7 +27,6 @@ function NavBar() {
         <NavIcon />
       </Box>
       <SubNav />
-      <Test />
     </Box>
   )
 }

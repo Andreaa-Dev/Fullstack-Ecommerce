@@ -19,23 +19,19 @@ function ProductPage() {
 
   console.log(productData, 's')
   return (
-    <>
+    <Box
+      sx={{
+        display: 'grid',
+        gridTemplateColumns: '1fr 1fr 1fr 1fr ',
+        justifyContent: 'center',
+        gap: 10,
+        p: 10,
+      }}
+    >
       {productData.map((item) => {
-        return (
-          <Box
-            sx={{
-              display: 'grid',
-              gridTemplateRows: '1fr 1fr 1fr 1fr 1fr',
-              justifyContent: 'center',
-              p: 5,
-            }}
-          >
-            product page
-            <ProductItem data={item} />
-          </Box>
-        )
+        return <ProductItem data={item} />
       })}
-    </>
+    </Box>
   )
 }
 

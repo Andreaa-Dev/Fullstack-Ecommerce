@@ -5,6 +5,7 @@ import { Box } from '@mui/system'
 import ProductItem from './ProductItem'
 import { AppState } from '../../misc/type'
 import { fetchData } from '../../redux/action'
+import SortProduct from './SortProduct'
 
 function ProductPage() {
   const dispatch = useDispatch()
@@ -28,6 +29,7 @@ function ProductPage() {
         p: 10,
       }}
     >
+      <SortProduct />
       {productData.map((item) => {
         return <ProductItem data={item} />
       })}

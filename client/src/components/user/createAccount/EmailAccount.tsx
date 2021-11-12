@@ -13,7 +13,7 @@ function EmailAccount() {
       noValidate
       autoComplete="off"
     >
-      <Typography>YOUR USER ID</Typography>
+      {/* <Typography>YOUR USER ID</Typography> */}
       <TextField id="standard-basic" label="Email" variant="standard" />
     </Box>
   )

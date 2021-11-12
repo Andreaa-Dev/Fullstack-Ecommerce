@@ -11,16 +11,21 @@ import SearchIcon from '@mui/icons-material/Search'
 import DirectionsIcon from '@mui/icons-material/Directions'
 
 import location from '../images/location.webp'
+import { CustomizedTitle } from '../customizedCSS'
 
 function LocationFooter() {
   return (
     <Box
       sx={{
         backgroundImage: `url(${location})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         p: 10,
+        height: '100%',
       }}
     >
       <Typography sx={{ marginBottom: 5 }}>OUR BOUTIQUES</Typography>

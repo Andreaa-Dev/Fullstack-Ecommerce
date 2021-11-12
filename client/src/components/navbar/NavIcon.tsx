@@ -5,6 +5,8 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined'
 import { Box } from '@mui/system'
 import { Badge } from '@mui/material'
 
+import { CustomizedLink } from '../customizedCSS'
+
 function NavIcon() {
   return (
     <Box
@@ -19,7 +21,9 @@ function NavIcon() {
       <Badge badgeContent={1} color="primary">
         <FavoriteBorderIcon color="action" />
       </Badge>
-      <PersonOutlineOutlinedIcon />
+      <CustomizedLink to="/createAccount">
+        <PersonOutlineOutlinedIcon />
+      </CustomizedLink>
       <Badge badgeContent={4} color="primary">
         <ShoppingCartOutlinedIcon color="action" />
       </Badge>

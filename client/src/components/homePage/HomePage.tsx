@@ -1,42 +1,24 @@
 import React from 'react'
-import { styled } from '@mui/material/styles'
-import { Box, Button, Typography } from '@mui/material'
+import { Box } from '@mui/material'
 
 import mainImg from '../images/mainPage.webp'
 import subImg1 from '../images/subImg1.webp'
 import subImg2 from '../images/subImg2.webp'
 import subImg3 from '../images/subImg3.webp'
-import ProductDetail from '../product/ProductDetail'
-
-const CustomizedBox = styled(Box)`
-  display: flex;
-  flex-direction: column;
-  align-item: center;
-  text-align: center;
-`
-const CustomizedText = styled(Typography)`
-  color: white;
-  margin-top: 1rem;
-  font-size: 5;
-`
-
-const CustomizedButton = styled('button')`
-  border-radius: 20px;
-  color: white;
-  background-color: #16213e;
-  padding: 5px;
-`
+import background from '../images/background.webp'
+import { CustomizedTitle, CustomizedButton, BoxColumn } from '../customizedCSS'
+import WorkShop from './WorkShop'
+import Gift from './Gift'
 
 function HomePage() {
   return (
-    <Box sx={{ backgroundColor: '#16213E' }}>
+    <Box sx={{ backgroundImage: `url(${background})` }}>
       <Box>
         <img src={mainImg} alt="RougeDior" />
-        <Button> DISCOVER</Button>
+        <CustomizedButton>DISCOVER</CustomizedButton>
       </Box>
-      <ProductDetail />
       <Box>
-        <Typography color="white">HOLIDAY LOOK</Typography>
+        <CustomizedTitle variant="h5">HOLIDAY LOOK</CustomizedTitle>
         <Box
           sx={{
             display: 'grid',
@@ -44,50 +26,48 @@ function HomePage() {
             gap: 1,
           }}
         >
-          <CustomizedBox>
+          <BoxColumn>
             <img
               src={subImg1}
               alt=" ROUGE DIOR MINAUDIERE - THE ATELIER OF DREAMS LIMITED EDITION"
               height="400"
               width="350"
             />
-            <CustomizedText>
+            <CustomizedTitle>
               ROUGE DIOR MINAUDIERE - THE ATELIER OF DREAMS LIMITED EDITION
-            </CustomizedText>
-            <CustomizedText> MAKE-UP</CustomizedText>
+            </CustomizedTitle>
             <CustomizedButton>Discover</CustomizedButton>
-          </CustomizedBox>
-          <Box>
+          </BoxColumn>
+          <BoxColumn>
             <img
               src={subImg2}
               alt="DIORIFIC VERNIS - THE ATELIER OF DREAMS LIMITED EDITION"
               height="400"
               width="350"
             />
-            <CustomizedText>
+            <CustomizedTitle>
               DIORIFIC VERNIS - THE ATELIER OF DREAMS LIMITED EDITION
-            </CustomizedText>
-            <CustomizedText> MAKE-UP</CustomizedText>
+            </CustomizedTitle>
 
-            <Button>Discover</Button>
-          </Box>
+            <CustomizedButton>Discover</CustomizedButton>
+          </BoxColumn>
 
-          <Box>
+          <BoxColumn>
             <img
               src={subImg3}
               alt="ROUGE BLUSH - THE ATELIER OF DREAMS LIMITED EDITION"
               height="400"
               width="350"
             />
-            <CustomizedText>
+            <CustomizedTitle>
               ROUGE BLUSH - THE ATELIER OF DREAMS LIMITED EDITION
-            </CustomizedText>
-            <CustomizedText> MAKE-UP</CustomizedText>
-
-            <Button>Discover</Button>
-          </Box>
+            </CustomizedTitle>
+            <CustomizedButton>Discover</CustomizedButton>
+          </BoxColumn>
         </Box>
       </Box>
+      <WorkShop />
+      <Gift />
     </Box>
   )
 }

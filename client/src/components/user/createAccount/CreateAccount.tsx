@@ -4,25 +4,25 @@ import { Box } from '@mui/system'
 
 import PasswordAccount from './PasswordAccount'
 import EmailAccount from './EmailAccount'
+import { BoxColumn, BoxRow } from '../../customizedCSS'
 
 function CreateAccount() {
   return (
-    <Box
+    <BoxColumn
       component="form"
       sx={{
         p: 4,
-
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
       }}
     >
       <Typography variant="h4">YOUR ACCOUNT</Typography>
       <Typography>Create your Dior account</Typography>
-      <EmailAccount />
-      <PasswordAccount />
-    </Box>
+      <Typography> * Required fields</Typography>
+
+      <BoxRow>
+        <EmailAccount />
+        <PasswordAccount />
+      </BoxRow>
+    </BoxColumn>
   )
 }
 

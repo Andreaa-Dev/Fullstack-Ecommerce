@@ -31,9 +31,7 @@ function SubNav() {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        marginTop: 5,
         p: 5,
-        width: '80%',
       }}
     >
       <Typography

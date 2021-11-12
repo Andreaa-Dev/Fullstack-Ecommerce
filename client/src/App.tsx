@@ -1,4 +1,5 @@
 import React from 'react'
+import { Routes, Route } from 'react-router-dom'
 
 import Footer from './components/footer/Footer'
 import HomePage from './components/homePage/HomePage'
@@ -10,9 +11,13 @@ function App() {
   return (
     <div>
       <NavBar />
-      <HomePage />
-      <CreateAccount />
-      <ProductPage />
+      <Routes>
+        <Route>
+          <Route path="" element={<HomePage />} />
+          <Route path="/product" element={<ProductPage />} />
+          <Route path="/createAccount" element={<CreateAccount />} />
+        </Route>
+      </Routes>
       <Footer />
     </div>
   )

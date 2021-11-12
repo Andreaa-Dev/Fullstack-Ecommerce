@@ -3,24 +3,16 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
-import HomePage from './components/homePage/HomePage'
-import ProductPage from './components/product/ProductPage'
-import CreateAccount from './components/user/createAccount/CreateAccount'
+
 import makeStore from './redux/store'
 
 const store = makeStore()
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />}>
-          <Route index element={<HomePage />} />
-          <Route path="/product" element={<ProductPage />} />
-          <Route path="/createAccount" element={<CreateAccount />} />
-        </Route>
-      </Routes>
+      <App />
     </BrowserRouter>
   </Provider>,
 

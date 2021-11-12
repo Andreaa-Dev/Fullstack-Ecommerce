@@ -6,6 +6,7 @@ import mainImg from '../images/mainPage.webp'
 import subImg1 from '../images/subImg1.webp'
 import subImg2 from '../images/subImg2.webp'
 import subImg3 from '../images/subImg3.webp'
+import ProductDetail from '../product/ProductDetail'
 
 const CustomizedBox = styled(Box)`
   display: flex;
@@ -33,6 +34,7 @@ function HomePage() {
         <img src={mainImg} alt="RougeDior" />
         <Button> DISCOVER</Button>
       </Box>
+      <ProductDetail />
       <Box>
         <Typography color="white">HOLIDAY LOOK</Typography>
         <Box

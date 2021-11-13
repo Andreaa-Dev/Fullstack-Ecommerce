@@ -1,4 +1,5 @@
 import React from 'react'
+import './App.css'
 import { Routes, Route } from 'react-router-dom'
 
 import Footer from './components/footer/Footer'
@@ -11,7 +12,7 @@ import ProductByCategory from './components/product/ProductByCategory'
 
 function App() {
   return (
-    <div>
+    <>
       <NavBar />
       <Routes>
         <Route path="" element={<HomePage />} />
@@ -21,7 +22,7 @@ function App() {
         <Route path="/createAccount" element={<CreateAccount />} />
       </Routes>
       <Footer />
-    </div>
+    </>
   )
 }
 

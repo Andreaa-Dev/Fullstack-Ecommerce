@@ -1,12 +1,12 @@
 import React from 'react'
 
-import { CustomizedTitle } from '../customizedCSS'
+import { CustomizedText } from '../customizedCSS'
 import workshopImg from '../images/workshopImg.webp'
 
 function WorkShop() {
   return (
     <div>
-      <CustomizedTitle>THE PERSONALISATION WORKSHOP </CustomizedTitle>
+      <CustomizedText>THE PERSONALISATION WORKSHOP</CustomizedText>
       <img src={workshopImg} alt="" />
     </div>
   )

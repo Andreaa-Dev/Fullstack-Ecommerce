@@ -2,6 +2,13 @@ import { Link } from 'react-router-dom'
 import { styled } from '@mui/material/styles'
 import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline'
 import { Box, Button, Typography } from '@mui/material'
+import { createTheme } from '@mui/system'
+
+export const themes = createTheme({
+  typography: {
+    fontFamily: ['Open Sans Condensed', 'sans-serif'].join(','),
+  },
+})
 
 export const CustomizedLink = styled(Link)`
   text-decoration: none;
@@ -39,6 +46,13 @@ export const CustomizedLPlayIcon = styled(PlayCircleOutlineIcon)`
 
 export const CustomizedTitle = styled(Typography)`
   color: white;
+  text-align: center;
+  margin: 10px;
+  font-family: 'Open Sans Condensed', sans-serif;
+`
+
+export const CustomizedText = styled(Typography)`
+  color: black;
   text-align: center;
   margin: 10px;
 `

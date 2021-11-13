@@ -6,7 +6,7 @@ import { Box } from '@mui/system'
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
 import { giftImgList } from '../../misc/giftImgList'
-import { CustomizedText } from '../customizedCSS'
+import { CustomizedText, CustomizedTitle } from '../customizedCSS'
 
 function Gift() {
   const settings = {
@@ -23,10 +23,10 @@ function Gift() {
       sx={{
         paddingLeft: '150px',
         paddingRight: '150px',
-        margin: '20px',
+        margin: '50px',
       }}
     >
-      <CustomizedText variant="h5">YOUR GIFTS MADE BEAUTIFUL</CustomizedText>
+      <CustomizedTitle color="black">YOUR GIFTS MADE BEAUTIFUL</CustomizedTitle>
       <CustomizedText>
         Custom engraving, personalised message, express delivery… Dior has
         thought of everything to make your Holidays gifts unforgettable.
@@ -40,7 +40,15 @@ function Gift() {
                 marginTop: '10',
               }}
             >
-              <img src={item.name} alt="" height="324px" width="300px" />
+              <Box sx={{ margin: 1 }}>
+                <img
+                  src={item.name}
+                  alt={item.description}
+                  height="324px"
+                  width="300px"
+                />
+              </Box>
+
               <CustomizedText> {item.description}</CustomizedText>
             </Box>
           )

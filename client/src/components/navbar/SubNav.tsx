@@ -5,6 +5,7 @@ import { MenuItem, Typography } from '@mui/material'
 
 import lipstick from '../images/lipstick.webp'
 import palette from '../images/palette.jpeg'
+import { CustomizedText, CustomizedTitle } from '../customizedCSS'
 
 function SubNav() {
   const [anchorEl, setAnchorEl] = useState({
@@ -34,7 +35,7 @@ function SubNav() {
         p: 5,
       }}
     >
-      <Typography
+      <CustomizedText
         aria-owns={open ? 'lipStick' : undefined}
         aria-haspopup="true"
         onMouseEnter={(event: any) => {
@@ -46,7 +47,7 @@ function SubNav() {
         sx={{ borderBottomColor: 'black' }}
       >
         LIPSTICK
-      </Typography>
+      </CustomizedText>
       <Popover
         id="lipStick"
         sx={{
@@ -73,7 +74,7 @@ function SubNav() {
         </div>
       </Popover>
 
-      <Typography
+      <CustomizedText
         aria-owns={open ? 'foundation' : undefined}
         aria-haspopup="true"
         onMouseEnter={(event: any) => {
@@ -84,7 +85,7 @@ function SubNav() {
         }}
       >
         FOUNDATION
-      </Typography>
+      </CustomizedText>
       <Popover
         id="foundation"
         sx={{
@@ -110,7 +111,7 @@ function SubNav() {
         </div>
       </Popover>
 
-      <Typography
+      <CustomizedText
         aria-owns={open ? 'palette' : undefined}
         aria-haspopup="true"
         onMouseEnter={(event: any) => {
@@ -122,7 +123,7 @@ function SubNav() {
         sx={{ borderBottomColor: 'black' }}
       >
         EYES PALETTES
-      </Typography>
+      </CustomizedText>
       <Popover
         id="palette"
         sx={{
@@ -148,7 +149,7 @@ function SubNav() {
         </div>
       </Popover>
 
-      <Typography
+      <CustomizedText
         aria-owns={open ? 'eyesBrown' : undefined}
         aria-haspopup="true"
         onMouseEnter={(event: any) => {
@@ -160,7 +161,7 @@ function SubNav() {
         sx={{ borderBottomColor: 'black' }}
       >
         EYESBROWNS
-      </Typography>
+      </CustomizedText>
       <Popover
         id="eyesbrown"
         sx={{
@@ -185,7 +186,7 @@ function SubNav() {
         </div>
       </Popover>
 
-      <Typography
+      <CustomizedText
         aria-owns={open ? 'mascara' : undefined}
         aria-haspopup="true"
         onMouseEnter={(event: any) => {
@@ -197,7 +198,7 @@ function SubNav() {
         sx={{ borderBottomColor: 'black' }}
       >
         MASCARA
-      </Typography>
+      </CustomizedText>
       <Popover
         id="mascara"
         sx={{
@@ -222,7 +223,7 @@ function SubNav() {
         </div>
       </Popover>
 
-      <Typography
+      <CustomizedText
         aria-owns={open ? 'nailPolish' : undefined}
         aria-haspopup="true"
         onMouseEnter={(event: any) => {
@@ -234,7 +235,7 @@ function SubNav() {
         sx={{ borderBottomColor: 'black' }}
       >
         NAIL POLISH
-      </Typography>
+      </CustomizedText>
       <Popover
         id="mascara"
         sx={{

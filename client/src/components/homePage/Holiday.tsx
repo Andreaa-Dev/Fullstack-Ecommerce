@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, ThemeProvider } from '@mui/system'
+import { Box } from '@mui/system'
 
 import mainImg from '../images/mainPage.webp'
 import subImg1 from '../images/subImg1.webp'
@@ -7,7 +7,6 @@ import subImg2 from '../images/subImg2.webp'
 import subImg3 from '../images/subImg3.webp'
 import background from '../images/background.webp'
 import { CustomizedTitle, CustomizedButton, BoxColumn } from '../customizedCSS'
-import { themes } from '../customizedCSS/index'
 
 function Holiday() {
   return (
@@ -17,9 +16,7 @@ function Holiday() {
         <CustomizedButton>DISCOVER</CustomizedButton>
       </Box>
       <Box>
-        <ThemeProvider theme={themes}>
-          <CustomizedTitle variant="h5">HOLIDAY LOOK</CustomizedTitle>
-        </ThemeProvider>
+        <CustomizedTitle color="white">HOLIDAY LOOK</CustomizedTitle>
 
         <Box
           sx={{

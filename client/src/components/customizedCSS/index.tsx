@@ -13,6 +13,8 @@ export const themes = createTheme({
 export const CustomizedLink = styled(Link)`
   text-decoration: none;
   color: black;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
 `
 
 export const BoxColumn = styled(Box)`
@@ -36,6 +38,7 @@ export const CustomizedButton = styled(Button)`
   border: 1px white solid;
   margin: 20px;
   width: 150px;
+  font-family: 'Open Sans Condensed', sans-serif;
 `
 
 export const CustomizedLPlayIcon = styled(PlayCircleOutlineIcon)`
@@ -45,14 +48,14 @@ export const CustomizedLPlayIcon = styled(PlayCircleOutlineIcon)`
 `
 
 export const CustomizedTitle = styled(Typography)`
-  color: white;
   text-align: center;
   margin: 10px;
   font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2rem;
 `
 
 export const CustomizedText = styled(Typography)`
-  color: black;
   text-align: center;
   margin: 10px;
+  font-family: 'Open Sans Condensed', sans-serif;
 `

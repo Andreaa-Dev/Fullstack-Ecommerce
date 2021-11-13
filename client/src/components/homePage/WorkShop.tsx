@@ -1,14 +1,15 @@
+import { Box } from '@mui/system'
 import React from 'react'
 
-import { CustomizedText } from '../customizedCSS'
+import { CustomizedTitle } from '../customizedCSS'
 import workshopImg from '../images/workshopImg.webp'
 
 function WorkShop() {
   return (
-    <div>
-      <CustomizedText>THE PERSONALISATION WORKSHOP</CustomizedText>
+    <Box sx={{ marginTop: '50px', marginBottom: '50px' }}>
+      <CustomizedTitle>THE PERSONALISATION WORKSHOP</CustomizedTitle>
       <img src={workshopImg} alt="" />
-    </div>
+    </Box>
   )
 }
 

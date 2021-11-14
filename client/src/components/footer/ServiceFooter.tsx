@@ -3,13 +3,14 @@ import { Box, Typography } from '@mui/material'
 import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined'
 import ReplayOutlinedIcon from '@mui/icons-material/ReplayOutlined'
 import CardGiftcardOutlinedIcon from '@mui/icons-material/CardGiftcardOutlined'
+import { CustomizedText, CustomizedTitle } from '../customizedCSS'
 
 function ServiceFooter() {
   return (
     <Box sx={{ backgroundColor: 'black', color: 'white', p: 15 }}>
-      <Typography sx={{ textAlign: 'center', mb: 5 }}>
+      <CustomizedTitle sx={{ textAlign: 'center', mb: 5 }}>
         THE E-BOUTIQUE SERVICES
-      </Typography>
+      </CustomizedTitle>
       <Box
         sx={{
           display: 'grid',
@@ -24,8 +25,8 @@ function ServiceFooter() {
           }}
         >
           <LocalShippingOutlinedIcon />
-          <Typography>FREE DELIVERY</Typography>
-          <Typography>Free custom duty</Typography>
+          <CustomizedTitle>FREE DELIVERY</CustomizedTitle>
+          <CustomizedText>Free custom duty</CustomizedText>
         </Box>
         <Box
           sx={{
@@ -34,10 +35,10 @@ function ServiceFooter() {
           }}
         >
           <ReplayOutlinedIcon />
-          <Typography>FREE RETURN</Typography>
-          <Typography>
+          <CustomizedTitle>FREE RETURN</CustomizedTitle>
+          <CustomizedText>
             Enjoy complimentary Standard shipping, with free Customs duty
-          </Typography>
+          </CustomizedText>
         </Box>
         <Box
           sx={{
@@ -46,11 +47,11 @@ function ServiceFooter() {
           }}
         >
           <CardGiftcardOutlinedIcon />
-          <Typography>ART OF GIFTING</Typography>
-          <Typography>
+          <CustomizedTitle>ART OF GIFTING</CustomizedTitle>
+          <CustomizedText>
             Your order will be presented in an iconic Dior gift box and
             accompanied by a personalised message
-          </Typography>
+          </CustomizedText>
         </Box>
       </Box>
     </Box>

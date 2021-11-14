@@ -1,17 +1,18 @@
 import { Typography } from '@mui/material'
 import React from 'react'
+import { CustomizedText } from '../../customizedCSS'
 
 function ContactFooter() {
   return (
     <div>
-      <Typography>Contact</Typography>
-      <Typography>Delivery & returns</Typography>
-      <Typography>FAQ</Typography>
-      <Typography>Legal terms and conditions</Typography>
-      <Typography>Data protection</Typography>{' '}
-      <Typography>Cookie management</Typography>{' '}
-      <Typography>General Sales Condition</Typography>{' '}
-      <Typography>Careers</Typography>
+      <CustomizedText>Contact</CustomizedText>
+      <CustomizedText>Delivery & returns</CustomizedText>
+      <CustomizedText>FAQ</CustomizedText>
+      <CustomizedText>Legal terms and conditions</CustomizedText>
+      <CustomizedText>Data protection</CustomizedText>{' '}
+      <CustomizedText>Cookie management</CustomizedText>{' '}
+      <CustomizedText>General Sales Condition</CustomizedText>{' '}
+      <CustomizedText>Careers</CustomizedText>
     </div>
   )
 }

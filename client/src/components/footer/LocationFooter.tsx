@@ -11,7 +11,7 @@ import SearchIcon from '@mui/icons-material/Search'
 import DirectionsIcon from '@mui/icons-material/Directions'
 
 import location from '../images/location.webp'
-import { CustomizedTitle } from '../customizedCSS'
+import { CustomizedText, CustomizedTitle } from '../customizedCSS'
 
 function LocationFooter() {
   return (
@@ -28,7 +28,9 @@ function LocationFooter() {
         height: '100%',
       }}
     >
-      <Typography sx={{ marginBottom: 5 }}>OUR BOUTIQUES</Typography>
+      <CustomizedText variant="h5" sx={{ marginBottom: 5 }}>
+        OUR BOUTIQUES
+      </CustomizedText>
 
       <Paper
         component="form"

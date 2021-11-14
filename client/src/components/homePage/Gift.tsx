@@ -26,7 +26,9 @@ function Gift() {
         margin: '50px',
       }}
     >
-      <CustomizedTitle color="black">YOUR GIFTS MADE BEAUTIFUL</CustomizedTitle>
+      <CustomizedText variant="h5" color="black">
+        YOUR GIFTS MADE BEAUTIFUL
+      </CustomizedText>
       <CustomizedText>
         Custom engraving, personalised message, express delivery… Dior has
         thought of everything to make your Holidays gifts unforgettable.

@@ -9,10 +9,18 @@ import ProductDetail from './components/productDetail/ProductDetail'
 import ProductPage from './components/product/ProductPage'
 import CreateAccount from './components/user/createAccount/CreateAccount'
 import ProductByCategory from './components/product/ProductByCategory'
+import { ThemeProvider } from '@emotion/react'
+import { createTheme } from '@mui/system'
 
+// export const theme = createTheme({
+//   typography: {
+//     fontFamily: ['Open Sans Condensed', 'sans-serif'].join(','),
+//   },
+// })
 function App() {
   return (
-    <>
+    // <ThemeProvider theme={theme}>
+    <div>
       <NavBar />
       <Routes>
         <Route path="" element={<HomePage />} />
@@ -22,7 +30,8 @@ function App() {
         <Route path="/createAccount" element={<CreateAccount />} />
       </Routes>
       <Footer />
-    </>
+    </div>
+    // </ThemeProvider>
   )
 }
 

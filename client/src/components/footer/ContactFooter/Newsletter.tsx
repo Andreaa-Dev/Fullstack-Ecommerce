@@ -1,13 +1,16 @@
-import { TextField, Typography } from '@mui/material'
+import { TextField } from '@mui/material'
 import React from 'react'
+import { CustomizedText } from '../../customizedCSS'
 
 function Newsletter() {
   return (
     <div>
-      <Typography variant="h6" fontWeight="bold">
+      <CustomizedText variant="h6" fontWeight="bold">
         NEWSLETTER
-      </Typography>
-      <Typography>Sign up to receive exclusive updates and content</Typography>
+      </CustomizedText>
+      <CustomizedText>
+        Sign up to receive exclusive updates and content
+      </CustomizedText>
       <TextField
         id="standard-basic"
         label="Your email address"

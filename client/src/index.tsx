@@ -5,17 +5,31 @@ import App from './App'
 import reportWebVitals from './reportWebVitals'
 import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
+import { ThemeProvider } from '@emotion/react'
 
 import makeStore from './redux/store'
+import { createTheme } from '@mui/system'
+
+const THEME = createTheme({
+  typography: {
+    fontFamily: `'Open Sans Condensed', sans-serif
+    `,
+    fontSize: 14,
+    fontWeightLight: 300,
+    fontWeightRegular: 400,
+    fontWeightMedium: 500,
+  },
+})
 
 const store = makeStore()
 ReactDOM.render(
+  // <ThemeProvider theme={THEME}>
   <Provider store={store}>
     <BrowserRouter>
       <App />
     </BrowserRouter>
   </Provider>,
-
+  // </ThemeProvider>,
   document.getElementById('root')
 )
 

@@ -3,6 +3,7 @@ import Box from '@mui/material/Box'
 import TextField from '@mui/material/TextField'
 import MenuItem from '@mui/material/MenuItem'
 import { Typography } from '@mui/material'
+import { CustomizedText } from '../../customizedCSS'
 
 const currencies = [
   {
@@ -39,7 +40,7 @@ export default function RegionFooter() {
       noValidate
       autoComplete="off"
     >
-      <Typography>COUNTRY / REGION</Typography>
+      <CustomizedText>COUNTRY / REGION</CustomizedText>
       <TextField
         id="outlined-select-currency"
         select

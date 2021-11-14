@@ -2,27 +2,37 @@ import React from 'react'
 import { Typography } from '@mui/material'
 import { Box } from '@mui/system'
 
-import PasswordAccount from './PasswordAccount'
-import EmailAccount from './EmailAccount'
-import { BoxColumn, BoxRow } from '../../customizedCSS'
+import PasswordAccount from './userID/PasswordAccount'
+import EmailAccount from './userID/EmailAccount'
+import { BoxColumn, BoxRow, CustomizedText } from '../../customizedCSS'
+import ShippingAddress from './shippingAddress'
 
 function CreateAccount() {
   return (
-    <BoxColumn
-      component="form"
+    <Box
       sx={{
-        p: 4,
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'flex-start',
       }}
     >
-      <Typography variant="h4">YOUR ACCOUNT</Typography>
-      <Typography>Create your Dior account</Typography>
-      <Typography> * Required fields</Typography>
+      <BoxColumn component="form">
+        <CustomizedText variant="h4">YOUR ACCOUNT</CustomizedText>
+        <CustomizedText>Create your Dior account</CustomizedText>
+        <BoxRow>
+          <CustomizedText> YOUR USER ID</CustomizedText>
+          <CustomizedText> * Required fields</CustomizedText>
+        </BoxRow>
 
-      <BoxRow>
-        <EmailAccount />
-        <PasswordAccount />
-      </BoxRow>
-    </BoxColumn>
+        <BoxRow>
+          <EmailAccount />
+          <PasswordAccount />
+        </BoxRow>
+      </BoxColumn>
+      <BoxColumn>
+        <ShippingAddress />
+      </BoxColumn>
+    </Box>
   )
 }
 

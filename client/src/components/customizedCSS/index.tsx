@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom'
-import { styled } from '@mui/material/styles'
+import { createTheme, styled } from '@mui/material/styles'
 import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline'
 import { Box, Button, Typography } from '@mui/material'
-import { createTheme } from '@mui/system'
 
 export const themes = createTheme({
   typography: {
@@ -23,6 +22,11 @@ export const BoxColumn = styled(Box)`
   justify-content: center;
   align-items: center;
 `
+export const BoxColumnStart = styled(Box)`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+`
 
 export const BoxRow = styled(Box)`
   display: flex;
@@ -30,6 +34,7 @@ export const BoxRow = styled(Box)`
   justify-content: center;
   align-items: center;
 `
+
 export const CustomizedButton = styled(Button)`
   color: white;
   border-radius: 20px;
@@ -52,6 +57,16 @@ export const CustomizedTitle = styled(Typography)`
   margin: 10px;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 2rem;
+  background-image: linear-gradient(
+    92deg,
+    #a48b5e -31%,
+    #ce944a -7%,
+    #d8a965 11%,
+    #f9f3e2 121%,
+    #f4e3af 132%
+  );
+  background-clip: text;
+  text-fill-color: transparent;
 `
 
 export const CustomizedText = styled(Typography)`

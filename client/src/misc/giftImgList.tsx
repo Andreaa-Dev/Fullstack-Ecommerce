@@ -1,5 +1,3 @@
-import { Description } from '@mui/icons-material'
-
 export const giftImgList = [
   {
     name: 'https://www.dior.com/couture/var/dior/storage/images/horizon/gifts/fragrance-beauty/holidays-in-dior/xmas-21-menu/gift-finder/image-videos-slider/slider-item-engrave-a-date-or-a-name/27914084-1-eng-US/slider-item-engrave-a-date-or-a-name_1440_1200.jpg',

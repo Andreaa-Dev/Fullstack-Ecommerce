@@ -2,10 +2,17 @@ import React from 'react'
 import { Typography } from '@mui/material'
 import { Box } from '@mui/system'
 
-import PasswordAccount from './userID/PasswordAccount'
-import EmailAccount from './userID/EmailAccount'
-import { BoxColumn, BoxRow, CustomizedText } from '../../customizedCSS'
+import {
+  BoxColumn,
+  BoxRow,
+  CustomizedButton,
+  CustomizedText,
+} from '../../customizedCSS'
+
+import UserId from './userID'
 import ShippingAddress from './shippingAddress'
+import Policy from './policy'
+import { policy } from '../../../misc/policy'
 
 function CreateAccount() {
   return (
@@ -16,22 +23,26 @@ function CreateAccount() {
         justifyContent: 'flex-start',
       }}
     >
-      <BoxColumn component="form">
+      <BoxColumn>
         <CustomizedText variant="h4">YOUR ACCOUNT</CustomizedText>
         <CustomizedText>Create your Dior account</CustomizedText>
-        <BoxRow>
+        <Box>
           <CustomizedText> YOUR USER ID</CustomizedText>
           <CustomizedText> * Required fields</CustomizedText>
-        </BoxRow>
+        </Box>
 
-        <BoxRow>
-          <EmailAccount />
-          <PasswordAccount />
-        </BoxRow>
+        <Box>
+          <UserId />
+          <ShippingAddress />
+          <Policy />
+        </Box>
       </BoxColumn>
       <BoxColumn>
-        <ShippingAddress />
+        <CustomizedButton>CREATE AN ACCOUNT</CustomizedButton>
       </BoxColumn>
+      <CustomizedText sx={{ textAlign: 'justify' }}>
+        {policy.name}
+      </CustomizedText>
     </Box>
   )
 }

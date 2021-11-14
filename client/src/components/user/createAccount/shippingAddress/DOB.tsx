@@ -15,7 +15,7 @@ export default function MaterialUIPickers() {
   }
 
   return (
-    <Box sx={{ marginTop: 5 }}>
+    <Box sx={{ marginTop: 4 }}>
       <LocalizationProvider dateAdapter={AdapterDateFns}>
         <DesktopDatePicker
           label="dd.mm.yyyy"

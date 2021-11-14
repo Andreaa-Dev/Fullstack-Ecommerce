@@ -1,18 +1,28 @@
+import { Box } from '@mui/material'
 import React from 'react'
 
 import { BoxRow, CustomizedText } from '../../../customizedCSS'
 import Checkboxes from './CheckBox'
 
 type ItemPropType = {
-  name: string
+  item: {
+    name: string
+  }
 }
 
-function SubItem(item: ItemPropType) {
+// props = { item: { name: string } }
+function SubItem({ item }: ItemPropType) {
   return (
-    <div>
+    <Box
+      sx={{
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'flex-start',
+      }}
+    >
       <Checkboxes />
       <CustomizedText> {item.name}</CustomizedText>
-    </div>
+    </Box>
   )
 }
 

@@ -6,7 +6,13 @@ import UserDetailInformation from './UserDetailInformation'
 
 function index() {
   return (
-    <Box>
+    <Box
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'flex-start',
+      }}
+    >
       <UserDetailInformation />
       <DOB />
     </Box>

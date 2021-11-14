@@ -5,6 +5,7 @@ import NavIcon from './NavIcon'
 import SubNav from './SubNav'
 import SearchProduct from './SearchProduct'
 import { CustomizedLink } from '../customizedCSS'
+import Logo from './Logo'
 
 function NavBar() {
   return (
@@ -17,9 +18,7 @@ function NavBar() {
         }}
       >
         <SearchProduct />
-        <Typography variant="h4">
-          <CustomizedLink to="/">DIOR</CustomizedLink>
-        </Typography>
+        <Logo />
         <NavIcon />
       </Box>
       <SubNav />

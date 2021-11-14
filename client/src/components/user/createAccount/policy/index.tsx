@@ -1,16 +1,28 @@
 import React from 'react'
-import { BoxRow } from '../../../customizedCSS'
+
+import { BoxColumn, BoxRow } from '../../../customizedCSS'
 import { policyList } from '../../../../misc/policyList'
 import SubItem from './SubItem'
+import { Box } from '@mui/system'
 
 type ItemType = {
   name: string
 }
 
 function index() {
-  policyList.map((item: ItemType) => {
-    return <SubItem item={item} />
-  })
+  return (
+    <Box
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'flex-start',
+      }}
+    >
+      {policyList.map((item: ItemType) => {
+        return <SubItem item={item} />
+      })}
+    </Box>
+  )
 }
 
 export default index

@@ -7,7 +7,7 @@ import InputAdornment from '@mui/material/InputAdornment'
 import FormControl from '@mui/material/FormControl'
 import Visibility from '@mui/icons-material/Visibility'
 import VisibilityOff from '@mui/icons-material/VisibilityOff'
-import { Typography } from '@mui/material'
+import { OutlinedInput, Typography } from '@mui/material'
 
 interface State {
   amount: string
@@ -48,7 +48,7 @@ export default function InputAdornments() {
     <Box sx={{ display: 'flex', flexWrap: 'wrap' }}>
       <FormControl sx={{ m: 2, width: '35ch' }} variant="outlined">
         <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
-        <Input
+        <OutlinedInput
           id="outlined-adornment-password"
           type={values.showPassword ? 'text' : 'password'}
           value={values.password}

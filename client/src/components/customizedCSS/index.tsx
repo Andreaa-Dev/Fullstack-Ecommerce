@@ -2,10 +2,17 @@ import { Link } from 'react-router-dom'
 import { createTheme, styled } from '@mui/material/styles'
 import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline'
 import { Box, Button, Typography } from '@mui/material'
+import { makeStyles } from '@mui/styles'
 
 export const themes = createTheme({
   typography: {
     fontFamily: ['Open Sans Condensed', 'sans-serif'].join(','),
+  },
+})
+
+export const useStyles = makeStyles({
+  typography: {
+    fontFamily: 'Open Sans Condensed',
   },
 })
 

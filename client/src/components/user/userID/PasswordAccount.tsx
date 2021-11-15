@@ -1,13 +1,14 @@
-import * as React from 'react'
+import React, { useState } from 'react'
 import Box from '@mui/material/Box'
 import IconButton from '@mui/material/IconButton'
-import Input from '@mui/material/Input'
 import InputLabel from '@mui/material/InputLabel'
 import InputAdornment from '@mui/material/InputAdornment'
 import FormControl from '@mui/material/FormControl'
 import Visibility from '@mui/icons-material/Visibility'
 import VisibilityOff from '@mui/icons-material/VisibilityOff'
 import { OutlinedInput, Typography } from '@mui/material'
+
+import { useStyles } from '../../customizedCSS'
 
 interface State {
   amount: string
@@ -18,7 +19,9 @@ interface State {
 }
 
 export default function InputAdornments() {
-  const [values, setValues] = React.useState<State>({
+  const classes = useStyles()
+
+  const [values, setValues] = useState<State>({
     amount: '',
     password: '',
     weight: '',
@@ -47,7 +50,12 @@ export default function InputAdornments() {
   return (
     <Box sx={{ display: 'flex', flexWrap: 'wrap' }}>
       <FormControl sx={{ m: 2, width: '35ch' }} variant="outlined">
-        <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
+        <InputLabel
+          classes={{ root: classes.typography }}
+          htmlFor="outlined-adornment-password"
+        >
+          Password
+        </InputLabel>
         <OutlinedInput
           id="outlined-adornment-password"
           type={values.showPassword ? 'text' : 'password'}

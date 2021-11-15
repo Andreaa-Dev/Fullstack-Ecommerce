@@ -1,11 +1,13 @@
+import React from 'react'
 import { TextField } from '@mui/material'
 import { Box } from '@mui/system'
-import React from 'react'
 import { BoxColumn, BoxColumnStart, BoxRow } from '../../customizedCSS'
 
-import OptionalInformation from './OptionalInformation'
+import { useStyles } from '../../customizedCSS/index'
 
 function UserDetailInformation() {
+  const classes = useStyles()
+
   return (
     <Box>
       <BoxRow
@@ -13,8 +15,26 @@ function UserDetailInformation() {
           '& > :not(style)': { m: 2, width: '35ch' },
         }}
       >
-        <TextField id="standard-basic" label="*First name" variant="outlined" />
-        <TextField id="standard-basic" label="*Last name" variant="outlined" />
+        <TextField
+          InputLabelProps={{
+            classes: {
+              root: classes.typography,
+            },
+          }}
+          id="standard-basic"
+          label="*First name"
+          variant="outlined"
+        />
+        <TextField
+          InputLabelProps={{
+            classes: {
+              root: classes.typography,
+            },
+          }}
+          id="standard-basic"
+          label="*Last name"
+          variant="outlined"
+        />
       </BoxRow>
     </Box>
   )

@@ -4,7 +4,7 @@ import React from 'react'
 function ProductRecently() {
   return (
     <div>
-      <Typography>RECENTLY</Typography>
+      <Typography>RECENTLY VIEWED</Typography>
     </div>
   )
 }

@@ -9,6 +9,8 @@ import ProductDetail from './components/productDetail/ProductDetail'
 import ProductPage from './components/product/ProductPage'
 import CreateAccount from './components/user/CreateAccount'
 import ProductByCategory from './components/product/ProductByCategory'
+import Cart from './components/cart'
+
 import { ThemeProvider } from '@emotion/react'
 import { createTheme } from '@mui/system'
 
@@ -28,6 +30,7 @@ function App() {
         <Route path="/productDetail" element={<ProductDetail />} />
         <Route path="/productCategory" element={<ProductByCategory />} />
         <Route path="/createAccount" element={<CreateAccount />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
       <Footer />
     </div>

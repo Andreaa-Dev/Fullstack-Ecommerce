@@ -21,12 +21,16 @@ function NavIcon() {
       <Badge badgeContent={1} color="primary">
         <FavoriteBorderIcon color="action" />
       </Badge>
+
+      <CustomizedLink to="/cart">
+        <Badge badgeContent={4} color="primary">
+          <LocalMallOutlinedIcon color="action" />
+        </Badge>
+      </CustomizedLink>
+
       <CustomizedLink to="/createAccount">
         <PersonOutlineOutlinedIcon />
       </CustomizedLink>
-      <Badge badgeContent={4} color="primary">
-        <LocalMallOutlinedIcon color="action" />
-      </Badge>
     </Box>
   )
 }

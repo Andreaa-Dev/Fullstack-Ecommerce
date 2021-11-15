@@ -72,9 +72,9 @@ function SubNav() {
       >
         <img src={lipstick} alt="Lipstick" height="300" width="300" />
         <div>
-          <MenuItem>LIP GLOSSES</MenuItem>
-          <MenuItem>MATTE ANS SATIN LIPSTICK</MenuItem>
-          <MenuItem>LIP BALMS</MenuItem>
+          <CustomizedText>LIP GLOSSES</CustomizedText>
+          <CustomizedText>MATTE ANS SATIN LIPSTICK</CustomizedText>
+          <CustomizedText>LIP BALMS</CustomizedText>
         </div>
       </Popover>
 
@@ -109,9 +109,9 @@ function SubNav() {
         disableRestoreFocus
       >
         <div>
-          <MenuItem>FLUID FOUNDATIONS</MenuItem>
-          <MenuItem>CUSHION</MenuItem>
-          <MenuItem>COMPACT FOUNDATIONS </MenuItem>
+          <CustomizedText>FLUID FOUNDATIONS</CustomizedText>
+          <CustomizedText>CUSHION</CustomizedText>
+          <CustomizedText>COMPACT FOUNDATIONS </CustomizedText>
         </div>
       </Popover>
 
@@ -147,8 +147,8 @@ function SubNav() {
         disableRestoreFocus
       >
         <div>
-          <MenuItem>LIMITED EDITION</MenuItem>
-          <MenuItem>DIOR BACKSTAGE</MenuItem>
+          <CustomizedText>LIMITED EDITION</CustomizedText>
+          <CustomizedText>DIOR BACKSTAGE</CustomizedText>
           <img src={palette} alt="Lipstick" height="300" width="400" />
         </div>
       </Popover>
@@ -185,8 +185,8 @@ function SubNav() {
         disableRestoreFocus
       >
         <div>
-          <MenuItem>DIOR SHOW</MenuItem>
-          <MenuItem>DIOR BOLD BROW</MenuItem>
+          <CustomizedText>DIOR SHOW</CustomizedText>
+          <CustomizedText>DIOR BOLD BROW</CustomizedText>
         </div>
       </Popover>
 
@@ -222,8 +222,8 @@ function SubNav() {
         disableRestoreFocus
       >
         <div>
-          <MenuItem>DIORSHOW PUMP 'N' VOLUME HD</MenuItem>
-          <MenuItem>WATERPROOF</MenuItem>
+          <CustomizedText>DIORSHOW PUMP 'N' VOLUME HD</CustomizedText>
+          <CustomizedText>WATERPROOF</CustomizedText>
         </div>
       </Popover>
 
@@ -259,9 +259,9 @@ function SubNav() {
         disableRestoreFocus
       >
         <div>
-          <MenuItem>LIMITED EDITION</MenuItem>
-          <MenuItem>DIOR VERNIS</MenuItem>
-          <MenuItem>ALL PRODUCTS</MenuItem>
+          <CustomizedText>LIMITED EDITION</CustomizedText>
+          <CustomizedText>DIOR VERNIS</CustomizedText>
+          <CustomizedText>ALL PRODUCTS</CustomizedText>
         </div>
       </Popover>
 
@@ -298,9 +298,9 @@ function SubNav() {
       >
         <div>
           <img src={gift} alt="Gift" height="250" width="650" />
-          <MenuItem>ATELIER</MenuItem>
-          <MenuItem>GIFT SETS</MenuItem>
-          <MenuItem>SERVICES</MenuItem>
+          <CustomizedText>ATELIER</CustomizedText>
+          <CustomizedText>GIFT SETS</CustomizedText>
+          <CustomizedText>SERVICES</CustomizedText>
         </div>
       </Popover>
 
@@ -336,9 +336,9 @@ function SubNav() {
         disableRestoreFocus
       >
         <div>
-          <MenuItem>NEWS</MenuItem>
-          <MenuItem>FASHIONS SHOW</MenuItem>
-          <MenuItem>HISTORY & SAVOIR-FAIRE </MenuItem>
+          <CustomizedText>NEWS</CustomizedText>
+          <CustomizedText>FASHIONS SHOW</CustomizedText>
+          <CustomizedText>HISTORY & SAVOIR-FAIRE </CustomizedText>
           <img
             src={history}
             alt="Christian Dior History"

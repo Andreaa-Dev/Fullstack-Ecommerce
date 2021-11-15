@@ -25,6 +25,8 @@ function CreateAccount() {
         maxWidth: '52.5rem',
         m: 'auto',
         p: 2,
+        mt: 5,
+        mb: 10,
       }}
     >
       <BoxColumn>

@@ -6,17 +6,15 @@ import ProductService from '../services/product'
 import data from '../../data.json'
 
 //map cant use async
-
 export const seedProduct = async (
   req: Request,
   res: Response,
   next: NextFunction
 ) => {
-  console.log('runnnn')
   try {
     data.forEach(async (product) => {
-      console.log('running', product)
       const seedProduct = new Product({
+        category: product.product_type,
         name: product.name,
         price: Number(product.price),
         imageLink: product.image_link,
@@ -126,13 +124,17 @@ export const findById = async (
 }
 
 // GET / product
+// /api/v1/product?category=lib&price=10
 export const findAll = async (
   req: Request,
   res: Response,
   next: NextFunction
 ) => {
+  // query = { category: string, price: string }
+  const category = req.query.category as string | undefined
+  console.log(category, 'e')
   try {
-    res.json(await ProductService.findAll())
+    res.json(await ProductService.findAll(category))
   } catch (error) {
     if (error instanceof Error && error.name == 'ValidationError') {
       next(new BadRequestError('Invalid Request', error))

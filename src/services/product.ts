@@ -17,8 +17,10 @@ const findById = async (productId: string): Promise<ProductDocument> => {
   return foundProduct
 }
 
-//publishedYear: -1
-const findAll = async (): Promise<ProductDocument[]> => {
+const findAll = async (category?: string): Promise<ProductDocument[]> => {
+  if (category) {
+    return Product.find({ category: category }).sort({ name: 1 })
+  }
   return Product.find().sort({ name: 1 })
 }
 

@@ -4,6 +4,7 @@ import mongoose, { Document } from 'mongoose'
 //add types for mongoose
 export type ProductDocument = Document & {
   _id: string
+  category: string
   name: string
   price: number
   imageLink: string
@@ -26,6 +27,10 @@ const VariantSchema = new mongoose.Schema({
 
 const ProductSchema = new mongoose.Schema({
   name: {
+    type: String,
+    required: true,
+  },
+  category: {
     type: String,
     required: true,
   },

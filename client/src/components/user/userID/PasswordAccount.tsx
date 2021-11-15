@@ -46,10 +46,10 @@ export default function InputAdornments() {
 
   return (
     <Box sx={{ display: 'flex', flexWrap: 'wrap' }}>
-      <FormControl sx={{ m: 2, width: '25ch' }} variant="standard">
-        <InputLabel htmlFor="standard-adornment-password">Password</InputLabel>
+      <FormControl sx={{ m: 2, width: '35ch' }} variant="outlined">
+        <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
         <Input
-          id="standard-adornment-password"
+          id="outlined-adornment-password"
           type={values.showPassword ? 'text' : 'password'}
           value={values.password}
           onChange={handleChange('password')}
@@ -59,6 +59,7 @@ export default function InputAdornments() {
                 aria-label="toggle password visibility"
                 onClick={handleClickShowPassword}
                 onMouseDown={handleMouseDownPassword}
+                edge="end"
               >
                 {values.showPassword ? <VisibilityOff /> : <Visibility />}
               </IconButton>

@@ -1,7 +1,7 @@
 import { Box } from '@mui/material'
 import React from 'react'
 
-import { BoxRow, CustomizedText } from '../../../customizedCSS'
+import { BoxRow, CustomizedText } from '../../customizedCSS'
 import Checkboxes from './CheckBox'
 
 type ItemPropType = {
@@ -10,7 +10,6 @@ type ItemPropType = {
   }
 }
 
-// props = { item: { name: string } }
 function SubItem({ item }: ItemPropType) {
   return (
     <Box

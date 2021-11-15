@@ -1,7 +1,8 @@
-import { Box } from '@mui/material'
+import { Box, TextField } from '@mui/material'
 import React from 'react'
-import { BoxColumn, BoxRow } from '../../../customizedCSS'
+import { BoxColumn, BoxRow, CustomizedText } from '../../customizedCSS'
 import DOB from './DOB'
+import OptionalInformation from './OptionalInformation'
 import UserDetailInformation from './UserDetailInformation'
 
 function index() {
@@ -14,6 +15,7 @@ function index() {
       }}
     >
       <UserDetailInformation />
+      <OptionalInformation />
       <DOB />
     </Box>
   )

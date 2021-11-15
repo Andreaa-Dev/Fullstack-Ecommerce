@@ -15,8 +15,15 @@ function Gift() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    prevArrow: <ArrowBackIosIcon sx={{ color: 'black' }} />,
-    nextArrow: <ArrowForwardIosIcon sx={{ color: 'black' }} />,
+    arrows: true,
+    prevArrow: (
+      <ArrowBackIosIcon sx={{ color: 'black', ':hover': { color: 'black' } }} />
+    ),
+    nextArrow: (
+      <ArrowForwardIosIcon
+        sx={{ color: 'black', ':hover': { color: 'black' } }}
+      />
+    ),
   }
   return (
     <Box

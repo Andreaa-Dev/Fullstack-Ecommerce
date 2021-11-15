@@ -1,7 +1,7 @@
 import React from 'react'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined'
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined'
+import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined'
 import { Box } from '@mui/system'
 import { Badge } from '@mui/material'
 
@@ -25,7 +25,7 @@ function NavIcon() {
         <PersonOutlineOutlinedIcon />
       </CustomizedLink>
       <Badge badgeContent={4} color="primary">
-        <ShoppingCartOutlinedIcon color="action" />
+        <LocalMallOutlinedIcon color="action" />
       </Badge>
     </Box>
   )

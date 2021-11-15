@@ -1,31 +1,13 @@
-import * as React from 'react'
+import React, { useState } from 'react'
 import Box from '@mui/material/Box'
 import TextField from '@mui/material/TextField'
 import MenuItem from '@mui/material/MenuItem'
-import { Typography } from '@mui/material'
+
+import { currencies } from '../../../misc/currency'
 import { CustomizedText } from '../../customizedCSS'
 
-const currencies = [
-  {
-    value: 'USD',
-    label: '$',
-  },
-  {
-    value: 'EUR',
-    label: '€',
-  },
-  {
-    value: 'BTC',
-    label: '฿',
-  },
-  {
-    value: 'JPY',
-    label: '¥',
-  },
-]
-
 export default function RegionFooter() {
-  const [currency, setCurrency] = React.useState('EUR')
+  const [currency, setCurrency] = useState('EUR')
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setCurrency(event.target.value)

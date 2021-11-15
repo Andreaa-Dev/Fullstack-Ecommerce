@@ -1,11 +1,13 @@
 import React, { useState, MouseEvent } from 'react'
 import { Box } from '@mui/system'
 import Popover from '@mui/material/Popover'
-import { MenuItem, Typography } from '@mui/material'
+import { MenuItem } from '@mui/material'
 
+import { CustomizedText } from '../customizedCSS'
 import lipstick from '../images/lipstick.webp'
 import palette from '../images/palette.jpeg'
-import { CustomizedText, CustomizedTitle } from '../customizedCSS'
+import history from '../images/history.webp'
+import gift from '../images/gift.webp'
 
 function SubNav() {
   const [anchorEl, setAnchorEl] = useState({
@@ -15,6 +17,8 @@ function SubNav() {
     eyesBrown: null,
     mascara: null,
     nailPolish: null,
+    gift: null,
+    news: null,
   })
 
   const handlePopoverOpen = (event: MouseEvent<HTMLElement>, id: string) => {
@@ -237,7 +241,7 @@ function SubNav() {
         NAIL POLISH
       </CustomizedText>
       <Popover
-        id="mascara"
+        id="nailPolish"
         sx={{
           pointerEvents: 'none',
         }}
@@ -258,6 +262,89 @@ function SubNav() {
           <MenuItem>LIMITED EDITION</MenuItem>
           <MenuItem>DIOR VERNIS</MenuItem>
           <MenuItem>ALL PRODUCTS</MenuItem>
+        </div>
+      </Popover>
+
+      <CustomizedText
+        aria-owns={open ? 'gift' : undefined}
+        aria-haspopup="true"
+        onMouseEnter={(event: any) => {
+          handlePopoverOpen(event, 'gift')
+        }}
+        onMouseLeave={() => {
+          handlePopoverClose('gift')
+        }}
+        sx={{ borderBottomColor: 'black' }}
+      >
+        GIFT & SERVICES
+      </CustomizedText>
+      <Popover
+        id="gift"
+        sx={{
+          pointerEvents: 'none',
+        }}
+        open={Boolean(anchorEl.gift)}
+        anchorEl={anchorEl.gift}
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'left',
+        }}
+        transformOrigin={{
+          vertical: 'top',
+          horizontal: 'left',
+        }}
+        onClose={handlePopoverClose}
+        disableRestoreFocus
+      >
+        <div>
+          <img src={gift} alt="Gift" height="250" width="650" />
+          <MenuItem>ATELIER</MenuItem>
+          <MenuItem>GIFT SETS</MenuItem>
+          <MenuItem>SERVICES</MenuItem>
+        </div>
+      </Popover>
+
+      <CustomizedText
+        aria-owns={open ? 'news' : undefined}
+        aria-haspopup="true"
+        onMouseEnter={(event: any) => {
+          handlePopoverOpen(event, 'news')
+        }}
+        onMouseLeave={() => {
+          handlePopoverClose('news')
+        }}
+        sx={{ borderBottomColor: 'black' }}
+      >
+        NEWS
+      </CustomizedText>
+      <Popover
+        id="news"
+        sx={{
+          pointerEvents: 'none',
+        }}
+        open={Boolean(anchorEl.news)}
+        anchorEl={anchorEl.news}
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'left',
+        }}
+        transformOrigin={{
+          vertical: 'top',
+          horizontal: 'left',
+        }}
+        onClose={handlePopoverClose}
+        disableRestoreFocus
+      >
+        <div>
+          <MenuItem>NEWS</MenuItem>
+          <MenuItem>FASHIONS SHOW</MenuItem>
+          <MenuItem>HISTORY & SAVOIR-FAIRE </MenuItem>
+          <img
+            src={history}
+            alt="Christian Dior History"
+            height="300"
+            width="400"
+          />
         </div>
       </Popover>
     </Box>

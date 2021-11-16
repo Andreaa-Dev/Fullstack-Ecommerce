@@ -2,16 +2,18 @@ import React, { useEffect } from 'react'
 import { Box } from '@mui/system'
 import { useDispatch, useSelector } from 'react-redux'
 import { useSearchParams } from 'react-router-dom'
+import { Link } from 'react-scroll'
 
 import { AppState } from '../../misc/type'
 import { fetchData, fetchDataByCategory } from '../../redux/action'
 import {
+  BoxRow,
+  CustomizedButton,
   CustomizedText,
   CustomizedTitle,
   CustomizedTitleProduct,
 } from '../customizedCSS'
 import ProductItem from './ProductItem'
-
 import { productName } from '../../misc/productName'
 import { introductionProduct } from '../../misc/introductionProduct'
 //palette, eyebrow, eyeliner, mascara, eyeshadow, blush(1), bronzer (1), foundation, lipstick,
@@ -42,17 +44,39 @@ function ProductPage() {
       <CustomizedText>
         {introductionProduct[category as keyof typeof productName]}
       </CustomizedText>
-      <Box
-        sx={{
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr 1fr',
-          gap: 5,
-          m: 5,
-        }}
-      >
-        {data.map((item) => {
-          return <ProductItem data={item} />
-        })}
+      <Box>
+        <Link activeClass="active" to="Christmas" spy={true} smooth={true}>
+          <CustomizedButton>Christmas</CustomizedButton>
+        </Link>
+        <Link activeClass="active" to="DIOR ADDICT" spy={true} smooth={true}>
+          <CustomizedButton>DIOR ADDICT</CustomizedButton>
+        </Link>
+        <Link activeClass="active" to="DIORIFIC" spy={true} smooth={true}>
+          <CustomizedButton>DIORIFIC</CustomizedButton>
+        </Link>
+      </Box>
+      <Box>
+        <BoxRow id="Christmas">
+          {data.map((item) => {
+            if (item.name.includes('Christmas')) {
+              return <ProductItem data={item} />
+            }
+          })}
+        </BoxRow>
+        <BoxRow id="DIOR ADDICT">
+          {data.map((item) => {
+            if (item.name.includes('DIOR ADDICT')) {
+              return <ProductItem data={item} />
+            }
+          })}
+        </BoxRow>
+        <BoxRow id="DIORIFIC">
+          {data.map((item) => {
+            if (item.name.includes('DIORIFIC')) {
+              return <ProductItem data={item} />
+            }
+          })}
+        </BoxRow>
       </Box>
     </Box>
   )

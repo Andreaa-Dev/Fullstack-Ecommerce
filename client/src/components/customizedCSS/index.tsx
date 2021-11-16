@@ -16,6 +16,7 @@ export const useStyles = makeStyles({
   },
 })
 
+//NORMAL THEME
 export const CustomizedLink = styled(Link)`
   text-decoration: none;
   color: black;
@@ -59,6 +60,7 @@ export const CustomizedLPlayIcon = styled(PlayCircleOutlineIcon)`
   height: 50px;
 `
 
+//HOLIDAY THEME
 export const CustomizedTitle = styled(Typography)`
   text-align: center;
   margin: 10px;

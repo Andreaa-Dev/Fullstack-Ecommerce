@@ -81,3 +81,22 @@ export const CustomizedText = styled(Typography)`
   margin: 10px;
   font-family: 'Open Sans Condensed', sans-serif;
 `
+
+export const CustomizedTitleProduct = styled(Typography)`
+  text-align: center;
+  margin: 10px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+`
+export const CustomizedTextProduct = styled(Typography)`
+  text-align: flex-start;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin: 1rem;
+  -webkit-line-clamp: 2;
+  position: relative;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+`

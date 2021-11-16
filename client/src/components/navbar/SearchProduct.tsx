@@ -3,13 +3,13 @@ import TextField from '@mui/material/TextField'
 import { Button } from '@mui/material'
 import SearchIcon from '@mui/icons-material/Search'
 
-import { useStyles } from '../customizedCSS/index'
+import { BoxRow, useStyles } from '../customizedCSS/index'
 
 function SearchProduct() {
   const classes = useStyles()
 
   return (
-    <div>
+    <BoxRow sx={{ m: 1 }}>
       <TextField
         InputLabelProps={{
           classes: {
@@ -20,10 +20,8 @@ function SearchProduct() {
         label="What are you looking for ?"
         variant="standard"
       />
-      <Button>
-        <SearchIcon />
-      </Button>
-    </div>
+      <SearchIcon sx={{ mt: '20px', ml: '10px' }} />
+    </BoxRow>
   )
 }
 

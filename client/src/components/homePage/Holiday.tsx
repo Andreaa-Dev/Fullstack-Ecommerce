@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box } from '@mui/system'
 
-import mainImg from '../images/mainPage.webp'
+import mainImg from '../images/xmas_cover.webp'
 import subImg1 from '../images/subImg1.webp'
 import subImg2 from '../images/subImg2.webp'
 import subImg3 from '../images/subImg3.webp'

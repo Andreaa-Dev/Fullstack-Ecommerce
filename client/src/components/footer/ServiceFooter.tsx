@@ -4,10 +4,20 @@ import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined
 import ReplayOutlinedIcon from '@mui/icons-material/ReplayOutlined'
 import CardGiftcardOutlinedIcon from '@mui/icons-material/CardGiftcardOutlined'
 import { CustomizedText, CustomizedTitle } from '../customizedCSS'
+import background from '../images/footerbg.webp'
 
 function ServiceFooter() {
   return (
-    <Box sx={{ backgroundColor: 'black', color: 'white', p: 15 }}>
+    <Box
+      sx={{
+        backgroundImage: `url(${background})`,
+        backgroundSize: 'fit',
+        backgroundPosition: '50% 50%',
+        backgroundRepeat: 'no-repeat',
+        color: 'white',
+        p: 15,
+      }}
+    >
       <CustomizedTitle sx={{ textAlign: 'center', mb: 5 }}>
         THE E-BOUTIQUE SERVICES
       </CustomizedTitle>

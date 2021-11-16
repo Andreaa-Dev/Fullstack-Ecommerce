@@ -3,9 +3,9 @@ import { Box } from '@mui/system'
 import Popover from '@mui/material/Popover'
 import { MenuItem } from '@mui/material'
 
-import { CustomizedText } from '../customizedCSS'
+import { CustomizedLink, CustomizedText } from '../customizedCSS'
 import lipstick from '../images/lipstick.webp'
-import palette from '../images/palette.jpeg'
+import palette from '../images/palette_subNav.jpeg'
 import history from '../images/history.webp'
 import gift from '../images/gift.webp'
 
@@ -39,19 +39,22 @@ function SubNav() {
         p: 5,
       }}
     >
-      <CustomizedText
-        aria-owns={open ? 'lipStick' : undefined}
-        aria-haspopup="true"
-        onMouseEnter={(event: any) => {
-          handlePopoverOpen(event, 'lipStick')
-        }}
-        onMouseLeave={() => {
-          handlePopoverClose('lipStick')
-        }}
-        sx={{ borderBottomColor: 'black' }}
-      >
-        LIPSTICK
-      </CustomizedText>
+      <CustomizedLink to="/product/?category=lipstick">
+        <CustomizedText
+          aria-owns={open ? 'lipStick' : undefined}
+          aria-haspopup="true"
+          onMouseEnter={(event: any) => {
+            handlePopoverOpen(event, 'lipStick')
+          }}
+          onMouseLeave={() => {
+            handlePopoverClose('lipStick')
+          }}
+          sx={{ borderBottomColor: 'black' }}
+        >
+          LIPSTICK
+        </CustomizedText>
+      </CustomizedLink>
+
       <Popover
         id="lipStick"
         sx={{
@@ -77,19 +80,20 @@ function SubNav() {
           <CustomizedText>LIP BALMS</CustomizedText>
         </div>
       </Popover>
-
-      <CustomizedText
-        aria-owns={open ? 'foundation' : undefined}
-        aria-haspopup="true"
-        onMouseEnter={(event: any) => {
-          handlePopoverOpen(event, 'foundation')
-        }}
-        onMouseLeave={() => {
-          handlePopoverClose('foundation')
-        }}
-      >
-        FOUNDATION
-      </CustomizedText>
+      <CustomizedLink to="/product/?category=foundation">
+        <CustomizedText
+          aria-owns={open ? 'foundation' : undefined}
+          aria-haspopup="true"
+          onMouseEnter={(event: any) => {
+            handlePopoverOpen(event, 'foundation')
+          }}
+          onMouseLeave={() => {
+            handlePopoverClose('foundation')
+          }}
+        >
+          FOUNDATION
+        </CustomizedText>
+      </CustomizedLink>
       <Popover
         id="foundation"
         sx={{
@@ -115,19 +119,21 @@ function SubNav() {
         </div>
       </Popover>
 
-      <CustomizedText
-        aria-owns={open ? 'palette' : undefined}
-        aria-haspopup="true"
-        onMouseEnter={(event: any) => {
-          handlePopoverOpen(event, 'palette')
-        }}
-        onMouseLeave={() => {
-          handlePopoverClose('palette')
-        }}
-        sx={{ borderBottomColor: 'black' }}
-      >
-        EYES PALETTES
-      </CustomizedText>
+      <CustomizedLink to="/product/?category=eyeshadow">
+        <CustomizedText
+          aria-owns={open ? 'palette' : undefined}
+          aria-haspopup="true"
+          onMouseEnter={(event: any) => {
+            handlePopoverOpen(event, 'palette')
+          }}
+          onMouseLeave={() => {
+            handlePopoverClose('palette')
+          }}
+          sx={{ borderBottomColor: 'black' }}
+        >
+          EYES PALETTES
+        </CustomizedText>
+      </CustomizedLink>
       <Popover
         id="palette"
         sx={{
@@ -153,19 +159,21 @@ function SubNav() {
         </div>
       </Popover>
 
-      <CustomizedText
-        aria-owns={open ? 'eyesBrown' : undefined}
-        aria-haspopup="true"
-        onMouseEnter={(event: any) => {
-          handlePopoverOpen(event, 'eyesBrown')
-        }}
-        onMouseLeave={() => {
-          handlePopoverClose('eyesBrown')
-        }}
-        sx={{ borderBottomColor: 'black' }}
-      >
-        EYESBROWNS
-      </CustomizedText>
+      <CustomizedLink to="/product/?category=eyebrow">
+        <CustomizedText
+          aria-owns={open ? 'eyesBrown' : undefined}
+          aria-haspopup="true"
+          onMouseEnter={(event: any) => {
+            handlePopoverOpen(event, 'eyesBrown')
+          }}
+          onMouseLeave={() => {
+            handlePopoverClose('eyesBrown')
+          }}
+          sx={{ borderBottomColor: 'black' }}
+        >
+          EYESBROWNS
+        </CustomizedText>
+      </CustomizedLink>
       <Popover
         id="eyesbrown"
         sx={{
@@ -190,19 +198,21 @@ function SubNav() {
         </div>
       </Popover>
 
-      <CustomizedText
-        aria-owns={open ? 'mascara' : undefined}
-        aria-haspopup="true"
-        onMouseEnter={(event: any) => {
-          handlePopoverOpen(event, 'mascara')
-        }}
-        onMouseLeave={() => {
-          handlePopoverClose('mascara')
-        }}
-        sx={{ borderBottomColor: 'black' }}
-      >
-        MASCARA
-      </CustomizedText>
+      <CustomizedLink to="/product/?category=mascara">
+        <CustomizedText
+          aria-owns={open ? 'mascara' : undefined}
+          aria-haspopup="true"
+          onMouseEnter={(event: any) => {
+            handlePopoverOpen(event, 'mascara')
+          }}
+          onMouseLeave={() => {
+            handlePopoverClose('mascara')
+          }}
+          sx={{ borderBottomColor: 'black' }}
+        >
+          MASCARA
+        </CustomizedText>
+      </CustomizedLink>
       <Popover
         id="mascara"
         sx={{
@@ -227,19 +237,21 @@ function SubNav() {
         </div>
       </Popover>
 
-      <CustomizedText
-        aria-owns={open ? 'nailPolish' : undefined}
-        aria-haspopup="true"
-        onMouseEnter={(event: any) => {
-          handlePopoverOpen(event, 'nailPolish')
-        }}
-        onMouseLeave={() => {
-          handlePopoverClose('nailPolish')
-        }}
-        sx={{ borderBottomColor: 'black' }}
-      >
-        NAIL POLISH
-      </CustomizedText>
+      <CustomizedLink to="/product/?category=nail_polish">
+        <CustomizedText
+          aria-owns={open ? 'nailPolish' : undefined}
+          aria-haspopup="true"
+          onMouseEnter={(event: any) => {
+            handlePopoverOpen(event, 'nailPolish')
+          }}
+          onMouseLeave={() => {
+            handlePopoverClose('nailPolish')
+          }}
+          sx={{ borderBottomColor: 'black' }}
+        >
+          NAIL POLISH
+        </CustomizedText>
+      </CustomizedLink>
       <Popover
         id="nailPolish"
         sx={{

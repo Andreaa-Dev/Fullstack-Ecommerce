@@ -15,7 +15,7 @@ function NavIcon() {
         flexDirection: 'row',
         justifyContent: 'space-between',
         width: 100,
-        p: 1.5,
+        p: '1rem',
       }}
     >
       <Badge badgeContent={1} color="primary">

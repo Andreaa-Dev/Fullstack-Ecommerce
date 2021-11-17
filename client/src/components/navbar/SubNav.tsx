@@ -36,7 +36,9 @@ function SubNav() {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        p: 5,
+        pl: 10,
+        pr: 10,
+        pb: 1,
       }}
     >
       <CustomizedLink to="/product/?category=lipstick">

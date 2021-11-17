@@ -26,6 +26,23 @@ export const useStyles = makeStyles({
 })
 
 //NORMAL THEME
+export const CustomizedTitle = styled(Typography)`
+  text-align: center;
+  margin: 10px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2rem;
+`
+export const CustomizedButton = styled(Button)`
+  color: white;
+  border-radius: 20px;
+  background-color: #16213e;
+  padding: 10px;
+  border: 1px white solid;
+  margin: 20px;
+  width: 150px;
+  font-family: 'Open Sans Condensed', sans-serif;
+`
+
 export const CustomizedLink = styled(Link)`
   text-decoration: none;
   color: black;
@@ -84,7 +101,8 @@ export const CustomizedTextProduct = styled(Typography)`
 `
 
 //HOLIDAY THEME
-export const CustomizedTitle = styled(Typography)`
+
+export const CustomizedTitleHT = styled(Typography)`
   text-align: center;
   margin: 10px;
   font-family: 'Open Sans Condensed', sans-serif;
@@ -99,14 +117,21 @@ export const CustomizedTitle = styled(Typography)`
   );
   background-clip: text;
   text-fill-color: transparent;
+  margin-bottom: 1rem;
 `
-export const CustomizedButton = styled(Button)`
-  color: white;
-  border-radius: 20px;
-  background-color: #16213e;
-  padding: 10px;
-  border: 1px white solid;
-  margin: 20px;
-  width: 150px;
+export const CustomizedTextHT = styled(Typography)`
+  text-align: center;
+  margin: 10px;
   font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1rem;
+  background-image: linear-gradient(
+    92deg,
+    #a48b5e -31%,
+    #ce944a -7%,
+    #d8a965 11%,
+    #f9f3e2 121%,
+    #f4e3af 132%
+  );
+  background-clip: text;
+  text-fill-color: transparent;
 `

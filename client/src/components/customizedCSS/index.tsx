@@ -3,10 +3,19 @@ import { createTheme, styled } from '@mui/material/styles'
 import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline'
 import { Box, Button, Typography } from '@mui/material'
 import { makeStyles } from '@mui/styles'
+import { grey, indigo } from '@mui/material/colors'
 
 export const themes = createTheme({
   typography: {
     fontFamily: ['Open Sans Condensed', 'sans-serif'].join(','),
+  },
+  palette: {
+    primary: {
+      main: indigo[900],
+    },
+    secondary: {
+      main: grey[800],
+    },
   },
 })
 

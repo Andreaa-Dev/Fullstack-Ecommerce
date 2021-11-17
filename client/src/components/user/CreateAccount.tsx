@@ -13,6 +13,7 @@ import UserId from './userID'
 import ShippingAddress from './shippingAddress'
 import Policy from './policy'
 import { policy } from '../../misc/policy'
+import GoogleLogIn from './googleLogIn/GoogleLogIn'
 
 function CreateAccount() {
   return (
@@ -32,6 +33,8 @@ function CreateAccount() {
       <BoxColumn>
         <CustomizedText variant="h4">YOUR ACCOUNT</CustomizedText>
         <CustomizedText>Create a dior.com account</CustomizedText>
+        <GoogleLogIn />
+
         <Box>
           <BoxRow sx={{ justifyContent: 'space-between', m: 1 }}>
             <CustomizedText> YOUR USER ID</CustomizedText>

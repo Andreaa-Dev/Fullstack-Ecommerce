@@ -1,11 +1,12 @@
 import React from 'react'
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
-import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined'
-import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined'
 import { Box } from '@mui/system'
 import { Badge } from '@mui/material'
+import { ThemeProvider } from '@emotion/react'
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
+import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined'
+import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined'
 
-import { CustomizedLink } from '../customizedCSS'
+import { CustomizedLink, themes } from '../customizedCSS'
 
 function NavIcon() {
   return (
@@ -18,19 +19,19 @@ function NavIcon() {
         p: '1rem',
       }}
     >
-      <Badge badgeContent={1} color="primary">
-        <FavoriteBorderIcon color="action" />
-      </Badge>
-
-      <CustomizedLink to="/cart">
-        <Badge badgeContent={4} color="primary">
-          <LocalMallOutlinedIcon color="action" />
+      <ThemeProvider theme={themes}>
+        <Badge badgeContent={1} color="primary">
+          <FavoriteBorderIcon color="action" />
         </Badge>
-      </CustomizedLink>
-
-      <CustomizedLink to="/createAccount">
-        <PersonOutlineOutlinedIcon />
-      </CustomizedLink>
+        <CustomizedLink to="/cart">
+          <Badge badgeContent={4} color="primary">
+            <LocalMallOutlinedIcon color="action" />
+          </Badge>
+        </CustomizedLink>
+        <CustomizedLink to="/createAccount">
+          <PersonOutlineOutlinedIcon />
+        </CustomizedLink>
+      </ThemeProvider>
     </Box>
   )
 }

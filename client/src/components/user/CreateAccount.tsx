@@ -13,7 +13,7 @@ import UserId from './userID'
 import ShippingAddress from './shippingAddress'
 import Policy from './policy'
 import { policy } from '../../misc/policy'
-import GoogleLogIn from './googleLogIn/GoogleLogIn'
+import GoogleLogIn from './googleLogIn/GoogleLogInPage'
 
 function CreateAccount() {
   return (
@@ -38,7 +38,7 @@ function CreateAccount() {
         <Box>
           <BoxRow sx={{ justifyContent: 'space-between', m: 1 }}>
             <CustomizedText> YOUR USER ID</CustomizedText>
-            <CustomizedText> * Required fields</CustomizedText>
+            <CustomizedText fontWeight="bold">* Required fields</CustomizedText>
           </BoxRow>
 
           <UserId />

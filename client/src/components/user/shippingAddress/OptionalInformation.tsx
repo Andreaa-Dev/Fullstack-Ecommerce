@@ -8,7 +8,6 @@ function OptionalInformation() {
   const classes = useStyles()
 
   const [countryName, setCountryName] = useState('Country')
-
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setCountryName(event.target.value)
   }
@@ -18,20 +17,24 @@ function OptionalInformation() {
       <Box sx={{ m: 2 }}>
         <Box sx={{ mt: 2 }}>
           <TextField
+            InputLabelProps={{
+              classes: {
+                root: classes.typography,
+              },
+            }}
             InputProps={{
               classes: {
                 root: classes.typography,
               },
             }}
             fullWidth
-            id="outlined-select-currency"
             select
             value={countryName}
             onChange={handleChange}
           >
-            {countryList.map((option) => (
-              <MenuItem key={option.name} value={option.name}>
-                {option.name}
+            {countryList.map((item) => (
+              <MenuItem key={item.code} value={item.name}>
+                {item.name}
               </MenuItem>
             ))}
           </TextField>

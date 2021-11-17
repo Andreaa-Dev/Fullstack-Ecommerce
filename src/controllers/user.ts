@@ -1,8 +1,10 @@
+import jwt from 'jsonwebtoken'
 import { Request, Response, NextFunction } from 'express'
 
 import User from '../models/User'
-import { BadRequestError } from '../helpers/apiError'
+import { BadRequestError, InternalServerError } from '../helpers/apiError'
 import UserService from '../services/user'
+import { JWT_SECRET } from '../util/secrets'
 
 // POST /user => create user
 export const createUser = async (
@@ -88,7 +90,7 @@ export const findById = async (
   }
 }
 
-// GET /movies => get all users
+// GET /users => get all users
 export const findAll = async (
   req: Request,
   res: Response,
@@ -102,5 +104,35 @@ export const findAll = async (
     } else {
       next(error)
     }
+  }
+}
+
+// authentication
+export const authenticate = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  try {
+    console.log('user controller', req.user)
+    const { email, _id, firstName, lastName } = req.user as any
+    console.log(email, 'e')
+    const token = jwt.sign(
+      {
+        email,
+        _id,
+        firstName,
+      },
+      JWT_SECRET,
+      {
+        expiresIn: '1h',
+      }
+    )
+    console.log(token, 't')
+
+    res.json({ token, _id, firstName, lastName })
+  } catch (error) {
+    console.log('error', error)
+    return next(new InternalServerError())
   }
 }

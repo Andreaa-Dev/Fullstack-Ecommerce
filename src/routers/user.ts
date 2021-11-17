@@ -1,4 +1,5 @@
 import express from 'express'
+import passport from 'passport'
 
 import {
   createUser,
@@ -6,15 +7,21 @@ import {
   deleteUser,
   findAll,
   updateUser,
+  authenticate,
 } from '../controllers/user'
 
 const router = express.Router()
 
-// Every path we define here will get /api/v1/movies prefix
 router.post('/', createUser)
 router.put('/:userId', updateUser)
 router.get('/', findAll)
 router.get('/:userId', findById)
 router.delete('/:userId', deleteUser)
+
+router.post(
+  '/google-authenticate',
+  passport.authenticate('google-id-token', { session: false }),
+  authenticate
+)
 
 export default router

@@ -11,10 +11,10 @@ export const themes = createTheme({
   },
   palette: {
     primary: {
-      main: indigo[900],
+      main: '#16213e',
     },
     secondary: {
-      main: grey[800],
+      main: indigo[800],
     },
   },
 })

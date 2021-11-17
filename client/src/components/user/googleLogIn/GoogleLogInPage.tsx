@@ -10,7 +10,6 @@ const responseGoogle = async (response: any) => {
     'http://localhost:5000/api/v1/user/google-authenticate',
     { id_token: response.tokenObj.id_token }
   )
-  console.log(response, 'a')
   console.log(res, 's')
 }
 

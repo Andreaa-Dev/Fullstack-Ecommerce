@@ -44,22 +44,23 @@ const deleteUser = async (userId: string): Promise<UserDocument | null> => {
   return foundUser
 }
 
-//exec() will return true Promise
-async function findOrCreate(payload: Partial<UserDocument>) {
-  return User.findOne({ email: payload.email })
-    .exec()
-    .then((user) => {
-      if (!user) {
-        const newUser = new User({
-          email: payload.email,
-          firstName: payload.firstName,
-          lastName: payload.lastName,
-        })
-        newUser.save()
-        return newUser
-      }
-      return user
+const findOrCreate = async (payload: Partial<UserDocument>) => {
+  const result = User.findOne({ email: payload.email })
+  if (result) {
+    return result
+  } else {
+    const user = new User({
+      email: payload.email,
+      firstName: payload.firstName,
+      lastName: payload.lastName,
     })
+    user.save()
+    return user
+  }
+}
+
+const findUserByEmail = async (payload: Partial<UserDocument>) => {
+  return User.findOne({ email: payload.email })
 }
 
 export default {
@@ -69,4 +70,5 @@ export default {
   updateUser,
   deleteUser,
   findOrCreate,
+  findUserByEmail,
 }

@@ -1,12 +1,13 @@
 import passport from 'passport'
 import jwt from 'jsonwebtoken'
 import passportLocal from 'passport-local'
-import { JWT_SECRET } from '../util/secrets'
 import GoogleTokenStrategy from 'passport-google-id-token'
+import { Strategy as JwtStrategy, ExtractJwt } from 'passport-jwt'
 
 import userService from '../services/user'
+import { JWT_SECRET } from '../util/secrets'
 
-// type in passport.d.ts file
+// type in google-passport.d.ts file
 const LocalStrategy = passportLocal.Strategy
 export const googleStrategy = new GoogleTokenStrategy(
   {
@@ -26,13 +27,15 @@ export const googleStrategy = new GoogleTokenStrategy(
   }
 )
 
-// export const jwtStategy = new jwtStrategy(
-//     {
-//         secretOrKey:JWT_SECRET,
-//         jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
-//     }
-//     async(payload: any, done:any) =>{
-//         const userEmail = payload.email
-//         const foundUser = await userService.fin
-//     }
-// )
+// protect route
+export const jwtStategy = new JwtStrategy(
+  {
+    secretOrKey: JWT_SECRET,
+    jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
+  },
+  async (payload: any, done: any) => {
+    const userEmail = payload.email
+    const foundUser = await userService.findUserByEmail(userEmail)
+    done(null, foundUser)
+  }
+)

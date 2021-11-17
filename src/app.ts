@@ -28,6 +28,7 @@ app.use(lusca.xframe('SAMEORIGIN'))
 app.use(lusca.xssProtection(true))
 
 app.use(passport.initialize())
+app.use(passport.session())
 passport.use(googleStrategy)
 
 // Use product router

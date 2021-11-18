@@ -14,10 +14,10 @@ const router = express.Router()
 
 router.post('/', createUser)
 router.put('/:userId', updateUser)
-router.get('/', findAll)
+// router.get('/', findAll)
+router.get('/', passport.authenticate('jwt', { session: false }), findAll)
 router.get('/:userId', findById)
 router.delete('/:userId', deleteUser)
-
 router.post(
   '/google-authenticate',
   passport.authenticate('google-id-token', { session: false }),

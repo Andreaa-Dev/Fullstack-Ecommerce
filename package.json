@@ -37,6 +37,7 @@
     "errorhandler": "^1.5.1",
     "express": "^4.17.1",
     "husky": "^4.2.3",
+    "joi": "^17.4.2",
     "jsonwebtoken": "^8.5.1",
     "lint-staged": "^10.0.8",
     "lodash": "^4.17.15",

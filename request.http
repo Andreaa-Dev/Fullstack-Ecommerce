@@ -6,3 +6,6 @@ content-type: application/json
 GET http://localhost:5000/api/v1/product/seed HTTP/1.1
 content-type: application/json
 
+###
+GET http://localhost:5000/api/v1/user HTTP/1.1
+content-type: application/json

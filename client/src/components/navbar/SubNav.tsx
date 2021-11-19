@@ -1,17 +1,44 @@
 import React, { useState, MouseEvent } from 'react'
 import { Box } from '@mui/system'
 import Popover from '@mui/material/Popover'
-import { MenuItem } from '@mui/material'
 
-import { CustomizedLink, CustomizedText } from '../customizedCSS'
+import {
+  BoxColumn,
+  BoxRow,
+  CustomizedLink,
+  CustomizedText,
+} from '../customizedCSS'
 import lipstick from '../images/lipstick.webp'
 import palette from '../images/palette_subNav.jpeg'
 import history from '../images/history.webp'
 import gift from '../images/gift.webp'
 
+const productNameList = [
+  {
+    name: 'lipstick',
+  },
+  {
+    name: 'foundation',
+  },
+  {
+    name: 'palette',
+  },
+  {
+    name: 'mascara',
+  },
+  {
+    name: 'nailPolish',
+  },
+  {
+    name: 'gift',
+  },
+  {
+    name: 'news',
+  },
+]
 function SubNav() {
   const [anchorEl, setAnchorEl] = useState({
-    lipStick: null,
+    lipstick: null,
     foundation: null,
     palette: null,
     eyesBrown: null,
@@ -26,6 +53,7 @@ function SubNav() {
   }
   const handlePopoverClose = (id: string) => {
     setAnchorEl({ ...anchorEl, [id]: null })
+    console.log('run')
   }
 
   const open = Boolean(anchorEl)
@@ -41,17 +69,62 @@ function SubNav() {
         pb: 1,
       }}
     >
-      <CustomizedLink to="/product/?category=lipstick">
+      <BoxRow sx={{ pl: 10, pr: 10, pb: 1 }}>
+        {productNameList.map((item) => {
+          return (
+            <Box>
+              <CustomizedLink to={`/product/?category=${item.name}`}>
+                <CustomizedText
+                  aria-owns={open ? item.name : undefined}
+                  aria-haspopup="true"
+                  onMouseEnter={(event: any) => {
+                    handlePopoverOpen(event, item.name)
+                  }}
+                >
+                  {item.name}
+                </CustomizedText>
+              </CustomizedLink>
+              <Popover
+                id={item.name}
+                sx={{
+                  pointerEvents: 'none',
+                }}
+                open={Boolean(anchorEl[item.name as keyof typeof anchorEl])}
+                anchorEl={anchorEl[item.name as keyof typeof anchorEl]}
+                anchorOrigin={{
+                  vertical: 'bottom',
+                  horizontal: 'left',
+                }}
+                transformOrigin={{
+                  vertical: 'top',
+                  horizontal: 'left',
+                }}
+                disableRestoreFocus
+              >
+                <Box
+                  onMouseLeave={() => {
+                    handlePopoverClose(item.name)
+                  }}
+                >
+                  <img src={lipstick} alt="Lipstick" height="300" width="300" />
+                  <div>
+                    <CustomizedText>LIP GLOSSES</CustomizedText>
+                    <CustomizedText>MATTE ANS SATIN LIPSTICK</CustomizedText>
+                    <CustomizedText>LIP BALMS</CustomizedText>
+                  </div>
+                </Box>
+              </Popover>
+            </Box>
+          )
+        })}
+      </BoxRow>
+      {/* <CustomizedLink to="/product/?category=lipstick">
         <CustomizedText
           aria-owns={open ? 'lipStick' : undefined}
           aria-haspopup="true"
           onMouseEnter={(event: any) => {
             handlePopoverOpen(event, 'lipStick')
           }}
-          onMouseLeave={() => {
-            handlePopoverClose('lipStick')
-          }}
-          sx={{ borderBottomColor: 'black' }}
         >
           LIPSTICK
         </CustomizedText>
@@ -72,15 +145,20 @@ function SubNav() {
           vertical: 'top',
           horizontal: 'left',
         }}
-        onClose={handlePopoverClose}
         disableRestoreFocus
       >
-        <img src={lipstick} alt="Lipstick" height="300" width="300" />
-        <div>
-          <CustomizedText>LIP GLOSSES</CustomizedText>
-          <CustomizedText>MATTE ANS SATIN LIPSTICK</CustomizedText>
-          <CustomizedText>LIP BALMS</CustomizedText>
-        </div>
+        <Box
+          onMouseLeave={() => {
+            handlePopoverClose('lipStick')
+          }}
+        >
+          <img src={lipstick} alt="Lipstick" height="300" width="300" />
+          <div>
+            <CustomizedText>LIP GLOSSES</CustomizedText>
+            <CustomizedText>MATTE ANS SATIN LIPSTICK</CustomizedText>
+            <CustomizedText>LIP BALMS</CustomizedText>
+          </div>
+        </Box>
       </Popover>
       <CustomizedLink to="/product/?category=foundation">
         <CustomizedText
@@ -360,7 +438,7 @@ function SubNav() {
             width="400"
           />
         </div>
-      </Popover>
+      </Popover> */}
     </Box>
   )
 }

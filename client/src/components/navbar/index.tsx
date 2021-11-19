@@ -1,16 +1,16 @@
 import React from 'react'
-import { Box, Typography } from '@mui/material'
+import { Box } from '@mui/material'
 
 import NavIcon from './NavIcon'
 import SubNav from './SubNav'
 import SearchProduct from './SearchProduct'
-import { CustomizedLink } from '../customizedCSS'
 import Logo from './Logo'
+import { BoxRow } from '../customizedCSS'
 
 function NavBar() {
   return (
     <Box>
-      <Box
+      <BoxRow
         sx={{
           display: 'flex',
           flexDirection: 'row',
@@ -20,7 +20,7 @@ function NavBar() {
         <SearchProduct />
         <Logo />
         <NavIcon />
-      </Box>
+      </BoxRow>
       <SubNav />
     </Box>
   )

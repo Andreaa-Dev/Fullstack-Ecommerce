@@ -24,7 +24,6 @@ function ProductPage() {
 
   const dispatch = useDispatch()
   const data = useSelector((state: AppState) => state.productState.product)
-  console.log(data, 'd')
 
   useEffect(() => {
     if (category) {

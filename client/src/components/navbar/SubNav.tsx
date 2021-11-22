@@ -58,18 +58,8 @@ function SubNav() {
 
   const open = Boolean(anchorEl)
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        pl: 10,
-        pr: 10,
-        pb: 1,
-      }}
-    >
-      <BoxRow sx={{ pl: 10, pr: 10, pb: 1 }}>
+    <Box>
+      <BoxRow>
         {productNameList.map((item) => {
           return (
             <Box>
@@ -79,6 +69,9 @@ function SubNav() {
                   aria-haspopup="true"
                   onMouseEnter={(event: any) => {
                     handlePopoverOpen(event, item.name)
+                  }}
+                  onMouseLeave={() => {
+                    handlePopoverClose(item.name)
                   }}
                 >
                   {item.name}
@@ -101,11 +94,7 @@ function SubNav() {
                 }}
                 disableRestoreFocus
               >
-                <Box
-                  onMouseLeave={() => {
-                    handlePopoverClose(item.name)
-                  }}
-                >
+                <Box>
                   <img src={lipstick} alt="Lipstick" height="300" width="300" />
                   <div>
                     <CustomizedText>LIP GLOSSES</CustomizedText>

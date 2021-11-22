@@ -21,11 +21,11 @@ function Gift() {
     slidesToScroll: 1,
     arrows: true,
     prevArrow: (
-      <ArrowBackIosIcon sx={{ color: 'black', ':hover': { color: 'black' } }} />
+      <ArrowBackIosIcon sx={{ color: 'white', ':hover': { color: 'black' } }} />
     ),
     nextArrow: (
       <ArrowForwardIosIcon
-        sx={{ color: 'black', ':hover': { color: 'black' } }}
+        sx={{ color: 'white', ':hover': { color: 'black' } }}
       />
     ),
   }

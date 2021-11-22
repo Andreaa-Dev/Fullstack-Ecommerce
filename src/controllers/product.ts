@@ -130,11 +130,12 @@ export const findAll = async (
   res: Response,
   next: NextFunction
 ) => {
-  // query = { category: string, price: string }
+  // query = { category: string, price: string , search :string | undefined if dont put anything in url }
+
   const category = req.query.category as string | undefined
-  console.log(category, 'e')
+  const searchQuery = req.query.search as string | undefined
   try {
-    res.json(await ProductService.findAll(category))
+    res.json(await ProductService.findAll(category, searchQuery))
   } catch (error) {
     if (error instanceof Error && error.name == 'ValidationError') {
       next(new BadRequestError('Invalid Request', error))

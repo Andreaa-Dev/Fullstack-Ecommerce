@@ -50,4 +50,6 @@ const ProductSchema = new mongoose.Schema({
   variant: [VariantSchema],
 })
 
+ProductSchema.index({ name: 'text', category: 'text', description: 'text' })
+
 export default mongoose.model<ProductDocument>('Product', ProductSchema)

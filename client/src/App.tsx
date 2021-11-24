@@ -12,6 +12,10 @@ import Cart from './components/cart'
 
 import { ThemeProvider } from '@emotion/react'
 import { createTheme } from '@mui/system'
+import UserAccount from './components/user/UserAccount'
+import Gift from './components/gift/Gift'
+import ArtofGift from './components/gift/ArtofGift'
+import GiftFinder from './components/gift/giftFinder'
 
 // export const theme = createTheme({
 //   typography: {
@@ -28,6 +32,11 @@ function App() {
         <Route path="/product" element={<ProductPage />} />
         <Route path="/productDetail" element={<ProductDetail />} />
         <Route path="/createAccount" element={<CreateAccount />} />
+        <Route path="/gift" element={<Gift />} />
+        <Route path="gift/art" element={<ArtofGift />} />
+        <Route path="gift/finder" element={<GiftFinder />} />
+
+        <Route path="/user" element={<UserAccount />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
       <Footer />

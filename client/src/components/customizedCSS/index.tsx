@@ -5,6 +5,8 @@ import { Box, Button, Typography } from '@mui/material'
 import { makeStyles } from '@mui/styles'
 import { grey, indigo } from '@mui/material/colors'
 
+import background from '../images/background.webp'
+
 export const themes = createTheme({
   typography: {
     fontFamily: ['Open Sans Condensed', 'sans-serif'].join(','),
@@ -79,7 +81,7 @@ export const CustomizedText = styled(Typography)`
   text-align: center;
   margin: 10px;
   font-family: 'Open Sans Condensed', sans-serif;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   font-size: 20px;
 `
 
@@ -103,6 +105,14 @@ export const CustomizedTextProduct = styled(Typography)`
 `
 
 //HOLIDAY THEME
+
+export const CustomizedBoxHT = styled(Box)`
+  background-image: url(${background});
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
 
 export const CustomizedTitleHT = styled(Typography)`
   text-align: center;

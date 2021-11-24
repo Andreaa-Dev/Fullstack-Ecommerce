@@ -2,7 +2,7 @@ import React from 'react'
 import { Box } from '@mui/material'
 
 import WorkShop from './WorkShop'
-import Gift from './Gift'
+import GiftItem from './GiftItem'
 import Holiday from './Holiday'
 import background from '../images/background.webp'
 
@@ -11,7 +11,7 @@ function HomePage() {
     <Box sx={{ backgroundImage: `url(${background})` }}>
       <Holiday />
       <WorkShop />
-      <Gift />
+      <GiftItem />
     </Box>
   )
 }

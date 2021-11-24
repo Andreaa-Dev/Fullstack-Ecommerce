@@ -70,18 +70,15 @@ function SubNav() {
                   onMouseEnter={(event: any) => {
                     handlePopoverOpen(event, item.name)
                   }}
-                  onMouseLeave={() => {
-                    handlePopoverClose(item.name)
-                  }}
                 >
                   {item.name}
                 </CustomizedText>
               </CustomizedLink>
               <Popover
                 id={item.name}
-                sx={{
-                  pointerEvents: 'none',
-                }}
+                // sx={{
+                //   pointerEvents: 'none',
+                // }}
                 open={Boolean(anchorEl[item.name as keyof typeof anchorEl])}
                 anchorEl={anchorEl[item.name as keyof typeof anchorEl]}
                 anchorOrigin={{
@@ -94,7 +91,11 @@ function SubNav() {
                 }}
                 disableRestoreFocus
               >
-                <Box>
+                <Box
+                  onMouseLeave={() => {
+                    handlePopoverClose(item.name)
+                  }}
+                >
                   <img src={lipstick} alt="Lipstick" height="300" width="300" />
                   <div>
                     <CustomizedText>LIP GLOSSES</CustomizedText>

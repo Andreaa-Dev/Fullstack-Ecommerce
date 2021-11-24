@@ -7,7 +7,7 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
 
 import { giftImgList } from '../../../misc/giftImgList'
-import { CustomizedText, CustomizedTextHT } from '../../customizedCSS'
+import { BoxRow, CustomizedText, CustomizedTextHT } from '../../customizedCSS'
 
 function GiftList() {
   const settings = {
@@ -27,30 +27,39 @@ function GiftList() {
     ),
   }
   return (
-    <Box>
+    <Box sx={{ width: '100%' }}>
       <CustomizedTextHT>YOUR GIFTS MADE BEAUTIFUL</CustomizedTextHT>
       <CustomizedText color="white">
         Custom engraving, a personalised message, complimentary express
         delivery… Dior has thought of everything to make your holidays gifts
         unforgettable.
       </CustomizedText>
-      <Slider {...settings}>
-        {giftImgList.map((item) => {
-          return (
-            <Box>
-              <Box sx={{ margin: 1 }}>
-                <img
-                  src={item.name}
-                  alt={item.description}
-                  height="320px"
-                  width="300px"
-                />
+      <Box
+        sx={{
+          mt: '50px',
+          mb: '50px',
+          pl: '200px',
+          pr: '200px',
+        }}
+      >
+        <Slider {...settings}>
+          {giftImgList.map((item) => {
+            return (
+              <Box>
+                <BoxRow sx={{ ml: '25px', mr: '25px' }}>
+                  <img
+                    src={item.name}
+                    alt={item.description}
+                    height="320px"
+                    width="300px"
+                  />
+                </BoxRow>
+                <CustomizedTextHT> {item.description}</CustomizedTextHT>
               </Box>
-              <CustomizedTextHT> {item.description}</CustomizedTextHT>
-            </Box>
-          )
-        })}
-      </Slider>
+            )
+          })}
+        </Slider>
+      </Box>
     </Box>
   )
 }

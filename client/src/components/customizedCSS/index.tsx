@@ -81,7 +81,7 @@ export const CustomizedText = styled(Typography)`
   text-align: center;
   margin: 10px;
   font-family: 'Open Sans Condensed', sans-serif;
-  // text-transform: uppercase;
+  text-transform: uppercase;
   font-size: 20px;
 `
 

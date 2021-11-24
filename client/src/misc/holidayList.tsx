@@ -1,5 +1,4 @@
 import subImg1 from '../components/images/subImg1.webp'
-
 import subImg2 from '../components/images/subImg2.webp'
 import subImg3 from '../components/images/subImg3.webp'
 

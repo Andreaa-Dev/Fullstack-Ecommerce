@@ -13,7 +13,15 @@ type DataPropType = {
 
 function ProductItem({ data }: DataPropType) {
   return (
-    <Box sx={{ border: '1px solid #cecece' }}>
+    <Box
+      sx={{
+        border: '1px solid #cecece',
+        height: '320px',
+        width: '450px',
+        m: '10px',
+        p: '5px',
+      }}
+    >
       <img height="220px" width="250px" src={data.imageLink} alt="" />
       <CustomizedTextProduct fontWeight="bold">
         {data.name}

@@ -4,7 +4,7 @@ export const productNameList = [
     img: 'https://eco-beauty.dior.com/dw/image/v2/BDGF_PRD/on/demandware.static/-/Sites-master_dior/default/dwcd8adbf4/assets/Y0038009/Y0038009_C003800641_E02_GHC.jpg?sw=460&sh=498&sm=fit&imwidth=430',
     subNav: [
       { title: 'Christmas' },
-      { title: 'Dior  Addict' },
+      { title: 'Dior Addict' },
       { title: 'Diorific' },
     ],
   },
@@ -31,12 +31,12 @@ export const productNameList = [
   {
     name: 'mascara',
     img: 'https://eco-beauty.dior.com/dw/image/v2/BDGF_PRD/on/demandware.static/-/Sites-master_dior/default/dwa7997bc0/assets/Y0225000/Y0225000_E05_GHC.jpg?sw=460&sh=498&sm=fit&imwidth=430',
-    subNav: [{ title: 'Dior Show' }, { title: 'Others' }, { title: '' }],
+    subNav: [{ title: 'Diorshow' }, { title: 'Dior Addict' }],
   },
   {
     name: 'nailPolish',
     img: 'https://eco-beauty.dior.com/dw/image/v2/BDGF_PRD/on/demandware.static/-/Sites-master_dior/default/dwf89a81b1/assets/Y0996341/Y0996341_E02_GHC.jpg?sw=460&sh=498&sm=fit&imwidth=430',
-    subNav: [{ title: 'Dior Show' }, { title: 'Dior  Addict' }, { title: '' }],
+    subNav: [{ title: 'Diorshow' }, { title: 'Dior  Addict' }],
   },
   {
     name: 'gift',

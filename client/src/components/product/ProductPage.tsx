@@ -16,6 +16,7 @@ import {
 import ProductItem from './ProductItem'
 import { productName } from '../../misc/productName'
 import { introductionProduct } from '../../misc/introductionProduct'
+import { productNameList } from '../../misc/productNameList'
 //palette, eyebrow, eyeliner, mascara, eyeshadow, blush(1), bronzer (1), foundation, lipstick,
 
 function ProductPage() {
@@ -43,40 +44,44 @@ function ProductPage() {
       <CustomizedText>
         {introductionProduct[category as keyof typeof productName]}
       </CustomizedText>
+      <BoxRow>
+        {productNameList.map((item) => {
+          if (item.name === category) {
+            return item.subNav.map((subitem) => {
+              return (
+                <Link
+                  activeClass="active"
+                  to={subitem.title}
+                  spy={true}
+                  smooth={true}
+                >
+                  <CustomizedButton>{subitem.title}</CustomizedButton>
+                </Link>
+              )
+            })
+          }
+        })}
+      </BoxRow>
       <Box>
-        <Link activeClass="active" to="Christmas" spy={true} smooth={true}>
-          <CustomizedButton>Christmas</CustomizedButton>
-        </Link>
-        <Link activeClass="active" to="DIOR ADDICT" spy={true} smooth={true}>
-          <CustomizedButton>DIOR ADDICT</CustomizedButton>
-        </Link>
-        <Link activeClass="active" to="DIORIFIC" spy={true} smooth={true}>
-          <CustomizedButton>DIORIFIC</CustomizedButton>
-        </Link>
-      </Box>
-      <Box>
-        <BoxRow id="Christmas" sx={{ mb: '20px' }}>
-          <CustomizedTitle>{}</CustomizedTitle>
-          {data.map((item) => {
-            if (item.name.includes('Christmas')) {
-              return <ProductItem data={item} />
-            }
-          })}
-        </BoxRow>
-        <BoxRow id="DIOR ADDICT" sx={{ mb: '20px' }}>
-          {data.map((item) => {
-            if (item.name.includes('DIOR ADDICT')) {
-              return <ProductItem data={item} />
-            }
-          })}
-        </BoxRow>
-        <BoxRow id="DIORIFIC" sx={{ mb: '20px' }}>
-          {data.map((item) => {
-            if (item.name.includes('DIORIFIC')) {
-              return <ProductItem data={item} />
-            }
-          })}
-        </BoxRow>
+        {productNameList.map((item) => {
+          if (item.name === category) {
+            return item.subNav.map((subitem) => {
+              return (
+                <Box>
+                  <CustomizedTitle>{subitem.title}</CustomizedTitle>
+
+                  <BoxRow id={subitem.title} sx={{ mb: '20px' }}>
+                    {data.map((item) => {
+                      if (item.name.includes(subitem.title)) {
+                        return <ProductItem data={item} />
+                      }
+                    })}
+                  </BoxRow>
+                </Box>
+              )
+            })
+          }
+        })}
       </Box>
     </Box>
   )

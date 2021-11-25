@@ -32,8 +32,8 @@ function SubNav() {
 
   const open = Boolean(anchorEl)
   return (
-    <Box>
-      <BoxRow>
+    <Box sx={{ width: '70%', m: 'auto', mb: '20px', mt: '20px' }}>
+      <BoxRow sx={{ justifyContent: 'space-between' }}>
         {productNameList.map((item) => {
           return (
             <Box>

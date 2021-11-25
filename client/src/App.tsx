@@ -18,6 +18,7 @@ import ArtofGift from './components/gift/ArtofGift'
 import GiftFinder from './components/gift/giftFinder'
 import News from './components/news'
 import Craft from './components/news/craft'
+import History from './components/news/history/History'
 
 // export const theme = createTheme({
 //   typography: {
@@ -31,16 +32,23 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="" element={<HomePage />} />
-        <Route path="/product" element={<ProductPage />} />
-        <Route path="/productDetail" element={<ProductDetail />} />
-        <Route path="/createAccount" element={<CreateAccount />} />
-        <Route path="/gift" element={<Gift />} />
-        <Route path="gift/art" element={<ArtofGift />} />
-        <Route path="gift/finder" element={<GiftFinder />} />
-        <Route path="/news" element={<News />} />
-        <Route path="/news/craft" element={<Craft />} />
+        <Route path="/product" element={<ProductPage />}>
+          {/* <Route path="/:id" element={<ProductDetail />} /> */}
+        </Route>
+
+        <Route path="/gift" element={<Gift />}>
+          <Route path="art" element={<ArtofGift />} />
+          <Route path="finder" element={<GiftFinder />} />
+        </Route>
+
+        <Route path="/news" element={<News />}>
+          <Route path="craft" element={<Craft />} />
+          <Route path="history" element={<History />} />
+        </Route>
 
         <Route path="/user" element={<UserAccount />} />
+        <Route path="/createAccount" element={<CreateAccount />} />
+
         <Route path="/cart" element={<Cart />} />
       </Routes>
       <Footer />

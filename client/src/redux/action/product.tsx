@@ -38,3 +38,13 @@ export function fetchDataByCategory(category: string) {
       })
   }
 }
+
+//fetch product by id
+export function fetchProductbyId(id: string) {
+  return (dispatch: Dispatch) => {
+    axios.get(`http://localhost:5000/api/v1/product?${id}`).then((res: any) => {
+      const dataByCategory = res.data
+      dispatch(fetchProduct(dataByCategory))
+    })
+  }
+}

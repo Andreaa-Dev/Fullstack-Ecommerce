@@ -3,6 +3,7 @@ import { Box } from '@mui/system'
 import { ProductType } from '../../misc/type'
 import {
   CustomizedButton,
+  CustomizedLink,
   CustomizedText,
   CustomizedTextProduct,
 } from '../customizedCSS'
@@ -23,9 +24,12 @@ function ProductItem({ data }: DataPropType) {
       }}
     >
       <img height="220px" width="250px" src={data.imageLink} alt="" />
-      <CustomizedTextProduct fontWeight="bold">
-        {data.name}
-      </CustomizedTextProduct>
+      <CustomizedLink to="/:id">
+        <CustomizedTextProduct fontWeight="bold">
+          {data.name}
+        </CustomizedTextProduct>
+      </CustomizedLink>
+
       <CustomizedTextProduct>{data.description}</CustomizedTextProduct>
     </Box>
   )

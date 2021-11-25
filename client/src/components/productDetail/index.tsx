@@ -6,6 +6,7 @@ import lipstick1 from '../images/lipstick1.webp'
 import lipstick2 from '../images/lipstick2.jpeg'
 import ProductVideo from './ProductVideo'
 import ProductRecently from './ProductRecently'
+import { CustomizedButton } from '../customizedCSS'
 
 function ProductDetail() {
   return (
@@ -21,6 +22,7 @@ function ProductDetail() {
           <Typography>description</Typography>
           variant
         </Box>
+        <CustomizedButton> ADD TO CART</CustomizedButton>
         <ProductVideo />
         <ProductRecently />
       </Box>

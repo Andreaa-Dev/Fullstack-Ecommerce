@@ -7,6 +7,8 @@ import createRootReducer from './reducer'
 const initState: AppState = {
   productState: {
     product: [],
+    productById: null,
+    favoriteProduct: [],
   },
 }
 

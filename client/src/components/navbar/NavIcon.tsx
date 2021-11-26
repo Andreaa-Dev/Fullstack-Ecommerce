@@ -28,6 +28,9 @@ function NavIcon() {
             <LocalMallOutlinedIcon color="action" />
           </Badge>
         </CustomizedLink>
+        <CustomizedLink to="/user">
+          <PersonOutlineOutlinedIcon />
+        </CustomizedLink>
         <CustomizedLink to="/createAccount">
           <PersonOutlineOutlinedIcon />
         </CustomizedLink>

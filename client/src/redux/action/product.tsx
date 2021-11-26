@@ -1,11 +1,56 @@
 import { Dispatch } from 'redux'
 import axios from 'axios'
 
-import { FetchProduct, FetchProductAction, ProductType } from '../../misc/type'
+import {
+  AddFavorite,
+  AddFavoriteAction,
+  FetchProduct,
+  FetchProductAction,
+  FetchProductById,
+  FetchProductByIdAction,
+  ProductType,
+  SearchProduct,
+  SearchProductAction,
+} from '../../misc/type'
 
-export function fetchProduct(productData: ProductType[]): FetchProductAction {
+export function fetchProductSuccess(
+  productData: ProductType[]
+): FetchProductAction {
   return {
     type: FetchProduct,
+    payload: {
+      product: productData,
+    },
+  }
+}
+
+export function fetchProductByIdSuccess(
+  productData: ProductType
+): FetchProductByIdAction {
+  return {
+    type: FetchProductById,
+    payload: {
+      product: productData,
+    },
+  }
+}
+
+export function addFavoriteSuccess(
+  favoriteProduct: ProductType
+): AddFavoriteAction {
+  return {
+    type: AddFavorite,
+    payload: {
+      favoriteProduct: favoriteProduct,
+    },
+  }
+}
+
+export function searchProductSuccess(
+  productData: ProductType
+): SearchProductAction {
+  return {
+    type: SearchProduct,
     payload: {
       product: productData,
     },
@@ -21,7 +66,7 @@ export function fetchData() {
       .get('http://localhost:5000/api/v1/product')
       .then((res: any) => {
         const data = res.data
-        dispatch(fetchProduct(data))
+        dispatch(fetchProductSuccess(data))
       })
       .catch((error) => console.log(error))
   }
@@ -34,7 +79,7 @@ export function fetchDataByCategory(category: string) {
       .get(`http://localhost:5000/api/v1/product?category=${category}`)
       .then((res: any) => {
         const dataByCategory = res.data
-        dispatch(fetchProduct(dataByCategory))
+        dispatch(fetchProductSuccess(dataByCategory))
       })
   }
 }
@@ -42,9 +87,12 @@ export function fetchDataByCategory(category: string) {
 //fetch product by id
 export function fetchProductbyId(id: string) {
   return (dispatch: Dispatch) => {
-    axios.get(`http://localhost:5000/api/v1/product?${id}`).then((res: any) => {
-      const dataByCategory = res.data
-      dispatch(fetchProduct(dataByCategory))
-    })
+    axios
+      .get(`http://localhost:5000/api/v1/product/${id}`)
+      .then((res: any) => {
+        const dataById = res.data
+        dispatch(fetchProductByIdSuccess(dataById))
+      })
+      .catch((error) => console.log(error))
   }
 }

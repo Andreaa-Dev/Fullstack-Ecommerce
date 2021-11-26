@@ -27,7 +27,6 @@ function SubNav() {
   }
   const handlePopoverClose = (id: string) => {
     setAnchorEl({ ...anchorEl, [id]: null })
-    console.log('run')
   }
 
   const open = Boolean(anchorEl)

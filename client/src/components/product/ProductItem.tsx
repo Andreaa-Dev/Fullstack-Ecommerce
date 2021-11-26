@@ -1,6 +1,5 @@
 import React from 'react'
 import { Box } from '@mui/system'
-import { useParams } from 'react-router-dom'
 
 import { ProductType } from '../../misc/type'
 import {
@@ -15,8 +14,7 @@ type DataPropType = {
 }
 
 function ProductItem({ data }: DataPropType) {
-  let params = useParams()
-  console.log(params, 'h')
+  let productId = data._id
   return (
     <Box
       sx={{
@@ -28,7 +26,7 @@ function ProductItem({ data }: DataPropType) {
       }}
     >
       <img height="220px" width="250px" src={data.imageLink} alt="" />
-      <CustomizedLink to=":id">
+      <CustomizedLink to={productId}>
         <CustomizedTextProduct fontWeight="bold">
           {data.name}
         </CustomizedTextProduct>

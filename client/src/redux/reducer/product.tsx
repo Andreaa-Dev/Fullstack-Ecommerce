@@ -1,6 +1,16 @@
-import { ProductState, AllAction, FetchProduct } from '../../misc/type'
+import {
+  ProductState,
+  AllAction,
+  FetchProduct,
+  FetchProductById,
+  AddFavorite,
+} from '../../misc/type'
 
-const initialState: ProductState = { product: [] }
+const initialState: ProductState = {
+  product: [],
+  productById: null,
+  favoriteProduct: [],
+}
 
 export default function product(
   state = initialState,
@@ -12,7 +22,19 @@ export default function product(
         ...state,
         product: action.payload.product,
       }
+    case FetchProductById:
+      return {
+        ...state,
+        productById: action.payload.product,
+      }
 
+    case AddFavorite:
+      return {
+        // if (action.payload.favoriteProduct.id) {
+        // }
+        ...state,
+        // favoriteProduct: action.payload.product,
+      }
     default:
       return state
   }

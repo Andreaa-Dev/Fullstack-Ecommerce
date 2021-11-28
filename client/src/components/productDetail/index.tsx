@@ -10,7 +10,7 @@ import ProductVideo from './ProductVideo'
 import ProductRecently from './ProductRecently'
 import { CustomizedButton, themes } from '../customizedCSS'
 import { AppState } from '../../misc/type'
-import { fetchProductbyId } from '../../redux/action'
+import { fetchProductById } from '../../redux/action'
 import FavoriteButton from './FavoriteButton'
 import { useParams } from 'react-router-dom'
 
@@ -24,7 +24,7 @@ function ProductDetail() {
   console.log(data, 'hi')
 
   useEffect(() => {
-    dispatch(fetchProductbyId(productId))
+    dispatch(fetchProductById(productId))
   }, [dispatch, productId])
 
   if (!data) {

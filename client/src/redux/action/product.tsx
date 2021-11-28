@@ -85,7 +85,7 @@ export function fetchDataByCategory(category: string) {
 }
 
 //fetch product by id
-export function fetchProductbyId(id: string) {
+export function fetchProductById(id: string) {
   return (dispatch: Dispatch) => {
     axios
       .get(`http://localhost:5000/api/v1/product/${id}`)
@@ -94,5 +94,17 @@ export function fetchProductbyId(id: string) {
         dispatch(fetchProductByIdSuccess(dataById))
       })
       .catch((error) => console.log(error))
+  }
+}
+
+//fetch product by searching
+export function fetchProductBySearch(search: string) {
+  return (dispatch: Dispatch) => {
+    axios
+      .get(`http://localhost:5000/api/v1/product?search=${search}`)
+      .then((res: any) => {
+        const dataBySearch = res.data
+        dispatch(searchProductSuccess(dataBySearch))
+      })
   }
 }

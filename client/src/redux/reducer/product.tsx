@@ -30,10 +30,8 @@ export default function product(
 
     case AddFavorite:
       return {
-        // if (action.payload.favoriteProduct.id) {
-        // }
         ...state,
-        // favoriteProduct: action.payload.product,
+        // favoriteProduct: action.payload.favoriteProduct,
       }
     default:
       return state

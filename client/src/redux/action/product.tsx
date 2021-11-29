@@ -47,7 +47,7 @@ export function addFavoriteSuccess(
 }
 
 export function searchProductSuccess(
-  productData: ProductType
+  productData: ProductType[]
 ): SearchProductAction {
   return {
     type: SearchProduct,

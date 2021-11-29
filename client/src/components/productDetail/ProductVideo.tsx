@@ -17,14 +17,13 @@ function ProductVideo(props: any) {
           gap: 3,
           justifyContent: 'center',
           alignItems: 'center',
-          marginLeft: '150px',
-          marginRight: '150px',
+          mt: '100px',
         }}
       >
         <ReactPlayer
           url="https://secure.massmotionmedia.com/diorparfums/projects/diorparfums_rouge_forever_liquid_no_transfer/videos/20210308145130_960x540_1900_986decdf-da91-4dab-8d8c-0ddeb1c6ce7a.mp4"
           width="100%"
-          height="250px"
+          height="200px"
           playing
           playIcon={<CustomizedLPlayIcon />}
           light={videoImg1}
@@ -33,7 +32,7 @@ function ProductVideo(props: any) {
         <ReactPlayer
           url="https://secure.massmotionmedia.com/diorparfums/projects/diorparfums_rouge_forever_liquid_second_skin/videos/20210308145132_960x540_1900_890625ef-f15d-4510-8829-801f7ccd4193.mp4"
           width="100%"
-          height="250px"
+          height="200px"
           playing
           playIcon={<CustomizedLPlayIcon />}
           light={videoImg2}
@@ -42,7 +41,7 @@ function ProductVideo(props: any) {
         <ReactPlayer
           url="https://secure.massmotionmedia.com/diorparfums/projects/diorparfums_rouge_forever_liquid_ultra_matte/videos/20210308145133_960x540_1900_a313cacf-6970-4002-9ec4-1787cd142b03.mp4"
           width="100%"
-          height="250px"
+          height="200px"
           playing
           playIcon={<CustomizedLPlayIcon />}
           light={videoImg3}

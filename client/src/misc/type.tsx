@@ -46,7 +46,7 @@ export type FetchProductByIdAction = {
 export type SearchProductAction = {
   type: typeof SearchProduct
   payload: {
-    product: ProductType
+    product: ProductType[]
   }
 }
 

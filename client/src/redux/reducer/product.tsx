@@ -4,6 +4,7 @@ import {
   FetchProduct,
   FetchProductById,
   AddFavorite,
+  SearchProduct,
 } from '../../misc/type'
 
 const initialState: ProductState = {
@@ -46,6 +47,12 @@ export default function product(
       return {
         ...state,
         favoriteProduct: newState,
+      }
+
+    case SearchProduct:
+      return {
+        ...state,
+        product: action.payload.product,
       }
     default:
       return state

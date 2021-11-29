@@ -13,7 +13,14 @@ import lipstick2 from '../images/lipstick2.jpeg'
 import ProductVideo from './ProductVideo'
 import ProductRecently from './ProductRecently'
 import { AppState, ProductType } from '../../misc/type'
-import { BoxColumn, BoxRow, CustomizedButton, themes } from '../customizedCSS'
+import {
+  BoxColumn,
+  BoxRow,
+  CustomizedButton,
+  CustomizedText,
+  CustomizedTitle,
+  themes,
+} from '../customizedCSS'
 import { addFavoriteSuccess, fetchProductById } from '../../redux/action'
 
 let color: 'action' | 'secondary' = 'action'
@@ -59,35 +66,58 @@ function ProductDetail() {
   }
   return (
     <ThemeProvider theme={themes}>
-      <BoxRow>
-        <BoxColumn>
-          <img src={data.imageLink} alt="error" height="450px" width="600px" />
-          <BoxRow>
-            <img src={lipstick1} alt="error" height="200px" width="200px" />
-            <img src={lipstick2} alt="error" height="200px" width="200px" />
-          </BoxRow>
-        </BoxColumn>
-        <BoxColumn>
-          <Typography>{data.name}</Typography>
-          <Typography>{data.description}</Typography>
-          <Box>
-            {data.variant.map((item) => {
-              return (
-                <CircleIcon sx={{ fontSize: '40px', color: item.hexValue }} />
-              )
-            })}
+      <Box sx={{ ml: '20px', mr: '20px' }}>
+        <BoxRow>
+          <BoxColumn>
+            <img
+              src={data.imageLink}
+              alt="error"
+              height="350px"
+              width="400px"
+            />
+            <BoxRow>
+              <Box sx={{ m: '10px' }}>
+                <img src={lipstick1} alt="error" height="200px" width="200px" />
+              </Box>
+              <img src={lipstick2} alt="error" height="200px" width="200px" />
+            </BoxRow>
+          </BoxColumn>
+          <Box
+            sx={{
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'flex-start',
+              mt: '0',
+            }}
+          >
+            <CustomizedTitle sx={{ textAlign: 'left' }}>
+              {data.name}
+            </CustomizedTitle>
+            <CustomizedText sx={{ textAlign: 'left' }}>
+              {data.description}
+            </CustomizedText>
+            <Box>
+              {data.variant.map((item) => {
+                return (
+                  <CircleIcon sx={{ fontSize: '40px', color: item.hexValue }} />
+                )
+              })}
+            </Box>
+            <Box>
+              <CustomizedButton> ADD TO CART</CustomizedButton>
+              <FavoriteIcon
+                className={classes.icon}
+                id="favIcon"
+                onClick={onClickHandler}
+                color={color}
+                sx={{ fontSize: 30, textAlign: 'center' }}
+              />
+            </Box>
           </Box>
-          <FavoriteIcon
-            className={classes.icon}
-            id="favIcon"
-            onClick={onClickHandler}
-            color={color}
-          />
-          <CustomizedButton> ADD TO CART</CustomizedButton>
-        </BoxColumn>
-      </BoxRow>
-      <ProductVideo sx={{ m: '20px' }} />
-      <ProductRecently />
+        </BoxRow>
+        <ProductVideo sx={{ width: '100%' }} />
+        <ProductRecently />
+      </Box>
     </ThemeProvider>
   )
 }

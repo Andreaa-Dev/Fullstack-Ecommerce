@@ -29,9 +29,23 @@ export default function product(
       }
 
     case AddFavorite:
+      let productId = action.payload.favoriteProduct._id
+      let isAdded = state.favoriteProduct.some((item) => {
+        return item._id === productId
+      })
+
+      let newState = []
+      if (isAdded) {
+        newState = state.favoriteProduct.filter((item) => {
+          return item._id !== productId
+        })
+      } else {
+        newState = [...state.favoriteProduct, action.payload.favoriteProduct]
+      }
+
       return {
         ...state,
-        // favoriteProduct: action.payload.favoriteProduct,
+        favoriteProduct: newState,
       }
     default:
       return state

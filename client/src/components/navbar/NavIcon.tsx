@@ -7,8 +7,14 @@ import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined'
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined'
 
 import { CustomizedLink, themes } from '../customizedCSS'
+import { useSelector } from 'react-redux'
+import { AppState } from '../../misc/type'
 
 function NavIcon() {
+  const favoriteProduct = useSelector(
+    (state: AppState) => state.productState.favoriteProduct
+  )
+  const favoriteCount = favoriteProduct.length
   return (
     <Box
       sx={{
@@ -20,7 +26,7 @@ function NavIcon() {
       }}
     >
       <ThemeProvider theme={themes}>
-        <Badge badgeContent={1} color="primary">
+        <Badge badgeContent={favoriteCount} color="primary">
           <FavoriteBorderIcon color="action" />
         </Badge>
         <CustomizedLink to="/cart">

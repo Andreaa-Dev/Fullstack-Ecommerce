@@ -16,7 +16,7 @@ function Gift() {
     <CustomizedBoxHT>
       <GiftVideo />
       <CustomizedTitleHT>ART OF GIFTING</CustomizedTitleHT>
-      <img src={gift} alt="" />
+      <img src={gift} alt="error" />
       <CustomizedLink to="art">
         <CustomizedButton>DISCOVER</CustomizedButton>
       </CustomizedLink>

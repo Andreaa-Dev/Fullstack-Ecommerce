@@ -11,6 +11,18 @@ export type ProductType = {
   description: string
   variant: VariantType[]
 }
+export type UserType = {
+  firstName: string
+  lastName: string
+  email: string
+  password: string
+  country: string
+  address: string
+  phone: number
+  DOB: Date
+  acceptedTerms: boolean
+  role: string
+}
 
 export type UserInput = {
   userInput: string
@@ -28,6 +40,8 @@ export const SearchProduct = 'searchProduct'
 
 export const AddFavorite = 'addFavorite'
 export const RemoveFavorite = 'removeFavorite'
+
+export const FetchUserById = 'fetchUserById'
 
 export type FetchProductAction = {
   type: typeof FetchProduct
@@ -57,12 +71,20 @@ export type AddFavoriteAction = {
   }
 }
 
+export type FetchUserByIdAction = {
+  type: typeof FetchUserById
+  payload: {
+    userById: UserType
+  }
+}
+
 //combine action
 export type AllAction =
   | FetchProductAction
   | FetchProductByIdAction
   | SearchProductAction
   | AddFavoriteAction
+  | FetchUserByIdAction
 
 //state
 export type ProductState = {
@@ -71,6 +93,11 @@ export type ProductState = {
   favoriteProduct: ProductType[]
 }
 
+export type UserState = {
+  userById: null | UserType
+}
+
 export type AppState = {
   productState: ProductState
+  userState: UserState
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
@@ -16,8 +16,15 @@ import { title } from '../../../misc/titleGift'
 import { type } from '../../../misc/typeGift'
 import { forWho } from '../../../misc/forGift'
 import GiftList from './GiftList'
+import GiftFinderResult from './GiftFinderResult'
 
 function GiftFinder() {
+  const [randomProduct, setRandomProduct] = useState(false)
+
+  const onRandomProductHandler = () => {
+    setRandomProduct(true)
+  }
+
   const settings = {
     dots: false,
     infinite: true,
@@ -42,7 +49,7 @@ function GiftFinder() {
   }
   return (
     <CustomizedBoxHT>
-      <CustomizedTextHT>gift finder</CustomizedTextHT>
+      <CustomizedTextHT sx={{ fontSize: '30px' }}>GIFT FINDER</CustomizedTextHT>
       <Box>
         <CustomizedText color="white">TO INDULGE</CustomizedText>
         <Box
@@ -113,7 +120,10 @@ function GiftFinder() {
           </Slider>
         </Box>
       </Box>
-      <CustomizedButton>Find the perfect gift</CustomizedButton>
+      <CustomizedButton onClick={onRandomProductHandler}>
+        Find the perfect gift
+      </CustomizedButton>
+      {randomProduct && <GiftFinderResult />}
       <GiftList />
     </CustomizedBoxHT>
   )

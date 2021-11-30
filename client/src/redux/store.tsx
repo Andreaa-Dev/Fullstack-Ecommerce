@@ -10,6 +10,9 @@ const initState: AppState = {
     productById: null,
     favoriteProduct: [],
   },
+  userState: {
+    userById: null,
+  },
 }
 
 export default function makeStore(initialState = initState) {

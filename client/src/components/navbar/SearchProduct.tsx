@@ -75,7 +75,7 @@ function SearchProduct() {
                 height="100px"
                 width="100px"
               />
-              <CustomizedLink to="/product/:id">
+              <CustomizedLink to={`product/${item._id}`}>
                 <CustomizedText sx={{ textAlign: 'left' }}>
                   {item.name}
                 </CustomizedText>

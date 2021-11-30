@@ -1,5 +1,5 @@
 export const countryList = [
-  { name: 'Country', code: 'Default' },
+  { name: 'Choose your country', code: 'Default' },
   { name: 'Albania', code: 'AL' },
   { name: 'Åland Islands', code: 'AX' },
   { name: 'Algeria', code: 'DZ' },

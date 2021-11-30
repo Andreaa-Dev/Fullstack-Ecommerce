@@ -36,7 +36,6 @@ function NavIcon() {
 
       setState({ ...state, [anchor]: open })
     }
-
   const list = (anchor: Anchor) => (
     <Box
       sx={{ width: 350 }}
@@ -54,7 +53,7 @@ function NavIcon() {
                 height="100px"
                 width="100px"
               />
-              <CustomizedLink to="/product/:id">
+              <CustomizedLink to={`product/${item._id}`}>
                 <CustomizedText> {item.name}</CustomizedText>
               </CustomizedLink>
             </BoxRow>
@@ -97,10 +96,7 @@ function NavIcon() {
             <LocalMallOutlinedIcon color="action" />
           </Badge>
         </CustomizedLink>
-        <CustomizedLink to="/user">
-          <PersonOutlineOutlinedIcon />
-        </CustomizedLink>
-        <CustomizedLink to="/createAccount">
+        <CustomizedLink to="/createUser">
           <PersonOutlineOutlinedIcon />
         </CustomizedLink>
       </ThemeProvider>

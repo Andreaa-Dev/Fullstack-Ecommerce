@@ -7,18 +7,19 @@ import HomePage from './components/homePage/HomePage'
 import NavBar from './components/navbar'
 import ProductDetail from './components/productDetail'
 import ProductPage from './components/product/ProductPage'
-import CreateAccount from './components/user/CreateAccount'
+import CreateAccount from './components/user/CreateAccount1'
 import Cart from './components/cart'
 
 import { ThemeProvider } from '@emotion/react'
 import { createTheme } from '@mui/system'
-import UserAccount from './components/user/UserAccount'
+import UserAccount from './components/user/CreateUserAccount'
 import Gift from './components/gift/Gift'
 import ArtofGift from './components/gift/ArtofGift'
 import GiftFinder from './components/gift/giftFinder'
 import News from './components/news'
 import Craft from './components/news/craft'
 import History from './components/news/history/History'
+import CreateUserAccount from './components/user/CreateUserAccount'
 
 // export const theme = createTheme({
 //   typography: {
@@ -36,16 +37,20 @@ function App() {
         <Route path="product/:id" element={<ProductDetail />} />
 
         <Route path="/gift" element={<Gift />}>
-          <Route path="art" element={<ArtofGift />} />
-          <Route path="finder" element={<GiftFinder />} />
+          {/* <Route path="art" element={<ArtofGift />} /> */}
+          {/* <Route path="finder" element={<GiftFinder />} /> */}
         </Route>
+        <Route path="gift/art" element={<ArtofGift />} />
+        <Route path="gift/finder" element={<GiftFinder />} />
 
         <Route path="/news" element={<News />}>
           <Route path="craft" element={<Craft />} />
           <Route path="history" element={<History />} />
         </Route>
 
-        <Route path="/user" element={<UserAccount />} />
+        <Route path="/createUser" element={<CreateUserAccount />} />
+        <Route path="/account" element={<UserAccount />} />
+
         <Route path="/createAccount" element={<CreateAccount />} />
 
         <Route path="/cart" element={<Cart />} />

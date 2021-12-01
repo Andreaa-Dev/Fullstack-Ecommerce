@@ -24,6 +24,13 @@ export type UserType = {
   role: string
 }
 
+export type OrderType = {
+  quantity: number
+  date: Date
+  userId: string
+  productId: string
+}
+
 export type UserInput = {
   userInput: string
 }
@@ -32,16 +39,14 @@ export type UserInput = {
 
 export const FetchProduct = 'fetchProduct'
 export const FetchProductById = 'fetchProductById'
-
 export const AddProduct = 'addProduct'
 export const RemoveProduct = 'removeProduct'
-
 export const SearchProduct = 'searchProduct'
-
 export const AddFavorite = 'addFavorite'
 export const RemoveFavorite = 'removeFavorite'
 
 export const FetchUserById = 'fetchUserById'
+export const GetOrder = 'getOrder'
 
 export type FetchProductAction = {
   type: typeof FetchProduct
@@ -78,6 +83,13 @@ export type FetchUserByIdAction = {
   }
 }
 
+export type GetOrderAction = {
+  type: typeof GetOrder
+  payload: {
+    orderData: OrderType
+  }
+}
+
 //combine action
 export type AllAction =
   | FetchProductAction
@@ -85,6 +97,7 @@ export type AllAction =
   | SearchProductAction
   | AddFavoriteAction
   | FetchUserByIdAction
+  | GetOrderAction
 
 //state
 export type ProductState = {
@@ -97,7 +110,12 @@ export type UserState = {
   userById: null | UserType
 }
 
+export type OrderState = {
+  orderData: OrderType[]
+}
+
 export type AppState = {
   productState: ProductState
   userState: UserState
+  orderState: OrderState
 }

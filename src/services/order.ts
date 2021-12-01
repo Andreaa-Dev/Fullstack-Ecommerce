@@ -6,7 +6,7 @@ const createOrder = async (order: OrderDocument): Promise<OrderDocument> => {
 }
 
 const findById = async (orderId: string): Promise<OrderDocument> => {
-  const foundOrder = await Order.findById(orderId)
+  const foundOrder = await Order.findById(orderId).populate('productIds')
 
   if (!foundOrder) {
     throw new NotFoundError(`order ${orderId} not found`)

@@ -5,6 +5,7 @@ import { useParams } from 'react-router'
 import { AppState } from '../../misc/type'
 import { fetchUserData } from '../../redux/action'
 import { CustomizedTitle } from '../customizedCSS'
+import SideBar from './SideBar'
 import UserDetail from './UserDetail'
 
 function Index() {
@@ -20,6 +21,7 @@ function Index() {
   return (
     <div>
       <CustomizedTitle> YOUR ACCOUNT</CustomizedTitle>
+      <SideBar />
       <UserDetail userData={userData} />
     </div>
   )

@@ -13,6 +13,9 @@ const initState: AppState = {
   userState: {
     userById: null,
   },
+  orderState: {
+    orderData: [],
+  },
 }
 
 export default function makeStore(initialState = initState) {

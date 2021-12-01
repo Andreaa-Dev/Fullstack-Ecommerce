@@ -31,7 +31,6 @@ const UserSchema = new mongoose.Schema({
   },
   password: {
     type: String,
-    // required: true,
   },
   country: {
     type: String,
@@ -53,6 +52,12 @@ const UserSchema = new mongoose.Schema({
     type: String,
     default: 'user',
   },
+  orderIds: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Order',
+    },
+  ],
 })
 
 export default mongoose.model<UserDocument>('User', UserSchema)

@@ -20,8 +20,14 @@ const updateUser = async (
   return foundUser
 }
 
+// join / nest populate
 const findById = async (userId: string): Promise<UserDocument> => {
-  const foundUser = await User.findById(userId)
+  const foundUser = await User.findById(userId).populate({
+    path: 'orderIds',
+    populate: {
+      path: 'productIds',
+    },
+  })
 
   if (!foundUser) {
     throw new NotFoundError(`User ${userId} not found`)

@@ -1,19 +1,26 @@
 import React from 'react'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 import GoogleLogIn from 'react-google-login'
 import GoogleIcon from '@mui/icons-material/Google'
 
 import { CustomizedButton } from '../../customizedCSS'
 
-const responseGoogle = async (response: any) => {
-  let res = await axios.post(
-    'http://localhost:5000/api/v1/user/google-authenticate',
-    { id_token: response.tokenObj.id_token }
-  )
-  console.log(res, 's')
-}
-
 function GoogleLogInPage() {
+  let navigate = useNavigate()
+  const responseGoogle = async (response: any) => {
+    let res = await axios.post(
+      'http://localhost:5000/api/v1/user/google-authenticate',
+      { id_token: response.tokenObj.id_token }
+    )
+    const userId = res.data.userGoogleData._id
+    if (res.status === 200) {
+      navigate(`/account/${userId}`)
+    }
+
+    console.log(res, 's')
+  }
+
   return (
     <div>
       <GoogleLogIn

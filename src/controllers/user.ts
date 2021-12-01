@@ -1,10 +1,11 @@
 import jwt from 'jsonwebtoken'
+import bcrypt from 'bcrypt'
 import { Request, Response, NextFunction } from 'express'
 
-import User from '../models/User'
-import { BadRequestError, InternalServerError } from '../helpers/apiError'
+import User, { UserDocument } from '../models/User'
 import UserService from '../services/user'
 import { JWT_SECRET } from '../util/secrets'
+import { BadRequestError, InternalServerError } from '../helpers/apiError'
 
 // POST /user => create user
 export const createUser = async (
@@ -13,13 +14,34 @@ export const createUser = async (
   next: NextFunction
 ) => {
   try {
-    const { firstName, lastName, email, password, role } = req.body
+    if (!req.body.password) {
+      next(new BadRequestError('Missing password'))
+    }
+    const {
+      firstName,
+      lastName,
+      email,
+      password,
+      country,
+      address,
+      phone,
+      DOB,
+      acceptedTerms,
+      role,
+    } = req.body
+    const salt = await bcrypt.genSalt(10)
+    const hashedPassword = await bcrypt.hash(password, salt)
 
     const user = new User({
       firstName,
       lastName,
       email,
-      password,
+      password: hashedPassword,
+      country,
+      address,
+      phone,
+      DOB,
+      acceptedTerms,
       role,
     })
 
@@ -96,6 +118,7 @@ export const findAll = async (
   res: Response,
   next: NextFunction
 ) => {
+  //foundUser = req.user (from passport)
   try {
     res.json(await UserService.findAll())
   } catch (error) {
@@ -114,9 +137,8 @@ export const authenticate = async (
   next: NextFunction
 ) => {
   try {
-    console.log('user controller', req.user)
-    const { email, _id, firstName, lastName } = req.user as any
-    console.log(email, 'e')
+    const userGoogleData = req.user as UserDocument
+    const { email, _id, firstName } = userGoogleData
     const token = jwt.sign(
       {
         email,
@@ -128,9 +150,8 @@ export const authenticate = async (
         expiresIn: '1h',
       }
     )
-    console.log(token, 't')
 
-    res.json({ token, _id, firstName, lastName })
+    res.json({ token, userGoogleData })
   } catch (error) {
     console.log('error', error)
     return next(new InternalServerError())

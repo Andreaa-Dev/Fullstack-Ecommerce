@@ -1,14 +1,28 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { useParams } from 'react-router'
 
-import UserNav from './UserNav'
+import { AppState } from '../../misc/type'
+import { fetchUserData } from '../../redux/action'
+import { CustomizedTitle } from '../customizedCSS'
+import UserDetail from './UserDetail'
 
-function index() {
+function Index() {
+  let param = useParams() as { id: string }
+  const dispatch = useDispatch()
+  const userData = useSelector((state: AppState) => state.userState.userById)
+
+  useEffect(() => {
+    dispatch(fetchUserData(param.id))
+  }, [dispatch])
+
+  console.log(userData, 'h')
   return (
     <div>
-      userAccount
-      <UserNav />
+      <CustomizedTitle> YOUR ACCOUNT</CustomizedTitle>
+      <UserDetail userData={userData} />
     </div>
   )
 }
 
-export default index
+export default Index

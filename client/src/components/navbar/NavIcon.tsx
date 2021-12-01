@@ -36,6 +36,7 @@ function NavIcon() {
 
       setState({ ...state, [anchor]: open })
     }
+
   const list = (anchor: Anchor) => (
     <Box
       sx={{ width: 350 }}
@@ -88,7 +89,10 @@ function NavIcon() {
             open={state.right}
             onClose={toggleDrawer('right', false)}
           >
-            {list('right')}
+            <Box>
+              <CustomizedText> Wish list</CustomizedText>
+              {list('right')}
+            </Box>
           </Drawer>
         </Badge>
         <CustomizedLink to="/cart">

@@ -2,6 +2,8 @@ import axios from 'axios'
 import * as yup from 'yup'
 import { TextField } from 'formik-mui'
 import React, { useState } from 'react'
+import { DatePicker } from 'formik-mui-lab'
+import { useNavigate } from 'react-router'
 import { Box, IconButton, MenuItem } from '@mui/material'
 import Visibility from '@mui/icons-material/Visibility'
 import VisibilityOff from '@mui/icons-material/VisibilityOff'
@@ -23,7 +25,6 @@ import {
 import { policy } from '../../misc/policy'
 import { phoneCode } from '../../misc/phoneCode'
 import { countryList } from '../../misc/countryList'
-import { DatePicker } from 'formik-mui-lab'
 
 const validationSchema = yup.object({
   email: yup
@@ -56,6 +57,8 @@ const initialValues = {
 }
 
 function CreateUserAccount() {
+  let navigate = useNavigate()
+
   const classes = useStyles()
 
   const [countryName, setCountryName] = useState('Choose your country')
@@ -89,13 +92,19 @@ function CreateUserAccount() {
           validateOnChange={true}
           initialValues={initialValues}
           validationSchema={validationSchema}
-          onSubmit={(values, actions) => {
+          onSubmit={async (values, actions) => {
             console.log(values, 'k')
             setTimeout(() => {
               actions.setSubmitting(false)
             }, 500)
 
-            axios.post('http://localhost:5000/api/v1/user', values)
+            const result = await axios.post(
+              'http://localhost:5000/api/v1/user',
+              values
+            )
+            if (result.status === 200) {
+              navigate('/account')
+            }
           }}
         >
           {({ isSubmitting, isValid, dirty }) => {

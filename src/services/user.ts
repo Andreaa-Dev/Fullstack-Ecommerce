@@ -45,7 +45,7 @@ const deleteUser = async (userId: string): Promise<UserDocument | null> => {
 }
 
 const findOrCreate = async (payload: Partial<UserDocument>) => {
-  const result = User.findOne({ email: payload.email })
+  const result = await User.findOne({ email: payload.email })
   if (result) {
     return result
   } else {
@@ -53,9 +53,10 @@ const findOrCreate = async (payload: Partial<UserDocument>) => {
       email: payload.email,
       firstName: payload.firstName,
       lastName: payload.lastName,
+      acceptedTerms: true,
     })
-    user.save()
-    return user
+    const createdUser = await user.save()
+    return createdUser
   }
 }
 

@@ -15,10 +15,10 @@ export function fetchUserSuccess(userByIdData: UserType): FetchUserByIdAction {
 //redux-thunk
 
 // fetch all product
-export function fetchUserData() {
+export function fetchUserData(userId: string) {
   return (dispatch: Dispatch) => {
     axios
-      .get('http://localhost:5000/api/v1/user')
+      .get(`http://localhost:5000/api/v1/user/${userId}`)
       .then((res: any) => {
         const userData = res.data
         dispatch(fetchUserSuccess(userData))

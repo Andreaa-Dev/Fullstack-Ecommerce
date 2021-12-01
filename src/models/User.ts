@@ -8,6 +8,11 @@ export type UserDocument = Document & {
   lastName: string
   email: string
   password: string
+  country: string
+  address: string
+  phone: number
+  DOB: Date
+  acceptedTerms: boolean
   role: string
 }
 
@@ -26,7 +31,27 @@ const UserSchema = new mongoose.Schema({
   },
   password: {
     type: String,
+    // required: true,
+  },
+  country: {
+    type: String,
+  },
+  address: {
+    type: String,
+  },
+  phone: {
+    type: String,
+  },
+  DOB: {
+    type: Date,
+  },
+  acceptedTerms: {
+    type: Boolean,
     required: true,
+  },
+  role: {
+    type: String,
+    default: 'user',
   },
 })
 

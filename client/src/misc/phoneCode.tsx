@@ -4,6 +4,10 @@ export const phoneCode = [
     name: 'Abkhazia',
   },
   {
+    code: '+7 840',
+    name: 'Abkhazia',
+  },
+  {
     code: '+93',
     name: 'Afghanistan',
   },

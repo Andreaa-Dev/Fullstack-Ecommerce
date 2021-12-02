@@ -86,7 +86,7 @@ export type FetchUserByIdAction = {
 export type GetOrderAction = {
   type: typeof GetOrder
   payload: {
-    orderData: OrderType
+    orderData: OrderType[]
   }
 }
 

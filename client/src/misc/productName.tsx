@@ -1,4 +1,4 @@
-import lipstick from '../components/images/lipstick_main.jpeg'
+import lipstick from '../components/images/lipsticks_main.webp'
 import nail_polish from '../components/images/nail.webp'
 import eyeshadow from '../components/images/palettes.webp'
 import mascara from '../components/images/mascara.webp'

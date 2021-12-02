@@ -4,6 +4,8 @@ import { Box } from '@mui/system'
 import GiftVideo from './GiftVideo'
 import background from '../images/background.webp'
 import gift from '../images/gift.gif'
+import giftFinder from '../images/gift.webp'
+
 import {
   CustomizedBoxHT,
   CustomizedButton,
@@ -11,7 +13,7 @@ import {
   CustomizedTitleHT,
 } from '../customizedCSS'
 
-function Gift() {
+function index() {
   return (
     <CustomizedBoxHT>
       <GiftVideo />
@@ -22,6 +24,7 @@ function Gift() {
       </CustomizedLink>
 
       <CustomizedTitleHT>GIFT FINDER</CustomizedTitleHT>
+      <img src={giftFinder} alt="error" />
       <CustomizedLink to="finder">
         <CustomizedButton>DISCOVER</CustomizedButton>
       </CustomizedLink>
@@ -29,4 +32,4 @@ function Gift() {
   )
 }
 
-export default Gift
+export default index

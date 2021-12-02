@@ -100,7 +100,7 @@ function NavIcon() {
             <LocalMallOutlinedIcon color="action" />
           </Badge>
         </CustomizedLink>
-        <CustomizedLink to="/createUser">
+        <CustomizedLink to="/userCheck">
           <PersonOutlineOutlinedIcon />
         </CustomizedLink>
       </ThemeProvider>

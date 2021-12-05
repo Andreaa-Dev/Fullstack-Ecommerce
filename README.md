@@ -7,6 +7,7 @@
 1. Node js
 2. MongoDB - data
 3. Google authentication
+4. Hashed password by crypt
    maybe stripe
 
 ## Front-end

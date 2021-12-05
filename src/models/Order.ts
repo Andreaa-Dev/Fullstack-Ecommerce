@@ -1,5 +1,35 @@
 /* eslint-disable @typescript-eslint/member-delimiter-style */
 import mongoose, { Document } from 'mongoose'
+import { VariantSchema } from './Product'
+
+const ProductSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true,
+  },
+  category: {
+    type: String,
+    required: true,
+  },
+  price: {
+    type: Number,
+    required: true,
+  },
+  imageLink: {
+    type: String,
+    required: true,
+  },
+  description: {
+    type: String,
+    required: true,
+  },
+  quantity: {
+    type: Number,
+    required: true,
+  },
+  //embed schema
+  variant: [VariantSchema],
+})
 
 //add types for mongoose
 export type OrderDocument = Document & {
@@ -14,19 +44,14 @@ export type OrderDocument = Document & {
 }
 
 const OrderSchema = new mongoose.Schema({
-  quantity: {
-    type: Number,
-    required: true,
-  },
   date: { type: Date, default: Date.now },
   userId: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
   },
-  productIds: [
+  products: [
     {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: 'Product',
+      type: ProductSchema,
     },
   ],
 })

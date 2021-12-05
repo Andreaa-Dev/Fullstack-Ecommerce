@@ -11,13 +11,11 @@ export const createOrder = async (
   next: NextFunction
 ) => {
   try {
-    const { quantity, date, userId, productIds } = req.body
+    const { userId, products } = req.body
 
     const order = new Order({
-      quantity,
-      date,
       userId,
-      productIds,
+      products,
     })
 
     await OrderService.createOrder(order)

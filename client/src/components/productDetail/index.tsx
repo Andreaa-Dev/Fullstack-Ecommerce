@@ -12,7 +12,7 @@ import lipstick1 from '../images/lipstick1.webp'
 import lipstick2 from '../images/lipstick2.jpeg'
 import ProductVideo from './ProductVideo'
 import ProductRecently from './ProductRecently'
-import { AppState, ProductType } from '../../misc/type'
+import { AddProductToCart, AppState, ProductType } from '../../misc/type'
 import {
   BoxColumn,
   BoxRow,
@@ -21,7 +21,11 @@ import {
   CustomizedTitle,
   themes,
 } from '../customizedCSS'
-import { addFavoriteSuccess, fetchProductById } from '../../redux/action'
+import {
+  addFavoriteSuccess,
+  addToCart,
+  fetchProductById,
+} from '../../redux/action'
 
 let color: 'action' | 'secondary' = 'action'
 const useStyles = makeStyles({
@@ -37,7 +41,7 @@ function ProductDetail() {
   const productId = params.id
 
   const dispatch = useDispatch()
-  const data = useSelector((state: AppState) => state.productState.productById)
+
   const favoriteProduct = useSelector(
     (state: AppState) => state.productState.favoriteProduct
   )
@@ -53,6 +57,13 @@ function ProductDetail() {
     dispatch(fetchProductById(productId))
   }, [dispatch, productId])
 
+  const onClickCartHandler = () => {
+    if (selectedProduct) {
+      const newObj = { ...selectedProduct, quantity: 1 }
+      dispatch(addToCart(newObj))
+    }
+  }
+
   const isFavorited = favoriteProduct.some((item) => {
     return item._id === selectedProduct?._id
   })
@@ -61,7 +72,7 @@ function ProductDetail() {
     color = 'secondary'
   }
 
-  if (!data) {
+  if (!selectedProduct) {
     return <> </>
   }
   return (
@@ -70,7 +81,7 @@ function ProductDetail() {
         <BoxRow>
           <BoxColumn>
             <img
-              src={data.imageLink}
+              src={selectedProduct.imageLink}
               alt="error"
               height="350px"
               width="400px"
@@ -91,20 +102,22 @@ function ProductDetail() {
             }}
           >
             <CustomizedTitle sx={{ textAlign: 'left' }}>
-              {data.name}
+              {selectedProduct.name}
             </CustomizedTitle>
             <CustomizedText sx={{ textAlign: 'left' }}>
-              {data.description}
+              {selectedProduct.description}
             </CustomizedText>
             <Box>
-              {data.variant.map((item) => {
+              {selectedProduct.variant.map((item) => {
                 return (
                   <CircleIcon sx={{ fontSize: '40px', color: item.hexValue }} />
                 )
               })}
             </Box>
             <Box>
-              <CustomizedButton> ADD TO CART</CustomizedButton>
+              <CustomizedButton onClick={onClickCartHandler}>
+                ADD TO CART
+              </CustomizedButton>
               <FavoriteIcon
                 className={classes.icon}
                 id="favIcon"

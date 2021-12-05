@@ -2143,6 +2143,14 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-stripe-elements@^6.0.6":
+  version "6.0.6"
+  resolved "https://registry.yarnpkg.com/@types/react-stripe-elements/-/react-stripe-elements-6.0.6.tgz#9e4622d3072d2ff7afe534c05a72371194c137bc"
+  integrity sha512-LrLQ4f0tvUww5WxTYRiWedVp8HijKUall4KrKO5wbp2RrAmGV2WDhzfhhmdUGYOY2mAAUId1su82aIrkSkzz1A==
+  dependencies:
+    "@types/react" "*"
+    "@types/stripe-v3" "*"
+
 "@types/react-transition-group@^4.4.4":
   version "4.4.4"
   resolved "https://registry.yarnpkg.com/@types/react-transition-group/-/react-transition-group-4.4.4.tgz#acd4cceaa2be6b757db61ed7b432e103242d163e"
@@ -2180,6 +2188,11 @@
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-2.0.0.tgz#7036640b4e21cc2f259ae826ce843d277dad8cff"
   integrity sha512-RJJrrySY7A8havqpGObOB4W92QXKJo63/jFLLgpvOtsGUqbQZ9Sbgl35KMm1DjC6j7AvmmU2bIno+3IyEaemaw==
+
+"@types/stripe-v3@*":
+  version "3.1.26"
+  resolved "https://registry.yarnpkg.com/@types/stripe-v3/-/stripe-v3-3.1.26.tgz#c3c8cf5713af9a3dda0f96766eb64c150dc35799"
+  integrity sha512-c3cI1OzDJ2L1MYm8WvRfpTAojm8O3WyJDEq90py8d2zQJy+sY4ducdQztmZ5ykrRhCPNQJIBHzpEPLl5nCZfSQ==
 
 "@types/styled-jsx@^2.2.8":
   version "2.2.9"
@@ -9378,7 +9391,7 @@ prompts@2.4.0, prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@15.7.2, prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -9740,6 +9753,13 @@ react-slick@^0.28.1:
     json2mq "^0.2.0"
     lodash.debounce "^4.0.8"
     resize-observer-polyfill "^1.5.0"
+
+react-stripe-elements@^6.1.2:
+  version "6.1.2"
+  resolved "https://registry.yarnpkg.com/react-stripe-elements/-/react-stripe-elements-6.1.2.tgz#bd277e86d0b868a6fac9358df09e0d38149b6736"
+  integrity sha512-gYbYhVVJm3Woc84TgmuiqUj44rI/BZGUVUTTmS0U6kZyZa5fYMPlKKIsVZdQZufQ7Ab4BXLO2LSxBlGY0s2jew==
+  dependencies:
+    prop-types "15.7.2"
 
 react-transition-group@^4.0.0, react-transition-group@^4.4.2:
   version "4.4.2"

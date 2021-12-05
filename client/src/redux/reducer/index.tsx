@@ -1,13 +1,13 @@
 import { combineReducers } from 'redux'
 import product from './product'
 import user from './user'
-import order from './order'
+import cart from './cart'
 
 const createRootReducer = () =>
   combineReducers({
     productState: product,
     userState: user,
-    orderState: order,
+    cartState: cart,
   })
 
 export default createRootReducer

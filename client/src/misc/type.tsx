@@ -12,6 +12,7 @@ export type ProductType = {
   variant: VariantType[]
 }
 export type UserType = {
+  _id: string
   firstName: string
   lastName: string
   email: string
@@ -24,17 +25,19 @@ export type UserType = {
   role: string
 }
 
-export type OrderType = {
+export type CartType = {
+  _id: string
+  name: string
+  price: number
+  imageLink: string
+  description: string
+  variant: VariantType[]
   quantity: number
-  date: Date
-  userId: string
-  productId: string
 }
 
 export type UserInput = {
   userInput: string
 }
-
 //Action types
 
 export const FetchProduct = 'fetchProduct'
@@ -46,7 +49,10 @@ export const AddFavorite = 'addFavorite'
 export const RemoveFavorite = 'removeFavorite'
 
 export const FetchUserById = 'fetchUserById'
-export const GetOrder = 'getOrder'
+
+export const AddProductToCart = 'addProductToCart'
+export const AddProductQuantity = 'addProductQuantity'
+export const RemoveProductQuantity = 'removeProductQuantity'
 
 export type FetchProductAction = {
   type: typeof FetchProduct
@@ -83,10 +89,24 @@ export type FetchUserByIdAction = {
   }
 }
 
-export type GetOrderAction = {
-  type: typeof GetOrder
+export type AddProductToCartAction = {
+  type: typeof AddProductToCart
   payload: {
-    orderData: OrderType[]
+    cart: CartType
+  }
+}
+
+export type AddProductQuantityAction = {
+  type: typeof AddProductQuantity
+  payload: {
+    productId: string
+  }
+}
+
+export type RemoveProductQuantityAction = {
+  type: typeof RemoveProductQuantity
+  payload: {
+    productId: string
   }
 }
 
@@ -97,7 +117,9 @@ export type AllAction =
   | SearchProductAction
   | AddFavoriteAction
   | FetchUserByIdAction
-  | GetOrderAction
+  | AddProductToCartAction
+  | AddProductQuantityAction
+  | RemoveProductQuantityAction
 
 //state
 export type ProductState = {
@@ -110,12 +132,12 @@ export type UserState = {
   userById: null | UserType
 }
 
-export type OrderState = {
-  orderData: OrderType[]
+export type CartState = {
+  cartData: CartType[]
 }
 
 export type AppState = {
   productState: ProductState
   userState: UserState
-  orderState: OrderState
+  cartState: CartState
 }

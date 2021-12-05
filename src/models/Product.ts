@@ -16,7 +16,7 @@ export type VariantDocument = {
   colourName: string
 }
 
-const VariantSchema = new mongoose.Schema({
+export const VariantSchema = new mongoose.Schema({
   hexValue: {
     type: String,
   },

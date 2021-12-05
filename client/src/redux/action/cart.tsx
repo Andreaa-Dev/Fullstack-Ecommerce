@@ -1,0 +1,40 @@
+import {
+  AddProductQuantity,
+  AddProductQuantityAction,
+  AddProductToCart,
+  AddProductToCartAction,
+  CartType,
+  RemoveProductQuantity,
+  RemoveProductQuantityAction,
+} from '../../misc/type'
+
+export function addToCart(cart: CartType): AddProductToCartAction {
+  return {
+    type: AddProductToCart,
+    payload: {
+      cart: cart,
+    },
+  }
+}
+
+export function addProductQuantity(
+  productId: string
+): AddProductQuantityAction {
+  return {
+    type: AddProductQuantity,
+    payload: {
+      productId: productId,
+    },
+  }
+}
+
+export function removeProductQuantity(
+  productId: string
+): RemoveProductQuantityAction {
+  return {
+    type: RemoveProductQuantity,
+    payload: {
+      productId: productId,
+    },
+  }
+}

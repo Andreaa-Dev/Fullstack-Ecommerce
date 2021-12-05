@@ -3,10 +3,12 @@ import lusca from 'lusca'
 import dotenv from 'dotenv'
 import cors from 'cors'
 import passport from 'passport'
+import stripe from 'stripe'
 
 import productRouter from './routers/product'
 import userRoute from './routers/user'
 import orderRoute from './routers/order'
+import paymentRoute from './routers/payment'
 import apiErrorHandler from './middlewares/apiErrorHandler'
 import apiContentType from './middlewares/apiContentType'
 import compression from 'compression'
@@ -15,6 +17,10 @@ import { jwtStrategy, googleStrategy } from './config/passport'
 
 dotenv.config({ path: '.env' })
 const app = express()
+
+export const Stripe = new stripe(process.env.STRIPE_SECRET as string, {
+  apiVersion: '2020-08-27',
+})
 
 // Express configuration
 app.set('port', process.env.PORT || 3000)
@@ -32,10 +38,11 @@ app.use(passport.initialize())
 passport.use(googleStrategy)
 passport.use(jwtStrategy)
 
-// Use product router
+//router
 app.use('/api/v1/product', productRouter)
 app.use('/api/v1/user', userRoute)
 app.use('/api/v1/order', orderRoute)
+app.use('/api/v1/payment', paymentRoute)
 
 // Custom API error handler
 app.use(apiErrorHandler)

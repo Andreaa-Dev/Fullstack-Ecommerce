@@ -13,8 +13,8 @@ const initState: AppState = {
   userState: {
     userById: null,
   },
-  orderState: {
-    orderData: [],
+  cartState: {
+    cartData: [],
   },
 }
 
@@ -27,11 +27,25 @@ export default function makeStore(initialState = initState) {
     }
   }
 
+  let favoriteObject = localStorage.getItem('favoriteItem')
+
+  let finalState
+  if (favoriteObject) {
+    let stored = JSON.parse(favoriteObject)
+    finalState = stored
+  } else {
+    finalState = initState
+  }
   const store = createStore(
     createRootReducer(),
-    initialState,
+    finalState,
     composeEnhancers(applyMiddleware(...middlewares))
   )
+
+  store.subscribe(() => {
+    const state = store.getState()
+    localStorage.setItem('favoriteItem', JSON.stringify(state))
+  })
 
   if ((module as any).hot) {
     ;(module as any).hot.accept('./reducer', () => {

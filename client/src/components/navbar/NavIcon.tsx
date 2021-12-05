@@ -23,6 +23,12 @@ function NavIcon() {
     (state: AppState) => state.productState.favoriteProduct
   )
 
+  const addProductCart = useSelector(
+    (state: AppState) => state.cartState.cartData
+  )
+
+  const productInCartCount = addProductCart.length
+
   const toggleDrawer =
     (anchor: Anchor, open: boolean) =>
     (event: React.KeyboardEvent | React.MouseEvent) => {
@@ -39,7 +45,7 @@ function NavIcon() {
 
   const list = (anchor: Anchor) => (
     <Box
-      sx={{ width: 350 }}
+      sx={{ width: 450 }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
@@ -47,7 +53,7 @@ function NavIcon() {
       {favoriteProductList.map((item) => {
         return (
           <>
-            <BoxRow>
+            <BoxRow sx={{ justifyContent: 'flex-start' }}>
               <img
                 src={item.imageLink}
                 alt="error"
@@ -96,7 +102,7 @@ function NavIcon() {
           </Drawer>
         </Badge>
         <CustomizedLink to="/cart">
-          <Badge badgeContent={4} color="primary">
+          <Badge badgeContent={productInCartCount} color="primary">
             <LocalMallOutlinedIcon color="action" />
           </Badge>
         </CustomizedLink>

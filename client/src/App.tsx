@@ -21,6 +21,7 @@ import History from './components/news/history/History'
 import CreateUserAccount from './components/user/CreateUserAccount'
 import UserAccount from './components/userAccount'
 import UserCheck from './components/userCheck'
+import Order from './components/order'
 
 // export const theme = createTheme({
 //   typography: {
@@ -36,26 +37,22 @@ function App() {
         <Route path="" element={<HomePage />} />
         <Route path="/product" element={<ProductPage />}></Route>
         <Route path="product/:id" element={<ProductDetail />} />
-
         <Route path="/gift" element={<Gift />}>
           {/* <Route path="art" element={<ArtofGift />} /> */}
           {/* <Route path="finder" element={<GiftFinder />} /> */}
         </Route>
         <Route path="gift/art" element={<ArtofGift />} />
         <Route path="gift/finder" element={<GiftFinder />} />
-
         <Route path="/news" element={<News />}>
           <Route path="craft" element={<Craft />} />
           <Route path="history" element={<History />} />
         </Route>
-
         <Route path="/userCheck" element={<UserCheck />} />
         <Route path="/createUser" element={<CreateUserAccount />} />
         <Route path="/account/:id" element={<UserAccount />} />
-
         <Route path="/createAccount" element={<CreateAccount />} />
-
         <Route path="/cart" element={<Cart />} />
+        <Route path="/order" element={<Order />} />
       </Routes>
       <Footer />
     </div>

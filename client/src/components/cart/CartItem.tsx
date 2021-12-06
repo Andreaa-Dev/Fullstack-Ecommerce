@@ -16,16 +16,17 @@ type ItemPropType = {
   item: CartType
   onClickHandlerRemove: (productId: string) => void
   onClickHandlerAdd: (productId: string) => void
+  onClickHandlerRemoveCart: () => void
 }
 
 function CartItem({
   item,
   onClickHandlerRemove,
   onClickHandlerAdd,
+  onClickHandlerRemoveCart,
 }: ItemPropType) {
   return (
     <div>
-      <CustomizedTitle>Product</CustomizedTitle>
       <BoxRow>
         <CustomizedText>{item.name}</CustomizedText>
         <AddCircleIcon onClick={() => onClickHandlerAdd(item._id)} />

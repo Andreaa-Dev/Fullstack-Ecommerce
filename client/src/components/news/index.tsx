@@ -57,7 +57,9 @@ function index() {
             width: '400px',
           }}
         >
-          <CustomizedTitle color="white"> THE STORY OF DIOR</CustomizedTitle>
+          <CustomizedLink to="history">
+            <CustomizedTitle color="white"> THE STORY OF DIOR</CustomizedTitle>
+          </CustomizedLink>
           <hr />
           <CustomizedText color="white">
             See inside the workshops to learn about Dior's unique expertise via

@@ -51,6 +51,8 @@ export const RemoveFavorite = 'removeFavorite'
 export const FetchUserById = 'fetchUserById'
 
 export const AddProductToCart = 'addProductToCart'
+export const RemoveProductToCart = 'removeProductToCart'
+
 export const AddProductQuantity = 'addProductQuantity'
 export const RemoveProductQuantity = 'removeProductQuantity'
 
@@ -96,6 +98,13 @@ export type AddProductToCartAction = {
   }
 }
 
+export type RemoveProductToCartAction = {
+  type: typeof RemoveProductToCart
+  payload: {
+    cart: CartType
+  }
+}
+
 export type AddProductQuantityAction = {
   type: typeof AddProductQuantity
   payload: {
@@ -118,6 +127,7 @@ export type AllAction =
   | AddFavoriteAction
   | FetchUserByIdAction
   | AddProductToCartAction
+  | RemoveProductToCartAction
   | AddProductQuantityAction
   | RemoveProductQuantityAction
 

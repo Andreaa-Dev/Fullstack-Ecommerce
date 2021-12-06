@@ -22,6 +22,8 @@ import CreateUserAccount from './components/user/CreateUserAccount'
 import UserAccount from './components/userAccount'
 import UserCheck from './components/userCheck'
 import Order from './components/order'
+import OrderSuccess from './components/cart/OrderSuccess'
+import OrderCancel from './components/cart/OrderCancel'
 
 // export const theme = createTheme({
 //   typography: {
@@ -38,21 +40,27 @@ function App() {
         <Route path="/product" element={<ProductPage />}></Route>
         <Route path="product/:id" element={<ProductDetail />} />
         <Route path="/gift" element={<Gift />}>
-          {/* <Route path="art" element={<ArtofGift />} /> */}
-          {/* <Route path="finder" element={<GiftFinder />} /> */}
+          {/* <Route path="art" element={<ArtofGift />} />
+          <Route path="finder" element={<GiftFinder />} /> */}
         </Route>
         <Route path="gift/art" element={<ArtofGift />} />
         <Route path="gift/finder" element={<GiftFinder />} />
+
         <Route path="/news" element={<News />}>
-          <Route path="craft" element={<Craft />} />
-          <Route path="history" element={<History />} />
+          {/* <Route path="craft" element={<Craft />} />
+          <Route path="history" element={<History />} /> */}
         </Route>
+        <Route path="news/craft" element={<Craft />} />
+        <Route path="news/history" element={<History />} />
+
         <Route path="/userCheck" element={<UserCheck />} />
         <Route path="/createUser" element={<CreateUserAccount />} />
         <Route path="/account/:id" element={<UserAccount />} />
         <Route path="/createAccount" element={<CreateAccount />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/order" element={<Order />} />
+        <Route path="/order/success" element={<OrderSuccess />} />
+        <Route path="/order/cancel" element={<OrderCancel />} />
       </Routes>
       <Footer />
     </div>

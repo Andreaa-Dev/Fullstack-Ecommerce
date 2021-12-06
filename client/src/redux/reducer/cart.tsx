@@ -1,9 +1,11 @@
+import { isTemplateExpression } from 'typescript'
 import {
   AddProductQuantity,
   AddProductToCart,
   AllAction,
   CartState,
   RemoveProductQuantity,
+  RemoveProductToCart,
 } from '../../misc/type'
 
 const initialState: CartState = {
@@ -16,9 +18,27 @@ export default function cart(
 ): CartState {
   switch (action.type) {
     case AddProductToCart:
+      let result = state.cartData.map((item) => {
+        if (item._id === action.payload.cart._id) {
+          return { ...item, quantity: item.quantity + 1 }
+        }
+        return item
+      })
       return {
         ...state,
-        cartData: [...state.cartData, action.payload.cart],
+        cartData: [...result, action.payload.cart],
+      }
+
+    case RemoveProductToCart:
+      const productRemoved = action.payload.cart
+      let removedProductCart = state.cartData.filter((item) => {
+        if (item !== productRemoved) {
+          return { ...item }
+        }
+      })
+      return {
+        ...state,
+        cartData: removedProductCart,
       }
     case AddProductQuantity:
       const productID = action.payload.productId

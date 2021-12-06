@@ -1,14 +1,17 @@
-import React from 'react'
-import {
-  CardNumberElement,
-  CardExpiryElement,
-  CardCVCElement,
-  injectStripe,
-} from 'react-stripe-elements'
-import axios from 'axios'
+import React, { useState } from 'react'
+//@ts-ignore
+import { useStripe, useElements, PaymentElement } from '@stripe/react-stripe-js'
 
-function CheckOutForm() {
-  return <div></div>
+import { CustomizedButton } from '../customizedCSS'
+
+type OrderDataPropType = {
+  orderData: any
+}
+function CheckOutForm({ orderData }: OrderDataPropType) {
+  const handleSubmit = async (event: any) => {
+    event.preventDefault()
+  }
+  return <form onSubmit={handleSubmit}></form>
 }
 
 export default CheckOutForm

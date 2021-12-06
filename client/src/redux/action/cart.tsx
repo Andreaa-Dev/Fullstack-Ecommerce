@@ -6,11 +6,22 @@ import {
   CartType,
   RemoveProductQuantity,
   RemoveProductQuantityAction,
+  RemoveProductToCart,
+  RemoveProductToCartAction,
 } from '../../misc/type'
 
 export function addToCart(cart: CartType): AddProductToCartAction {
   return {
     type: AddProductToCart,
+    payload: {
+      cart: cart,
+    },
+  }
+}
+
+export function removeToCart(cart: CartType): RemoveProductToCartAction {
+  return {
+    type: RemoveProductToCart,
     payload: {
       cart: cart,
     },

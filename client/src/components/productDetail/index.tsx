@@ -107,6 +107,9 @@ function ProductDetail() {
             <CustomizedText sx={{ textAlign: 'left' }}>
               {selectedProduct.description}
             </CustomizedText>
+            <CustomizedText sx={{ textAlign: 'left' }}>
+              {selectedProduct.price} €
+            </CustomizedText>
             <Box>
               {selectedProduct.variant.map((item) => {
                 return (

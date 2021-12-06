@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { createStore, applyMiddleware, compose } from 'redux'
 import thunk from 'redux-thunk'
 
@@ -26,7 +27,6 @@ export default function makeStore(initialState = initState) {
       composeEnhancers = (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
     }
   }
-
   let favoriteObject = localStorage.getItem('favoriteItem')
 
   let finalState

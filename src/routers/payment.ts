@@ -3,6 +3,6 @@ import postCharge from '../controllers/postCharge'
 
 const router = express.Router()
 
-router.post('/stripe/charge', postCharge)
+router.post('/', postCharge)
 
 export default router

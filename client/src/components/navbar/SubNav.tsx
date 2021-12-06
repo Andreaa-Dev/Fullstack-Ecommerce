@@ -34,9 +34,21 @@ function SubNav() {
     <Box sx={{ width: '70%', m: 'auto', mb: '20px', mt: '20px' }}>
       <BoxRow sx={{ justifyContent: 'space-between' }}>
         {productNameList.map((item) => {
+          let link = ''
+
+          if (item.name === 'news') {
+            link = 'news'
+          } else {
+            if (item.name === 'gift') {
+              link = 'gift'
+            } else {
+              link = `/product/?category=${item.name}`
+            }
+          }
+
           return (
             <Box>
-              <CustomizedLink to={`/product/?category=${item.name}`}>
+              <CustomizedLink to={link}>
                 <CustomizedText
                   aria-owns={open ? item.name : undefined}
                   aria-haspopup="true"

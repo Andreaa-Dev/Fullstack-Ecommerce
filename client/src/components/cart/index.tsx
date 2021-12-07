@@ -1,5 +1,5 @@
 import axios from 'axios'
-import React, { useState } from 'react'
+import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
 import CartItem from './CartItem'
@@ -11,7 +11,6 @@ import {
   CustomizedTitle,
 } from '../customizedCSS'
 import { addProductQuantity, removeProductQuantity } from '../../redux/action'
-import { isTemplateExpression } from 'typescript'
 
 type Order = {
   _id: string

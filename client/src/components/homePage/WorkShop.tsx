@@ -1,7 +1,11 @@
 import { Box } from '@mui/system'
 import React from 'react'
 
-import { CustomizedButton, CustomizedTitleHT } from '../customizedCSS'
+import {
+  CustomizedButton,
+  CustomizedLink,
+  CustomizedTitleHT,
+} from '../customizedCSS'
 import workshopImg from '../images/workshopImg.webp'
 
 function WorkShop() {
@@ -11,7 +15,10 @@ function WorkShop() {
         THE PERSONALISATION WORKSHOP
       </CustomizedTitleHT>
       <img src={workshopImg} alt="" />
-      <CustomizedButton>Discover</CustomizedButton>
+
+      <CustomizedLink to="/gift">
+        <CustomizedButton>Discover</CustomizedButton>
+      </CustomizedLink>
     </Box>
   )
 }

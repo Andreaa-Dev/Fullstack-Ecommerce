@@ -13,7 +13,7 @@ import {
 } from '../customizedCSS/index'
 import { useDispatch, useSelector } from 'react-redux'
 import { AppState } from '../../misc/type'
-import { Box, Drawer } from '@mui/material'
+import { Drawer } from '@mui/material'
 import { fetchProductBySearch } from '../../redux/action'
 
 type Anchor = 'bottom'

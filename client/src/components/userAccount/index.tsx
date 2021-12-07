@@ -14,7 +14,7 @@ function Index() {
 
   useEffect(() => {
     dispatch(fetchUserData(param.id))
-  }, [dispatch])
+  }, [dispatch, param.id])
 
   console.log(userData, 'h')
   return (

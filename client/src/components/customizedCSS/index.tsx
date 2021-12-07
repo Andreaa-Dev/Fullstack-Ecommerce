@@ -3,7 +3,6 @@ import { createTheme, styled } from '@mui/material/styles'
 import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline'
 import { Box, Button, Typography } from '@mui/material'
 import { makeStyles } from '@mui/styles'
-import { grey, indigo } from '@mui/material/colors'
 
 import background from '../images/background.webp'
 

@@ -1,17 +1,15 @@
-import React from 'react'
 import './App.css'
+import React from 'react'
+import { ThemeProvider } from '@emotion/react'
+import { createTheme } from '@mui/system'
 import { Routes, Route } from 'react-router-dom'
 
 import Footer from './components/footer/Footer'
-import HomePage from './components/homePage/HomePage'
+import HomePage from './components/homePage'
 import NavBar from './components/navbar'
 import ProductDetail from './components/productDetail'
 import ProductPage from './components/product/ProductPage'
-import CreateAccount from './components/user/CreateAccount1'
 import Cart from './components/cart'
-
-import { ThemeProvider } from '@emotion/react'
-import { createTheme } from '@mui/system'
 import Gift from './components/gift'
 import ArtofGift from './components/gift/ArtofGift'
 import GiftFinder from './components/gift/giftFinder'
@@ -57,7 +55,6 @@ function App() {
 
         <Route path="/createUser" element={<CreateUserAccount />} />
         <Route path="/account/:id" element={<UserAccount />} />
-        <Route path="/createAccount" element={<CreateAccount />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/order" element={<Order />} />
         <Route path="/order/success" element={<OrderSuccess />} />

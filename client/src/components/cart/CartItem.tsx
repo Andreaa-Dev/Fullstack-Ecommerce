@@ -8,7 +8,6 @@ import {
   CustomizedButton,
   CustomizedLink,
   CustomizedText,
-  CustomizedTitle,
 } from '../customizedCSS'
 import { CartType } from '../../misc/type'
 import { removeToCart } from '../../redux/action'

@@ -6,9 +6,9 @@
 
 1. Node js
 2. MongoDB - data
-3. Google authentication
+3. Google log-in
 4. Hashed password by crypt
-   maybe stripe
+5. Stripe - handle payment
 
 ## Front-end
 

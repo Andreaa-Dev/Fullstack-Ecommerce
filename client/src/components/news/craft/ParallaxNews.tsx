@@ -1,5 +1,5 @@
 import React from 'react'
-import { Parallax, Background } from 'react-parallax'
+import { Parallax } from 'react-parallax'
 import Parallax1 from './Parallax1'
 import Parallax2 from './Parallax2'
 

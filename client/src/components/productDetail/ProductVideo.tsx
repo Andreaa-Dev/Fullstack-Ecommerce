@@ -14,10 +14,12 @@ function ProductVideo(props: any) {
         sx={{
           display: 'grid',
           gridTemplateColumns: '1fr 1fr 1fr',
-          gap: 3,
+          gap: 4,
           justifyContent: 'center',
           alignItems: 'center',
           mt: '100px',
+          ml: '200px',
+          mr: '200px',
         }}
       >
         <ReactPlayer

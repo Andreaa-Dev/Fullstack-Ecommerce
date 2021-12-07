@@ -1,18 +1,16 @@
 import React, { useEffect } from 'react'
-import { Typography } from '@mui/material'
 import { makeStyles } from '@mui/styles'
 import { useParams } from 'react-router-dom'
 import { Box, ThemeProvider } from '@mui/system'
 import CircleIcon from '@mui/icons-material/Circle'
 import { useDispatch, useSelector } from 'react-redux'
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 
 import lipstick1 from '../images/lipstick1.webp'
 import lipstick2 from '../images/lipstick2.jpeg'
 import ProductVideo from './ProductVideo'
 import ProductRecently from './ProductRecently'
-import { AddProductToCart, AppState, ProductType } from '../../misc/type'
+import { AppState, ProductType } from '../../misc/type'
 import {
   BoxColumn,
   BoxRow,
@@ -79,7 +77,7 @@ function ProductDetail() {
     <ThemeProvider theme={themes}>
       <Box sx={{ ml: '20px', mr: '20px' }}>
         <BoxRow>
-          <BoxColumn>
+          <BoxColumn sx={{ mr: '20px' }}>
             <img
               src={selectedProduct.imageLink}
               alt="error"
@@ -95,15 +93,22 @@ function ProductDetail() {
           </BoxColumn>
           <Box
             sx={{
-              display: 'flex',
-              flexDirection: 'column',
               justifyContent: 'flex-start',
-              mt: '0',
             }}
           >
-            <CustomizedTitle sx={{ textAlign: 'left' }}>
-              {selectedProduct.name}
-            </CustomizedTitle>
+            <BoxRow sx={{ justifyContent: 'flex-start' }}>
+              <CustomizedTitle sx={{ textAlign: 'left' }}>
+                {selectedProduct.name}
+              </CustomizedTitle>
+              <FavoriteIcon
+                className={classes.icon}
+                id="favIcon"
+                onClick={onClickHandler}
+                color={color}
+                sx={{ fontSize: 30, ml: '50px' }}
+              />
+            </BoxRow>
+
             <CustomizedText sx={{ textAlign: 'left' }}>
               {selectedProduct.description}
             </CustomizedText>
@@ -117,18 +122,14 @@ function ProductDetail() {
                 )
               })}
             </Box>
-            <Box>
-              <CustomizedButton onClick={onClickCartHandler}>
+            <BoxRow sx={{ justifyContent: 'flex-start' }}>
+              <CustomizedButton
+                onClick={onClickCartHandler}
+                sx={{ m: '0', mt: '20px' }}
+              >
                 ADD TO CART
               </CustomizedButton>
-              <FavoriteIcon
-                className={classes.icon}
-                id="favIcon"
-                onClick={onClickHandler}
-                color={color}
-                sx={{ fontSize: 30, textAlign: 'center' }}
-              />
-            </Box>
+            </BoxRow>
           </Box>
         </BoxRow>
         <ProductVideo sx={{ width: '100%' }} />

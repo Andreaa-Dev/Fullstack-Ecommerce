@@ -1,6 +1,5 @@
-import { useEffect } from 'react'
-import { createStore, applyMiddleware, compose } from 'redux'
 import thunk from 'redux-thunk'
+import { createStore, applyMiddleware, compose } from 'redux'
 
 import { AppState } from '../misc/type'
 import createRootReducer from './reducer'

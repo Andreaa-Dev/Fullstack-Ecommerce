@@ -2,12 +2,7 @@ import React, { useState, MouseEvent } from 'react'
 import { Box } from '@mui/system'
 import Popover from '@mui/material/Popover'
 
-import {
-  BoxColumn,
-  BoxRow,
-  CustomizedLink,
-  CustomizedText,
-} from '../customizedCSS'
+import { BoxRow, CustomizedLink, CustomizedText } from '../customizedCSS'
 import { productNameList } from '../../misc/productNameList'
 
 function SubNav() {

@@ -4,7 +4,6 @@ import ReactPlayer from 'react-player'
 
 import {
   BoxRow,
-  CustomizedButton,
   CustomizedLink,
   CustomizedLPlayIcon,
   CustomizedText,

@@ -22,6 +22,7 @@ import { productNameList } from '../../misc/productNameList'
 function ProductPage() {
   let [searchParams] = useSearchParams()
   const category = searchParams.get('category') as string
+  console.log(category, 'k')
 
   const dispatch = useDispatch()
   const data = useSelector((state: AppState) => state.productState.product)
@@ -70,13 +71,20 @@ function ProductPage() {
                 <Box>
                   <CustomizedTitle>{subitem.title}</CustomizedTitle>
 
-                  <BoxRow id={subitem.title} sx={{ mb: '20px' }}>
+                  <Box
+                    id={subitem.title}
+                    sx={{
+                      display: 'grid',
+                      gridTemplateColumns: ' 1fr 1fr 1fr',
+                      m: '50px',
+                    }}
+                  >
                     {data.map((item) => {
                       if (item.name.includes(subitem.title)) {
                         return <ProductItem data={item} />
                       }
                     })}
-                  </BoxRow>
+                  </Box>
                 </Box>
               )
             })

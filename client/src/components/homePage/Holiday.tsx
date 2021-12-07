@@ -8,6 +8,7 @@ import {
   CustomizedTitleHT,
   CustomizedButton,
   BoxColumn,
+  CustomizedLink,
 } from '../customizedCSS'
 import { holidayList } from '../../misc/holidayList'
 
@@ -33,10 +34,12 @@ function Holiday() {
             return (
               <BoxColumn>
                 <img src={item.img} alt={item.name} height="400" width="350" />
-                <CustomizedTextHT sx={{ fontSize: '20px' }}>
+                <CustomizedTextHT sx={{ fontSize: '20px', width: '350px' }}>
                   {item.name}
                 </CustomizedTextHT>
-                <CustomizedButton>Discover</CustomizedButton>
+                <CustomizedLink to={`/product/?category=${item.link}`}>
+                  <CustomizedButton>Discover</CustomizedButton>
+                </CustomizedLink>
               </BoxColumn>
             )
           })}

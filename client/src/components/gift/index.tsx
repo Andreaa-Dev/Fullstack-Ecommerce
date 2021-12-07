@@ -1,8 +1,6 @@
 import React from 'react'
-import { Box } from '@mui/system'
 
 import GiftVideo from './GiftVideo'
-import background from '../images/background.webp'
 import gift from '../images/gift.gif'
 import giftFinder from '../images/gift.webp'
 

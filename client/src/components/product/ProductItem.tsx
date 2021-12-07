@@ -3,12 +3,7 @@ import { Box } from '@mui/system'
 import { useDispatch } from 'react-redux'
 
 import { ProductType } from '../../misc/type'
-import {
-  CustomizedButton,
-  CustomizedLink,
-  CustomizedText,
-  CustomizedTextProduct,
-} from '../customizedCSS'
+import { CustomizedLink, CustomizedTextProduct } from '../customizedCSS'
 import { addProductRecently } from '../../redux/action'
 
 type DataPropType = {
@@ -33,6 +28,7 @@ function ProductItem({ data }: DataPropType) {
       }}
     >
       <img height="220px" width="250px" src={data.imageLink} alt="" />
+
       <CustomizedLink to={productId}>
         <CustomizedTextProduct fontWeight="bold" onClick={onClickHandler}>
           {data.name}

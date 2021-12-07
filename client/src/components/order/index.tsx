@@ -1,14 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-//@ts-ignore
-import { Elements } from '@stripe/react-stripe-js'
-import { loadStripe } from '@stripe/stripe-js'
-
 import CheckOutForm from './CheckOutForm'
 
-const stripePromise = loadStripe(
-  'pk_test_51JybmWIYz4dWwgdcmZ16InryKK9hYIo1lqbWNEf5Juf5fCYcJUKElbXJuOGqcnYYfJQ1xap7qyS8kDzW89a1x2DD00ISOnvmVb'
-)
 function Index() {
   const [orderData, setOrderData] = useState<any>()
 
@@ -23,11 +16,7 @@ function Index() {
     getOrderData()
   }, [])
 
-  return (
-    // <Elements stripe={stripePromise} options={options}>
-    <CheckOutForm orderData={orderData} />
-    // </Elements>
-  )
+  return <CheckOutForm orderData={orderData} />
 }
 
 export default Index

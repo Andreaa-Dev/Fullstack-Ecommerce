@@ -34,7 +34,7 @@ export const productNameList = [
     subNav: [{ title: 'Diorshow' }, { title: 'Dior Addict' }],
   },
   {
-    name: 'nailPolish',
+    name: 'nail_polish',
     img: 'https://eco-beauty.dior.com/dw/image/v2/BDGF_PRD/on/demandware.static/-/Sites-master_dior/default/dwf89a81b1/assets/Y0996341/Y0996341_E02_GHC.jpg?sw=460&sh=498&sm=fit&imwidth=430',
     subNav: [{ title: 'Diorshow' }, { title: 'Dior  Addict' }],
   },

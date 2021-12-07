@@ -1,7 +1,5 @@
 import React from 'react'
-import { Typography } from '@mui/material'
 import { Box } from '@mui/system'
-
 import Paper from '@mui/material/Paper'
 import InputBase from '@mui/material/InputBase'
 import Divider from '@mui/material/Divider'
@@ -11,7 +9,7 @@ import SearchIcon from '@mui/icons-material/Search'
 import DirectionsIcon from '@mui/icons-material/Directions'
 
 import location from '../images/location.webp'
-import { CustomizedText, CustomizedTitle } from '../customizedCSS'
+import { CustomizedText } from '../customizedCSS'
 
 function LocationFooter() {
   return (

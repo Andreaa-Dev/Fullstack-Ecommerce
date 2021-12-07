@@ -1,8 +1,4 @@
-import React, { useState } from 'react'
-//@ts-ignore
-import { useStripe, useElements, PaymentElement } from '@stripe/react-stripe-js'
-
-import { CustomizedButton } from '../customizedCSS'
+import React from 'react'
 
 type OrderDataPropType = {
   orderData: any

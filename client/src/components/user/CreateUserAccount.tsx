@@ -1,29 +1,21 @@
+import React from 'react'
 import axios from 'axios'
 import * as yup from 'yup'
 import { TextField } from 'formik-mui'
-import React, { useState } from 'react'
 import { DatePicker } from 'formik-mui-lab'
 import { useNavigate } from 'react-router'
-import { Box, IconButton, MenuItem } from '@mui/material'
-import Visibility from '@mui/icons-material/Visibility'
-import VisibilityOff from '@mui/icons-material/VisibilityOff'
+import { Box, MenuItem } from '@mui/material'
 import { Field, Form, Formik } from 'formik'
 import { LocalizationProvider } from '@mui/lab'
 import AdapterDateFns from '@mui/lab/AdapterDateFns'
-import InputAdornment from '@mui/material/InputAdornment'
-import GoogleLogIn from './googleLogIn/GoogleLogInPage'
 
 import {
   CustomizedText,
   CustomizedButton,
   BoxColumn,
-  useStyles,
   BoxRow,
-  CustomizedTitle,
-  CustomizedLink,
 } from '../customizedCSS'
 import { policy } from '../../misc/policy'
-import { phoneCode } from '../../misc/phoneCode'
 import { countryList } from '../../misc/countryList'
 
 const validationSchema = yup.object({
@@ -58,10 +50,6 @@ const initialValues = {
 
 function CreateUserAccount() {
   let navigate = useNavigate()
-
-  const classes = useStyles()
-
-  const [countryName, setCountryName] = useState('Choose your country')
 
   return (
     <div>

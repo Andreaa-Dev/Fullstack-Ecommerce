@@ -17,7 +17,9 @@ function Holiday() {
     <Box>
       <Box>
         <img src={mainImg} alt="RougeDior" />
-        <CustomizedButton>DISCOVER</CustomizedButton>
+        <CustomizedLink to="/gift">
+          <CustomizedButton>DISCOVER</CustomizedButton>
+        </CustomizedLink>
       </Box>
 
       <Box>

@@ -1,17 +1,17 @@
 import React from 'react'
-import { BoxRow, CustomizedTitle } from '../customizedCSS'
-import NewClient from './NewClient'
-import UserLogIn from './UserLogIn'
+import { BoxColumn, BoxRow, CustomizedTitle } from '../customizedCSS'
+import NewClient from './newUser/NewClient'
+import UserLogIn from './existUser/UserLogIn'
 
 function index() {
   return (
-    <div>
+    <BoxColumn sx={{ justifyContent: 'space-around' }}>
       <CustomizedTitle> YOUR ACCOUNT</CustomizedTitle>
       <BoxRow>
         <NewClient />
         <UserLogIn />
       </BoxRow>
-    </div>
+    </BoxColumn>
   )
 }
 

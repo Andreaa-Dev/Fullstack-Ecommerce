@@ -3,8 +3,7 @@ import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 import GoogleLogIn from 'react-google-login'
 import GoogleIcon from '@mui/icons-material/Google'
-
-import { CustomizedButton } from '../../customizedCSS'
+import { CustomizedButton } from '../../../customizedCSS'
 
 function GoogleLogInPage() {
   let navigate = useNavigate()

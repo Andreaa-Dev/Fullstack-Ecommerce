@@ -1,15 +1,16 @@
 import React from 'react'
 
 import {
+  BoxColumn,
   CustomizedButton,
   CustomizedLink,
   CustomizedText,
   CustomizedTitle,
-} from '../customizedCSS'
+} from '../../customizedCSS'
 
 function NewClient() {
   return (
-    <div>
+    <BoxColumn>
       <CustomizedTitle> NEW CLIENT</CustomizedTitle>
       <CustomizedText sx={{ fontSize: '10px' }}>
         Create an account to track and manage your orders, view all your
@@ -18,7 +19,7 @@ function NewClient() {
       <CustomizedLink to="/createUser">
         <CustomizedButton>CREATE AN ACCOUNT</CustomizedButton>
       </CustomizedLink>
-    </div>
+    </BoxColumn>
   )
 }
 

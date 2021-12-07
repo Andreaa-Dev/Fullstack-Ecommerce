@@ -85,7 +85,7 @@ function CreateUserAccount() {
             )
             console.log(result, 'j')
             if (result.status === 200) {
-              navigate(`{/account/${result.data._id}}`)
+              navigate(`/account/${result.data._id}`)
             }
           }}
         >

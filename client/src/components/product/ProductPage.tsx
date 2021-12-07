@@ -61,6 +61,7 @@ function ProductPage() {
               )
             })
           }
+          return <> </>
         })}
       </BoxRow>
       <Box>
@@ -83,12 +84,14 @@ function ProductPage() {
                       if (item.name.includes(subitem.title)) {
                         return <ProductItem data={item} />
                       }
+                      return <> </>
                     })}
                   </Box>
                 </Box>
               )
             })
           }
+          return <> </>
         })}
       </Box>
     </Box>

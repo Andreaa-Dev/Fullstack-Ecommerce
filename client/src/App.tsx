@@ -54,6 +54,7 @@ function App() {
         <Route path="news/history" element={<History />} />
 
         <Route path="/userCheck" element={<UserCheck />} />
+
         <Route path="/createUser" element={<CreateUserAccount />} />
         <Route path="/account/:id" element={<UserAccount />} />
         <Route path="/createAccount" element={<CreateAccount />} />

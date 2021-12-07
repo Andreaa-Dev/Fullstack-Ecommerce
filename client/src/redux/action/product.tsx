@@ -4,6 +4,8 @@ import axios from 'axios'
 import {
   AddFavorite,
   AddFavoriteAction,
+  AddProductRecently,
+  AddProductRecentlyAction,
   FetchProduct,
   FetchProductAction,
   FetchProductById,
@@ -51,6 +53,17 @@ export function searchProductSuccess(
 ): SearchProductAction {
   return {
     type: SearchProduct,
+    payload: {
+      product: productData,
+    },
+  }
+}
+
+export function addProductRecently(
+  productData: ProductType
+): AddProductRecentlyAction {
+  return {
+    type: AddProductRecently,
     payload: {
       product: productData,
     },

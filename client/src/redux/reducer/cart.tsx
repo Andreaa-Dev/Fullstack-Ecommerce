@@ -18,23 +18,26 @@ export default function cart(
 ): CartState {
   switch (action.type) {
     case AddProductToCart:
-      let result = state.cartData.map((item) => {
-        if (item._id === action.payload.cart._id) {
-          return { ...item, quantity: item.quantity + 1 }
-        }
-        return item
+      const foundProduct = state.cartData.find((item) => {
+        return item._id === action.payload.cart._id
       })
-      return {
-        ...state,
-        cartData: [...result, action.payload.cart],
+      if (foundProduct) {
+        const newProduct = {
+          ...foundProduct,
+          quantity: foundProduct.quantity + 1,
+        }
+        const newCartData = [
+          ...state.cartData.filter((item) => item._id !== newProduct._id),
+          newProduct,
+        ]
+        return { ...state, cartData: newCartData }
       }
+      return { ...state, cartData: [...state.cartData, action.payload.cart] }
 
     case RemoveProductToCart:
-      const productRemoved = action.payload.cart
+      const foundProductCart = action.payload.cart
       let removedProductCart = state.cartData.filter((item) => {
-        if (item !== productRemoved) {
-          return { ...item }
-        }
+        return item._id !== foundProductCart._id
       })
       return {
         ...state,

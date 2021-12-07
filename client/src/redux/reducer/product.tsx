@@ -5,12 +5,14 @@ import {
   FetchProductById,
   AddFavorite,
   SearchProduct,
+  AddProductRecently,
 } from '../../misc/type'
 
 const initialState: ProductState = {
   product: [],
   productById: null,
   favoriteProduct: [],
+  productRecently: [],
 }
 
 export default function product(
@@ -53,6 +55,25 @@ export default function product(
       return {
         ...state,
         product: action.payload.product,
+      }
+
+    case AddProductRecently:
+      let productIds = action.payload.product._id
+      let isAddedProducts = state.productRecently.some((item) => {
+        return item._id === productIds
+      })
+
+      let updateProductState = []
+      if (isAddedProducts) {
+        updateProductState = state.productRecently.filter((item) => {
+          return item._id === productIds
+        })
+      } else {
+        updateProductState = [...state.productRecently, action.payload.product]
+      }
+      return {
+        ...state,
+        productRecently: updateProductState,
       }
     default:
       return state

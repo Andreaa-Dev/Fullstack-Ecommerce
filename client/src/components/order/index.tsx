@@ -10,11 +10,6 @@ const stripePromise = loadStripe(
   'pk_test_51JybmWIYz4dWwgdcmZ16InryKK9hYIo1lqbWNEf5Juf5fCYcJUKElbXJuOGqcnYYfJQ1xap7qyS8kDzW89a1x2DD00ISOnvmVb'
 )
 function Index() {
-  //   const options = {
-  //     // passing the client secret obtained from the server
-  //     clientSecret:
-  //       'sk_test_51JybmWIYz4dWwgdcjYLpJWVjpQwpKrJL5K0ST1ai3csyhECUWEmVD1bRQbq0pvPBgkjOu0OLXdESTdjgBDZ4y7LJ00NpHffOBX',
-  //   }
   const [orderData, setOrderData] = useState<any>()
 
   useEffect(() => {

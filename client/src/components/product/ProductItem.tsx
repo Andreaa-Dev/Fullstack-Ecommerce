@@ -1,5 +1,6 @@
 import React from 'react'
 import { Box } from '@mui/system'
+import { useDispatch } from 'react-redux'
 
 import { ProductType } from '../../misc/type'
 import {
@@ -8,12 +9,18 @@ import {
   CustomizedText,
   CustomizedTextProduct,
 } from '../customizedCSS'
+import { addProductRecently } from '../../redux/action'
 
 type DataPropType = {
   data: ProductType
 }
 
 function ProductItem({ data }: DataPropType) {
+  const dispatch = useDispatch()
+
+  const onClickHandler = () => {
+    dispatch(addProductRecently(data))
+  }
   let productId = data._id
   return (
     <Box
@@ -27,7 +34,7 @@ function ProductItem({ data }: DataPropType) {
     >
       <img height="220px" width="250px" src={data.imageLink} alt="" />
       <CustomizedLink to={productId}>
-        <CustomizedTextProduct fontWeight="bold">
+        <CustomizedTextProduct fontWeight="bold" onClick={onClickHandler}>
           {data.name}
         </CustomizedTextProduct>
       </CustomizedLink>

@@ -78,13 +78,6 @@ function CreateUserAccount() {
           mb: 10,
         }}
       >
-        <CustomizedText>LOG IN WITH GOOGLE </CustomizedText>
-        <BoxColumn>
-          <GoogleLogIn />
-        </BoxColumn>
-        <BoxColumn>
-          <CustomizedText>--- OR ---</CustomizedText>
-        </BoxColumn>
         <Box>
           <CustomizedText variant="h4">CREATE YOUR ACCOUNT</CustomizedText>
         </Box>
@@ -102,8 +95,9 @@ function CreateUserAccount() {
               'http://localhost:5000/api/v1/user',
               values
             )
+            console.log(result, 'j')
             if (result.status === 200) {
-              navigate('/account')
+              navigate(`{/account/${result.data._id}}`)
             }
           }}
         >

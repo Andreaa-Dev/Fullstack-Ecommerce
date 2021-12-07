@@ -2,6 +2,7 @@ import React from 'react'
 
 import {
   CustomizedButton,
+  CustomizedLink,
   CustomizedText,
   CustomizedTitle,
 } from '../customizedCSS'
@@ -14,7 +15,9 @@ function NewClient() {
         Create an account to track and manage your orders, view all your
         personal information and items added to your wishlist.
       </CustomizedText>
-      <CustomizedButton>CREATE AN ACCOUNT</CustomizedButton>
+      <CustomizedLink to="/createUser">
+        <CustomizedButton>CREATE AN ACCOUNT</CustomizedButton>
+      </CustomizedLink>
     </div>
   )
 }

@@ -47,14 +47,12 @@ export const RemoveProduct = 'removeProduct'
 export const SearchProduct = 'searchProduct'
 export const AddFavorite = 'addFavorite'
 export const RemoveFavorite = 'removeFavorite'
-
 export const FetchUserById = 'fetchUserById'
-
 export const AddProductToCart = 'addProductToCart'
 export const RemoveProductToCart = 'removeProductToCart'
-
 export const AddProductQuantity = 'addProductQuantity'
 export const RemoveProductQuantity = 'removeProductQuantity'
+export const AddProductRecently = 'addProductRecently'
 
 export type FetchProductAction = {
   type: typeof FetchProduct
@@ -119,6 +117,13 @@ export type RemoveProductQuantityAction = {
   }
 }
 
+export type AddProductRecentlyAction = {
+  type: typeof AddProductRecently
+  payload: {
+    product: ProductType
+  }
+}
+
 //combine action
 export type AllAction =
   | FetchProductAction
@@ -130,12 +135,14 @@ export type AllAction =
   | RemoveProductToCartAction
   | AddProductQuantityAction
   | RemoveProductQuantityAction
+  | AddProductRecentlyAction
 
 //state
 export type ProductState = {
   product: ProductType[]
   productById: null | ProductType
   favoriteProduct: ProductType[]
+  productRecently: ProductType[]
 }
 
 export type UserState = {

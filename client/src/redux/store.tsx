@@ -10,6 +10,7 @@ const initState: AppState = {
     product: [],
     productById: null,
     favoriteProduct: [],
+    productRecently: [],
   },
   userState: {
     userById: null,

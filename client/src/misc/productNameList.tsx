@@ -14,7 +14,7 @@ export const productNameList = [
 
     subNav: [
       { title: 'Christmas' },
-      { title: 'Dior  Skin' },
+      { title: 'Diorskin' },
       { title: 'Fix It' },
     ],
   },
@@ -24,8 +24,8 @@ export const productNameList = [
 
     subNav: [
       { title: 'Holiday' },
-      { title: 'Dior Fusion' },
-      { title: '5 colours' },
+      { title: 'Diorshow Fusion' },
+      { title: '5 COULEURS' },
     ],
   },
   {

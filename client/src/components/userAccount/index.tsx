@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router'
-
-//test
+import { ThemeProvider } from '@emotion/react'
 import Tabs from '@mui/material/Tabs'
 import Tab from '@mui/material/Tab'
 import Typography from '@mui/material/Typography'
@@ -10,20 +9,17 @@ import Box from '@mui/material/Box'
 
 import { AppState } from '../../misc/type'
 import { fetchUserData } from '../../redux/action'
-import { BoxColumn, CustomizedTitle } from '../customizedCSS'
+import { CustomizedTitle, themes } from '../customizedCSS'
 import UserDetail from './UserDetail'
 import UserOrder from './UserOrder'
 
-// test
-interface TabPanelProps {
+type TabPanelPropType = {
   children?: React.ReactNode
   index: number
   value: number
 }
 
-function TabPanel(props: TabPanelProps) {
-  const { children, value, index, ...other } = props
-
+function TabPanel({ children, value, index, ...other }: TabPanelPropType) {
   return (
     <div
       role="tabpanel"
@@ -42,53 +38,51 @@ function TabPanel(props: TabPanelProps) {
 }
 
 function Index() {
-  // test
   const [value, setValue] = useState(0)
-
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue)
   }
-
   let param = useParams() as { id: string }
   const dispatch = useDispatch()
   const userData = useSelector((state: AppState) => state.userState.userById)
+  const cartData = useSelector((state: AppState) => state.cartState.cartData)
 
   useEffect(() => {
     dispatch(fetchUserData(param.id))
   }, [dispatch, param.id])
 
-  console.log(userData, 'h')
   return (
-    <Box sx={{ m: '50px' }}>
-      <CustomizedTitle> YOUR ACCOUNT</CustomizedTitle>
+    <ThemeProvider theme={themes}>
+      <Box sx={{ m: '50px' }}>
+        <CustomizedTitle> YOUR ACCOUNT</CustomizedTitle>
 
-      <Box
-        sx={{
-          flexGrow: 1,
-          bgcolor: 'background.paper',
-          display: 'flex',
-          height: 224,
-        }}
-      >
-        <Tabs
-          orientation="vertical"
-          variant="scrollable"
-          value={value}
-          onChange={handleChange}
-          aria-label="Vertical tabs example"
-          sx={{ borderRight: 1, borderColor: 'divider' }}
+        <Box
+          sx={{
+            flexGrow: 1,
+            bgcolor: 'background.paper',
+            display: 'flex',
+          }}
         >
-          <Tab label="YOUR PROFILE" />
-          <Tab label="ORDERS" />
-        </Tabs>
-        <TabPanel value={value} index={0}>
-          <UserDetail userData={userData} />
-        </TabPanel>
-        <TabPanel value={value} index={1}>
-          <UserOrder />
-        </TabPanel>
+          <Tabs
+            orientation="vertical"
+            variant="scrollable"
+            value={value}
+            onChange={handleChange}
+            aria-label="Vertical tabs example"
+            sx={{ borderRight: 1, borderColor: 'divider' }}
+          >
+            <Tab label="YOUR PROFILE" />
+            <Tab label="ORDERS" />
+          </Tabs>
+          <TabPanel value={value} index={0}>
+            <UserDetail userData={userData} />
+          </TabPanel>
+          <TabPanel value={value} index={1}>
+            <UserOrder cartData={cartData} />
+          </TabPanel>
+        </Box>
       </Box>
-    </Box>
+    </ThemeProvider>
   )
 }
 

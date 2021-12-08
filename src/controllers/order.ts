@@ -29,6 +29,23 @@ export const createOrder = async (
   }
 }
 
+// find order by user id
+export const findOrderByUser = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  try {
+    const { userId, products } = req.body
+  } catch (error) {
+    if (error instanceof Error && error.name == 'ValidationError') {
+      next(new BadRequestError('Invalid Request', error))
+    } else {
+      next(error)
+    }
+  }
+}
+
 // GET /orders/:orderId => find order
 export const findById = async (
   req: Request,

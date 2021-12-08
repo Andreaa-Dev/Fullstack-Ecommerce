@@ -1,8 +1,17 @@
 import React from 'react'
+import axios from 'axios'
 import * as yup from 'yup'
+import { TextField } from 'formik-mui'
+import { Field, Form, Formik } from 'formik'
+import { useNavigate } from 'react-router-dom'
 
+import {
+  BoxColumn,
+  CustomizedButton,
+  CustomizedText,
+  CustomizedTitle,
+} from '../../customizedCSS'
 import GoogleLogIn from '../newUser/googleLogIn/GoogleLogInPage'
-import { BoxColumn, CustomizedText, CustomizedTitle } from '../../customizedCSS'
 
 const validationSchema = yup.object({
   email: yup
@@ -24,9 +33,62 @@ const initialValues = {
   password: '',
 }
 function UserLogIn() {
+  let navigate = useNavigate()
+
   return (
     <BoxColumn sx={{ m: '20px' }}>
       <CustomizedTitle> YOU ALREADY HAVE A DIOR ACCOUNT</CustomizedTitle>
+      <Formik
+        validateOnChange={true}
+        initialValues={initialValues}
+        validationSchema={validationSchema}
+        onSubmit={async (values, actions) => {
+          setTimeout(() => {
+            actions.setSubmitting(false)
+          }, 500)
+
+          const result = await axios.post(
+            'http://localhost:5000/api/v1/user/login',
+            values
+          )
+          if (result.status === 200) {
+            navigate(`/account/${result.data.userData._id}`)
+          }
+        }}
+      >
+        {({ isSubmitting, isValid, dirty }) => {
+          return (
+            <Form>
+              <BoxColumn sx={{ p: '50px' }}>
+                <Field
+                  fullWidth
+                  component={TextField}
+                  name="email"
+                  type="email"
+                  label="Email"
+                  variant="outlined"
+                  helperText="Please Enter Email"
+                />
+                <Field
+                  fullWidth
+                  component={TextField}
+                  name="password"
+                  type="password"
+                  label="Password"
+                  variant="outlined"
+                  helperText="Must Contain 8 Characters, One Uppercase, One Lowercase, One Number and one special case Character"
+                />
+                <CustomizedButton
+                  type="submit"
+                  disabled={!isValid || !dirty || isSubmitting}
+                >
+                  LOG IN
+                </CustomizedButton>
+              </BoxColumn>
+            </Form>
+          )
+        }}
+      </Formik>
 
       <CustomizedText>--- OR ---</CustomizedText>
       <BoxColumn>

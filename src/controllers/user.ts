@@ -14,6 +14,7 @@ export const createUser = async (
   next: NextFunction
 ) => {
   try {
+    //check if user exsit
     if (!req.body.password) {
       next(new BadRequestError('Missing password'))
     }
@@ -152,6 +153,52 @@ export const authenticate = async (
     )
 
     res.json({ token, userGoogleData })
+  } catch (error) {
+    console.log('error', error)
+    return next(new InternalServerError())
+  }
+}
+
+export const logInWithPassword = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  try {
+    console.log('h')
+    if (!req.body.email) {
+      throw new BadRequestError('No email sent !')
+    }
+    if (!req.body.password) {
+      throw new BadRequestError('No password sent !')
+    }
+    const userData = await UserService.findUserByEmail(req.body.email)
+    console.log(userData?.password, 'k')
+    console.log(req.body.password, 'h')
+
+    if (!userData) {
+      throw new BadRequestError('Need to create an account !')
+    }
+
+    const match = await bcrypt.compare(userData.password, req.body.password)
+    if (match) {
+      throw new BadRequestError('Password doesnt match  !')
+    }
+
+    //sign: generate token. first argument : token payload: data sent, second: secrect
+    const token = jwt.sign(
+      {
+        email: req.body.email,
+        _id: userData._id,
+        firstName: userData.firstName,
+      },
+      JWT_SECRET,
+      {
+        expiresIn: '1h',
+      }
+    )
+
+    res.json({ token, userData })
   } catch (error) {
     console.log('error', error)
     return next(new InternalServerError())

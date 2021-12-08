@@ -17,7 +17,8 @@
 
 ## CSS
 
-1. React slick for Gift section
-2. Parallax - scroll effect for News section
-3. React - scroll effect for Product pages
-4. React player for video with custom thumbnail
+1. MUI
+2. React slick for Gift section
+3. Parallax - scroll effect for News section
+4. React - scroll effect for Product pages
+5. React player for video with custom thumbnail

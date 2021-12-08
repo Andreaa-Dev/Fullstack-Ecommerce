@@ -84,6 +84,14 @@ export const CustomizedText = styled(Typography)`
   font-size: 20px;
 `
 
+export const CustomizedTextLeft = styled(Typography)`
+  text-align: left;
+  margin: 10px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+`
+
 export const CustomizedTitleProduct = styled(Typography)`
   text-align: center;
   margin: 10px;

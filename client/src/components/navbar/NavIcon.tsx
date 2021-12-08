@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
 import { Box } from '@mui/system'
-import { ThemeProvider } from '@emotion/react'
+import React, { useState } from 'react'
+import { useSelector } from 'react-redux'
 import { Badge, Drawer } from '@mui/material'
+import { useNavigate } from 'react-router-dom'
+import { ThemeProvider } from '@emotion/react'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined'
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined'
@@ -12,22 +14,27 @@ import {
   CustomizedText,
   themes,
 } from '../customizedCSS'
-import { useSelector } from 'react-redux'
 import { AppState } from '../../misc/type'
 
 type Anchor = 'right'
 
 function NavIcon() {
+  let navigate = useNavigate()
+  const userData = useSelector((state: AppState) => state.userState.userById)
+  const onClickHandler = () => {
+    if (userData?._id) {
+      navigate(`/account/${userData._id}`)
+    } else navigate('/userCheck')
+  }
+
   const [state, setState] = useState({ right: false })
   const favoriteProductList = useSelector(
     (state: AppState) => state.productState.favoriteProduct
   )
-
-  const addProductCart = useSelector(
+  const productsInCart = useSelector(
     (state: AppState) => state.cartState.cartData
   )
-
-  const productInCartCount = addProductCart.length
+  const productInCartCount = productsInCart.length
 
   const toggleDrawer =
     (anchor: Anchor, open: boolean) =>
@@ -39,7 +46,6 @@ function NavIcon() {
       ) {
         return
       }
-
       setState({ ...state, [anchor]: open })
     }
 
@@ -106,9 +112,7 @@ function NavIcon() {
             <LocalMallOutlinedIcon color="action" />
           </Badge>
         </CustomizedLink>
-        <CustomizedLink to="/userCheck">
-          <PersonOutlineOutlinedIcon />
-        </CustomizedLink>
+        <PersonOutlineOutlinedIcon onClick={onClickHandler} />
       </ThemeProvider>
     </Box>
   )

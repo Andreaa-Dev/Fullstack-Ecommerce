@@ -63,9 +63,13 @@ const findOrCreate = async (payload: Partial<UserDocument>) => {
   }
 }
 
-const findUserByEmail = async (payload: Partial<UserDocument>) => {
-  return User.findOne({ email: payload.email })
+const findUserByEmail = async (email: string) => {
+  return User.findOne({ email: email })
 }
+
+// const logInWithPassword = async (payload: Partial<UserDocument>) => {
+//   return User
+// }
 
 export default {
   createUser,

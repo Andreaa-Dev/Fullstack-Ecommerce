@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import TextField from '@mui/material/TextField'
 import SearchIcon from '@mui/icons-material/Search'
 import { ThemeProvider } from '@emotion/react'
+import { Drawer } from '@mui/material'
 
 import {
   BoxRow,
@@ -11,9 +12,8 @@ import {
   CustomizedText,
   BoxColumn,
 } from '../customizedCSS/index'
-import { useDispatch, useSelector } from 'react-redux'
 import { AppState } from '../../misc/type'
-import { Drawer } from '@mui/material'
+import { useDispatch, useSelector } from 'react-redux'
 import { fetchProductBySearch } from '../../redux/action'
 
 type Anchor = 'bottom'

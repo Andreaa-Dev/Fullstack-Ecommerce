@@ -170,7 +170,6 @@ function CreateUserAccount() {
                       name="country"
                       select
                       variant="outlined"
-                      // helperText="Choose your country"
                       InputLabelProps={{
                         shrink: true,
                       }}

@@ -7,6 +7,7 @@ import {
   findById,
   deleteUser,
   findAll,
+  logInWithPassword,
   updateUser,
   authenticate,
 } from '../controllers/user'
@@ -27,6 +28,7 @@ router.get(
   findAll
 )
 // check user log in
+router.post('/login', logInWithPassword)
 router.get('/:userId', findById)
 router.delete('/:userId', deleteUser)
 router.post(

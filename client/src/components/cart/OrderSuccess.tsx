@@ -1,5 +1,6 @@
 import React from 'react'
 import {
+  BoxColumn,
   CustomizedButton,
   CustomizedLink,
   CustomizedTitle,
@@ -7,12 +8,14 @@ import {
 
 function OrderSuccess() {
   return (
-    <div>
+    <BoxColumn>
       <CustomizedTitle> Your order was purchased successfully!</CustomizedTitle>
       <CustomizedButton>
-        <CustomizedLink to="/">Continue to shop</CustomizedLink>
+        <CustomizedLink to="/" sx={{ color: 'white' }}>
+          Continue to shop
+        </CustomizedLink>
       </CustomizedButton>
-    </div>
+    </BoxColumn>
   )
 }
 

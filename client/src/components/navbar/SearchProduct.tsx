@@ -67,21 +67,19 @@ function SearchProduct() {
     >
       {searchProductList.map((item) => {
         return (
-          <>
-            <BoxRow>
-              <img
-                src={item.imageLink}
-                alt="error"
-                height="100px"
-                width="100px"
-              />
-              <CustomizedLink to={`product/${item._id}`}>
-                <CustomizedText sx={{ textAlign: 'left' }}>
-                  {item.name}
-                </CustomizedText>
-              </CustomizedLink>
-            </BoxRow>
-          </>
+          <BoxRow key={item._id}>
+            <img
+              src={item.imageLink}
+              alt="error"
+              height="100px"
+              width="100px"
+            />
+            <CustomizedLink to={`product/${item._id}`}>
+              <CustomizedText sx={{ textAlign: 'left' }}>
+                {item.name}
+              </CustomizedText>
+            </CustomizedLink>
+          </BoxRow>
         )
       })}
     </BoxColumn>

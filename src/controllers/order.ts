@@ -36,7 +36,8 @@ export const findOrderByUser = async (
   next: NextFunction
 ) => {
   try {
-    const { userId, products } = req.body
+    const userId = req.params.userId
+    res.json(await await OrderService.findByUserId(userId))
   } catch (error) {
     if (error instanceof Error && error.name == 'ValidationError') {
       next(new BadRequestError('Invalid Request', error))

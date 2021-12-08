@@ -19,8 +19,13 @@ const findAll = async (): Promise<OrderDocument[]> => {
   return Order.find().sort({ name: 1 })
 }
 
+const findByUserId = async (userId: string): Promise<OrderDocument[]> => {
+  return Order.find({ userId: userId })
+}
+
 export default {
   createOrder,
   findById,
   findAll,
+  findByUserId,
 }

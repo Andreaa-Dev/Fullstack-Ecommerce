@@ -39,7 +39,7 @@ const ProductOrderSchema = new mongoose.Schema({
 export type OrderDocument = Document & {
   _id: string
   date: Date
-  userId: mongoose.Schema.Types.ObjectId
+  userId: string
   products: ProductOrder[]
 }
 

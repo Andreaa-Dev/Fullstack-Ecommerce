@@ -45,7 +45,7 @@ function Index() {
   let param = useParams() as { id: string }
   const dispatch = useDispatch()
   const userData = useSelector((state: AppState) => state.userState.userById)
-  const cartData = useSelector((state: AppState) => state.cartState.cartData)
+  let userId = userData?._id
 
   useEffect(() => {
     dispatch(fetchUserData(param.id))
@@ -78,7 +78,7 @@ function Index() {
             <UserDetail userData={userData} />
           </TabPanel>
           <TabPanel value={value} index={1}>
-            <UserOrder cartData={cartData} />
+            <UserOrder userId={userId} />
           </TabPanel>
         </Box>
       </Box>

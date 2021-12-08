@@ -42,7 +42,7 @@ function SubNav() {
           }
 
           return (
-            <Box>
+            <Box key={item.name}>
               <CustomizedLink to={link}>
                 <CustomizedText
                   aria-owns={open ? item.name : undefined}
@@ -76,7 +76,11 @@ function SubNav() {
                   <img src={item.img} alt="Lipstick" height="300" width="300" />
                   <div>
                     {item.subNav?.map((item) => {
-                      return <CustomizedText>{item.title}</CustomizedText>
+                      return (
+                        <CustomizedText key={item.title}>
+                          {item.title}
+                        </CustomizedText>
+                      )
                     })}
                   </div>
                 </Box>

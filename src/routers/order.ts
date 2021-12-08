@@ -11,7 +11,7 @@ const router = express.Router()
 
 // Every path we define here will get /api/v1/orders prefix
 router.post('/', createOrder)
-router.post('/order', findOrderByUser)
+router.get('/user/:userId', findOrderByUser)
 router.get('/', findAll)
 router.get('/:orderId', findById)
 

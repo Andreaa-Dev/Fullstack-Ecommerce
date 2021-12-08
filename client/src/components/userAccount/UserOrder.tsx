@@ -1,26 +1,65 @@
-import React from 'react'
+import axios from 'axios'
+import React, { useEffect, useState } from 'react'
+import DoneIcon from '@mui/icons-material/Done'
+import { Avatar, ListItem, ListItemAvatar, ListItemText } from '@mui/material'
 
-import { CartType } from '../../misc/type'
-import { BoxRow, CustomizedText, CustomizedTitle } from '../customizedCSS'
+import {
+  BoxColumn,
+  BoxRow,
+  CustomizedText,
+  CustomizedTextHT,
+  CustomizedTitle,
+  CustomizedTitleHT,
+} from '../customizedCSS'
 
-type CartDataPropType = {
-  cartData: CartType[]
+type UserIdPropType = {
+  userId: string | undefined
 }
+function UserOrder({ userId }: UserIdPropType) {
+  const [orderData, setOrderData] = useState<any>()
 
-function UserOrder({ cartData }: CartDataPropType) {
-  console.log(cartData, 'j')
+  useEffect(() => {
+    async function getOrderByUser() {
+      let response = await axios.get(
+        `http://localhost:5000/api/v1/order/user/${userId}`
+      )
+      const orderData = response.data
+      setOrderData(orderData)
+    }
+    getOrderByUser()
+  }, [userId])
+
+  console.log(orderData, 'k ')
+
+  if (orderData) {
+    return (
+      <BoxColumn>
+        <CustomizedTitle>ORDERS</CustomizedTitle>
+        {orderData.map((item: any) => {
+          return (
+            <div>
+              <ListItem>
+                <ListItemAvatar>
+                  <Avatar>
+                    <DoneIcon />
+                  </Avatar>
+                </ListItemAvatar>
+                <ListItemText primary="Photos" secondary="Jan 9, 2014" />
+                <CustomizedText>
+                  {new Date(item.date).toDateString()}
+                </CustomizedText>
+              </ListItem>
+            </div>
+          )
+        })}
+      </BoxColumn>
+    )
+  }
   return (
-    <div>
+    <>
       <CustomizedTitle>ORDERS</CustomizedTitle>
-      {cartData.map((item) => {
-        return (
-          <BoxRow>
-            <CustomizedText>{item.name} </CustomizedText>
-            <img src={item.imageLink} alt={item.name} height="100px" />
-          </BoxRow>
-        )
-      })}
-    </div>
+      <CustomizedText> You have no order history</CustomizedText>
+    </>
   )
 }
 

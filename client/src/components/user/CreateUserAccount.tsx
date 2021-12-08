@@ -83,7 +83,6 @@ function CreateUserAccount() {
               'http://localhost:5000/api/v1/user',
               values
             )
-            console.log(result, 'j')
             if (result.status === 200) {
               navigate(`/account/${result.data._id}`)
             }

@@ -11,6 +11,7 @@ import {
   CustomizedTitle,
   CustomizedTitleHT,
 } from '../customizedCSS'
+import UserOrderProduct from './UserOrderProduct'
 
 type UserIdPropType = {
   userId: string | undefined
@@ -36,6 +37,7 @@ function UserOrder({ userId }: UserIdPropType) {
       <BoxColumn>
         <CustomizedTitle>ORDERS</CustomizedTitle>
         {orderData.map((item: any) => {
+          const product = item.products
           return (
             <div>
               <ListItem>
@@ -48,6 +50,7 @@ function UserOrder({ userId }: UserIdPropType) {
                 <CustomizedText>
                   {new Date(item.date).toDateString()}
                 </CustomizedText>
+                <UserOrderProduct product={product} />
               </ListItem>
             </div>
           )

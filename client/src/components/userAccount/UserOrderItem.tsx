@@ -71,9 +71,14 @@ function UserOrderItem({ item, orderData }: ItemPropType) {
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <BoxColumnStart>
-            <CustomizedText> ORDER NO: {item._id}</CustomizedText>
-            <CustomizedText>
+            <CustomizedText sx={{ textAlign: 'left' }}>
+              ORDER NO: {item._id}
+            </CustomizedText>
+            <CustomizedText sx={{ textAlign: 'left' }}>
               DATE: {new Date(item.date).toDateString()}
+            </CustomizedText>
+            <CustomizedText sx={{ textAlign: 'left' }}>
+              PRODUCTS:
             </CustomizedText>
             <UserOrderProduct product={product} />
 

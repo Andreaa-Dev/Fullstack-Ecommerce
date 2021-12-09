@@ -4,6 +4,7 @@ import { Box } from '@mui/system'
 import { UserType } from '../../misc/type'
 import {
   BoxColumn,
+  CustomizedButton,
   CustomizedTextLeft,
   CustomizedTitle,
 } from '../customizedCSS'
@@ -13,6 +14,12 @@ type UserDataPropType = {
 }
 
 function UserDetail({ userData }: UserDataPropType) {
+  let userRole = ''
+  if (userData?.role === 'admin') {
+    userRole = 'Role: Admin'
+  } else {
+    userRole = ''
+  }
   return (
     <BoxColumn>
       <CustomizedTitle> PERSONAL DETAILS</CustomizedTitle>
@@ -30,6 +37,9 @@ function UserDetail({ userData }: UserDataPropType) {
         </CustomizedTextLeft>
         <CustomizedTextLeft>Address : {userData?.address}</CustomizedTextLeft>
         <CustomizedTextLeft>Country: {userData?.country}</CustomizedTextLeft>
+        <CustomizedTextLeft> {userRole}</CustomizedTextLeft>
+        <CustomizedButton> Edit</CustomizedButton>
+        <CustomizedButton> Log out</CustomizedButton>
       </Box>
     </BoxColumn>
   )

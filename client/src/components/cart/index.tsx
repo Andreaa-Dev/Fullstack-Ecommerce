@@ -6,6 +6,7 @@ import CartItem from './CartItem'
 import { AppState, CartType } from '../../misc/type'
 import {
   BoxColumn,
+  BoxColumnStart,
   CustomizedButton,
   CustomizedText,
   CustomizedTitle,
@@ -27,7 +28,6 @@ function Index() {
   const onClickHandlerAdd = (productId: string) => {
     dispatch(addProductQuantity(productId))
   }
-
   const onClickHandlerRemove = (productId: string) => {
     dispatch(removeProductQuantity(productId))
   }
@@ -46,7 +46,6 @@ function Index() {
       receipt_email: userData?.email,
       order,
     })
-    console.log(result, 'l')
     const checkoutUrl = result.data.url
     window.location.href = checkoutUrl
   }
@@ -61,14 +60,13 @@ function Index() {
   const eachOrderAmount = cartData.map((item) => {
     return item.price * item.quantity
   })
-  console.log(eachOrderAmount, 'j')
   let totalOrderAmount = 0
   eachOrderAmount.map((item) => (totalOrderAmount = item + totalOrderAmount))
   return (
     <BoxColumn>
       <CustomizedText>MY SHOPPING BAG</CustomizedText>
       <CustomizedText>YOUR ITEMS </CustomizedText>
-      <BoxColumn sx={{ justifyContent: 'flex-start' }}>
+      <BoxColumnStart>
         {cartData.map((item) => {
           return (
             <CartItem
@@ -78,7 +76,7 @@ function Index() {
             />
           )
         })}
-      </BoxColumn>
+      </BoxColumnStart>
       <CustomizedTitle>Total: {totalOrderAmount} €</CustomizedTitle>
       <CustomizedButton onClick={onClickHandler}>
         PROCESS TO CHECKOUT

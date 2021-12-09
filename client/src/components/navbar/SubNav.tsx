@@ -2,7 +2,12 @@ import React, { useState, MouseEvent } from 'react'
 import { Box } from '@mui/system'
 import Popover from '@mui/material/Popover'
 
-import { BoxRow, CustomizedLink, CustomizedText } from '../customizedCSS'
+import {
+  BoxRow,
+  CustomizedLink,
+  CustomizedText,
+  CustomizedTextUC,
+} from '../customizedCSS'
 import { productNameList } from '../../misc/productNameList'
 
 function SubNav() {
@@ -44,7 +49,7 @@ function SubNav() {
           return (
             <Box key={item.name}>
               <CustomizedLink to={link}>
-                <CustomizedText
+                <CustomizedTextUC
                   aria-owns={open ? item.name : undefined}
                   aria-haspopup="true"
                   onMouseEnter={(event: any) => {
@@ -52,7 +57,7 @@ function SubNav() {
                   }}
                 >
                   {item.name}
-                </CustomizedText>
+                </CustomizedTextUC>
               </CustomizedLink>
               <Popover
                 id={item.name}

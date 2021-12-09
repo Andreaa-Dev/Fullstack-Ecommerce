@@ -15,7 +15,7 @@ type UserDataPropType = {
 function UserDetail({ userData }: UserDataPropType) {
   return (
     <BoxColumn>
-      <CustomizedTitle> DETAILS</CustomizedTitle>
+      <CustomizedTitle> PERSONAL DETAILS</CustomizedTitle>
       <Box>
         <CustomizedTextLeft>
           <span style={{ fontWeight: 'bold' }}> First Name: </span>{' '}

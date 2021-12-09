@@ -1,7 +1,5 @@
 import './App.css'
 import React from 'react'
-import { ThemeProvider } from '@emotion/react'
-import { createTheme } from '@mui/system'
 import { Routes, Route } from 'react-router-dom'
 
 import Footer from './components/footer/Footer'
@@ -23,14 +21,8 @@ import Order from './components/order'
 import OrderSuccess from './components/cart/OrderSuccess'
 import OrderCancel from './components/cart/OrderCancel'
 
-// export const theme = createTheme({
-//   typography: {
-//     fontFamily: ['Open Sans Condensed', 'sans-serif'].join(','),
-//   },
-// })
 function App() {
   return (
-    // <ThemeProvider theme={theme}>
     <div>
       <NavBar />
       <Routes>
@@ -62,7 +54,6 @@ function App() {
       </Routes>
       <Footer />
     </div>
-    // </ThemeProvider>
   )
 }
 

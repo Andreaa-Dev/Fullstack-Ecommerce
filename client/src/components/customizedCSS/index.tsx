@@ -70,6 +70,16 @@ export const BoxRow = styled(Box)`
   align-items: center;
 `
 
+export const BoxGrid = styled(Box)`
+  display: grid;
+  grid-template-columns: 400px 400px;
+  column-gap: 20px;
+  row-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  grid-row-start: row1-start;
+`
+
 export const CustomizedLPlayIcon = styled(PlayCircleOutlineIcon)`
   color: white;
   width: 50px;
@@ -77,6 +87,12 @@ export const CustomizedLPlayIcon = styled(PlayCircleOutlineIcon)`
 `
 
 export const CustomizedText = styled(Typography)`
+  text-align: center;
+  margin: 10px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+`
+export const CustomizedTextUC = styled(Typography)`
   text-align: center;
   margin: 10px;
   font-family: 'Open Sans Condensed', sans-serif;

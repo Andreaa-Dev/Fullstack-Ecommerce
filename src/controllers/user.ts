@@ -119,7 +119,6 @@ export const findAll = async (
   res: Response,
   next: NextFunction
 ) => {
-  //foundUser = req.user (from passport)
   try {
     res.json(await UserService.findAll())
   } catch (error) {
@@ -201,5 +200,23 @@ export const logInWithPassword = async (
   } catch (error) {
     console.log('error', error)
     return next(new InternalServerError())
+  }
+}
+
+export const banUser = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  try {
+    const userId = req.params.userId
+    await UserService.banUser(userId)
+    res.sendStatus(200)
+  } catch (error) {
+    if (error instanceof Error && error.name == 'ValidationError') {
+      next(new BadRequestError('Invalid Request', error))
+    } else {
+      next(error)
+    }
   }
 }

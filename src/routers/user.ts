@@ -10,6 +10,7 @@ import {
   logInWithPassword,
   updateUser,
   authenticate,
+  banUser,
 } from '../controllers/user'
 
 const router = express.Router()
@@ -20,18 +21,20 @@ router.put(
   passport.authenticate('jwt', { session: false }),
   updateUser
 )
-// router.get (
-//   /:userId ,
-// )
-
+router.patch(
+  '/:userId/ban-user',
+  passport.authenticate('jwt', { session: false }),
+  adminCheck,
+  banUser
+)
 // router.get('/', findAll)
+// check user log in
 router.get(
   '/',
   passport.authenticate('jwt', { session: false }),
   adminCheck,
   findAll
 )
-// check user log in
 router.post('/login', logInWithPassword)
 router.get(
   '/:userId',

@@ -90,7 +90,9 @@ function Index() {
             <CustomizedLink to="/admin/product">
               <CustomizedText> Products</CustomizedText>
             </CustomizedLink>
-            <CustomizedText>Users</CustomizedText>
+            <CustomizedLink to="/admin/user">
+              <CustomizedText>Users</CustomizedText>
+            </CustomizedLink>
           </TabPanel>
         </Box>
       </Box>

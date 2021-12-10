@@ -67,9 +67,13 @@ const findUserByEmail = async (email: string) => {
   return User.findOne({ email: email })
 }
 
-// const logInWithPassword = async (payload: Partial<UserDocument>) => {
-//   return User
-// }
+const banUser = async (userId: string) => {
+  const foundUser = await User.findOne({ _id: userId })
+  if (foundUser) {
+    foundUser.isBanned = true
+    updateUser(userId, foundUser)
+  }
+}
 
 export default {
   createUser,
@@ -79,4 +83,5 @@ export default {
   deleteUser,
   findOrCreate,
   findUserByEmail,
+  banUser,
 }

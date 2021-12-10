@@ -19,8 +19,6 @@ function GoogleLogInPage() {
       const userToken = res.data.token
       localStorage.setItem('userToken', userToken)
     }
-
-    console.log(res, 's')
   }
 
   return (

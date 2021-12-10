@@ -19,7 +19,7 @@ import {
   CustomizedButton,
   CustomizedLink,
   CustomizedText,
-} from '../customizedCSS'
+} from '../../../customizedCSS'
 
 type ItemPropType = {
   item: any

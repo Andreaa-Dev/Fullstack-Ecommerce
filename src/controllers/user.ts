@@ -165,7 +165,6 @@ export const logInWithPassword = async (
   next: NextFunction
 ) => {
   try {
-    console.log('h')
     if (!req.body.email) {
       throw new BadRequestError('No email sent !')
     }

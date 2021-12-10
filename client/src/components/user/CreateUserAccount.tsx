@@ -84,7 +84,7 @@ function CreateUserAccount() {
               values
             )
             if (result.status === 200) {
-              navigate(`/account/${result.data._id}`)
+              navigate(`/userCheck`)
             }
           }}
         >
@@ -145,7 +145,7 @@ function CreateUserAccount() {
                         fullWidth
                         component={TextField}
                         name="phone"
-                        type="number"
+                        type="text"
                         label="Phone number"
                         variant="outlined"
                       />

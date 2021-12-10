@@ -53,6 +53,8 @@ function UserLogIn() {
           )
           if (result.status === 200) {
             navigate(`/account/${result.data.userData._id}`)
+            const userToken = result.data.token
+            localStorage.setItem('userToken', userToken)
           }
         }}
       >

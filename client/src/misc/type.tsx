@@ -48,6 +48,8 @@ export const SearchProduct = 'searchProduct'
 export const AddFavorite = 'addFavorite'
 export const RemoveFavorite = 'removeFavorite'
 export const FetchUserById = 'fetchUserById'
+export const RemoveUserData = 'removeUserData'
+
 export const AddProductToCart = 'addProductToCart'
 export const RemoveProductToCart = 'removeProductToCart'
 export const AddProductQuantity = 'addProductQuantity'
@@ -84,6 +86,13 @@ export type AddFavoriteAction = {
 
 export type FetchUserByIdAction = {
   type: typeof FetchUserById
+  payload: {
+    userById: UserType
+  }
+}
+
+export type RemoveUserDataAction = {
+  type: typeof RemoveUserData
   payload: {
     userById: UserType
   }
@@ -131,6 +140,7 @@ export type AllAction =
   | SearchProductAction
   | AddFavoriteAction
   | FetchUserByIdAction
+  | RemoveUserDataAction
   | AddProductToCartAction
   | RemoveProductToCartAction
   | AddProductQuantityAction

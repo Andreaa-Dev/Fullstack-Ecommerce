@@ -12,7 +12,7 @@ import {
 import { CartType } from '../../misc/type'
 import { removeToCart } from '../../redux/action'
 
-import { Button } from '@mui/material'
+import { Box, Button } from '@mui/material'
 
 type ItemPropType = {
   item: CartType
@@ -38,18 +38,23 @@ function CartItem({
     } else setButtonStatus(false)
   }, [item.quantity])
   return (
-    <div>
-      <BoxRow>
+    <Box>
+      <BoxRow sx={{ justifyContent: 'flex-start', width: '1000px' }}>
         <img
           src={item.imageLink}
           alt={item.name}
           height="100px"
           width="100px"
         />
-        <CustomizedLink to={`/product/${item._id}`}>
-          <CustomizedText>{item.name}</CustomizedText>
-        </CustomizedLink>
-        <div>{item.price} €</div>
+        <Box sx={{ width: '500px' }}>
+          <CustomizedLink to={`/product/${item._id}`}>
+            <CustomizedText sx={{ textAlign: 'left', ml: '40px', mr: '40px' }}>
+              {item.name}
+            </CustomizedText>
+          </CustomizedLink>
+        </Box>
+
+        <Box sx={{ width: '50px', ml: '10px', mr: '10px' }}>{item.price} €</Box>
         <Button>
           <AddCircleIcon onClick={() => onClickHandlerAdd(item._id)} />
         </Button>
@@ -64,7 +69,7 @@ function CartItem({
           Remove
         </CustomizedButton>
       </BoxRow>
-    </div>
+    </Box>
   )
 }
 

@@ -9,9 +9,14 @@ import Box from '@mui/material/Box'
 
 import { AppState } from '../../misc/type'
 import { fetchUserData } from '../../redux/action'
-import { CustomizedText, CustomizedTitle, themes } from '../customizedCSS'
-import UserDetail from './UserDetail'
-import UserOrder from './UserOrder'
+import {
+  CustomizedLink,
+  CustomizedText,
+  CustomizedTitle,
+  themes,
+} from '../customizedCSS'
+import UserDetail from './user/userInformation/UserDetail'
+import UserOrder from './user/userOrder'
 
 type TabPanelPropType = {
   children?: React.ReactNode
@@ -82,7 +87,9 @@ function Index() {
             <UserOrder userId={userId} />
           </TabPanel>
           <TabPanel value={value} index={2}>
-            <CustomizedText> Products</CustomizedText>
+            <CustomizedLink to="/admin/product">
+              <CustomizedText> Products</CustomizedText>
+            </CustomizedLink>
             <CustomizedText>Users</CustomizedText>
           </TabPanel>
         </Box>

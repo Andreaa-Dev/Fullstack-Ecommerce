@@ -1,4 +1,9 @@
-import { AllAction, FetchUserById, UserState } from '../../misc/type'
+import {
+  AllAction,
+  FetchUserById,
+  RemoveUserData,
+  UserState,
+} from '../../misc/type'
 
 const intitialState: UserState = {
   userById: null,
@@ -14,6 +19,9 @@ export default function user(
         ...state,
         userById: action.payload.userById,
       }
+
+    case RemoveUserData:
+      return intitialState
     default:
       return state
   }

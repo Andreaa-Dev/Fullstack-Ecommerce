@@ -20,6 +20,10 @@ router.put(
   passport.authenticate('jwt', { session: false }),
   updateUser
 )
+// router.get (
+//   /:userId ,
+// )
+
 // router.get('/', findAll)
 router.get(
   '/',

@@ -1,7 +1,13 @@
 import axios from 'axios'
 import { Dispatch } from 'redux'
 
-import { FetchUserById, FetchUserByIdAction, UserType } from '../../misc/type'
+import {
+  FetchUserById,
+  FetchUserByIdAction,
+  RemoveUserData,
+  RemoveUserDataAction,
+  UserType,
+} from '../../misc/type'
 
 export function fetchUserSuccess(userByIdData: UserType): FetchUserByIdAction {
   return {
@@ -12,6 +18,14 @@ export function fetchUserSuccess(userByIdData: UserType): FetchUserByIdAction {
   }
 }
 
+export function removeUserData(userByIdData: UserType): RemoveUserDataAction {
+  return {
+    type: RemoveUserData,
+    payload: {
+      userById: userByIdData,
+    },
+  }
+}
 //redux-thunk
 
 // fetch all product

@@ -15,9 +15,8 @@ const validationSchema = yup.object({
     .string()
     .required('No description provided')
     .min(10, 'Description is too short - should be 100 characters minimum.'),
-  price: yup.number().min(0).required('No price provided'),
-  image: yup.string().required('No image provided'),
-  // variant: yup.array().required('No variant provided '),
+  price: yup.string(),
+  imageLink: yup.string().required('No image provided'),
 })
 const initialValues = {
   category: '',
@@ -25,12 +24,6 @@ const initialValues = {
   description: '',
   price: 0,
   imageLink: '',
-  // productVariant: [
-  //   {
-  //     hexValue: '',
-  //     colourName: '',
-  //   },
-  // ],
 }
 function ProductManageAdmin() {
   let navigate = useNavigate()
@@ -46,21 +39,20 @@ function ProductManageAdmin() {
           setTimeout(() => {
             actions.setSubmitting(false)
           }, 500)
-
-          // const result = await axios.post(
-          //   'http://localhost:5000/api/v1/product',
-          //   values
-          // )
-          // if (result.status === 200) {
-          //   navigate(`/`)
-          // }
+          const result = await axios.post(
+            'http://localhost:5000/api/v1/product',
+            values
+          )
+          if (result.status === 200) {
+            navigate(`/admin/product`)
+          }
         }}
       >
-        {({ isSubmitting, isValid, dirty }) => {
-          console.log(dirty, 'm')
-          console.log(isSubmitting, 'l')
-          console.log(isValid, 'n')
-
+        {({ isSubmitting, isValid, dirty, errors }) => {
+          console.log(dirty, 'dirty')
+          console.log(isSubmitting, 'submit')
+          console.log(isValid, 'valid')
+          console.log(errors, ' err')
           return (
             <Form>
               <Box>
@@ -93,9 +85,10 @@ function ProductManageAdmin() {
                   fullWidth
                   component={TextField}
                   name="price"
-                  type="number"
+                  type="text"
                   label="Price"
                   variant="outlined"
+                  helperText="Please enter price and the price must be greater than 0"
                 />
 
                 <Field
@@ -105,15 +98,8 @@ function ProductManageAdmin() {
                   type="text"
                   label="Image"
                   variant="outlined"
+                  helperText="Please enter price and the price must be greater than 0"
                 />
-                {/* <Field
-                  fullWidth
-                  component={TextField}
-                  name="productVariant"
-                  type="array"
-                  label="Variant"
-                  variant="outlined"
-                /> */}
               </Box>
               <BoxColumn>
                 <CustomizedButton

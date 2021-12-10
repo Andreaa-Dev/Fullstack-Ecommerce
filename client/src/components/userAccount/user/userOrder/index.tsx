@@ -7,12 +7,12 @@ import {
   BoxColumnStart,
   CustomizedText,
   CustomizedTitle,
-} from '../customizedCSS'
+} from '../../../customizedCSS'
 
 type UserIdPropType = {
   userId: string | undefined
 }
-function UserOrder({ userId }: UserIdPropType) {
+function Index({ userId }: UserIdPropType) {
   const [orderData, setOrderData] = useState<any>()
 
   useEffect(() => {
@@ -47,4 +47,4 @@ function UserOrder({ userId }: UserIdPropType) {
   )
 }
 
-export default UserOrder
+export default Index

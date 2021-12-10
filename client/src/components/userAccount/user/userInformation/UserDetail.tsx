@@ -1,24 +1,38 @@
 import React from 'react'
 import { Box } from '@mui/system'
+import { useNavigate } from 'react-router'
+import { useDispatch } from 'react-redux'
 
-import { UserType } from '../../misc/type'
+import { UserType } from '../../../../misc/type'
 import {
   BoxColumn,
   CustomizedButton,
   CustomizedTextLeft,
   CustomizedTitle,
-} from '../customizedCSS'
+} from '../../../customizedCSS'
+import { removeUserData } from '../../../../redux/action'
 
 type UserDataPropType = {
   userData: UserType | null
 }
 
 function UserDetail({ userData }: UserDataPropType) {
+  const navigate = useNavigate()
+  const dispatch = useDispatch()
+
   let userRole = ''
   if (userData?.role === 'admin') {
     userRole = 'Role: Admin'
   } else {
     userRole = ''
+  }
+
+  const onClickHandler = () => {
+    if (userData) {
+      dispatch(removeUserData(userData))
+    }
+    localStorage.removeItem('userToken')
+    navigate(`/userCheck`)
   }
   return (
     <BoxColumn>
@@ -39,7 +53,7 @@ function UserDetail({ userData }: UserDataPropType) {
         <CustomizedTextLeft>Country: {userData?.country}</CustomizedTextLeft>
         <CustomizedTextLeft> {userRole}</CustomizedTextLeft>
         <CustomizedButton> Edit</CustomizedButton>
-        <CustomizedButton> Log out</CustomizedButton>
+        <CustomizedButton onClick={onClickHandler}> Log out</CustomizedButton>
       </Box>
     </BoxColumn>
   )

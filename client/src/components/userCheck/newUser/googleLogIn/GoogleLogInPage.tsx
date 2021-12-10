@@ -12,9 +12,12 @@ function GoogleLogInPage() {
       'http://localhost:5000/api/v1/user/google-authenticate',
       { id_token: response.tokenObj.id_token }
     )
+
     const userId = res.data.userGoogleData._id
     if (res.status === 200) {
       navigate(`/account/${userId}`)
+      const userToken = res.data.token
+      localStorage.setItem('userToken', userToken)
     }
 
     console.log(res, 's')

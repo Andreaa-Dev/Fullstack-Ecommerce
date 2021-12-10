@@ -6,8 +6,8 @@ import CartItem from './CartItem'
 import { AppState, CartType } from '../../misc/type'
 import {
   BoxColumn,
-  BoxColumnStart,
   CustomizedButton,
+  CustomizedLink,
   CustomizedText,
   CustomizedTitle,
 } from '../customizedCSS'
@@ -62,11 +62,24 @@ function Index() {
   })
   let totalOrderAmount = 0
   eachOrderAmount.map((item) => (totalOrderAmount = item + totalOrderAmount))
+
+  const userToken = localStorage.getItem('userToken')
+  if (!userToken) {
+    return (
+      <BoxColumn>
+        <CustomizedText>
+          You havent log in yet. Please log in or create new account
+        </CustomizedText>
+        <CustomizedLink to="/userCheck">
+          <CustomizedButton> Go</CustomizedButton>
+        </CustomizedLink>
+      </BoxColumn>
+    )
+  }
   return (
     <BoxColumn>
-      <CustomizedText>MY SHOPPING BAG</CustomizedText>
-      <CustomizedText>YOUR ITEMS </CustomizedText>
-      <BoxColumnStart>
+      <CustomizedText>YOUR CART</CustomizedText>
+      <BoxColumn>
         {cartData.map((item) => {
           return (
             <CartItem
@@ -76,7 +89,7 @@ function Index() {
             />
           )
         })}
-      </BoxColumnStart>
+      </BoxColumn>
       <CustomizedTitle>Total: {totalOrderAmount} €</CustomizedTitle>
       <CustomizedButton onClick={onClickHandler}>
         PROCESS TO CHECKOUT

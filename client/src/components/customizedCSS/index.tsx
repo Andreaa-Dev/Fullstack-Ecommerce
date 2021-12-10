@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
+import { makeStyles } from '@mui/styles'
+import { Box, Button, Typography } from '@mui/material'
 import { createTheme, styled } from '@mui/material/styles'
 import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline'
-import { Box, Button, Typography } from '@mui/material'
-import { makeStyles } from '@mui/styles'
 
 import background from '../images/background.webp'
 

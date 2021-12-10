@@ -1,12 +1,12 @@
 import React from 'react'
 import { Box } from '@mui/system'
 
-import { CartType } from '../../misc/type'
+import { CartType } from '../../../../misc/type'
 import {
   BoxColumnStart,
   CustomizedText,
   CustomizedTitle,
-} from '../customizedCSS'
+} from '../../../customizedCSS'
 import { CardContent } from '@mui/material'
 
 type ProductPropType = {

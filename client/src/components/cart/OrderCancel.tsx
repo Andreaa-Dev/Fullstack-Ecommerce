@@ -1,13 +1,22 @@
 import React from 'react'
-import { CustomizedTitle } from '../customizedCSS'
+
+import {
+  BoxColumn,
+  CustomizedButton,
+  CustomizedLink,
+  CustomizedTitle,
+} from '../customizedCSS'
 
 function OrderCancel() {
   return (
-    <div>
+    <BoxColumn>
       <CustomizedTitle>
         Your order was canceled. Please try again !
       </CustomizedTitle>
-    </div>
+      <CustomizedLink to="/cart" sx={{ color: 'white' }}>
+        <CustomizedButton>Go back to Cart</CustomizedButton>
+      </CustomizedLink>
+    </BoxColumn>
   )
 }
 

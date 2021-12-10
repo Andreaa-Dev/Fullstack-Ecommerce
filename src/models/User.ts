@@ -14,6 +14,7 @@ export type UserDocument = Document & {
   DOB: Date
   acceptedTerms: boolean
   role: string
+  isBanned: boolean
 }
 
 const UserSchema = new mongoose.Schema({
@@ -52,6 +53,10 @@ const UserSchema = new mongoose.Schema({
   role: {
     type: String,
     default: 'user',
+  },
+  isBanned: {
+    type: Boolean,
+    default: 'false',
   },
   orderIds: [
     {

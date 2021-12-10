@@ -29,7 +29,11 @@ router.get(
 )
 // check user log in
 router.post('/login', logInWithPassword)
-router.get('/:userId', findById)
+router.get(
+  '/:userId',
+  passport.authenticate('jwt', { session: false }),
+  findById
+)
 router.delete('/:userId', deleteUser)
 router.post(
   '/google-authenticate',

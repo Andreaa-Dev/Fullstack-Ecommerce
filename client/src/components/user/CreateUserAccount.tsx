@@ -117,7 +117,7 @@ function CreateUserAccount() {
                           fullWidth
                           component={TextField}
                           name="firstName"
-                          type="firstName"
+                          type="text"
                           label="First Name"
                           variant="outlined"
                         />
@@ -125,7 +125,7 @@ function CreateUserAccount() {
                           fullWidth
                           component={TextField}
                           name="lastName"
-                          type="lastName"
+                          type="text"
                           label="Last Name"
                           variant="outlined"
                         />
@@ -135,7 +135,7 @@ function CreateUserAccount() {
                         fullWidth
                         component={TextField}
                         name="address"
-                        type="address"
+                        type="text"
                         label="Address"
                         variant="outlined"
                       />
@@ -145,7 +145,7 @@ function CreateUserAccount() {
                         fullWidth
                         component={TextField}
                         name="phone"
-                        type="phone"
+                        type="number"
                         label="Phone number"
                         variant="outlined"
                       />

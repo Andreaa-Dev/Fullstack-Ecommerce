@@ -46,15 +46,14 @@ export const createProduct = async (
   next: NextFunction
 ) => {
   try {
-    const { name, price, priceSign, imageLink, description, variant } = req.body
+    const { category, name, price, imageLink, description } = req.body
 
     const product = new Product({
+      category,
       name,
       price,
-      priceSign,
       imageLink,
       description,
-      variant,
     })
 
     await ProductService.createProduct(product)

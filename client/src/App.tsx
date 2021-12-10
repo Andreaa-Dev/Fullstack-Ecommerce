@@ -20,6 +20,7 @@ import UserCheck from './components/userCheck'
 import Order from './components/order'
 import OrderSuccess from './components/cart/OrderSuccess'
 import OrderCancel from './components/cart/OrderCancel'
+import ProductManageAdmin from './components/userAccount/admin/product/ProductManageAdmin'
 
 function App() {
   return (
@@ -51,6 +52,8 @@ function App() {
         <Route path="/order" element={<Order />} />
         <Route path="/order/success" element={<OrderSuccess />} />
         <Route path="/order/cancel" element={<OrderCancel />} />
+
+        <Route path="/admin/product" element={<ProductManageAdmin />} />
       </Routes>
       <Footer />
     </div>

@@ -9,7 +9,7 @@ import Box from '@mui/material/Box'
 
 import { AppState } from '../../misc/type'
 import { fetchUserData } from '../../redux/action'
-import { CustomizedTitle, themes } from '../customizedCSS'
+import { CustomizedText, CustomizedTitle, themes } from '../customizedCSS'
 import UserDetail from './UserDetail'
 import UserOrder from './UserOrder'
 
@@ -73,12 +73,17 @@ function Index() {
           >
             <Tab label="YOUR PROFILE" />
             <Tab label="ORDERS" />
+            <Tab label="ADMIN" />
           </Tabs>
           <TabPanel value={value} index={0}>
             <UserDetail userData={userData} />
           </TabPanel>
           <TabPanel value={value} index={1}>
             <UserOrder userId={userId} />
+          </TabPanel>
+          <TabPanel value={value} index={2}>
+            <CustomizedText> Products</CustomizedText>
+            <CustomizedText>Users</CustomizedText>
           </TabPanel>
         </Box>
       </Box>

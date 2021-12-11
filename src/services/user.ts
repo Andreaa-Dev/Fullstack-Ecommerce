@@ -70,8 +70,13 @@ const findUserByEmail = async (email: string) => {
 const banUser = async (userId: string) => {
   const foundUser = await User.findOne({ _id: userId })
   if (foundUser) {
-    foundUser.isBanned = true
-    updateUser(userId, foundUser)
+    if (foundUser.isBanned === true) {
+      foundUser.isBanned = false
+      updateUser(userId, foundUser)
+    } else {
+      foundUser.isBanned = true
+      updateUser(userId, foundUser)
+    }
   }
 }
 

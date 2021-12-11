@@ -1,3 +1,4 @@
+import { findById } from './product'
 import jwt from 'jsonwebtoken'
 import bcrypt from 'bcrypt'
 import { Request, Response, NextFunction } from 'express'

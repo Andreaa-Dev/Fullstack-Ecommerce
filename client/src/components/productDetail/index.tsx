@@ -103,8 +103,8 @@ function ProductDetail() {
               <FavoriteIcon
                 className={classes.icon}
                 id="favIcon"
-                onClick={onClickHandler}
                 color={color}
+                onClick={onClickHandler}
                 sx={{ fontSize: 30, ml: '50px' }}
               />
             </BoxRow>

@@ -5,6 +5,7 @@ import { UserDocument } from '../models/User'
 const adminCheck = async (req: Request, res: Response, next: NextFunction) => {
   const userData = req.user as UserDocument
   const userRole = userData.role
+  console.log(userRole, 'user')
   if (userRole === 'admin') {
     next()
   } else {

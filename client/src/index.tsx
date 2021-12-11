@@ -14,7 +14,10 @@ axios.interceptors.request.use(
     // Do something before request is sent
     const userToken = localStorage.getItem('userToken')
     if (userToken) {
-      request.headers = { Authorization: `Bearer ${userToken}` }
+      request.headers = {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${userToken}`,
+      }
     }
     return request
   },

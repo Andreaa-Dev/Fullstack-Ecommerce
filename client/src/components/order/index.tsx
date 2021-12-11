@@ -10,7 +10,6 @@ function Index() {
       let response = await axios.get('http://localhost:5000/api/v1/order')
       const orderData = response.data
       setOrderData(orderData)
-      console.log(orderData, 'f')
     }
 
     getOrderData()

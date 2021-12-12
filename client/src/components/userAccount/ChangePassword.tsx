@@ -9,6 +9,7 @@ import {
   BoxRow,
   CustomizedButton,
   CustomizedText,
+  CustomizedTitle,
 } from '../customizedCSS'
 import axios from 'axios'
 
@@ -26,7 +27,10 @@ function ChangePassword() {
   const navigate = useNavigate()
   return (
     <div>
-      <CustomizedText>Change password</CustomizedText>
+      <CustomizedTitle>Change password</CustomizedTitle>
+      <CustomizedText>
+        Please enter your email to change password
+      </CustomizedText>
       <Formik
         validateOnChange={true}
         initialValues={initialValues}

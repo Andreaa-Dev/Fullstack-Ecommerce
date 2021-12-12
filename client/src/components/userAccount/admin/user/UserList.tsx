@@ -4,7 +4,6 @@ import { makeStyles } from '@mui/styles'
 import BlockIcon from '@mui/icons-material/Block'
 import IconButton from '@mui/material/IconButton'
 import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings'
-
 import {
   Paper,
   Table,
@@ -14,6 +13,7 @@ import {
   TableHead,
   TableRow,
 } from '@mui/material'
+
 import { BoxColumn, CustomizedText } from '../../../customizedCSS'
 import { UserDataType } from '../../../../misc/type'
 

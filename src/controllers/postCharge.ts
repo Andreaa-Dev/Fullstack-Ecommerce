@@ -26,7 +26,6 @@ async function postCharge(req: Request, res: Response, next: NextFunction) {
         quantity: prod.quantity,
       }
     })
-
     // console.log(purchasingItems[1].price_data.product_data.images, 'h')
 
     const session = await Stripe.checkout.sessions.create({

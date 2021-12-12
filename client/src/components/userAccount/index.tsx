@@ -47,6 +47,7 @@ function Index() {
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue)
   }
+
   let param = useParams() as { id: string }
   const dispatch = useDispatch()
   const userData = useSelector((state: AppState) => state.userState.userById)
@@ -55,12 +56,10 @@ function Index() {
   useEffect(() => {
     dispatch(fetchUserData(param.id))
   }, [dispatch, param.id])
-
   return (
     <ThemeProvider theme={themes}>
       <Box sx={{ m: '50px' }}>
         <CustomizedTitle> YOUR ACCOUNT</CustomizedTitle>
-
         <Box
           sx={{
             flexGrow: 1,
@@ -78,7 +77,7 @@ function Index() {
           >
             <Tab label="YOUR PROFILE" />
             <Tab label="ORDERS" />
-            <Tab label="ADMIN" />
+            {userData && userData?.role === 'admin' && <Tab label="ADMIN" />}
           </Tabs>
           <TabPanel value={value} index={0}>
             <UserDetail userData={userData} />

@@ -20,9 +20,10 @@ import UserCheck from './components/userCheck'
 import Order from './components/order'
 import OrderSuccess from './components/cart/OrderSuccess'
 import OrderCancel from './components/cart/OrderCancel'
-import ProductPageAdmin from './components/userAccount/admin/product/ProductPage'
-import ProductManageAdmin from './components/userAccount/admin/product/ProductManageAdmin'
+import ProductPageAdmin from './components/userAccount/admin/product'
+import AddProductAdmin from './components/userAccount/admin/product/AddProductAdmin'
 import UserPageAdmin from './components/userAccount/admin/user'
+import EditUserInformation from './components/userAccount/user/userInformation/EditUserInformation'
 
 function App() {
   return (
@@ -47,17 +48,18 @@ function App() {
         <Route path="news/history" element={<History />} />
 
         <Route path="/userCheck" element={<UserCheck />} />
-
         <Route path="/createUser" element={<CreateUserAccount />} />
         <Route path="/account/:id" element={<UserAccount />} />
+
         <Route path="/cart" element={<Cart />} />
         <Route path="/order" element={<Order />} />
         <Route path="/order/success" element={<OrderSuccess />} />
         <Route path="/order/cancel" element={<OrderCancel />} />
 
         <Route path="/admin/product" element={<ProductPageAdmin />} />
+        <Route path="/admin/product/add" element={<AddProductAdmin />} />
         <Route path="/admin/user" element={<UserPageAdmin />} />
-        <Route path="/admin/product/add" element={<ProductManageAdmin />} />
+        <Route path="/user/edit/:id" element={<EditUserInformation />} />
       </Routes>
       <Footer />
     </div>

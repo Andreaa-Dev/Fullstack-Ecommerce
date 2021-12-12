@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import axios from 'axios'
 import * as yup from 'yup'
 import { TextField } from 'formik-mui'
 import { Field, Form, Formik } from 'formik'
 import { useNavigate } from 'react-router-dom'
+import Snackbar from '@mui/material/Snackbar'
+import MuiAlert, { AlertProps } from '@mui/material/Alert'
 
 import {
   BoxColumn,
@@ -33,8 +35,27 @@ const initialValues = {
   password: '',
 }
 function UserLogIn() {
-  let navigate = useNavigate()
+  const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
+    props,
+    ref
+  ) {
+    return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />
+  })
 
+  let navigate = useNavigate()
+  const [open, setOpen] = useState(false)
+
+  const handleClick = () => {
+    setOpen(true)
+  }
+
+  const handleClose = (event?: React.SyntheticEvent, reason?: string) => {
+    if (reason === 'clickaway') {
+      return
+    }
+
+    setOpen(false)
+  }
   return (
     <BoxColumn sx={{ m: '20px' }}>
       <CustomizedTitle> YOU ALREADY HAVE A DIOR ACCOUNT</CustomizedTitle>
@@ -51,6 +72,9 @@ function UserLogIn() {
             'http://localhost:5000/api/v1/user/login',
             values
           )
+          if (result.status === 403) {
+            return <>{handleClick}</>
+          }
           if (result.status === 200) {
             navigate(`/account/${result.data.userData._id}`)
             const userToken = result.data.token
@@ -83,9 +107,24 @@ function UserLogIn() {
                 <CustomizedButton
                   type="submit"
                   disabled={!isValid || !dirty || isSubmitting}
+                  onClick={handleClick}
                 >
                   LOG IN
                 </CustomizedButton>
+                <Snackbar
+                  open={open}
+                  autoHideDuration={6000}
+                  onClose={handleClose}
+                >
+                  <Alert
+                    onClose={handleClose}
+                    severity="error"
+                    sx={{ width: '100%' }}
+                  >
+                    Sorry, you are banned by Admin! Please contact admin for
+                    further question.
+                  </Alert>
+                </Snackbar>
               </BoxColumn>
             </Form>
           )

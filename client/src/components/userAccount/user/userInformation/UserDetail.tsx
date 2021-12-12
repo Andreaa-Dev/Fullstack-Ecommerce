@@ -7,6 +7,7 @@ import { UserType } from '../../../../misc/type'
 import {
   BoxColumn,
   CustomizedButton,
+  CustomizedLink,
   CustomizedTextLeft,
   CustomizedTitle,
 } from '../../../customizedCSS'
@@ -34,6 +35,8 @@ function UserDetail({ userData }: UserDataPropType) {
     localStorage.removeItem('userToken')
     navigate(`/userCheck`)
   }
+
+  const userId = userData?._id
   return (
     <BoxColumn>
       <CustomizedTitle> PERSONAL DETAILS</CustomizedTitle>
@@ -52,7 +55,9 @@ function UserDetail({ userData }: UserDataPropType) {
         <CustomizedTextLeft>Address : {userData?.address}</CustomizedTextLeft>
         <CustomizedTextLeft>Country: {userData?.country}</CustomizedTextLeft>
         <CustomizedTextLeft> {userRole}</CustomizedTextLeft>
-        <CustomizedButton> Edit</CustomizedButton>
+        <CustomizedLink to={`/user/edit/${userId}`}>
+          <CustomizedButton> Edit</CustomizedButton>
+        </CustomizedLink>
         <CustomizedButton onClick={onClickHandler}> Log out</CustomizedButton>
       </Box>
     </BoxColumn>

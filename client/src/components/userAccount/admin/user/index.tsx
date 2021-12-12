@@ -1,11 +1,12 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import { UserDataType } from '../../../../misc/type'
 
-import { CustomizedText, CustomizedTitle } from '../../../customizedCSS'
+import { CustomizedTitle } from '../../../customizedCSS'
 import UserList from './UserList'
 
 function Index() {
-  const [userList, setUserList] = useState<any>()
+  const [userList, setUserList] = useState<UserDataType[] | undefined>()
 
   const getUserData = async () => {
     let response = await axios.get(`http://localhost:5000/api/v1/user`)

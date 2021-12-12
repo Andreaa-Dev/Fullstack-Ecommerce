@@ -68,7 +68,7 @@ function Index() {
     return (
       <BoxColumn>
         <CustomizedText>
-          You havent log in yet. Please log in or create new account
+          You havent logged in yet. Please log in or create new account.
         </CustomizedText>
         <CustomizedLink to="/userCheck">
           <CustomizedButton> Go</CustomizedButton>

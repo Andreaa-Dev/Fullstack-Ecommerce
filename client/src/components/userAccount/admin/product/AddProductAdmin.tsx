@@ -25,7 +25,7 @@ const initialValues = {
   price: 0,
   imageLink: '',
 }
-function ProductManageAdmin() {
+function AddProductAdmin() {
   let navigate = useNavigate()
 
   return (
@@ -117,4 +117,4 @@ function ProductManageAdmin() {
   )
 }
 
-export default ProductManageAdmin
+export default AddProductAdmin

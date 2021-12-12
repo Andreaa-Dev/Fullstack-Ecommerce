@@ -57,6 +57,7 @@ const findOrCreate = async (payload: Partial<UserDocument>) => {
       firstName: payload.firstName,
       lastName: payload.lastName,
       acceptedTerms: true,
+      logInWith: 'google',
     })
     const createdUser = await user.save()
     return createdUser

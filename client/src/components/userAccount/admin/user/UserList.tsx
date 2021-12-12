@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios'
+import { red } from '@mui/material/colors'
+import { grey } from '@mui/material/colors'
 import { makeStyles } from '@mui/styles'
 import BlockIcon from '@mui/icons-material/Block'
 import IconButton from '@mui/material/IconButton'
@@ -13,31 +15,16 @@ import {
   TableHead,
   TableRow,
 } from '@mui/material'
-import { BoxColumn } from '../../../customizedCSS'
-
-type UserDataType = {
-  _id: string
-  acceptedTerms: boolean
-  address: string
-  country: string
-  email: string
-  firstName: string
-  lastName: string
-  orderIds: []
-  isBanned: boolean
-  password: string
-  phone: string
-  role: string
-}
+import { BoxColumn, CustomizedText } from '../../../customizedCSS'
+import { UserDataType } from '../../../../misc/type'
 
 type UserDataPropType = {
-  userData: UserDataType[]
+  userData: UserDataType[] | undefined
   getUserData: () => Promise<void>
 }
 
 function UserList({ userData, getUserData }: UserDataPropType) {
-  const [buttonStatus, setButtonStatus] = useState(false)
-  const [banColor, setColor] = useState<'action' | 'secondary'>('action')
+  const [banColor] = useState<'primary' | 'warning'>('primary')
   const useStyles = makeStyles({
     icon: {
       color: banColor,
@@ -67,7 +54,7 @@ function UserList({ userData, getUserData }: UserDataPropType) {
                 <TableCell align="right">Last Name</TableCell>
                 <TableCell align="right">Email</TableCell>
                 <TableCell align="right">Phone</TableCell>
-                <TableCell align="right">Other</TableCell>
+                <TableCell align="right">Status*</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -86,11 +73,11 @@ function UserList({ userData, getUserData }: UserDataPropType) {
                     <TableCell align="right">{row.email}</TableCell>
                     <TableCell align="right">{row.phone}</TableCell>
                     <TableCell align="right">
-                      <IconButton disabled={true}>
+                      <IconButton>
                         <BlockIcon
                           className={classes.icon}
                           id={row._id}
-                          color={row.isBanned === true ? 'secondary' : 'action'}
+                          color={row.isBanned === true ? 'error' : 'primary'}
                           onClick={() => onClickHandler(row._id)}
                         />
                       </IconButton>
@@ -100,6 +87,9 @@ function UserList({ userData, getUserData }: UserDataPropType) {
             </TableBody>
           </Table>
         </TableContainer>
+        <CustomizedText sx={{ fontWeight: 'bold' }}>
+          Status* : red means the user was banned
+        </CustomizedText>
       </BoxColumn>
     )
   }

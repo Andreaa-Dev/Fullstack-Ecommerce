@@ -1,4 +1,4 @@
-import { findById } from './product'
+import { ForbiddenError } from './../helpers/apiError'
 import jwt from 'jsonwebtoken'
 import bcrypt from 'bcrypt'
 import { Request, Response, NextFunction } from 'express'
@@ -15,10 +15,17 @@ export const createUser = async (
   next: NextFunction
 ) => {
   try {
-    //check if user exsit
+    if (!req.body.email) {
+      next(new BadRequestError('Missing email'))
+    }
+    const existUserEmail = await UserService.findUserByEmail(req.body.email)
+    if (existUserEmail) {
+      next(new BadRequestError('Email has already taken'))
+    }
     if (!req.body.password) {
       next(new BadRequestError('Missing password'))
     }
+
     const {
       firstName,
       lastName,
@@ -30,6 +37,7 @@ export const createUser = async (
       DOB,
       acceptedTerms,
       role,
+      logInWith,
     } = req.body
     const salt = await bcrypt.genSalt(10)
     const hashedPassword = await bcrypt.hash(password, salt)
@@ -45,6 +53,7 @@ export const createUser = async (
       DOB,
       acceptedTerms,
       role,
+      logInWith,
     })
 
     await UserService.createUser(user)
@@ -168,6 +177,10 @@ export const logInWithPassword = async (
     if (!req.body.email) {
       throw new BadRequestError('No email sent !')
     }
+    const foundUser = await UserService.findUserByEmail(req.body.email)
+    if (foundUser?.isBanned === true) {
+      throw new ForbiddenError('The user was banned !')
+    }
     if (!req.body.password) {
       throw new BadRequestError('No password sent !')
     }
@@ -200,7 +213,7 @@ export const logInWithPassword = async (
     res.json({ token, userData })
   } catch (error) {
     console.log('error', error)
-    return next(new InternalServerError())
+    return next(error)
   }
 }
 

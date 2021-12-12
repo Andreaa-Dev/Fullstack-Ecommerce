@@ -11,6 +11,22 @@ export type ProductType = {
   description: string
   variant: VariantType[]
 }
+
+export type UserDataType = {
+  _id: string
+  acceptedTerms: boolean
+  address: string
+  country: string
+  email: string
+  firstName: string
+  lastName: string
+  orderIds: []
+  isBanned: boolean
+  password: string
+  phone: string
+  role: string
+}
+
 export type UserType = {
   _id: string
   firstName: string

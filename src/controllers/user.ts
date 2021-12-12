@@ -1,4 +1,3 @@
-import { ForbiddenError } from './../helpers/apiError'
 import jwt from 'jsonwebtoken'
 import bcrypt from 'bcrypt'
 import { Request, Response, NextFunction } from 'express'
@@ -6,6 +5,7 @@ import { Request, Response, NextFunction } from 'express'
 import User, { UserDocument } from '../models/User'
 import UserService from '../services/user'
 import { JWT_SECRET } from '../util/secrets'
+import { ForbiddenError } from './../helpers/apiError'
 import { BadRequestError, InternalServerError } from '../helpers/apiError'
 
 // POST /user => create user
@@ -168,7 +168,7 @@ export const authenticate = async (
   }
 }
 
-export const logInWithPassword = async (
+export const logInWithPasswordController = async (
   req: Request,
   res: Response,
   next: NextFunction
@@ -181,6 +181,11 @@ export const logInWithPassword = async (
     if (foundUser?.isBanned === true) {
       throw new ForbiddenError('The user was banned !')
     }
+
+    if (foundUser?.logInWith === 'google') {
+      throw new BadRequestError('User only can log in by Google')
+    }
+
     if (!req.body.password) {
       throw new BadRequestError('No password sent !')
     }
@@ -225,6 +230,24 @@ export const banUser = async (
   try {
     const userId = req.params.userId
     await UserService.banUser(userId)
+    res.sendStatus(200)
+  } catch (error) {
+    if (error instanceof Error && error.name == 'ValidationError') {
+      next(new BadRequestError('Invalid Request', error))
+    } else {
+      next(error)
+    }
+  }
+}
+
+export const makeAdmin = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  try {
+    const userId = req.params.userId
+    await UserService.makeAdminController(userId)
     res.sendStatus(200)
   } catch (error) {
     if (error instanceof Error && error.name == 'ValidationError') {

@@ -78,6 +78,37 @@ const banUser = async (userId: string) => {
       foundUser.isBanned = true
       updateUser(userId, foundUser)
     }
+  } else {
+    throw new NotFoundError('User not found')
+  }
+}
+
+const updateUserWithNewPassword = async (email: string, password: string) => {
+  const foundUser = await findUserByEmail(email)
+  if (foundUser) {
+    foundUser.password = password
+    const userWithNewpass = await foundUser.save()
+    return userWithNewpass
+  } else {
+    throw new NotFoundError('User not found')
+  }
+}
+
+const makeAdminController = async (userId: string) => {
+  const foundUser = await User.findOne({ _id: userId })
+  if (foundUser) {
+    if (foundUser.role === 'admin') {
+      foundUser.role = 'user'
+    } else {
+      if (foundUser.isBanned === true) {
+        foundUser.role = 'user'
+      } else {
+        foundUser.role = 'admin'
+      }
+    }
+    updateUser(userId, foundUser)
+  } else {
+    throw new NotFoundError('User not found')
   }
 }
 
@@ -90,4 +121,6 @@ export default {
   findOrCreate,
   findUserByEmail,
   banUser,
+  updateUserWithNewPassword,
+  makeAdminController,
 }

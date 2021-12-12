@@ -9,6 +9,7 @@ import { Box, MenuItem } from '@mui/material'
 import { Field, Form, Formik } from 'formik'
 import { LocalizationProvider } from '@mui/lab'
 import AdapterDateFns from '@mui/lab/AdapterDateFns'
+import { useNavigate } from 'react-router'
 
 import {
   BoxColumn,
@@ -20,23 +21,29 @@ import { countryList } from '../../../../misc/countryList'
 import { AppState } from '../../../../misc/type'
 import { fetchUserData } from '../../../../redux/action'
 
+const validationSchema = yup.object({
+  firstName: yup.string().required('No first name provided'),
+  lastName: yup.string().required('No last name provided'),
+})
+
 function EditUserInformation() {
+  const navigate = useNavigate()
   let param = useParams() as { id: string }
   const dispatch = useDispatch()
   const userData = useSelector((state: AppState) => state.userState.userById)
 
+  const userId = userData?._id
   useEffect(() => {
     dispatch(fetchUserData(param.id))
   }, [dispatch, param.id])
 
   const initialValues = {
-    email: userData?.email,
-    password: '',
+    firstName: userData?.firstName,
+    lastName: userData?.lastName,
     country: userData?.country,
     address: userData?.address,
     phone: userData?.phone,
     date: userData?.DOB,
-    acceptedTerms: false,
   }
 
   return (
@@ -60,22 +67,21 @@ function EditUserInformation() {
         <Formik
           validateOnChange={true}
           initialValues={initialValues}
-          // validationSchema={validationSchema}
+          validationSchema={validationSchema}
           onSubmit={async (values, actions) => {
             console.log(values, 'k')
             setTimeout(() => {
               actions.setSubmitting(false)
             }, 500)
 
-            const result = await axios.post(
-              'http://localhost:5000/api/v1/user',
+            const result = await axios.put(
+              `http://localhost:5000/api/v1/user/${userId}`,
               values
             )
             console.log(result, 'k')
-            const userId = result.data
-            // if (result.status === 200) {
-            //   navigate(`/user/${userId}`)
-            // }
+            if (result.status === 200) {
+              navigate(`/account/${userId}`)
+            }
           }}
         >
           {({ isSubmitting, isValid, dirty }) => {
@@ -85,61 +91,41 @@ function EditUserInformation() {
                   <Box>
                     <BoxRow>
                       <Field
+                        fullWidth
                         component={TextField}
-                        name="email"
-                        type="email"
-                        label="Email"
+                        name="firstName"
+                        type="text"
+                        label="First Name"
                         variant="outlined"
-                        helperText="Please Enter Email"
                       />
                       <Field
+                        fullWidth
                         component={TextField}
-                        name="password"
-                        type="password"
-                        label="Password"
+                        name="lastName"
+                        type="text"
+                        label="Last Name"
                         variant="outlined"
-                        helperText="Must Contain 8 Characters, One Uppercase, One Lowercase, One Number and one special case Character"
                       />
                     </BoxRow>
-                    <Box>
-                      <BoxRow>
-                        <Field
-                          fullWidth
-                          component={TextField}
-                          name="firstName"
-                          type="text"
-                          label="First Name"
-                          variant="outlined"
-                        />
-                        <Field
-                          fullWidth
-                          component={TextField}
-                          name="lastName"
-                          type="text"
-                          label="Last Name"
-                          variant="outlined"
-                        />
-                      </BoxRow>
 
-                      <Field
-                        fullWidth
-                        component={TextField}
-                        name="address"
-                        type="text"
-                        label="Address"
-                        variant="outlined"
-                      />
-                    </Box>
-                    <Box>
-                      <Field
-                        fullWidth
-                        component={TextField}
-                        name="phone"
-                        type="text"
-                        label="Phone number"
-                        variant="outlined"
-                      />
-                    </Box>
+                    <Field
+                      fullWidth
+                      component={TextField}
+                      name="address"
+                      type="text"
+                      label="Address"
+                      variant="outlined"
+                    />
+                  </Box>
+                  <Box>
+                    <Field
+                      fullWidth
+                      component={TextField}
+                      name="phone"
+                      type="text"
+                      label="Phone number"
+                      variant="outlined"
+                    />
                   </Box>
 
                   <Box mt="50px">

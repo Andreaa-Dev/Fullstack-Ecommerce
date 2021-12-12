@@ -39,6 +39,8 @@ export type UserType = {
   DOB: Date
   acceptedTerms: boolean
   role: string
+  isBanned: boolean
+  logInWith: string
 }
 
 export type CartType = {

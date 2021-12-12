@@ -9,7 +9,9 @@ import MuiAlert, { AlertProps } from '@mui/material/Alert'
 
 import {
   BoxColumn,
+  BoxRow,
   CustomizedButton,
+  CustomizedLink,
   CustomizedText,
   CustomizedTitle,
 } from '../../customizedCSS'
@@ -35,6 +37,9 @@ const initialValues = {
   password: '',
 }
 function UserLogIn() {
+  const [error, setError] = useState('string')
+  const [open, setOpen] = useState(false)
+
   const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
     props,
     ref
@@ -43,11 +48,6 @@ function UserLogIn() {
   })
 
   let navigate = useNavigate()
-  const [open, setOpen] = useState(false)
-
-  const handleClick = () => {
-    setOpen(true)
-  }
 
   const handleClose = (event?: React.SyntheticEvent, reason?: string) => {
     if (reason === 'clickaway') {
@@ -68,18 +68,27 @@ function UserLogIn() {
             actions.setSubmitting(false)
           }, 500)
 
-          const result = await axios.post(
-            'http://localhost:5000/api/v1/user/login',
-            values
-          )
-          if (result.status === 403) {
-            return <>{handleClick}</>
-          }
-          if (result.status === 200) {
-            navigate(`/account/${result.data.userData._id}`)
-            const userToken = result.data.token
-            localStorage.setItem('userToken', userToken)
-          }
+          await axios
+            .post('http://localhost:5000/api/v1/user/login', values)
+            .catch((error) => {
+              console.log(error, 'err')
+              if (error.response.status === 403) {
+                setOpen(true)
+                setError(
+                  'Sorry, you are banned by Admin! Please contact admin for further question.'
+                )
+              }
+              if (error.response.status === 400) {
+                setOpen(true)
+                setError('Only log in with Google')
+              }
+            })
+            .then((response: any) => {
+              console.log(response, 'res')
+              navigate(`/account/${response.data.userData._id}`)
+              const userToken = response.data.token
+              localStorage.setItem('userToken', userToken)
+            })
         }}
       >
         {({ isSubmitting, isValid, dirty }) => {
@@ -104,13 +113,25 @@ function UserLogIn() {
                   variant="outlined"
                   helperText="Must Contain 8 Characters, One Uppercase, One Lowercase, One Number and one special case Character"
                 />
-                <CustomizedButton
-                  type="submit"
-                  disabled={!isValid || !dirty || isSubmitting}
-                  onClick={handleClick}
-                >
-                  LOG IN
-                </CustomizedButton>
+                <BoxRow>
+                  <CustomizedButton
+                    type="submit"
+                    disabled={!isValid || !dirty || isSubmitting}
+                  >
+                    LOG IN
+                  </CustomizedButton>
+                  <CustomizedButton>
+                    <CustomizedLink
+                      to="changePassword"
+                      sx={{
+                        color: 'white',
+                      }}
+                    >
+                      Forgot password
+                    </CustomizedLink>
+                  </CustomizedButton>
+                </BoxRow>
+
                 <Snackbar
                   open={open}
                   autoHideDuration={6000}
@@ -121,8 +142,7 @@ function UserLogIn() {
                     severity="error"
                     sx={{ width: '100%' }}
                   >
-                    Sorry, you are banned by Admin! Please contact admin for
-                    further question.
+                    {error}
                   </Alert>
                 </Snackbar>
               </BoxColumn>

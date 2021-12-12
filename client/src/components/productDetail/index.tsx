@@ -1,10 +1,12 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { makeStyles } from '@mui/styles'
 import { useParams } from 'react-router-dom'
 import { Box, ThemeProvider } from '@mui/system'
 import CircleIcon from '@mui/icons-material/Circle'
 import { useDispatch, useSelector } from 'react-redux'
 import FavoriteIcon from '@mui/icons-material/Favorite'
+import Snackbar from '@mui/material/Snackbar'
+import MuiAlert, { AlertProps } from '@mui/material/Alert'
 
 import lipstick1 from '../images/lipstick1.webp'
 import lipstick2 from '../images/lipstick2.jpeg'
@@ -13,6 +15,7 @@ import ProductRecently from './ProductRecently'
 import { AppState, ProductType } from '../../misc/type'
 import {
   BoxColumn,
+  BoxColumnStart,
   BoxRow,
   CustomizedButton,
   CustomizedText,
@@ -33,6 +36,14 @@ const useStyles = makeStyles({
 })
 
 function ProductDetail() {
+  const [open, setOpen] = useState(false)
+  const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
+    props,
+    ref
+  ) {
+    return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />
+  })
+
   const classes = useStyles()
 
   const params = useParams() as { id: string }
@@ -60,6 +71,13 @@ function ProductDetail() {
       const newObj = { ...selectedProduct, quantity: 1 }
       dispatch(addToCart(newObj))
     }
+    setOpen(true)
+  }
+  const handleClose = (event?: React.SyntheticEvent, reason?: string) => {
+    if (reason === 'clickaway') {
+      return
+    }
+    setOpen(false)
   }
 
   const isFavorited = favoriteProduct.some((item) => {
@@ -73,6 +91,7 @@ function ProductDetail() {
   if (!selectedProduct) {
     return <> </>
   }
+
   return (
     <ThemeProvider theme={themes}>
       <Box sx={{ ml: '20px', mr: '20px' }}>
@@ -122,16 +141,26 @@ function ProductDetail() {
                 )
               })}
             </Box>
-            <BoxRow sx={{ justifyContent: 'flex-start' }}>
+            <BoxColumnStart sx={{ justifyContent: 'flex-start' }}>
               <CustomizedButton
                 onClick={onClickCartHandler}
                 sx={{ m: '0', mt: '20px' }}
               >
                 ADD TO CART
               </CustomizedButton>
-            </BoxRow>
+            </BoxColumnStart>
           </Box>
         </BoxRow>
+        <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+          <Alert
+            onClose={handleClose}
+            severity="success"
+            sx={{ width: '100%' }}
+          >
+            A product is added to your cart
+          </Alert>
+        </Snackbar>
+
         <ProductVideo sx={{ width: '100%' }} />
         <ProductRecently />
       </Box>

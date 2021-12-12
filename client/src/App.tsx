@@ -14,7 +14,7 @@ import GiftFinder from './components/gift/giftFinder'
 import News from './components/news'
 import Craft from './components/news/craft'
 import History from './components/news/history/History'
-import CreateUserAccount from './components/user/CreateUserAccount'
+import CreateUserAccount from './components/createUser/CreateUserAccount'
 import UserAccount from './components/userAccount'
 import UserCheck from './components/userCheck'
 import Order from './components/order'
@@ -24,6 +24,7 @@ import ProductPageAdmin from './components/userAccount/admin/product'
 import AddProductAdmin from './components/userAccount/admin/product/AddProductAdmin'
 import UserPageAdmin from './components/userAccount/admin/user'
 import EditUserInformation from './components/userAccount/user/userInformation/EditUserInformation'
+import ChangePassword from './components/userAccount/ChangePassword'
 
 function App() {
   return (
@@ -60,6 +61,7 @@ function App() {
         <Route path="/admin/product/add" element={<AddProductAdmin />} />
         <Route path="/admin/user" element={<UserPageAdmin />} />
         <Route path="/user/edit/:id" element={<EditUserInformation />} />
+        <Route path="/userCheck/changepassword" element={<ChangePassword />} />
       </Routes>
       <Footer />
     </div>

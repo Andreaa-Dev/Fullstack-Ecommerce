@@ -1,20 +1,7 @@
 import React from 'react'
-import {
-  Paper,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
-} from '@mui/material'
-
-//test
-
-import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid'
+import { DataGrid, GridColDef } from '@mui/x-data-grid'
 
 import { ProductType } from '../../../../misc/type'
-import { BoxColumn } from '../../../customizedCSS'
 
 type ProductListPropType = {
   productList: ProductType[] | undefined
@@ -63,11 +50,11 @@ function ProductList({ productList }: ProductListPropType) {
     },
   ]
 
-  const newRow =
-    productList &&
-    productList.map((item) => {
-      return { ...item, id: item._id }
-    })
+  const newRow = productList
+    ? productList.map((item) => {
+        return { ...item, id: item._id }
+      })
+    : []
 
   return (
     <div>

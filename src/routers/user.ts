@@ -7,10 +7,11 @@ import {
   findById,
   deleteUser,
   findAll,
-  logInWithPassword,
+  logInWithPasswordController,
   updateUser,
   authenticate,
   banUser,
+  makeAdmin,
 } from '../controllers/user'
 
 const router = express.Router()
@@ -27,15 +28,21 @@ router.patch(
   adminCheck,
   banUser
 )
-// router.get('/', findAll)
-// check user log in
+
+router.patch(
+  '/:userId/make-admin',
+  passport.authenticate('jwt', { session: false }),
+  adminCheck,
+  makeAdmin
+)
+
 router.get(
   '/',
   passport.authenticate('jwt', { session: false }),
   adminCheck,
   findAll
 )
-router.post('/login', logInWithPassword)
+router.post('/login', logInWithPasswordController)
 router.get(
   '/:userId',
   passport.authenticate('jwt', { session: false }),

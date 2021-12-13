@@ -67,6 +67,7 @@ function ProductDetail() {
   }, [dispatch, productId])
 
   const onClickCartHandler = () => {
+    //if user log in yet token?
     if (selectedProduct) {
       const newObj = { ...selectedProduct, quantity: 1 }
       dispatch(addToCart(newObj))

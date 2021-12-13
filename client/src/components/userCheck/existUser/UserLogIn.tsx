@@ -80,7 +80,7 @@ function UserLogIn() {
               }
               if (error.response.status === 400) {
                 setOpen(true)
-                setError('Only log in with Google')
+                setError('Please log in with Google')
               }
             })
             .then((response: any) => {

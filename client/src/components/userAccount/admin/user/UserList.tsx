@@ -116,8 +116,12 @@ function UserList({ userData, getUserData }: UserDataPropType) {
             </TableBody>
           </Table>
         </TableContainer>
-        <CustomizedText sx={{ fontWeight: 'bold' }}>
-          Status* : red : is banned and green: Admin
+        <CustomizedText
+          sx={{
+            fontWeight: 'bold',
+          }}
+        >
+          Status* : red : is banned & Make Admin*: green: Admin
         </CustomizedText>
       </BoxColumn>
     )

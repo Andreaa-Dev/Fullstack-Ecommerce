@@ -1,7 +1,10 @@
 import React from 'react'
 import { Parallax } from 'react-parallax'
+import { BoxColumn, CustomizedTitle } from '../../customizedCSS'
 import Parallax1 from './Parallax1'
 import Parallax2 from './Parallax2'
+import Parallax3 from './Parallax3'
+import Parallax4 from './Parallax4'
 
 function ParallaxNews() {
   return (
@@ -26,17 +29,24 @@ function ParallaxNews() {
         bgImageAlt="the cat"
         strength={200}
       >
-        Content goes here. Parallax height grows with content height.
-        <div style={{ height: '500px' }} />
+        <Parallax3 />
       </Parallax>
       <Parallax
         bgImage="https://www.dior.com/couture/var/nfsdior/var/dior/storage/maison-dior/happyend/images/metiers/haute_couture/para_sep4.jpg"
         bgImageAlt="the cat"
         strength={200}
       >
-        Content goes here. Parallax height grows with content height.
-        <div style={{ height: '500px' }} />
+        <Parallax4 />
       </Parallax>
+      <CustomizedTitle> FINAL PRODUCT</CustomizedTitle>
+      <BoxColumn>
+        <img
+          src="https://www.dior.com/couture/var/nfsdior/var/dior/storage/maison-dior/happyend/images/metiers/haute_couture/col2_montage1.jpg"
+          alt="error"
+          height="500px"
+          width="400px"
+        />
+      </BoxColumn>
     </div>
   )
 }

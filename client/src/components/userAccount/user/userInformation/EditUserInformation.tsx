@@ -88,74 +88,76 @@ function EditUserInformation() {
             return (
               <LocalizationProvider dateAdapter={AdapterDateFns}>
                 <Form>
-                  <Box>
-                    <BoxRow>
+                  <BoxRow mt="25px" m="5px">
+                    <Field
+                      fullWidth
+                      component={TextField}
+                      name="firstName"
+                      type="text"
+                      label="First Name"
+                      variant="outlined"
+                    />
+                    <Field
+                      fullWidth
+                      component={TextField}
+                      name="lastName"
+                      type="text"
+                      label="Last Name"
+                      variant="outlined"
+                    />
+                  </BoxRow>
+                  <Box m="5px">
+                    <Box mt="15px">
                       <Field
                         fullWidth
                         component={TextField}
-                        name="firstName"
+                        name="address"
                         type="text"
-                        label="First Name"
+                        label="Address"
                         variant="outlined"
                       />
+                    </Box>
+
+                    <Box mt="15px">
                       <Field
                         fullWidth
                         component={TextField}
-                        name="lastName"
+                        name="phone"
                         type="text"
-                        label="Last Name"
+                        label="Phone number"
                         variant="outlined"
                       />
-                    </BoxRow>
+                    </Box>
+                    <Box mt="15px">
+                      <Field
+                        component={DatePicker}
+                        name="date"
+                        label="DOB"
+                        variant="standard"
+                      />
+                    </Box>
 
-                    <Field
-                      fullWidth
-                      component={TextField}
-                      name="address"
-                      type="text"
-                      label="Address"
-                      variant="outlined"
-                    />
-                  </Box>
-                  <Box>
-                    <Field
-                      fullWidth
-                      component={TextField}
-                      name="phone"
-                      type="text"
-                      label="Phone number"
-                      variant="outlined"
-                    />
-                  </Box>
-
-                  <Box mt="50px">
-                    <Field
-                      component={DatePicker}
-                      name="date"
-                      label="DOB"
-                      variant="standard"
-                    />
+                    <Box mt="15px">
+                      <Field
+                        fullWidth
+                        component={TextField}
+                        type="text"
+                        name="country"
+                        select
+                        variant="outlined"
+                        InputLabelProps={{
+                          shrink: true,
+                        }}
+                      >
+                        {countryList.map((option) => (
+                          <MenuItem key={option.name} value={option.name}>
+                            {option.name}
+                          </MenuItem>
+                        ))}
+                      </Field>
+                    </Box>
                   </Box>
 
-                  <Box>
-                    <Field
-                      fullWidth
-                      component={TextField}
-                      type="text"
-                      name="country"
-                      select
-                      variant="outlined"
-                      InputLabelProps={{
-                        shrink: true,
-                      }}
-                    >
-                      {countryList.map((option) => (
-                        <MenuItem key={option.name} value={option.name}>
-                          {option.name}
-                        </MenuItem>
-                      ))}
-                    </Field>
-                  </Box>
                   <BoxColumn>
                     <CustomizedButton
                       type="submit"

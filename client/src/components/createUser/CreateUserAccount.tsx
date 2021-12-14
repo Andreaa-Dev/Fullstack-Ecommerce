@@ -113,22 +113,28 @@ function CreateUserAccount() {
                     </BoxRow>
                     <Box>
                       <BoxRow>
-                        <Field
-                          fullWidth
-                          component={TextField}
-                          name="firstName"
-                          type="text"
-                          label="First Name"
-                          variant="outlined"
-                        />
-                        <Field
-                          fullWidth
-                          component={TextField}
-                          name="lastName"
-                          type="text"
-                          label="Last Name"
-                          variant="outlined"
-                        />
+                        <Box mt="10px">
+                          <Field
+                            fullWidth
+                            component={TextField}
+                            name="firstName"
+                            type="text"
+                            label="First Name"
+                            variant="outlined"
+                          />
+                        </Box>
+                        <Box mt="10px">
+                          <Field
+                            fullWidth
+                            component={TextField}
+                            name="lastName"
+                            type="text"
+                            label="Last Name"
+                            variant="outlined"
+                          />
+                        </Box>
+
+                        <Box mt="10px"></Box>
                       </BoxRow>
 
                       <Field

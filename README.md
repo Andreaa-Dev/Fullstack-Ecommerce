@@ -10,6 +10,7 @@
 4. Hashed password by crypt
 5. Stripe - handle payment
 6. SendGrid - send email to user
+7. Testing: manual testing
 
 ## Front-end
 

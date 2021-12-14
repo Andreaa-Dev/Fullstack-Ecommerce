@@ -9,6 +9,7 @@
 3. Google log-in
 4. Hashed password by crypt
 5. Stripe - handle payment
+6. SendGrid - send email to user
 
 ## Front-end
 

@@ -5,14 +5,10 @@ const connect = async () => {
   const mongod = await MongoMemoryServer.create()
   const uri = mongod.getUri()
 
-  const mongooseOpts: ConnectOptions = {
+  await mongoose.connect(uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useFindAndModify: false,
-    useCreateIndex: true,
-  }
-
-  await mongoose.connect(uri, mongooseOpts)
+  } as ConnectOptions)
 
   return {
     closeDatabase: async () => {

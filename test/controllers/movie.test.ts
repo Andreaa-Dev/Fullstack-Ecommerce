@@ -24,12 +24,14 @@ async function createMovie(override?: Partial<MovieDocument>) {
 }
 
 describe('movie controller', () => {
+  //connect database
   let mongodHelper: MongodHelper
 
+  //Jest: set up and tear down. before all (small test)
   beforeAll(async () => {
     mongodHelper = await connect()
   })
-
+  // clear database
   afterEach(async () => {
     await mongodHelper.clearDatabase()
   })
@@ -38,8 +40,11 @@ describe('movie controller', () => {
     await mongodHelper.closeDatabase()
   })
 
+  //small test
   it('should create a movie', async () => {
     const res = await createMovie()
+    //assertion: check
+    //toBe: matcher. toBe (==, no type), toEqual(===, type)
     expect(res.status).toBe(200)
     expect(res.body).toHaveProperty('_id')
     expect(res.body.name).toBe('Angrybirds 2')

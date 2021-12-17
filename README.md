@@ -3,7 +3,7 @@
 ## Image
 
 1. Home page
-   ![](./dist/image/HomePage.png)
+   ![](dist/image/HomePage.png)
 2. Log in page
 3. Payment
 4. Admin page

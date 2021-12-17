@@ -2,8 +2,8 @@
 
 ## Image
 
-Home page
-![](../dist/image/HomePage.png)
+1. Home page
+   ![](./dist/image/HomePage.png)
 
 ## Back-end
 

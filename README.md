@@ -3,7 +3,7 @@
 ## Image
 
 1. Home page
-   ![](./image/HomePage.png)
+   ![](../image/HomePage.png)
 
 ## Back-end
 

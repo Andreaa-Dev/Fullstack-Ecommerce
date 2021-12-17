@@ -1,6 +1,9 @@
 # Dior website
 
-## img/link - updating ...
+## Image
+
+Home page
+![Home Page](Home page.png)
 
 ## Back-end
 

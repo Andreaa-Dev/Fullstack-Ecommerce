@@ -1,14 +1,24 @@
-# Dior website
+# DIOR WEBSITE
 
-## Image
+## IMAGE
 
 1. Home page
-   ![](dist/image/HomePage.png)
+
+   ![](./src/image/HomePage.png)
+
 2. Log in page
+
+   ![](./src/image/LogIn.png)
+
 3. Payment
+
+   ![](./src/image/Payment.png)
+
 4. Admin page
 
-## Back-end
+   ![](./src/image/Admin.png)
+
+## BACK-END
 
 1. Node js
 2. MongoDB - data
@@ -18,7 +28,7 @@
 6. SendGrid - send email to user
 7. Testing: manual testing
 
-## Front-end
+## FRONT-END
 
 1. Redux
 2. Use Formik and yup for user log in and validation

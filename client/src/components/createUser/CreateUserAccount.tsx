@@ -67,14 +67,15 @@ function CreateUserAccount() {
         }}
       >
         <Box>
-          <CustomizedText variant="h4">CREATE YOUR ACCOUNT</CustomizedText>
+          <CustomizedText variant="h2" fontWeight="bold">
+            CREATE YOUR ACCOUNT
+          </CustomizedText>
         </Box>
         <Formik
           validateOnChange={true}
           initialValues={initialValues}
           validationSchema={validationSchema}
           onSubmit={async (values, actions) => {
-            console.log(values, 'k')
             setTimeout(() => {
               actions.setSubmitting(false)
             }, 500)
@@ -113,32 +114,27 @@ function CreateUserAccount() {
                     </BoxRow>
                     <Box>
                       <BoxRow>
-                        <Box mt="10px">
-                          <Field
-                            fullWidth
-                            component={TextField}
-                            name="firstName"
-                            type="text"
-                            label="First Name"
-                            variant="outlined"
-                          />
-                        </Box>
-                        <Box mt="10px">
-                          <Field
-                            fullWidth
-                            component={TextField}
-                            name="lastName"
-                            type="text"
-                            label="Last Name"
-                            variant="outlined"
-                          />
-                        </Box>
-
-                        <Box mt="10px"></Box>
+                        <Field
+                          fullWidth
+                          component={TextField}
+                          name="firstName"
+                          type="text"
+                          label="First Name"
+                          variant="outlined"
+                        />
+                        <Field
+                          fullWidth
+                          component={TextField}
+                          name="lastName"
+                          type="text"
+                          label="Last Name"
+                          variant="outlined"
+                        />
                       </BoxRow>
 
                       <Field
                         fullWidth
+                        style={{ marginTop: '10px' }}
                         component={TextField}
                         name="address"
                         type="text"
@@ -148,6 +144,7 @@ function CreateUserAccount() {
                     </Box>
                     <Box>
                       <Field
+                        style={{ marginTop: '10px' }}
                         fullWidth
                         component={TextField}
                         name="phone"
@@ -158,7 +155,7 @@ function CreateUserAccount() {
                     </Box>
                   </Box>
 
-                  <Box mt="50px">
+                  <Box mt="10px">
                     <Field
                       component={DatePicker}
                       name="date"
@@ -169,6 +166,7 @@ function CreateUserAccount() {
 
                   <Box>
                     <Field
+                      style={{ marginTop: '10px' }}
                       fullWidth
                       component={TextField}
                       type="text"
@@ -191,6 +189,7 @@ function CreateUserAccount() {
                       display: 'flex',
                       flexDirection: 'column',
                       justifyContent: 'flex-start',
+                      marginTop: '10px',
                     }}
                   >
                     <label>

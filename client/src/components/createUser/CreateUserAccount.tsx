@@ -8,12 +8,15 @@ import { Box, MenuItem } from '@mui/material'
 import { Field, Form, Formik } from 'formik'
 import { LocalizationProvider } from '@mui/lab'
 import AdapterDateFns from '@mui/lab/AdapterDateFns'
+import { ThemeProvider } from '@emotion/react'
 
 import {
   CustomizedText,
   CustomizedButton,
   BoxColumn,
   BoxRow,
+  themes,
+  BoxRowStart,
 } from '../customizedCSS'
 import { policy } from '../../misc/policy'
 import { countryList } from '../../misc/countryList'
@@ -49,10 +52,10 @@ const initialValues = {
 }
 
 function CreateUserAccount() {
-  let navigate = useNavigate()
+  const navigate = useNavigate()
 
   return (
-    <div>
+    <ThemeProvider theme={themes}>
       <Box
         sx={{
           display: 'flex',
@@ -96,6 +99,8 @@ function CreateUserAccount() {
                   <Box>
                     <BoxRow>
                       <Field
+                        style={{ marginRight: '10px' }}
+                        fullWidth
                         component={TextField}
                         name="email"
                         type="email"
@@ -104,17 +109,19 @@ function CreateUserAccount() {
                         helperText="Please Enter Email"
                       />
                       <Field
+                        fullWidth
                         component={TextField}
                         name="password"
                         type="password"
                         label="Password"
                         variant="outlined"
-                        helperText="Must Contain 8 Characters, One Uppercase, One Lowercase, One Number and one special case Character"
+                        helperText="Must contain 8 characters, one uppercase, one lowercase, one number and one special character"
                       />
                     </BoxRow>
                     <Box>
                       <BoxRow>
                         <Field
+                          style={{ marginRight: '10px' }}
                           fullWidth
                           component={TextField}
                           name="firstName"
@@ -193,22 +200,42 @@ function CreateUserAccount() {
                     }}
                   >
                     <label>
-                      <Field type="checkbox" name="checked" value="checked-1" />
-                      I WISH TO RECEIVE FASHION & ACCESSORIES NEWS
+                      <BoxRowStart>
+                        <Field
+                          type="checkbox"
+                          name="checked"
+                          value="checked-1"
+                        />
+                        <CustomizedText>
+                          I WISH TO RECEIVE FASHION & ACCESSORIES NEWS
+                        </CustomizedText>
+                      </BoxRowStart>
                     </label>
                     <label>
-                      <Field type="checkbox" name="checked" value="checked-2" />
-                      I WISH I WISH TO RECEIVE PERFUMES & BEAUTY NEWS
+                      <BoxRowStart>
+                        <Field
+                          type="checkbox"
+                          name="checked"
+                          value="checked-2"
+                        />
+                        <CustomizedText>
+                          I WISH I WISH TO RECEIVE PERFUMES & BEAUTY NEWS
+                        </CustomizedText>
+                      </BoxRowStart>
                     </label>
                     <label className="checkbox-input">
-                      <Field
-                        type="checkbox"
-                        name="acceptedTerms"
-                        id="checked"
-                      />
-                      I HAVE READ THE PRIVACY POLICY AND CONSENT TO THE
-                      PROCESSING OF MY PERSONAL DATA IN ORDER FOR MY ACCOUNT TO
-                      BE CREATED
+                      <BoxRowStart>
+                        <Field
+                          type="checkbox"
+                          name="acceptedTerms"
+                          id="checked"
+                        />
+                        <CustomizedText>
+                          I HAVE READ THE PRIVACY POLICY AND CONSENT TO THE
+                          PROCESSING OF MY PERSONAL DATA IN ORDER FOR MY ACCOUNT
+                          TO BE CREATED
+                        </CustomizedText>
+                      </BoxRowStart>
                     </label>
                   </Box>
                   <BoxColumn>
@@ -230,7 +257,7 @@ function CreateUserAccount() {
           </CustomizedText>
         </BoxColumn>
       </Box>
-    </div>
+    </ThemeProvider>
   )
 }
 

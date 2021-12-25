@@ -1,10 +1,12 @@
 /* eslint-disable @typescript-eslint/member-delimiter-style */
-import mongoose, { Document } from 'mongoose'
+import mongoose, { Document, Model } from 'mongoose'
 import { VariantSchema, ProductDocument } from './Product'
 
 export type ProductOrder = ProductDocument & {
   quantity: number
 }
+
+export interface OrderTypeModel extends Model<OrderDocument> {}
 
 const ProductOrderSchema = new mongoose.Schema({
   name: {
@@ -37,7 +39,7 @@ const ProductOrderSchema = new mongoose.Schema({
 
 //add types for mongoose
 export type OrderDocument = Document & {
-  _id: string
+  _id: any
   date: Date
   userId: string
   products: ProductOrder[]
@@ -56,4 +58,7 @@ const OrderSchema = new mongoose.Schema({
   ],
 })
 
-export default mongoose.model<OrderDocument>('Order', OrderSchema)
+export default mongoose.model<OrderDocument, OrderTypeModel>(
+  'Order',
+  OrderSchema
+)

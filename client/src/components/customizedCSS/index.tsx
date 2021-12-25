@@ -70,6 +70,13 @@ export const BoxRow = styled(Box)`
   align-items: center;
 `
 
+export const BoxRowStart = styled(Box)`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+`
+
 export const BoxGrid = styled(Box)`
   display: grid;
   grid-template-columns: 400px 400px;

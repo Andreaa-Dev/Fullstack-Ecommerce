@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/member-delimiter-style */
-import mongoose, { Document } from 'mongoose'
+import mongoose, { Document, Model } from 'mongoose'
 
 //add types for mongoose
 export type UserDocument = Document & {
-  _id: string
+  _id: any
   firstName: string
   lastName: string
   email: string
@@ -17,6 +17,8 @@ export type UserDocument = Document & {
   logInWith: string
   isBanned: boolean
 }
+
+export interface UserTypeModel extends Model<UserDocument> {}
 
 const UserSchema = new mongoose.Schema({
   firstName: {
@@ -71,4 +73,4 @@ const UserSchema = new mongoose.Schema({
   ],
 })
 
-export default mongoose.model<UserDocument>('User', UserSchema)
+export default mongoose.model<UserDocument, UserTypeModel>('User', UserSchema)

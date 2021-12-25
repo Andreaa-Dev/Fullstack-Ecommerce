@@ -19,7 +19,7 @@ function Index() {
 
   return (
     <div>
-      <CustomizedTitle> User Manage</CustomizedTitle>
+      <CustomizedTitle> USER MANAGEMENT</CustomizedTitle>
       <UserList userData={userList} getUserData={getUserData} />
     </div>
   )

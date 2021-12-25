@@ -65,15 +65,31 @@ function UserList({ userData, getUserData }: UserDataPropType) {
           <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
             <TableHead>
               <TableRow>
-                <TableCell>User Id</TableCell>
-                <TableCell align="right">First Name</TableCell>
-                <TableCell align="right">Last Name</TableCell>
-                <TableCell align="right">Email</TableCell>
-                <TableCell align="right">Phone</TableCell>
-                <TableCell align="right">Country</TableCell>
-                <TableCell align="right">Role</TableCell>
-                <TableCell align="right">Status*</TableCell>
-                <TableCell align="right">Make Admin</TableCell>
+                <TableCell sx={{ fontWeight: 'bold' }}>User ID</TableCell>
+                <TableCell align="right" sx={{ fontWeight: 'bold' }}>
+                  FIRST NAME
+                </TableCell>
+                <TableCell align="right" sx={{ fontWeight: 'bold' }}>
+                  LAST NAME
+                </TableCell>
+                <TableCell align="right" sx={{ fontWeight: 'bold' }}>
+                  EMAIL
+                </TableCell>
+                <TableCell align="right" sx={{ fontWeight: 'bold' }}>
+                  PHONE
+                </TableCell>
+                <TableCell align="right" sx={{ fontWeight: 'bold' }}>
+                  COUNTRY
+                </TableCell>
+                <TableCell align="right" sx={{ fontWeight: 'bold' }}>
+                  ROLE
+                </TableCell>
+                <TableCell align="right" sx={{ fontWeight: 'bold' }}>
+                  STATUS*
+                </TableCell>
+                <TableCell align="right" sx={{ fontWeight: 'bold' }}>
+                  SPECIAL
+                </TableCell>
               </TableRow>
             </TableHead>
             <TableBody>

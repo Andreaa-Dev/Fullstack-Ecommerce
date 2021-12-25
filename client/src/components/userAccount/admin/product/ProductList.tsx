@@ -57,17 +57,15 @@ function ProductList({ productList }: ProductListPropType) {
     : []
 
   return (
-    <div>
-      <div style={{ height: 400, width: '100%' }}>
-        <DataGrid
-          rows={newRow}
-          columns={columns}
-          pageSize={5}
-          rowsPerPageOptions={[5]}
-          checkboxSelection
-          disableSelectionOnClick
-        />
-      </div>
+    <div style={{ height: 400, width: '100%' }}>
+      <DataGrid
+        rows={newRow}
+        columns={columns}
+        pageSize={5}
+        rowsPerPageOptions={[5]}
+        checkboxSelection
+        disableSelectionOnClick
+      />
     </div>
   )
 }

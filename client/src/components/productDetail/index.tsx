@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { makeStyles } from '@mui/styles'
 import { useParams } from 'react-router-dom'
-import { Box, ThemeProvider } from '@mui/system'
+import { Box } from '@mui/system'
 import CircleIcon from '@mui/icons-material/Circle'
 import { useDispatch, useSelector } from 'react-redux'
 import FavoriteIcon from '@mui/icons-material/Favorite'
@@ -20,7 +20,6 @@ import {
   CustomizedButton,
   CustomizedText,
   CustomizedTitle,
-  themes,
 } from '../customizedCSS'
 import {
   addFavoriteSuccess,
@@ -94,78 +93,72 @@ function ProductDetail() {
   }
 
   return (
-    <ThemeProvider theme={themes}>
-      <Box sx={{ ml: '20px', mr: '20px' }}>
-        <BoxRow>
-          <BoxColumn sx={{ mr: '20px' }}>
-            <img
-              src={selectedProduct.imageLink}
-              alt="error"
-              height="350px"
-              width="400px"
-            />
-            <BoxRow>
-              <Box sx={{ m: '10px' }}>
-                <img src={lipstick1} alt="error" height="200px" width="200px" />
-              </Box>
-              <img src={lipstick2} alt="error" height="200px" width="200px" />
-            </BoxRow>
-          </BoxColumn>
-          <Box
-            sx={{
-              justifyContent: 'flex-start',
-            }}
-          >
-            <BoxRow sx={{ justifyContent: 'flex-start' }}>
-              <CustomizedTitle sx={{ textAlign: 'left' }}>
-                {selectedProduct.name}
-              </CustomizedTitle>
-              <FavoriteIcon
-                className={classes.icon}
-                id="favIcon"
-                color={color}
-                onClick={onClickHandler}
-                sx={{ fontSize: 30, ml: '50px' }}
-              />
-            </BoxRow>
-
-            <CustomizedText sx={{ textAlign: 'left' }}>
-              {selectedProduct.description}
-            </CustomizedText>
-            <CustomizedText sx={{ textAlign: 'left' }}>
-              {selectedProduct.price} €
-            </CustomizedText>
-            <Box>
-              {selectedProduct.variant.map((item) => {
-                return (
-                  <CircleIcon sx={{ fontSize: '40px', color: item.hexValue }} />
-                )
-              })}
+    <Box sx={{ ml: '20px', mr: '20px' }}>
+      <BoxRow>
+        <BoxColumn sx={{ mr: '20px' }}>
+          <img
+            src={selectedProduct.imageLink}
+            alt="error"
+            height="350px"
+            width="400px"
+          />
+          <BoxRow>
+            <Box sx={{ m: '10px' }}>
+              <img src={lipstick1} alt="error" height="200px" width="200px" />
             </Box>
-            <BoxColumnStart sx={{ justifyContent: 'flex-start' }}>
-              <CustomizedButton
-                onClick={onClickCartHandler}
-                sx={{ m: '0', mt: '20px' }}
-              >
-                ADD TO CART
-              </CustomizedButton>
-            </BoxColumnStart>
-          </Box>
-        </BoxRow>
-        <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
-          <Alert
-            onClose={handleClose}
-            severity="success"
-            sx={{ width: '100%' }}
-          >
-            A product is added to your cart
-          </Alert>
-        </Snackbar>
+            <img src={lipstick2} alt="error" height="200px" width="200px" />
+          </BoxRow>
+        </BoxColumn>
+        <Box
+          sx={{
+            justifyContent: 'flex-start',
+          }}
+        >
+          <BoxRow sx={{ justifyContent: 'flex-start' }}>
+            <CustomizedTitle sx={{ textAlign: 'left' }}>
+              {selectedProduct.name}
+            </CustomizedTitle>
+            <FavoriteIcon
+              className={classes.icon}
+              id="favIcon"
+              color={color}
+              onClick={onClickHandler}
+              sx={{ fontSize: 30, ml: '50px' }}
+            />
+          </BoxRow>
 
-        <ProductVideo sx={{ width: '100%' }} />
-        <ProductRecently />
-      </Box>
-    </ThemeProvider>
+          <CustomizedText sx={{ textAlign: 'left' }}>
+            {selectedProduct.description}
+          </CustomizedText>
+          <CustomizedText sx={{ textAlign: 'left' }}>
+            {selectedProduct.price} €
+          </CustomizedText>
+          <Box>
+            {selectedProduct.variant.map((item) => {
+              return (
+                <CircleIcon sx={{ fontSize: '40px', color: item.hexValue }} />
+              )
+            })}
+          </Box>
+          <BoxColumnStart sx={{ justifyContent: 'flex-start' }}>
+            <CustomizedButton
+              onClick={onClickCartHandler}
+              sx={{ m: '0', mt: '20px' }}
+            >
+              ADD TO CART
+            </CustomizedButton>
+          </BoxColumnStart>
+        </Box>
+      </BoxRow>
+      <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+        <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
+          A product is added to your cart
+        </Alert>
+      </Snackbar>
+
+      <ProductVideo sx={{ width: '100%' }} />
+      <ProductRecently />
+    </Box>
   )
 }
 

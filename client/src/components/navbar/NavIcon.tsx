@@ -3,17 +3,11 @@ import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
 import { Badge, Drawer } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
-import { ThemeProvider } from '@emotion/react'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined'
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined'
 
-import {
-  BoxRow,
-  CustomizedLink,
-  CustomizedText,
-  themes,
-} from '../customizedCSS'
+import { BoxRow, CustomizedLink, CustomizedText } from '../customizedCSS'
 import { AppState } from '../../misc/type'
 
 type Anchor = 'right'
@@ -90,30 +84,28 @@ function NavIcon() {
         p: '1rem',
       }}
     >
-      <ThemeProvider theme={themes}>
-        <Badge badgeContent={favoriteCount} color="primary">
-          <FavoriteBorderIcon
-            color="action"
-            onClick={toggleDrawer('right', true)}
-          />
-          <Drawer
-            anchor="right"
-            open={state.right}
-            onClose={toggleDrawer('right', false)}
-          >
-            <Box>
-              <CustomizedText> Wish list</CustomizedText>
-              {list('right')}
-            </Box>
-          </Drawer>
+      <Badge badgeContent={favoriteCount} color="primary">
+        <FavoriteBorderIcon
+          color="action"
+          onClick={toggleDrawer('right', true)}
+        />
+        <Drawer
+          anchor="right"
+          open={state.right}
+          onClose={toggleDrawer('right', false)}
+        >
+          <Box>
+            <CustomizedText> Wish list</CustomizedText>
+            {list('right')}
+          </Box>
+        </Drawer>
+      </Badge>
+      <CustomizedLink to="/cart">
+        <Badge badgeContent={productInCartCount} color="primary">
+          <LocalMallOutlinedIcon color="action" />
         </Badge>
-        <CustomizedLink to="/cart">
-          <Badge badgeContent={productInCartCount} color="primary">
-            <LocalMallOutlinedIcon color="action" />
-          </Badge>
-        </CustomizedLink>
-        <PersonOutlineOutlinedIcon onClick={onClickHandler} />
-      </ThemeProvider>
+      </CustomizedLink>
+      <PersonOutlineOutlinedIcon onClick={onClickHandler} />
     </Box>
   )
 }

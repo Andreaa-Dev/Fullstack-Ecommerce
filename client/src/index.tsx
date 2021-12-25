@@ -5,9 +5,11 @@ import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 import reportWebVitals from './reportWebVitals'
 import { BrowserRouter } from 'react-router-dom'
+import { ThemeProvider } from '@emotion/react'
 
 import makeStore from './redux/store'
 import axios from 'axios'
+import { themes } from './components/customizedCSS'
 
 axios.interceptors.request.use(function (request) {
   // Do something before request is sent
@@ -25,7 +27,9 @@ const store = makeStore()
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
-      <App />
+      <ThemeProvider theme={themes}>
+        <App />
+      </ThemeProvider>
     </BrowserRouter>
   </Provider>,
   document.getElementById('root')

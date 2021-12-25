@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { Box } from '@mui/system'
 
 import {
   BoxColumn,
@@ -26,15 +25,15 @@ function ProductPage() {
   }, [])
 
   return (
-    <Box>
-      <CustomizedTitle> Product Page Manage</CustomizedTitle>
+    <div>
+      <CustomizedTitle> PRODUCT MANAGEMENT</CustomizedTitle>
       <ProductList productList={productList} />
       <BoxColumn>
         <CustomizedLink to="/admin/product/add">
           <CustomizedButton>Add product</CustomizedButton>
         </CustomizedLink>
       </BoxColumn>
-    </Box>
+    </div>
   )
 }
 

@@ -27,9 +27,9 @@ function ChangePassword() {
   const navigate = useNavigate()
   return (
     <div>
-      <CustomizedTitle>Change password</CustomizedTitle>
+      <CustomizedTitle>CHANGE PASSWORD</CustomizedTitle>
       <CustomizedText>
-        Please enter your email to change password
+        Please enter your email to change password.
       </CustomizedText>
       <Formik
         validateOnChange={true}

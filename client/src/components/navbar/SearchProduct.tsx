@@ -1,13 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import TextField from '@mui/material/TextField'
 import SearchIcon from '@mui/icons-material/Search'
-import { ThemeProvider } from '@emotion/react'
 import { Drawer } from '@mui/material'
 
 import {
   BoxRow,
-  useStyles,
-  themes,
   CustomizedLink,
   CustomizedText,
   BoxColumn,
@@ -19,8 +16,6 @@ import { fetchProductBySearch } from '../../redux/action'
 type Anchor = 'bottom'
 
 function SearchProduct() {
-  const classes = useStyles()
-
   const [state, setState] = useState({ bottom: false })
   const [userInput, setUserInput] = useState('')
 
@@ -87,31 +82,25 @@ function SearchProduct() {
 
   return (
     <BoxRow sx={{ m: 1 }}>
-      <ThemeProvider theme={themes}>
-        <TextField
-          InputLabelProps={{
-            classes: {
-              root: classes.typography,
-            },
-          }}
-          id="standard-basic"
-          label="What are you looking for ?"
-          variant="standard"
-          color="primary"
-          onChange={handleChange}
-        />
-        <SearchIcon
-          sx={{ mt: '20px', ml: '10px' }}
-          onClick={toggleDrawer('bottom', true)}
-        />
-        <Drawer
-          anchor="bottom"
-          open={state.bottom}
-          onClose={toggleDrawer('bottom', false)}
-        >
-          {list('bottom')}
-        </Drawer>
-      </ThemeProvider>
+      <TextField
+        sx={{ width: '150px' }}
+        id="standard-basic"
+        label="What are you looking for ?"
+        variant="standard"
+        color="primary"
+        onChange={handleChange}
+      />
+      <SearchIcon
+        sx={{ mt: '20px', ml: '10px' }}
+        onClick={toggleDrawer('bottom', true)}
+      />
+      <Drawer
+        anchor="bottom"
+        open={state.bottom}
+        onClose={toggleDrawer('bottom', false)}
+      >
+        {list('bottom')}
+      </Drawer>
     </BoxRow>
   )
 }

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router'
-import { ThemeProvider } from '@emotion/react'
 import Tabs from '@mui/material/Tabs'
 import Tab from '@mui/material/Tab'
 import Typography from '@mui/material/Typography'
@@ -13,7 +12,6 @@ import {
   CustomizedLink,
   CustomizedText,
   CustomizedTitle,
-  themes,
 } from '../customizedCSS'
 import UserDetail from './user/userInformation/UserDetail'
 import UserOrder from './user/userOrder'
@@ -57,45 +55,43 @@ function Index() {
     dispatch(fetchUserData(param.id))
   }, [dispatch, param.id])
   return (
-    <ThemeProvider theme={themes}>
-      <Box sx={{ m: '50px' }}>
-        <CustomizedTitle> YOUR ACCOUNT</CustomizedTitle>
-        <Box
-          sx={{
-            flexGrow: 1,
-            bgcolor: 'background.paper',
-            display: 'flex',
-          }}
+    <Box sx={{ m: '50px' }}>
+      <CustomizedTitle> YOUR ACCOUNT</CustomizedTitle>
+      <Box
+        sx={{
+          flexGrow: 1,
+          bgcolor: 'background.paper',
+          display: 'flex',
+        }}
+      >
+        <Tabs
+          orientation="vertical"
+          variant="scrollable"
+          value={value}
+          onChange={handleChange}
+          aria-label="Vertical tabs example"
+          sx={{ borderRight: 1, borderColor: 'divider' }}
         >
-          <Tabs
-            orientation="vertical"
-            variant="scrollable"
-            value={value}
-            onChange={handleChange}
-            aria-label="Vertical tabs example"
-            sx={{ borderRight: 1, borderColor: 'divider' }}
-          >
-            <Tab label="YOUR PROFILE" />
-            <Tab label="ORDERS" />
-            {userData && userData?.role === 'admin' && <Tab label="ADMIN" />}
-          </Tabs>
-          <TabPanel value={value} index={0}>
-            <UserDetail userData={userData} />
-          </TabPanel>
-          <TabPanel value={value} index={1}>
-            <UserOrder userId={userId} />
-          </TabPanel>
-          <TabPanel value={value} index={2}>
-            <CustomizedLink to="/admin/product">
-              <CustomizedText> Products</CustomizedText>
-            </CustomizedLink>
-            <CustomizedLink to="/admin/user">
-              <CustomizedText>Users</CustomizedText>
-            </CustomizedLink>
-          </TabPanel>
-        </Box>
+          <Tab label="YOUR PROFILE" />
+          <Tab label="ORDERS" />
+          {userData && userData?.role === 'admin' && <Tab label="ADMIN" />}
+        </Tabs>
+        <TabPanel value={value} index={0}>
+          <UserDetail userData={userData} />
+        </TabPanel>
+        <TabPanel value={value} index={1}>
+          <UserOrder userId={userId} />
+        </TabPanel>
+        <TabPanel value={value} index={2}>
+          <CustomizedLink to="/admin/product">
+            <CustomizedText> Products</CustomizedText>
+          </CustomizedLink>
+          <CustomizedLink to="/admin/user">
+            <CustomizedText>Users</CustomizedText>
+          </CustomizedLink>
+        </TabPanel>
       </Box>
-    </ThemeProvider>
+    </Box>
   )
 }
 

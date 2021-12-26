@@ -221,7 +221,7 @@ function CreateUserAccount() {
                       />
                       <CustomizedText>
                         I HAVE READ THE PRIVACY POLICY AND CONSENT TO THE
-                        PROCESSING OF MY PERSONAL DATA TO CREATE THIS ACCOUNT
+                        PROCESSING OF MY PERSONAL DATA TO CREATE THIS ACCOUNT.
                       </CustomizedText>
                     </BoxRowStart>
                   </label>

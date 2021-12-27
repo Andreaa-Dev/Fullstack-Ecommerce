@@ -37,12 +37,9 @@ function Index() {
     products: cartData,
   }
   const onClickHandler = async () => {
-    const response = await axios.post(
-      'http://localhost:5000/api/v1/order',
-      values
-    )
+    const response = await axios.post('/order', values)
     const order = response.data as Order
-    const result = await axios.post('http://localhost:5000/api/v1/payment', {
+    const result = await axios.post('/payment', {
       receipt_email: userData?.email,
       order,
     })

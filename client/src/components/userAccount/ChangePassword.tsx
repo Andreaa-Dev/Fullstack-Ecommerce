@@ -41,10 +41,7 @@ function ChangePassword() {
             actions.setSubmitting(false)
           }, 500)
 
-          const result = await axios.post(
-            'http://localhost:5000/api/v1/sendEmail',
-            values
-          )
+          const result = await axios.post('/sendEmail', values)
           console.log(result, 'k')
           if (result.status === 204) {
             navigate(`/userCheck`)

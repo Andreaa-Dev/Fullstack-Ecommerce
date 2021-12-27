@@ -17,9 +17,7 @@ function Index({ userId }: UserIdPropType) {
 
   useEffect(() => {
     async function getOrderByUser() {
-      let response = await axios.get(
-        `http://localhost:5000/api/v1/order/user/${userId}`
-      )
+      let response = await axios.get(`/order/user/${userId}`)
       const orderData = response.data
       setOrderData(orderData)
     }

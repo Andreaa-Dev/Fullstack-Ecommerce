@@ -69,7 +69,7 @@ function UserLogIn() {
           }, 500)
 
           await axios
-            .post('http://localhost:5000/api/v1/user/login', values)
+            .post('/user/login', values)
             .catch((error) => {
               console.log(error, 'err')
               if (error.response.status === 403) {

@@ -76,7 +76,7 @@ export function addProductRecently(
 export function fetchData() {
   return (dispatch: Dispatch) => {
     axios
-      .get('http://localhost:5000/api/v1/product')
+      .get('/product')
       .then((res: any) => {
         const data = res.data
         dispatch(fetchProductSuccess(data))
@@ -88,12 +88,10 @@ export function fetchData() {
 //fetch product by category
 export function fetchDataByCategory(category: string) {
   return (dispatch: Dispatch) => {
-    axios
-      .get(`http://localhost:5000/api/v1/product?category=${category}`)
-      .then((res: any) => {
-        const dataByCategory = res.data
-        dispatch(fetchProductSuccess(dataByCategory))
-      })
+    axios.get(`/product?category=${category}`).then((res: any) => {
+      const dataByCategory = res.data
+      dispatch(fetchProductSuccess(dataByCategory))
+    })
   }
 }
 
@@ -101,7 +99,7 @@ export function fetchDataByCategory(category: string) {
 export function fetchProductById(id: string) {
   return (dispatch: Dispatch) => {
     axios
-      .get(`http://localhost:5000/api/v1/product/${id}`)
+      .get(`/v1/product/${id}`)
       .then((res: any) => {
         const dataById = res.data
         dispatch(fetchProductByIdSuccess(dataById))
@@ -113,11 +111,9 @@ export function fetchProductById(id: string) {
 //fetch product by searching
 export function fetchProductBySearch(search: string) {
   return (dispatch: Dispatch) => {
-    axios
-      .get(`http://localhost:5000/api/v1/product?search=${search}`)
-      .then((res: any) => {
-        const dataBySearch = res.data
-        dispatch(searchProductSuccess(dataBySearch))
-      })
+    axios.get(`/product?search=${search}`).then((res: any) => {
+      const dataBySearch = res.data
+      dispatch(searchProductSuccess(dataBySearch))
+    })
   }
 }

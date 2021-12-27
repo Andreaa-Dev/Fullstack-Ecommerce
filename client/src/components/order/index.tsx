@@ -7,7 +7,7 @@ function Index() {
 
   useEffect(() => {
     async function getOrderData() {
-      let response = await axios.get('http://localhost:5000/api/v1/order')
+      let response = await axios.get('/order')
       const orderData = response.data
       setOrderData(orderData)
     }

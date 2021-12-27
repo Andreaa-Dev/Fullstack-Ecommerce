@@ -39,10 +39,7 @@ function AddProductAdmin() {
           setTimeout(() => {
             actions.setSubmitting(false)
           }, 500)
-          const result = await axios.post(
-            'http://localhost:5000/api/v1/product',
-            values
-          )
+          const result = await axios.post('/product', values)
           if (result.status === 200) {
             navigate(`/admin/product`)
           }

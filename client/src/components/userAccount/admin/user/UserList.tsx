@@ -37,20 +37,14 @@ function UserList({ userData, getUserData }: UserDataPropType) {
   const classes = useStyles()
 
   const onClickBannedHandler = async (userIdBanned: string) => {
-    const response = await axios.patch(
-      `http://localhost:5000/api/v1/user/${userIdBanned}/ban-user`,
-      {}
-    )
+    const response = await axios.patch(`/user/${userIdBanned}/ban-user`, {})
     if (response.status === 200) {
       getUserData()
     }
   }
 
   const onClickAdminHandler = async (userIdAdmin: string) => {
-    const adminReq = await axios.patch(
-      `http://localhost:5000/api/v1/user/${userIdAdmin}/make-admin`,
-      {}
-    )
+    const adminReq = await axios.patch(`/user/${userIdAdmin}/make-admin`, {})
     console.log(adminReq, 'h')
 
     if (adminReq.status === 200) {

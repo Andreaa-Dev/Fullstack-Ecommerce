@@ -9,7 +9,7 @@ function Index() {
   const [userList, setUserList] = useState<UserDataType[] | undefined>()
 
   const getUserData = async () => {
-    let response = await axios.get(`http://localhost:5000/api/v1/user`)
+    let response = await axios.get(`/user`)
     const userData = response.data
     setUserList(userData)
   }

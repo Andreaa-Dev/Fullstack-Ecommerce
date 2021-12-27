@@ -8,10 +8,9 @@ import { CustomizedButton } from '../../../customizedCSS'
 function GoogleLogInPage() {
   let navigate = useNavigate()
   const responseGoogle = async (response: any) => {
-    let res = await axios.post(
-      'http://localhost:5000/api/v1/user/google-authenticate',
-      { id_token: response.tokenObj.id_token }
-    )
+    let res = await axios.post('/user/google-authenticate', {
+      id_token: response.tokenObj.id_token,
+    })
 
     const userId = res.data.userGoogleData._id
     if (res.status === 200) {

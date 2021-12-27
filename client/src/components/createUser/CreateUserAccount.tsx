@@ -80,10 +80,7 @@ function CreateUserAccount() {
             actions.setSubmitting(false)
           }, 500)
 
-          const result = await axios.post(
-            'http://localhost:5000/api/v1/user',
-            values
-          )
+          const result = await axios.post('/user', values)
           if (result.status === 200) {
             navigate(`/userCheck`)
           }

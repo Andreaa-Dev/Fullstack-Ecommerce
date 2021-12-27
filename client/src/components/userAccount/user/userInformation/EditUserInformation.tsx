@@ -74,10 +74,7 @@ function EditUserInformation() {
               actions.setSubmitting(false)
             }, 500)
 
-            const result = await axios.put(
-              `http://localhost:5000/api/v1/user/${userId}`,
-              values
-            )
+            const result = await axios.put(`/user/${userId}`, values)
             console.log(result, 'k')
             if (result.status === 200) {
               navigate(`/account/${userId}`)

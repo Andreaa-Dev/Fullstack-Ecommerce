@@ -14,7 +14,7 @@ function ProductPage() {
   const [productList, setProductList] = useState<ProductType[] | undefined>()
 
   const getProductData = async () => {
-    let response = await axios.get(`http://localhost:5000/api/v1/product`)
+    let response = await axios.get(`/product`)
     const productData = response.data
     console.log(productData, 'l')
     setProductList(productData)

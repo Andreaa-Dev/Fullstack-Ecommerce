@@ -99,7 +99,7 @@ export function fetchDataByCategory(category: string) {
 export function fetchProductById(id: string) {
   return (dispatch: Dispatch) => {
     axios
-      .get(`/v1/product/${id}`)
+      .get(`/product/${id}`)
       .then((res: any) => {
         const dataById = res.data
         dispatch(fetchProductByIdSuccess(dataById))

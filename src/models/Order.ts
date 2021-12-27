@@ -39,7 +39,7 @@ const ProductOrderSchema = new mongoose.Schema({
 
 //add types for mongoose
 export type OrderDocument = Document & {
-  _id: any
+  _id: string
   date: Date
   userId: string
   products: ProductOrder[]

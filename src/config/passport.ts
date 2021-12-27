@@ -4,10 +4,15 @@ import { Strategy as JwtStrategy, ExtractJwt } from 'passport-jwt'
 import userService from '../services/user'
 import { JWT_SECRET } from '../util/secrets'
 
+const clientId =
+  process.env.NODE_ENV === 'production'
+    ? process.env.GOOGLE_CLIENT_ID_PROD
+    : process.env.GOOGLE_CLIENT_ID_DEV
+
 // type in google-passport.d.ts file
 export const googleStrategy = new GoogleTokenStrategy(
   {
-    clientID: process.env.GOOGLE_CLIENT_ID,
+    clientID: clientId,
   },
   async function (parsedToken: any, googleId: string, done: any) {
     const userPayload = {

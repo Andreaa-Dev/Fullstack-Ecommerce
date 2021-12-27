@@ -28,6 +28,8 @@ async function postCharge(req: Request, res: Response, next: NextFunction) {
     })
     // console.log(purchasingItems[1].price_data.product_data.images, 'h')
 
+    const success_link = ''
+    const cancel_link = ''
     const session = await Stripe.checkout.sessions.create({
       line_items: purchasingItems,
       mode: 'payment',

@@ -36,7 +36,7 @@ async function postCharge(req: Request, res: Response, next: NextFunction) {
       success_url: 'http://localhost:3000/order/success',
       cancel_url: 'http://localhost:3000/order/cancel',
     })
-
+    //https://dior-andrea.netlify.app/
     res.json({ url: session.url })
   } catch (error) {
     if (error instanceof Error && error.name == 'ValidationError') {

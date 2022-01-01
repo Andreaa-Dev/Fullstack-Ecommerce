@@ -28,7 +28,7 @@ Link: https://dior-andrea.netlify.app/
 4. Hashed password by crypt
 5. Stripe - handle payment
 6. SendGrid - send email to user
-7. Testing: manual testing
+7. Testing: manual testing and unit testing
 
 ## FRONT-END
 

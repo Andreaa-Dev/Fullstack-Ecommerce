@@ -76,6 +76,7 @@ function CreateUserAccount() {
         initialValues={initialValues}
         validationSchema={validationSchema}
         onSubmit={async (values, actions) => {
+          console.log(values, 'v')
           setTimeout(() => {
             actions.setSubmitting(false)
           }, 500)

@@ -160,7 +160,7 @@ function EditUserInformation() {
                       type="submit"
                       disabled={!isValid || !dirty || isSubmitting}
                     >
-                      Edit
+                      SAVE
                     </CustomizedButton>
                   </BoxColumn>
                 </Form>

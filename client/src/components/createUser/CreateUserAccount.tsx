@@ -45,12 +45,13 @@ const initialValues = {
   country: 'Choose your country',
   address: '',
   phone: '',
-  date: new Date(),
+  date: new Date().toISOString(),
   acceptedTerms: false,
 }
 
 function CreateUserAccount() {
   const navigate = useNavigate()
+  console.log(initialValues, 'i')
 
   return (
     <Box

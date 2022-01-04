@@ -45,7 +45,7 @@ const initialValues = {
   country: 'Choose your country',
   address: '',
   phone: '',
-  date: new Date().toISOString(),
+  date: new Date(),
   acceptedTerms: false,
 }
 
@@ -164,6 +164,7 @@ function CreateUserAccount() {
                     name="date"
                     label="DOB"
                     variant="standard"
+                    inputFormat="MM/DD/YYYY"
                   />
                 </Box>
 

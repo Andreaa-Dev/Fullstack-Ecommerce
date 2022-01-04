@@ -131,6 +131,7 @@ function EditUserInformation() {
                         name="date"
                         label="DOB"
                         variant="standard"
+                        inputFormat="MM/DD/YYYY"
                       />
                     </Box>
 

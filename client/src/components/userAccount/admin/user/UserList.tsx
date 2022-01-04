@@ -101,7 +101,7 @@ function UserList({ userData, getUserData }: UserDataPropType) {
                     <TableCell align="right">{row.lastName}</TableCell>
                     <TableCell align="right">{row.email}</TableCell>
                     <TableCell align="right">{row.phone}</TableCell>
-                    <TableCell align="left">{row.country}</TableCell>
+                    <TableCell align="right">{row.country}</TableCell>
                     <TableCell align="right">{row.role}</TableCell>
                     <TableCell align="right">
                       <IconButton onClick={() => onClickBannedHandler(row._id)}>
@@ -131,7 +131,7 @@ function UserList({ userData, getUserData }: UserDataPropType) {
             fontWeight: 'bold',
           }}
         >
-          Status* : red : is banned & Make Admin*: green: Admin
+          Status* : red : is banned & SPECIAL*: green: Admin
         </CustomizedText>
       </BoxColumn>
     )

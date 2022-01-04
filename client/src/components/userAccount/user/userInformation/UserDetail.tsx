@@ -37,6 +37,7 @@ function UserDetail({ userData }: UserDataPropType) {
   }
 
   const userId = userData?._id
+  console.log(userData, 'j')
   return (
     <BoxColumn>
       <CustomizedTitle> PERSONAL DETAILS</CustomizedTitle>
@@ -48,6 +49,8 @@ function UserDetail({ userData }: UserDataPropType) {
         <CustomizedTextLeft>
           Last Name : {userData?.lastName}
         </CustomizedTextLeft>
+        <CustomizedTextLeft>DOB : {userData?.DOB}</CustomizedTextLeft>
+
         <CustomizedTextLeft>Email : {userData?.email}</CustomizedTextLeft>
         <CustomizedTextLeft>
           Phone number : {userData?.phone}

@@ -27,7 +27,6 @@ const initialValues = {
 }
 function AddProductAdmin() {
   let navigate = useNavigate()
-
   return (
     <div>
       <Formik
@@ -35,7 +34,6 @@ function AddProductAdmin() {
         validationSchema={validationSchema}
         initialValues={initialValues}
         onSubmit={async (values, actions) => {
-          console.log(values, 'k')
           setTimeout(() => {
             actions.setSubmitting(false)
           }, 500)
@@ -46,10 +44,6 @@ function AddProductAdmin() {
         }}
       >
         {({ isSubmitting, isValid, dirty, errors }) => {
-          console.log(dirty, 'dirty')
-          console.log(isSubmitting, 'submit')
-          console.log(isValid, 'valid')
-          console.log(errors, ' err')
           return (
             <Form>
               <Box>

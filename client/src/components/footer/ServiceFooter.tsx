@@ -3,6 +3,7 @@ import { Box } from '@mui/material'
 import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined'
 import ReplayOutlinedIcon from '@mui/icons-material/ReplayOutlined'
 import CardGiftcardOutlinedIcon from '@mui/icons-material/CardGiftcardOutlined'
+
 import { CustomizedText, CustomizedTitle } from '../customizedCSS'
 import background from '../images/footerbg.webp'
 

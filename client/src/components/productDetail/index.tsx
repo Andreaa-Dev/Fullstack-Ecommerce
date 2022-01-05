@@ -155,7 +155,6 @@ function ProductDetail() {
           A product is added to your cart
         </Alert>
       </Snackbar>
-
       <ProductVideo sx={{ width: '100%' }} />
       <ProductRecently />
     </Box>

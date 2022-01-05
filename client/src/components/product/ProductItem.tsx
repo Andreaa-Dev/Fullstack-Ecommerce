@@ -3,8 +3,8 @@ import { Box } from '@mui/system'
 import { useDispatch } from 'react-redux'
 
 import { ProductType } from '../../misc/type'
-import { CustomizedLink, CustomizedTextProduct } from '../customizedCSS'
 import { addProductRecently } from '../../redux/action'
+import { CustomizedLink, CustomizedTextProduct } from '../customizedCSS'
 
 type DataPropType = {
   data: ProductType
@@ -27,7 +27,7 @@ function ProductItem({ data }: DataPropType) {
         p: '5px',
       }}
     >
-      <img height="220px" width="250px" src={data.imageLink} alt="" />
+      <img height="220px" width="250px" src={data.imageLink} alt={data.name} />
 
       <CustomizedLink to={productId}>
         <CustomizedTextProduct fontWeight="bold" onClick={onClickHandler}>

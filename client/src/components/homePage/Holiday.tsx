@@ -2,7 +2,6 @@ import React from 'react'
 import { Box } from '@mui/system'
 
 import mainImg from '../images/xmas_cover.webp'
-
 import {
   CustomizedTextHT,
   CustomizedTitleHT,

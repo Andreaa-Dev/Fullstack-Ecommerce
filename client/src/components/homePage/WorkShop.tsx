@@ -14,8 +14,7 @@ function WorkShop() {
       <CustomizedTitleHT variant="h5">
         THE PERSONALISATION WORKSHOP
       </CustomizedTitleHT>
-      <img src={workshopImg} alt="" />
-
+      <img src={workshopImg} alt="workshop" />
       <CustomizedLink to="/gift">
         <CustomizedButton>Discover</CustomizedButton>
       </CustomizedLink>

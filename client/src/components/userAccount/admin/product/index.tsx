@@ -16,7 +16,6 @@ function ProductPage() {
   const getProductData = async () => {
     let response = await axios.get(`/product`)
     const productData = response.data
-    console.log(productData, 'l')
     setProductList(productData)
   }
 

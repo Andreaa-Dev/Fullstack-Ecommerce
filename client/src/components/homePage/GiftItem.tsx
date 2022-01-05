@@ -41,7 +41,6 @@ function GiftItem() {
         Custom engraving, personalised message, express delivery… Dior has
         thought of everything to make your Holidays gifts unforgettable.
       </CustomizedTextHT>
-
       <Slider {...settings}>
         {giftImgList.map((item) => {
           return (
@@ -58,7 +57,6 @@ function GiftItem() {
                   width="300px"
                 />
               </Box>
-
               <CustomizedTextHT> {item.description}</CustomizedTextHT>
             </Box>
           )

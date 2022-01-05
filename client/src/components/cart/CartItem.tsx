@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useDispatch } from 'react-redux'
+import { Box, Button } from '@mui/material'
+
 import AddCircleIcon from '@mui/icons-material/AddCircle'
 import RemoveCircleIcon from '@mui/icons-material/RemoveCircle'
 
@@ -11,8 +13,6 @@ import {
 } from '../customizedCSS'
 import { CartType } from '../../misc/type'
 import { removeToCart } from '../../redux/action'
-
-import { Box, Button } from '@mui/material'
 
 type ItemPropType = {
   item: CartType
@@ -53,7 +53,6 @@ function CartItem({
             </CustomizedText>
           </CustomizedLink>
         </Box>
-
         <Box sx={{ width: '50px', ml: '10px', mr: '10px' }}>{item.price} €</Box>
         <Button>
           <AddCircleIcon onClick={() => onClickHandlerAdd(item._id)} />

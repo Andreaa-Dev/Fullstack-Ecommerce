@@ -29,11 +29,6 @@ function UserOrderProduct({ product }: ProductPropType) {
               <CustomizedTitle sx={{ fontSize: '17px' }}>
                 No{product.indexOf(item)}.{' '}
               </CustomizedTitle>
-              {/* <Box sx={{ width: '200px' }}>
-                <CustomizedTitle sx={{ fontSize: '15px' }}>
-                  {item.name}
-                </CustomizedTitle>
-              </Box> */}
               <Box>
                 <img
                   src={item.imageLink}
@@ -42,7 +37,6 @@ function UserOrderProduct({ product }: ProductPropType) {
                   width="50px"
                 />
               </Box>
-
               <CustomizedText sx={{ fontSize: '15px' }}>
                 Price: {item.price}
               </CustomizedText>

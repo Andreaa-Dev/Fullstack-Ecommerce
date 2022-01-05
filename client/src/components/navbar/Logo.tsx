@@ -1,5 +1,6 @@
-import { Box } from '@mui/system'
 import React from 'react'
+import { Box } from '@mui/system'
+
 import { CustomizedLink } from '../customizedCSS'
 
 function Logo() {

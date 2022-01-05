@@ -7,8 +7,8 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined'
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined'
 
-import { BoxRow, CustomizedLink, CustomizedText } from '../customizedCSS'
 import { AppState } from '../../misc/type'
+import { BoxRow, CustomizedLink, CustomizedText } from '../customizedCSS'
 
 type Anchor = 'right'
 

@@ -81,7 +81,6 @@ function UserOrderItem({ item, orderData }: ItemPropType) {
               PRODUCTS:
             </CustomizedText>
             <UserOrderProduct product={product} />
-
             <CustomizedLink to="/home">
               <CustomizedButton>SEE DETAILS</CustomizedButton>
             </CustomizedLink>

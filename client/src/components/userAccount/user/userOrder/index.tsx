@@ -1,5 +1,5 @@
-import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import axios from 'axios'
 
 import UserOrderItem from './UserOrderItem'
 import {
@@ -28,7 +28,6 @@ function Index({ userId }: UserIdPropType) {
     return (
       <BoxColumn>
         <CustomizedTitle sx={{ mb: '10px' }}>ORDER HISTORY</CustomizedTitle>
-
         <BoxColumnStart>
           {orderData.map((item: any) => {
             return <UserOrderItem item={item} orderData={orderData} />

@@ -1,5 +1,6 @@
-import { Box } from '@mui/system'
 import React from 'react'
+import { Box } from '@mui/system'
+
 import ContactFooter from './ContactFooter/ContactFooter'
 import MiscFooter from './ContactFooter/MiscFooter'
 import Newsletter from './ContactFooter/Newsletter'

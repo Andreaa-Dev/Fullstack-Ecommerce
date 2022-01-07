@@ -34,17 +34,12 @@ function App() {
         <Route path="" element={<HomePage />} />
         <Route path="/product" element={<ProductPage />}></Route>
         <Route path="product/:id" element={<ProductDetail />} />
-        <Route path="/gift" element={<Gift />}>
-          {/* <Route path="art" element={<ArtofGift />} />
-          <Route path="finder" element={<GiftFinder />} /> */}
-        </Route>
+
+        <Route path="/gift" element={<Gift />} />
         <Route path="gift/art" element={<ArtofGift />} />
         <Route path="gift/finder" element={<GiftFinder />} />
 
-        <Route path="/news" element={<News />}>
-          {/* <Route path="craft" element={<Craft />} />
-          <Route path="history" element={<History />} /> */}
-        </Route>
+        <Route path="/news" element={<News />} />
         <Route path="news/craft" element={<Craft />} />
         <Route path="news/history" element={<History />} />
 
@@ -60,6 +55,7 @@ function App() {
         <Route path="/admin/product" element={<ProductPageAdmin />} />
         <Route path="/admin/product/add" element={<AddProductAdmin />} />
         <Route path="/admin/user" element={<UserPageAdmin />} />
+
         <Route path="/user/edit/:id" element={<EditUserInformation />} />
         <Route path="/userCheck/changepassword" element={<ChangePassword />} />
       </Routes>

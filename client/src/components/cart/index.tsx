@@ -68,7 +68,7 @@ function Index() {
           You have not logged in yet. Please log in or create new account.
         </CustomizedText>
         <CustomizedLink to="/userCheck">
-          <CustomizedButton> Go</CustomizedButton>
+          <CustomizedButton> GO</CustomizedButton>
         </CustomizedLink>
       </BoxColumn>
     )

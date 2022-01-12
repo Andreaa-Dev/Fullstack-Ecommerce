@@ -9,7 +9,7 @@ import {
 function OrderSuccess() {
   return (
     <BoxColumn>
-      <CustomizedTitle> Your order was purchased successfully!</CustomizedTitle>
+      <CustomizedTitle>Your order was purchased successfully !</CustomizedTitle>
       <CustomizedButton>
         <CustomizedLink to="/" sx={{ color: 'white' }}>
           Continue to shop

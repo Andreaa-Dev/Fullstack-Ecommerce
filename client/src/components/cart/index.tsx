@@ -47,11 +47,7 @@ function Index() {
     window.location.href = checkoutUrl
   }
   if (cartData.length === 0) {
-    return (
-      <>
-        <CustomizedText>Your cart is empty</CustomizedText>
-      </>
-    )
+    return <CustomizedText>Your cart is empty</CustomizedText>
   }
 
   const eachOrderAmount = cartData.map((item) => {

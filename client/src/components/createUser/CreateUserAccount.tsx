@@ -111,7 +111,7 @@ function CreateUserAccount() {
                       type="password"
                       label="Password"
                       variant="outlined"
-                      helperText="Must contain 8 characters, one uppercase, one lowercase, one number and one special character"
+                      helperText="Must contain 8 characters, one uppercase, one lowercase, one number and one special character."
                     />
                   </BoxRow>
                   <Box>

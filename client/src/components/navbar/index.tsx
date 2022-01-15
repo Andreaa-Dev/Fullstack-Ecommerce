@@ -12,8 +12,6 @@ function NavBar() {
     <Box>
       <BoxRow
         sx={{
-          display: 'flex',
-          flexDirection: 'row',
           justifyContent: 'space-between',
         }}
       >

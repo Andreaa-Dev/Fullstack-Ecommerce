@@ -65,7 +65,7 @@ function SearchProduct() {
           <BoxRow key={item._id}>
             <img
               src={item.imageLink}
-              alt="error"
+              alt={item.name}
               height="100px"
               width="100px"
             />

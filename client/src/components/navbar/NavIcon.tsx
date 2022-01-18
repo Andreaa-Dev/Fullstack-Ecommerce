@@ -56,7 +56,7 @@ function NavIcon() {
             <BoxRow sx={{ justifyContent: 'flex-start' }}>
               <img
                 src={item.imageLink}
-                alt="error"
+                alt={item.name}
                 height="100px"
                 width="100px"
               />

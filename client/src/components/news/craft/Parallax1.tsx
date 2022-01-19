@@ -18,7 +18,7 @@ function Parallax1() {
       <BoxRow sx={{ height: '550px' }}>
         <img
           src=" https://www.dior.com/couture/var/nfsdior/var/dior/storage/maison-dior/happyend/images/metiers/haute_couture/col1_ateliers.jpg"
-          alt="error"
+          alt="Haute_Couture"
         />
         <Box>
           <CustomizedText

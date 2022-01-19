@@ -20,7 +20,7 @@ function Parallax2() {
         </CustomizedText>
         <img
           src="https://www.dior.com/couture/var/nfsdior/var/dior/storage/maison-dior/happyend/images/metiers/haute_couture/col2_proto.jpg"
-          alt=""
+          alt="Maison-Dior"
         />
       </BoxRow>
     </Box>

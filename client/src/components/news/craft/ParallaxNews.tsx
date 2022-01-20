@@ -42,7 +42,7 @@ function ParallaxNews() {
       <BoxColumn>
         <img
           src="https://www.dior.com/couture/var/nfsdior/var/dior/storage/maison-dior/happyend/images/metiers/haute_couture/col2_montage1.jpg"
-          alt="error"
+          alt="Haute Couture"
           height="500px"
           width="400px"
         />

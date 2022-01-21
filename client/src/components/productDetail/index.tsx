@@ -98,7 +98,7 @@ function ProductDetail() {
         <BoxColumn sx={{ mr: '20px' }}>
           <img
             src={selectedProduct.imageLink}
-            alt="error"
+            alt={selectedProduct.name}
             height="350px"
             width="400px"
           />

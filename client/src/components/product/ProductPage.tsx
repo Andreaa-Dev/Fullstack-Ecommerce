@@ -40,7 +40,7 @@ function ProductPage() {
       <CustomizedTitleProduct>{category}</CustomizedTitleProduct>
       <img
         src={productName[category as keyof typeof productName]}
-        alt="error"
+        alt={productName[category as keyof typeof productName]}
       />
       <CustomizedText>
         {introductionProduct[category as keyof typeof productName]}

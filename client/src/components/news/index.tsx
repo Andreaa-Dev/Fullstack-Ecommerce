@@ -44,7 +44,7 @@ function index() {
         <Box>
           <img
             src="https://www.dior.com/couture/var/nfsdior/var/dior/storage/maison-dior/mazarine/images/medias/history/le-30-avenue-montaigne/30_montaigne_intro_vzg_01.jpg"
-            alt="Avenue-Montaigne"
+            alt="Avenue Montaigne"
             height="500px"
             width="920px"
           />

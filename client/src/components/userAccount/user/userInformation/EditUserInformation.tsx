@@ -69,13 +69,11 @@ function EditUserInformation() {
           initialValues={initialValues}
           validationSchema={validationSchema}
           onSubmit={async (values, actions) => {
-            console.log(values, 'k')
             setTimeout(() => {
               actions.setSubmitting(false)
             }, 500)
 
             const result = await axios.put(`/user/${userId}`, values)
-            console.log(result, 'k')
             if (result.status === 200) {
               navigate(`/account/${userId}`)
             }

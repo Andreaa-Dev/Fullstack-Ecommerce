@@ -71,7 +71,6 @@ function UserLogIn() {
           await axios
             .post('/user/login', values)
             .catch((error) => {
-              console.log(error, 'err')
               if (error.response.status === 403) {
                 setOpen(true)
                 setError(

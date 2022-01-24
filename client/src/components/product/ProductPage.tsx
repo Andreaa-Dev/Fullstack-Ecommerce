@@ -22,7 +22,6 @@ import { productNameList } from '../../misc/productNameList'
 function ProductPage() {
   let [searchParams] = useSearchParams()
   const category = searchParams.get('category') as string
-  console.log(category, 'k')
 
   const dispatch = useDispatch()
   const data = useSelector((state: AppState) => state.productState.product)

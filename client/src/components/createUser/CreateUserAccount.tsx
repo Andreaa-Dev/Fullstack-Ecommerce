@@ -51,7 +51,6 @@ const initialValues = {
 
 function CreateUserAccount() {
   const navigate = useNavigate()
-  console.log(initialValues, 'i')
 
   return (
     <Box
@@ -77,7 +76,6 @@ function CreateUserAccount() {
         initialValues={initialValues}
         validationSchema={validationSchema}
         onSubmit={async (values, actions) => {
-          console.log(values, 'v')
           setTimeout(() => {
             actions.setSubmitting(false)
           }, 500)

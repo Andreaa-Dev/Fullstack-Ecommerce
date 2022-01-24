@@ -18,7 +18,7 @@ function ArtofGift() {
         controls={true}
       />
       <CustomizedTitleHT>ADD A PERSONALISED MESSAGE</CustomizedTitleHT>
-      <img src={giftImg1} alt="" />
+      <img src={giftImg1} alt="PERSONALISED MESSAGE" />
     </div>
   )
 }

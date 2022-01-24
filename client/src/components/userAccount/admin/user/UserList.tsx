@@ -45,7 +45,6 @@ function UserList({ userData, getUserData }: UserDataPropType) {
 
   const onClickAdminHandler = async (userIdAdmin: string) => {
     const adminReq = await axios.patch(`/user/${userIdAdmin}/make-admin`, {})
-    console.log(adminReq, 'h')
 
     if (adminReq.status === 200) {
       getUserData()

@@ -87,7 +87,7 @@ export const updateUser = async (
   }
 }
 
-// DELETE /movies/:movieId => delete user
+// DELETE /users/:userId => delete user
 export const deleteUser = async (
   req: Request,
   res: Response,

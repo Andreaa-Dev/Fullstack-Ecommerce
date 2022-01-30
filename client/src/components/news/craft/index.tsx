@@ -1,7 +1,8 @@
-import { Box } from '@mui/system'
 import React from 'react'
-import { CustomizedText, CustomizedTitle } from '../../customizedCSS'
+import { Box } from '@mui/system'
+
 import ParallaxNews from './ParallaxNews'
+import { CustomizedText, CustomizedTitle } from '../../customizedCSS'
 
 function index() {
   return (

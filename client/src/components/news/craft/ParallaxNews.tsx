@@ -1,10 +1,11 @@
 import React from 'react'
 import { Parallax } from 'react-parallax'
-import { BoxColumn, CustomizedTitle } from '../../customizedCSS'
+
 import Parallax1 from './Parallax1'
 import Parallax2 from './Parallax2'
 import Parallax3 from './Parallax3'
 import Parallax4 from './Parallax4'
+import { BoxColumn, CustomizedTitle } from '../../customizedCSS'
 
 function ParallaxNews() {
   return (

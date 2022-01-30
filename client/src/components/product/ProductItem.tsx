@@ -21,8 +21,8 @@ function ProductItem({ data }: DataPropType) {
     <Box
       sx={{
         border: '1px solid #cecece',
-        height: '320px',
-        width: '450px',
+        height: '330px',
+        width: '400px',
         m: '10px',
         p: '5px',
       }}

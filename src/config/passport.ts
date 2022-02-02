@@ -15,6 +15,7 @@ export const googleStrategy = new GoogleTokenStrategy(
     clientID: clientId,
   },
   async function (parsedToken: any, googleId: string, done: any) {
+    console.log(parsedToken, 'k')
     const userPayload = {
       email: parsedToken?.payload?.email,
       firstName: parsedToken?.payload?.given_name,

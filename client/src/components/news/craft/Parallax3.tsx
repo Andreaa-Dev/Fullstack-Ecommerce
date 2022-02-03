@@ -12,8 +12,8 @@ function Parallax3() {
         m: 'auto',
       }}
     >
-      <CustomizedTitle sx={{ color: 'white', fontWeight: 'bold' }}>
-        FINAL ASSEMBLY{' '}
+      <CustomizedTitle sx={{ color: 'white', fontWeight: 'bold', mt: '80px' }}>
+        FINAL ASSEMBLY
       </CustomizedTitle>
       <BoxRow sx={{ height: '550px' }}>
         <img

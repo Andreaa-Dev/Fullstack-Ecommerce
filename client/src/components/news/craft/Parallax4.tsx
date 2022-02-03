@@ -13,7 +13,7 @@ function Parallax4() {
           m: 'auto',
         }}
       >
-        <CustomizedTitle>
+        <CustomizedTitle sx={{ color: 'white', mt: '80px' }}>
           FINE SOFT DRESSMAKING and tailoring ateliers
         </CustomizedTitle>
         <BoxRow sx={{ height: '550px' }}>

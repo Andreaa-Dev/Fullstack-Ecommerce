@@ -28,15 +28,12 @@ async function postCharge(req: Request, res: Response, next: NextFunction) {
     })
     // console.log(purchasingItems[1].price_data.product_data.images, 'h')
 
-    const success_link = ''
-    const cancel_link = ''
     const session = await Stripe.checkout.sessions.create({
       line_items: purchasingItems,
       mode: 'payment',
       success_url: 'http://localhost:3000/order/success',
       cancel_url: 'http://localhost:3000/order/cancel',
     })
-    //https://dior-andrea.netlify.app/
     res.json({ url: session.url })
   } catch (error) {
     if (error instanceof Error && error.name == 'ValidationError') {

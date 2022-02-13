@@ -51,6 +51,7 @@ function ChangePassword() {
             <Form>
               <BoxRow>
                 <Field
+                  sx={{ width: '220px' }}
                   component={TextField}
                   name="email"
                   type="text"

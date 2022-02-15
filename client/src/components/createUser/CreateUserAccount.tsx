@@ -161,8 +161,7 @@ function CreateUserAccount() {
                     component={DatePicker}
                     name="date"
                     label="DOB"
-                    variant="standard"
-                    inputFormat="MM/DD/YYYY"
+                    inputFormat="DD-MM-YYYY"
                   />
                 </Box>
 

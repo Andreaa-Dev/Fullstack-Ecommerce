@@ -53,8 +53,8 @@ function GiftItem() {
                 <img
                   src={item.name}
                   alt={item.description}
-                  height="324px"
-                  width="300px"
+                  height="300px"
+                  width="270px"
                 />
               </Box>
               <CustomizedTextHT> {item.description}</CustomizedTextHT>

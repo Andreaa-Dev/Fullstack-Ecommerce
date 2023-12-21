@@ -13,7 +13,7 @@ import axios from 'axios'
 import { themes } from './components/customizedCSS'
 
 if (process.env.NODE_ENV === 'production') {
-  axios.defaults.baseURL = 'https://dior-andrea.herokuapp.com/api/v1'
+  axios.defaults.baseURL = 'https://dior-backend.onrender.com/api/v1'
 } else {
   axios.defaults.baseURL = 'http://localhost:5000/api/v1'
 }

@@ -53,11 +53,6 @@
     "passport-google-id-token": "^0.4.7",
     "passport-jwt": "^4.0.0",
     "passport-local": "^1.0.0",
-    "react-player": "^2.9.0",
-    "react-redux": "^7.2.6",
-    "react-use": "^17.3.1",
-    "redux": "^4.1.2",
-    "redux-thunk": "^2.4.0",
     "stripe": "^8.191.0",
     "winston": "^3.2.1"
   },

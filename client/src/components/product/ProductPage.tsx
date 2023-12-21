@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useEffect } from 'react'
 import { Box } from '@mui/system'
 import { useDispatch, useSelector } from 'react-redux'

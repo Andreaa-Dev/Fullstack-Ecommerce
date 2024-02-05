@@ -8,7 +8,6 @@
     "noImplicitAny": true,
     "moduleResolution": "node",
     "sourceMap": true,
-    "rootDir": "src",
     "outDir": "dist",
     "baseUrl": ".",
     "paths": {

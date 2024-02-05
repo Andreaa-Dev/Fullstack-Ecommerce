@@ -9,8 +9,6 @@ const mongoUrl = MONGODB_URI
 mongoose
   .connect(mongoUrl)
   .then(() => {
-    console.log(`connected to ${mongoUrl}`)
-    // Start Express server
     app.listen(app.get('port'), () => {
       console.log(
         '  App is running at http://localhost:%d in %s mode',

@@ -1,6 +1,6 @@
 # DIOR WEBSITE
 
-Link: https://dior-andrea.netlify.app/
+Link: https://dior-frontend.onrender.com/
 
 ## IMAGE
 
